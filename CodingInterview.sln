@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms", "Algorithms\Algorithms.csproj", "{4D1C7CC3-BBD2-41D9-85E6-7C405313A911}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures", "DataStructures\DataStructures.csproj", "{A3FD747B-3AF6-4077-95BD-748EE61466EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Numbers", "Numbers\Numbers.csproj", "{66BE72E1-7852-4AC7-9B85-E32FDA823831}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays", "Arrays\Arrays.csproj", "{1C7133E2-1D7D-49D2-8E87-2FFCB50A9D2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strings", "Strings\Strings.csproj", "{D7E83998-8D09-42AB-8841-056DA166E0CD}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Algorithms\\Algorithms.csproj
+		SccProjectName1 = Algorithms
+		SccLocalPath1 = Algorithms
+		SccProjectUniqueName2 = Arrays\\Arrays.csproj
+		SccProjectName2 = Arrays
+		SccLocalPath2 = Arrays
+		SccProjectUniqueName3 = DataStructures\\DataStructures.csproj
+		SccProjectName3 = DataStructures
+		SccLocalPath3 = DataStructures
+		SccProjectUniqueName4 = Numbers\\Numbers.csproj
+		SccProjectName4 = Numbers
+		SccLocalPath4 = Numbers
+		SccProjectUniqueName5 = Strings\\Strings.csproj
+		SccProjectName5 = Strings
+		SccLocalPath5 = Strings
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D1C7CC3-BBD2-41D9-85E6-7C405313A911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D1C7CC3-BBD2-41D9-85E6-7C405313A911}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D1C7CC3-BBD2-41D9-85E6-7C405313A911}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D1C7CC3-BBD2-41D9-85E6-7C405313A911}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3FD747B-3AF6-4077-95BD-748EE61466EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3FD747B-3AF6-4077-95BD-748EE61466EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3FD747B-3AF6-4077-95BD-748EE61466EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3FD747B-3AF6-4077-95BD-748EE61466EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66BE72E1-7852-4AC7-9B85-E32FDA823831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66BE72E1-7852-4AC7-9B85-E32FDA823831}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66BE72E1-7852-4AC7-9B85-E32FDA823831}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66BE72E1-7852-4AC7-9B85-E32FDA823831}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C7133E2-1D7D-49D2-8E87-2FFCB50A9D2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C7133E2-1D7D-49D2-8E87-2FFCB50A9D2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C7133E2-1D7D-49D2-8E87-2FFCB50A9D2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C7133E2-1D7D-49D2-8E87-2FFCB50A9D2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7E83998-8D09-42AB-8841-056DA166E0CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7E83998-8D09-42AB-8841-056DA166E0CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7E83998-8D09-42AB-8841-056DA166E0CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7E83998-8D09-42AB-8841-056DA166E0CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
