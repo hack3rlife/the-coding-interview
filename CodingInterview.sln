@@ -1,61 +1,54 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms", "Algorithms\Algorithms.csproj", "{4D1C7CC3-BBD2-41D9-85E6-7C405313A911}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3E48A53E-C8B5-4DE3-A51F-4F84F2A83413}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures", "DataStructures\DataStructures.csproj", "{A3FD747B-3AF6-4077-95BD-748EE61466EB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{C915F492-E693-4BB3-B97B-C699FD581991}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Numbers", "Numbers\Numbers.csproj", "{66BE72E1-7852-4AC7-9B85-E32FDA823831}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataStructures", "DataStructures", "{BE56D31A-1457-454C-B084-B8F645E8D7F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays", "Arrays\Arrays.csproj", "{1C7133E2-1D7D-49D2-8E87-2FFCB50A9D2E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList", "DataStructures\LinkedLists\LinkedList\LinkedList.csproj", "{FE94F32B-E9B9-4A31-85EE-BCA5366D963F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedListTest", "DataStructures\LinkedLists\LinkedListTest\LinkedListTest.csproj", "{6294096E-EC5C-46B6-8BA6-6BCC2D181A6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Strings", "Strings", "{1BC65096-362C-4FBE-8787-C5B10ACA15D4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strings", "Strings\Strings.csproj", "{D7E83998-8D09-42AB-8841-056DA166E0CD}"
 EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 6
+		SccNumberOfProjects = 4
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
 		SccLocalPath0 = .
-		SccProjectUniqueName1 = Algorithms\\Algorithms.csproj
-		SccProjectName1 = Algorithms
-		SccLocalPath1 = Algorithms
-		SccProjectUniqueName2 = Arrays\\Arrays.csproj
-		SccProjectName2 = Arrays
-		SccLocalPath2 = Arrays
-		SccProjectUniqueName3 = DataStructures\\DataStructures.csproj
-		SccProjectName3 = DataStructures
-		SccLocalPath3 = DataStructures
-		SccProjectUniqueName4 = Numbers\\Numbers.csproj
-		SccProjectName4 = Numbers
-		SccLocalPath4 = Numbers
-		SccProjectUniqueName5 = Strings\\Strings.csproj
-		SccProjectName5 = Strings
-		SccLocalPath5 = Strings
+		SccProjectUniqueName1 = DataStructures\\LinkedLists\\LinkedList\\LinkedList.csproj
+		SccProjectTopLevelParentUniqueName1 = CodingInterview.sln
+		SccProjectName1 = DataStructures/LinkedLists/LinkedList
+		SccLocalPath1 = DataStructures\\LinkedLists\\LinkedList
+		SccProjectUniqueName2 = DataStructures\\LinkedLists\\LinkedListTest\\LinkedListTest.csproj
+		SccProjectTopLevelParentUniqueName2 = CodingInterview.sln
+		SccProjectName2 = DataStructures/LinkedLists/LinkedListTest
+		SccLocalPath2 = DataStructures\\LinkedLists\\LinkedListTest
+		SccProjectUniqueName3 = Strings\\Strings.csproj
+		SccProjectTopLevelParentUniqueName3 = CodingInterview.sln
+		SccProjectName3 = Strings
+		SccLocalPath3 = Strings
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4D1C7CC3-BBD2-41D9-85E6-7C405313A911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D1C7CC3-BBD2-41D9-85E6-7C405313A911}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4D1C7CC3-BBD2-41D9-85E6-7C405313A911}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4D1C7CC3-BBD2-41D9-85E6-7C405313A911}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A3FD747B-3AF6-4077-95BD-748EE61466EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A3FD747B-3AF6-4077-95BD-748EE61466EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A3FD747B-3AF6-4077-95BD-748EE61466EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A3FD747B-3AF6-4077-95BD-748EE61466EB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{66BE72E1-7852-4AC7-9B85-E32FDA823831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{66BE72E1-7852-4AC7-9B85-E32FDA823831}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{66BE72E1-7852-4AC7-9B85-E32FDA823831}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{66BE72E1-7852-4AC7-9B85-E32FDA823831}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1C7133E2-1D7D-49D2-8E87-2FFCB50A9D2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1C7133E2-1D7D-49D2-8E87-2FFCB50A9D2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1C7133E2-1D7D-49D2-8E87-2FFCB50A9D2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1C7133E2-1D7D-49D2-8E87-2FFCB50A9D2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE94F32B-E9B9-4A31-85EE-BCA5366D963F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE94F32B-E9B9-4A31-85EE-BCA5366D963F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE94F32B-E9B9-4A31-85EE-BCA5366D963F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE94F32B-E9B9-4A31-85EE-BCA5366D963F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6294096E-EC5C-46B6-8BA6-6BCC2D181A6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6294096E-EC5C-46B6-8BA6-6BCC2D181A6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6294096E-EC5C-46B6-8BA6-6BCC2D181A6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6294096E-EC5C-46B6-8BA6-6BCC2D181A6C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D7E83998-8D09-42AB-8841-056DA166E0CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D7E83998-8D09-42AB-8841-056DA166E0CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7E83998-8D09-42AB-8841-056DA166E0CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -63,5 +56,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BE56D31A-1457-454C-B084-B8F645E8D7F6} = {3E48A53E-C8B5-4DE3-A51F-4F84F2A83413}
+		{FE94F32B-E9B9-4A31-85EE-BCA5366D963F} = {BE56D31A-1457-454C-B084-B8F645E8D7F6}
+		{6294096E-EC5C-46B6-8BA6-6BCC2D181A6C} = {C915F492-E693-4BB3-B97B-C699FD581991}
+		{1BC65096-362C-4FBE-8787-C5B10ACA15D4} = {3E48A53E-C8B5-4DE3-A51F-4F84F2A83413}
+		{D7E83998-8D09-42AB-8841-056DA166E0CD} = {1BC65096-362C-4FBE-8787-C5B10ACA15D4}
 	EndGlobalSection
 EndGlobal
