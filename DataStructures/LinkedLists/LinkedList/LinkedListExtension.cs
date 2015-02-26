@@ -43,5 +43,51 @@ namespace LinkedList
 
             return null;
         }
+
+        /// <summary>
+        /// Reverse a LinkedList<T> (Iterative version)
+        /// </summary>
+        public static void Reverse<T>(this LinkedList.LinkedList<T> list)
+        {
+            if (list.Head != null)
+            {
+                Node<T> previous = null;
+                Node<T> current = list.Head;
+                Node<T> next = null;
+
+                while (current != null)
+                {
+                    next = current.Next;
+                    current.Next = previous;
+                    previous = current;
+
+                    current = next;
+                }
+
+                list.Head = previous;
+                list.Tail = current;
+            }
+        }
+
+        /// <summary>
+        /// Reverse a LinkedList<T> (Recursive version)
+        /// </summary>
+        /// <param name="list"></param>
+        /// <param name="current"></param>
+        public static void Reverse<T>(this LinkedList.LinkedList<T> list, Node<T> current)
+        {
+            if (current.Next == null)
+            {
+                list.Head = current;
+                return;
+            }
+
+            Reverse(list, current.Next);
+
+            Node<T> node = current.Next;
+            current.Next = null;
+            node.Next = current;
+
+        }
     }
 }
