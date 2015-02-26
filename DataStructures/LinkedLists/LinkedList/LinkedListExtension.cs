@@ -87,7 +87,63 @@ namespace LinkedList
             Node<T> node = current.Next;
             current.Next = null;
             node.Next = current;
+        }
 
+        /// <summary>
+        /// Remove duplicates from an unsorted LinkedList<T>
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="list"></param>
+        public static void RemoveDulicatesUnsorted<T>(this LinkedList.LinkedList<T> list)
+        {
+            if (list.Head != null)
+            {
+                Node<T> current = list.Head;
+
+                while (current != null)
+                {
+                    Node<T> node = current.Next;
+
+                    while (node != null)
+                    {
+                        if (current.Value.Equals(node.Value))
+                        {
+                            node.Next = node.Next.Next;
+                        }
+                        else
+                        {
+                            node = node.Next;
+                        }
+                    }
+
+                    current = current.Next;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Remove duplicates from an sorted LinkedList<T>
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="list"></param>
+        public static void RemoveDuplicatesSorted<T>(this LinkedList.LinkedList<T> list)
+        {
+            if (list.Head != null)
+            {
+                Node<T> current = list.Head;
+
+                while (current.Next != null)
+                {
+                    if (current.Value.Equals(current.Next.Value))
+                    {
+                        current = current.Next.Next;
+                    }
+                    else
+                    {
+                        current = current.Next;
+                    }
+                }
+            }
         }
     }
 }
