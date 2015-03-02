@@ -183,6 +183,31 @@ namespace LinkedList
         }
 
         /// <summary>
+        /// Removes all the duplicates
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="data"></param>
+        /// <param name="current"></param>
+        /// <returns></returns>
+        public Node<T> Remove(int data, Node<T> current)
+        {
+            if (data == null)
+                return current;
+            if (current == null || current.Next == null)
+                return current;
+
+            if (current.Value.Equals(data))
+            {
+                return Remove(data, current.Next);
+            }
+            else
+            {
+                current.Next = Remove(data, current.Next);
+                return current;
+            }
+        }
+
+        /// <summary>
         /// Print the nodes of the LinkedList
         /// </summary>        
         public void Display()

@@ -44,6 +44,32 @@ namespace LinkedList
             return null;
         }
 
+        public static Node<T> Findnth<T>(this LinkedList<T> list, int position)
+        {
+            if (list.Head != null)
+            {
+                Node<T> current = list.Head;
+                Node<T> nth = list.Head;
+
+                while (current != null)
+                {
+                    if (position-- <= 0)
+                    {
+                        current = current.Next;
+                    }
+                    else
+                    {
+                        current = current.Next;
+                        nth = nth.Next;
+                    }
+                }
+
+                return position == 0 ? nth : null;
+            }
+
+            return null;
+        }
+
         /// <summary>
         /// Reverse a LinkedList<T> (Iterative version)
         /// </summary>
@@ -144,6 +170,6 @@ namespace LinkedList
                     }
                 }
             }
-        }
+        }     
     }
 }
