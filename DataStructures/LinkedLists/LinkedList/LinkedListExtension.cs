@@ -44,7 +44,7 @@ namespace LinkedList
             return null;
         }
 
-        public static Node<T> Findnth<T>(this LinkedList<T> list, int position)
+        public static Node<T> Findnth<T>(this LinkedList.LinkedList<T> list, int position)
         {
             if (list.Head != null)
             {
@@ -170,6 +170,39 @@ namespace LinkedList
                     }
                 }
             }
-        }     
+        }
+
+        /// <summary>
+        /// Given a singly linked list, rotate the linked list counter-clockwise by k nodes
+        /// </summary>
+        /// <param name="list">LinkedList<T></param>
+        /// <param name="k">Number of times the LinkedList is going to be rotated</param>
+        public static void Rotate<T>(this LinkedList.LinkedList<T> list, int k)
+        {
+            if (list.Head == null)
+                return;
+
+            if (list.Count < k)
+                return;
+           
+            Node<T> current = list.Head;
+            Node<T> kthnode = null;
+
+            while (current.Next != null)
+            {
+                if (k == 1)
+                {
+                    kthnode = current;
+                }
+
+                current = current.Next;
+                k--;
+            }
+
+            current.Next = list.Head;
+            list.Head = kthnode.Next;
+            kthnode.Next = null;
+           
+        }
     }
 }
