@@ -57,6 +57,7 @@
     <Compile Include="LinkedListTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RotateLinkedListTest.cs" />
+    <Compile Include="SwapConsecutivesTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LinkedList\LinkedList.csproj">

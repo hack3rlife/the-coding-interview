@@ -204,5 +204,31 @@ namespace LinkedList
             kthnode.Next = null;
            
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="list"></param>
+        public static void SwapConsecutives<T>(this LinkedList.LinkedList<T> list)
+        {
+            if (list.Head != null && list.Head.Next != null)
+            {
+                Node<T> current = list.Head;
+                list.Head = current.Next;
+                current.Next = list.Head.Next;
+                list.Head.Next = current;
+                
+                while (current.Next != null && current.Next.Next != null)
+                {
+                    Node<T> temp = current.Next;
+                    current.Next = current.Next.Next;
+                    temp.Next = current.Next.Next;
+                    current.Next.Next = temp;
+                    current = current.Next.Next; 
+                                      
+                }
+            }
+        }
     }
 }
