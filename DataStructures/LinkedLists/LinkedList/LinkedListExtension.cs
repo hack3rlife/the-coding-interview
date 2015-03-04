@@ -201,8 +201,7 @@ namespace LinkedList
 
             current.Next = list.Head;
             list.Head = kthnode.Next;
-            kthnode.Next = null;
-           
+            kthnode.Next = null;           
         }
 
         /// <summary>
@@ -228,6 +227,41 @@ namespace LinkedList
                     current = current.Next.Next; 
                                       
                 }
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="list"></param>
+        public static void ReverseAlternateNodesAndAppendAtTheEnd<T>(this LinkedList.LinkedList<T> list)
+        {
+            if (list.Head != null)
+            {
+                Node<T> current = list.Head;
+
+                Node<T> prev = current.Next;
+                current.Next = current.Next.Next;
+                prev.Next = null;
+
+                current = current.Next;
+
+                list.Display();
+
+                while (current!= null && current.Next != null)
+                {
+                    Node<T> temp = current.Next;
+                    current.Next = current.Next.Next;
+
+                    temp.Next = prev;                    
+                    prev = temp;
+                  
+                    current = current.Next;
+
+                    list.Display();
+                }
+
+                current.Next = prev;
             }
         }
     }

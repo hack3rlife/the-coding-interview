@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace LinkedListTest
 {
     [TestClass]
-    public class LinkedListTests
+    public class LinkedListTests: LinkedListBaseTest
     {
         [TestMethod]
         public void AddFirstTest()
