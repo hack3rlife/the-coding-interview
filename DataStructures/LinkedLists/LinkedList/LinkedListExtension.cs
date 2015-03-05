@@ -264,5 +264,27 @@ namespace LinkedList
                 current.Next = prev;
             }
         }
+
+        public static void MergeAlternateNodes<T>(this LinkedList.LinkedList<T> list, LinkedList.LinkedList<T> alternate)
+        {
+            if (list.Head != null)
+            {
+                Node<T> current1 = list.Head;
+                Node<T> current2 = alternate.Head;
+
+                while (current1 != null)
+                {
+                    Node<T> temp1 = current1.Next;
+                    Node<T> temp2 = current2.Next;
+
+                    current1.Next = current2;
+                    current2.Next = temp1;
+
+                    current2 = temp2;
+
+                    current1 = current1.Next.Next;
+                }
+            }
+        }
     }
 }
