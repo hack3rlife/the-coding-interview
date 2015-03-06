@@ -184,7 +184,7 @@ namespace LinkedList
 
             if (list.Count < k)
                 return;
-           
+
             Node<T> current = list.Head;
             Node<T> kthnode = null;
 
@@ -201,7 +201,7 @@ namespace LinkedList
 
             current.Next = list.Head;
             list.Head = kthnode.Next;
-            kthnode.Next = null;           
+            kthnode.Next = null;
         }
 
         /// <summary>
@@ -217,15 +217,15 @@ namespace LinkedList
                 list.Head = current.Next;
                 current.Next = list.Head.Next;
                 list.Head.Next = current;
-                
+
                 while (current.Next != null && current.Next.Next != null)
                 {
                     Node<T> temp = current.Next;
                     current.Next = current.Next.Next;
                     temp.Next = current.Next.Next;
                     current.Next.Next = temp;
-                    current = current.Next.Next; 
-                                      
+                    current = current.Next.Next;
+
                 }
             }
         }
@@ -248,14 +248,14 @@ namespace LinkedList
 
                 list.Display();
 
-                while (current!= null && current.Next != null)
+                while (current != null && current.Next != null)
                 {
                     Node<T> temp = current.Next;
                     current.Next = current.Next.Next;
 
-                    temp.Next = prev;                    
+                    temp.Next = prev;
                     prev = temp;
-                  
+
                     current = current.Next;
 
                     list.Display();
@@ -283,6 +283,43 @@ namespace LinkedList
                     current2 = temp2;
 
                     current1 = current1.Next.Next;
+                }
+            }
+        }
+
+        public static void DeleteNAfterM<T>(this LinkedList.LinkedList<T> list, int m, int n)
+        {
+            if (list.Head != null)
+            {
+                Node<T> current = list.Head;
+
+                while (current.Next != null)
+                {
+                    for (int i = 1; i < m; i++)
+                    {
+                        current = current.Next;
+                    }
+
+                    
+                    Node<T> temp = current;
+                    
+
+                    for (int i = 0; i < n; i++)
+                    {
+                        if (current.Next != null)
+                        {
+                            current = current.Next;
+
+                        }
+                    }
+
+                    temp.Next = current.Next;
+                    current.Next = temp;
+
+                    if (current.Next != null)
+                    {
+                        current = current.Next;
+                    }
                 }
             }
         }
