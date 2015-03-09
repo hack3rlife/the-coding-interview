@@ -292,33 +292,31 @@ namespace LinkedList
             if (list.Head != null)
             {
                 Node<T> current = list.Head;
+                Node<T> temp = new Node<T>();
+
+                bool skip = true;
+
+                int count = m-1;
 
                 while (current.Next != null)
                 {
-                    for (int i = 1; i < m; i++)
-                    {
-                        current = current.Next;
-                    }
+                    current = current.Next;
 
-                    
-                    Node<T> temp = current;
-                    
-
-                    for (int i = 0; i < n; i++)
+                    if (--count == 0)
                     {
-                        if (current.Next != null)
+                        if (skip)
                         {
-                            current = current.Next;
-
+                            temp = current;
                         }
-                    }
+                        else
+                        {
+                            temp.Next = current.Next;
+                            current = temp;
+                            
+                        }
 
-                    temp.Next = current.Next;
-                    current.Next = temp;
-
-                    if (current.Next != null)
-                    {
-                        current = current.Next;
+                        count = skip ? n : m;
+                        skip = !skip;
                     }
                 }
             }
