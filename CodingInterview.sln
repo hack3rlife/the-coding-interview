@@ -21,9 +21,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTree", "BST\Bin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTreeTest", "DataStructures\BinaraySearchTrees\BinarySearchTreeTest\BinarySearchTreeTest.csproj", "{00BE2B7C-37F9-4310-85DE-AF35F1057754}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Queue", "DataStructures\Queues\Queue\Queue.csproj", "{1066E43D-EDCE-47A3-9D2D-0F55AFDCA88B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueTest", "DataStructures\Queues\QueueTest\QueueTest.csproj", "{051C9BBA-A0B0-456C-BBD4-444207B8D82F}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 6
+		SccNumberOfProjects = 8
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
 		SccLocalPath0 = .
@@ -47,6 +51,14 @@ Global
 		SccProjectTopLevelParentUniqueName5 = CodingInterview.sln
 		SccProjectName5 = DataStructures/BinaraySearchTrees/BinarySearchTreeTest
 		SccLocalPath5 = DataStructures\\BinaraySearchTrees\\BinarySearchTreeTest
+		SccProjectUniqueName6 = DataStructures\\Queues\\Queue\\Queue.csproj
+		SccProjectTopLevelParentUniqueName6 = CodingInterview.sln
+		SccProjectName6 = DataStructures/Queues/Queue
+		SccLocalPath6 = DataStructures\\Queues\\Queue
+		SccProjectUniqueName7 = DataStructures\\Queues\\QueueTest\\QueueTest.csproj
+		SccProjectTopLevelParentUniqueName7 = CodingInterview.sln
+		SccProjectName7 = DataStructures/Queues/QueueTest
+		SccLocalPath7 = DataStructures\\Queues\\QueueTest
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +85,14 @@ Global
 		{00BE2B7C-37F9-4310-85DE-AF35F1057754}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00BE2B7C-37F9-4310-85DE-AF35F1057754}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00BE2B7C-37F9-4310-85DE-AF35F1057754}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1066E43D-EDCE-47A3-9D2D-0F55AFDCA88B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1066E43D-EDCE-47A3-9D2D-0F55AFDCA88B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1066E43D-EDCE-47A3-9D2D-0F55AFDCA88B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1066E43D-EDCE-47A3-9D2D-0F55AFDCA88B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{051C9BBA-A0B0-456C-BBD4-444207B8D82F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{051C9BBA-A0B0-456C-BBD4-444207B8D82F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{051C9BBA-A0B0-456C-BBD4-444207B8D82F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{051C9BBA-A0B0-456C-BBD4-444207B8D82F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,5 +105,7 @@ Global
 		{D7E83998-8D09-42AB-8841-056DA166E0CD} = {1BC65096-362C-4FBE-8787-C5B10ACA15D4}
 		{9B3E64A7-EF17-4066-B283-8AA8463C740D} = {BE56D31A-1457-454C-B084-B8F645E8D7F6}
 		{00BE2B7C-37F9-4310-85DE-AF35F1057754} = {C915F492-E693-4BB3-B97B-C699FD581991}
+		{1066E43D-EDCE-47A3-9D2D-0F55AFDCA88B} = {BE56D31A-1457-454C-B084-B8F645E8D7F6}
+		{051C9BBA-A0B0-456C-BBD4-444207B8D82F} = {C915F492-E693-4BB3-B97B-C699FD581991}
 	EndGlobalSection
 EndGlobal
