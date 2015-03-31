@@ -15,8 +15,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedListTest", "DataStruc
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Strings", "Strings", "{1BC65096-362C-4FBE-8787-C5B10ACA15D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strings", "Strings\Strings.csproj", "{D7E83998-8D09-42AB-8841-056DA166E0CD}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTree", "BST\BinarySearchTree.csproj", "{9B3E64A7-EF17-4066-B283-8AA8463C740D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTreeTest", "DataStructures\BinaraySearchTrees\BinarySearchTreeTest\BinarySearchTreeTest.csproj", "{00BE2B7C-37F9-4310-85DE-AF35F1057754}"
@@ -25,9 +23,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Queue", "DataStructures\Que
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueTest", "DataStructures\Queues\QueueTest\QueueTest.csproj", "{051C9BBA-A0B0-456C-BBD4-444207B8D82F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringReverseTest", "Strings\StringReverse\StringReverseTest\StringReverseTest.csproj", "{80DD867B-EDBE-422C-9800-3E89581677BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneNumberParser", "Strings\PhoneNumberParser\AlphanumericPhoneNumber\PhoneNumberParser.csproj", "{C1F2691B-C104-4038-A02B-BD11BE3219DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneNumberParserTest", "Strings\PhoneNumberParser\AlphanumericPhoneNumberTest\PhoneNumberParserTest.csproj", "{29A547D5-4B30-40F0-A328-C2111752F810}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 8
+		SccNumberOfProjects = 9
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
 		SccLocalPath0 = .
@@ -39,26 +43,30 @@ Global
 		SccProjectTopLevelParentUniqueName2 = CodingInterview.sln
 		SccProjectName2 = DataStructures/LinkedLists/LinkedListTest
 		SccLocalPath2 = DataStructures\\LinkedLists\\LinkedListTest
-		SccProjectUniqueName3 = Strings\\Strings.csproj
+		SccProjectUniqueName3 = BST\\BinarySearchTree.csproj
 		SccProjectTopLevelParentUniqueName3 = CodingInterview.sln
-		SccProjectName3 = Strings
-		SccLocalPath3 = Strings
-		SccProjectUniqueName4 = BST\\BinarySearchTree.csproj
+		SccProjectName3 = BST
+		SccLocalPath3 = BST
+		SccProjectUniqueName4 = DataStructures\\BinaraySearchTrees\\BinarySearchTreeTest\\BinarySearchTreeTest.csproj
 		SccProjectTopLevelParentUniqueName4 = CodingInterview.sln
-		SccProjectName4 = BST
-		SccLocalPath4 = BST
-		SccProjectUniqueName5 = DataStructures\\BinaraySearchTrees\\BinarySearchTreeTest\\BinarySearchTreeTest.csproj
+		SccProjectName4 = DataStructures/BinaraySearchTrees/BinarySearchTreeTest
+		SccLocalPath4 = DataStructures\\BinaraySearchTrees\\BinarySearchTreeTest
+		SccProjectUniqueName5 = DataStructures\\Queues\\Queue\\Queue.csproj
 		SccProjectTopLevelParentUniqueName5 = CodingInterview.sln
-		SccProjectName5 = DataStructures/BinaraySearchTrees/BinarySearchTreeTest
-		SccLocalPath5 = DataStructures\\BinaraySearchTrees\\BinarySearchTreeTest
-		SccProjectUniqueName6 = DataStructures\\Queues\\Queue\\Queue.csproj
+		SccProjectName5 = DataStructures/Queues/Queue
+		SccLocalPath5 = DataStructures\\Queues\\Queue
+		SccProjectUniqueName6 = DataStructures\\Queues\\QueueTest\\QueueTest.csproj
 		SccProjectTopLevelParentUniqueName6 = CodingInterview.sln
-		SccProjectName6 = DataStructures/Queues/Queue
-		SccLocalPath6 = DataStructures\\Queues\\Queue
-		SccProjectUniqueName7 = DataStructures\\Queues\\QueueTest\\QueueTest.csproj
+		SccProjectName6 = DataStructures/Queues/QueueTest
+		SccLocalPath6 = DataStructures\\Queues\\QueueTest
+		SccProjectUniqueName7 = Strings\\PhoneNumberParser\\AlphanumericPhoneNumber\\PhoneNumberParser.csproj
 		SccProjectTopLevelParentUniqueName7 = CodingInterview.sln
-		SccProjectName7 = DataStructures/Queues/QueueTest
-		SccLocalPath7 = DataStructures\\Queues\\QueueTest
+		SccProjectName7 = Strings/PhoneNumberParser/AlphanumericPhoneNumber
+		SccLocalPath7 = Strings\\PhoneNumberParser\\AlphanumericPhoneNumber
+		SccProjectUniqueName8 = Strings\\PhoneNumberParser\\AlphanumericPhoneNumberTest\\PhoneNumberParserTest.csproj
+		SccProjectTopLevelParentUniqueName8 = CodingInterview.sln
+		SccProjectName8 = Strings/PhoneNumberParser/AlphanumericPhoneNumberTest
+		SccLocalPath8 = Strings\\PhoneNumberParser\\AlphanumericPhoneNumberTest
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,10 +81,6 @@ Global
 		{6294096E-EC5C-46B6-8BA6-6BCC2D181A6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6294096E-EC5C-46B6-8BA6-6BCC2D181A6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6294096E-EC5C-46B6-8BA6-6BCC2D181A6C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D7E83998-8D09-42AB-8841-056DA166E0CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D7E83998-8D09-42AB-8841-056DA166E0CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D7E83998-8D09-42AB-8841-056DA166E0CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D7E83998-8D09-42AB-8841-056DA166E0CD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9B3E64A7-EF17-4066-B283-8AA8463C740D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9B3E64A7-EF17-4066-B283-8AA8463C740D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B3E64A7-EF17-4066-B283-8AA8463C740D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -93,6 +97,18 @@ Global
 		{051C9BBA-A0B0-456C-BBD4-444207B8D82F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{051C9BBA-A0B0-456C-BBD4-444207B8D82F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{051C9BBA-A0B0-456C-BBD4-444207B8D82F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80DD867B-EDBE-422C-9800-3E89581677BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80DD867B-EDBE-422C-9800-3E89581677BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80DD867B-EDBE-422C-9800-3E89581677BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80DD867B-EDBE-422C-9800-3E89581677BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1F2691B-C104-4038-A02B-BD11BE3219DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1F2691B-C104-4038-A02B-BD11BE3219DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1F2691B-C104-4038-A02B-BD11BE3219DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1F2691B-C104-4038-A02B-BD11BE3219DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29A547D5-4B30-40F0-A328-C2111752F810}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29A547D5-4B30-40F0-A328-C2111752F810}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29A547D5-4B30-40F0-A328-C2111752F810}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29A547D5-4B30-40F0-A328-C2111752F810}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -102,10 +118,12 @@ Global
 		{FE94F32B-E9B9-4A31-85EE-BCA5366D963F} = {BE56D31A-1457-454C-B084-B8F645E8D7F6}
 		{6294096E-EC5C-46B6-8BA6-6BCC2D181A6C} = {C915F492-E693-4BB3-B97B-C699FD581991}
 		{1BC65096-362C-4FBE-8787-C5B10ACA15D4} = {3E48A53E-C8B5-4DE3-A51F-4F84F2A83413}
-		{D7E83998-8D09-42AB-8841-056DA166E0CD} = {1BC65096-362C-4FBE-8787-C5B10ACA15D4}
 		{9B3E64A7-EF17-4066-B283-8AA8463C740D} = {BE56D31A-1457-454C-B084-B8F645E8D7F6}
 		{00BE2B7C-37F9-4310-85DE-AF35F1057754} = {C915F492-E693-4BB3-B97B-C699FD581991}
 		{1066E43D-EDCE-47A3-9D2D-0F55AFDCA88B} = {BE56D31A-1457-454C-B084-B8F645E8D7F6}
 		{051C9BBA-A0B0-456C-BBD4-444207B8D82F} = {C915F492-E693-4BB3-B97B-C699FD581991}
+		{80DD867B-EDBE-422C-9800-3E89581677BE} = {C915F492-E693-4BB3-B97B-C699FD581991}
+		{C1F2691B-C104-4038-A02B-BD11BE3219DF} = {1BC65096-362C-4FBE-8787-C5B10ACA15D4}
+		{29A547D5-4B30-40F0-A328-C2111752F810} = {C915F492-E693-4BB3-B97B-C699FD581991}
 	EndGlobalSection
 EndGlobal
