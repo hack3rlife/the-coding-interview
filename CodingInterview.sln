@@ -33,9 +33,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringPermutation", "String
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringPermutationTest", "Strings\StringPermutation\StringPermutationTest\StringPermutationTest.csproj", "{CC47582D-3337-409F-BAFE-9EA60308C9AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCombination", "Strings\StringCombination\StringCombination\StringCombination.csproj", "{F8FB71D0-6E61-4A11-B7B2-550B99233E3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCombinationTest", "Strings\StringCombination\StringCombinationTest\StringCombinationTest.csproj", "{F98AB756-AA37-4304-B058-6626FBCF79F0}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 12
+		SccNumberOfProjects = 14
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
 		SccLocalPath0 = .
@@ -83,6 +87,14 @@ Global
 		SccProjectTopLevelParentUniqueName11 = CodingInterview.sln
 		SccProjectName11 = Strings/StringPermutation/StringPermutationTest
 		SccLocalPath11 = Strings\\StringPermutation\\StringPermutationTest
+		SccProjectUniqueName12 = Strings\\StringCombination\\StringCombination\\StringCombination.csproj
+		SccProjectTopLevelParentUniqueName12 = CodingInterview.sln
+		SccProjectName12 = Strings/StringCombination/StringCombination
+		SccLocalPath12 = Strings\\StringCombination\\StringCombination
+		SccProjectUniqueName13 = Strings\\StringCombination\\StringCombinationTest\\StringCombinationTest.csproj
+		SccProjectTopLevelParentUniqueName13 = CodingInterview.sln
+		SccProjectName13 = Strings/StringCombination/StringCombinationTest
+		SccLocalPath13 = Strings\\StringCombination\\StringCombinationTest
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -133,6 +145,14 @@ Global
 		{CC47582D-3337-409F-BAFE-9EA60308C9AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC47582D-3337-409F-BAFE-9EA60308C9AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC47582D-3337-409F-BAFE-9EA60308C9AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8FB71D0-6E61-4A11-B7B2-550B99233E3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8FB71D0-6E61-4A11-B7B2-550B99233E3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8FB71D0-6E61-4A11-B7B2-550B99233E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8FB71D0-6E61-4A11-B7B2-550B99233E3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F98AB756-AA37-4304-B058-6626FBCF79F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F98AB756-AA37-4304-B058-6626FBCF79F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F98AB756-AA37-4304-B058-6626FBCF79F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F98AB756-AA37-4304-B058-6626FBCF79F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -151,5 +171,7 @@ Global
 		{29A547D5-4B30-40F0-A328-C2111752F810} = {C915F492-E693-4BB3-B97B-C699FD581991}
 		{F9406D2C-A5B0-480D-9375-212F94964B93} = {1BC65096-362C-4FBE-8787-C5B10ACA15D4}
 		{CC47582D-3337-409F-BAFE-9EA60308C9AE} = {C915F492-E693-4BB3-B97B-C699FD581991}
+		{F8FB71D0-6E61-4A11-B7B2-550B99233E3D} = {1BC65096-362C-4FBE-8787-C5B10ACA15D4}
+		{F98AB756-AA37-4304-B058-6626FBCF79F0} = {C915F492-E693-4BB3-B97B-C699FD581991}
 	EndGlobalSection
 EndGlobal
