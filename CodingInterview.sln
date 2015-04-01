@@ -29,9 +29,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneNumberParser", "String
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneNumberParserTest", "Strings\PhoneNumberParser\AlphanumericPhoneNumberTest\PhoneNumberParserTest.csproj", "{29A547D5-4B30-40F0-A328-C2111752F810}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringPermutation", "Strings\StringPermutation\StringPermutation\StringPermutation.csproj", "{F9406D2C-A5B0-480D-9375-212F94964B93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringPermutationTest", "Strings\StringPermutation\StringPermutationTest\StringPermutationTest.csproj", "{CC47582D-3337-409F-BAFE-9EA60308C9AE}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 9
+		SccNumberOfProjects = 12
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
 		SccLocalPath0 = .
@@ -67,6 +71,18 @@ Global
 		SccProjectTopLevelParentUniqueName8 = CodingInterview.sln
 		SccProjectName8 = Strings/PhoneNumberParser/AlphanumericPhoneNumberTest
 		SccLocalPath8 = Strings\\PhoneNumberParser\\AlphanumericPhoneNumberTest
+		SccProjectUniqueName9 = Strings\\StringReverse\\StringReverseTest\\StringReverseTest.csproj
+		SccProjectTopLevelParentUniqueName9 = CodingInterview.sln
+		SccProjectName9 = Strings/StringReverse/StringReverseTest
+		SccLocalPath9 = Strings\\StringReverse\\StringReverseTest
+		SccProjectUniqueName10 = Strings\\StringPermutation\\StringPermutation\\StringPermutation.csproj
+		SccProjectTopLevelParentUniqueName10 = CodingInterview.sln
+		SccProjectName10 = Strings/StringPermutation/StringPermutation
+		SccLocalPath10 = Strings\\StringPermutation\\StringPermutation
+		SccProjectUniqueName11 = Strings\\StringPermutation\\StringPermutationTest\\StringPermutationTest.csproj
+		SccProjectTopLevelParentUniqueName11 = CodingInterview.sln
+		SccProjectName11 = Strings/StringPermutation/StringPermutationTest
+		SccLocalPath11 = Strings\\StringPermutation\\StringPermutationTest
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -109,6 +125,14 @@ Global
 		{29A547D5-4B30-40F0-A328-C2111752F810}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29A547D5-4B30-40F0-A328-C2111752F810}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29A547D5-4B30-40F0-A328-C2111752F810}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9406D2C-A5B0-480D-9375-212F94964B93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9406D2C-A5B0-480D-9375-212F94964B93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9406D2C-A5B0-480D-9375-212F94964B93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9406D2C-A5B0-480D-9375-212F94964B93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC47582D-3337-409F-BAFE-9EA60308C9AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC47582D-3337-409F-BAFE-9EA60308C9AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC47582D-3337-409F-BAFE-9EA60308C9AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC47582D-3337-409F-BAFE-9EA60308C9AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -125,5 +149,7 @@ Global
 		{80DD867B-EDBE-422C-9800-3E89581677BE} = {C915F492-E693-4BB3-B97B-C699FD581991}
 		{C1F2691B-C104-4038-A02B-BD11BE3219DF} = {1BC65096-362C-4FBE-8787-C5B10ACA15D4}
 		{29A547D5-4B30-40F0-A328-C2111752F810} = {C915F492-E693-4BB3-B97B-C699FD581991}
+		{F9406D2C-A5B0-480D-9375-212F94964B93} = {1BC65096-362C-4FBE-8787-C5B10ACA15D4}
+		{CC47582D-3337-409F-BAFE-9EA60308C9AE} = {C915F492-E693-4BB3-B97B-C699FD581991}
 	EndGlobalSection
 EndGlobal
