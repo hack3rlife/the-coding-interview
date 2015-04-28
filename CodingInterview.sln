@@ -51,9 +51,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Algorithms", "Algorithms", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubbleSortTest", "Algorithms\BubbleSort\BubbleSortTest\BubbleSortTest.csproj", "{77D3FF05-E516-486C-8B7D-EDC61AB3740B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Algorithms", "Algorithms", "{290FF673-3B2E-4E97-AB9D-43D58D55DBB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSortTest", "Algorithms\MergeSort\MergeSortTest\MergeSortTest.csproj", "{4671DFD2-AC16-4651-95B1-D7196959F267}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort", "Algorithms\MergeSort\MergeSort\MergeSort.csproj", "{C7F6A001-E413-4FBD-A4AF-AF08442CF90C}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 14
+		SccNumberOfProjects = 16
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
 		SccLocalPath0 = .
@@ -109,6 +115,14 @@ Global
 		SccProjectTopLevelParentUniqueName13 = CodingInterview.sln
 		SccProjectName13 = Algorithms/BubbleSort/BubbleSortTest
 		SccLocalPath13 = Algorithms\\BubbleSort\\BubbleSortTest
+		SccProjectUniqueName14 = Algorithms\\MergeSort\\MergeSortTest\\MergeSortTest.csproj
+		SccProjectTopLevelParentUniqueName14 = CodingInterview.sln
+		SccProjectName14 = Algorithms/MergeSort/MergeSortTest
+		SccLocalPath14 = Algorithms\\MergeSort\\MergeSortTest
+		SccProjectUniqueName15 = Algorithms\\MergeSort\\MergeSort\\MergeSort.csproj
+		SccProjectTopLevelParentUniqueName15 = CodingInterview.sln
+		SccProjectName15 = Algorithms/MergeSort/MergeSort
+		SccLocalPath15 = Algorithms\\MergeSort\\MergeSort
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -183,6 +197,14 @@ Global
 		{77D3FF05-E516-486C-8B7D-EDC61AB3740B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77D3FF05-E516-486C-8B7D-EDC61AB3740B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77D3FF05-E516-486C-8B7D-EDC61AB3740B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4671DFD2-AC16-4651-95B1-D7196959F267}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4671DFD2-AC16-4651-95B1-D7196959F267}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4671DFD2-AC16-4651-95B1-D7196959F267}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4671DFD2-AC16-4651-95B1-D7196959F267}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7F6A001-E413-4FBD-A4AF-AF08442CF90C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7F6A001-E413-4FBD-A4AF-AF08442CF90C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7F6A001-E413-4FBD-A4AF-AF08442CF90C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7F6A001-E413-4FBD-A4AF-AF08442CF90C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -210,5 +232,8 @@ Global
 		{05888141-FDB7-4761-8491-61DED40BB40F} = {3E48A53E-C8B5-4DE3-A51F-4F84F2A83413}
 		{F492185D-A056-41AA-8849-0465BFBC1993} = {C915F492-E693-4BB3-B97B-C699FD581991}
 		{77D3FF05-E516-486C-8B7D-EDC61AB3740B} = {F492185D-A056-41AA-8849-0465BFBC1993}
+		{290FF673-3B2E-4E97-AB9D-43D58D55DBB4} = {3E48A53E-C8B5-4DE3-A51F-4F84F2A83413}
+		{4671DFD2-AC16-4651-95B1-D7196959F267} = {F492185D-A056-41AA-8849-0465BFBC1993}
+		{C7F6A001-E413-4FBD-A4AF-AF08442CF90C} = {290FF673-3B2E-4E97-AB9D-43D58D55DBB4}
 	EndGlobalSection
 EndGlobal
