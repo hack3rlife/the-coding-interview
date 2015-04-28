@@ -57,9 +57,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSortTest", "Algorithms
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort", "Algorithms\MergeSort\MergeSort\MergeSort.csproj", "{C7F6A001-E413-4FBD-A4AF-AF08442CF90C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSort", "Algorithms\QuickSort\QuickSort\QuickSort.csproj", "{7AC580D1-39A9-4A82-8680-A35D931867BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSortTest", "Algorithms\QuickSort\QuickSortTest\QuickSortTest.csproj", "{CC846162-81B1-4A59-8F4E-1B1A58A3E203}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 16
+		SccNumberOfProjects = 18
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
 		SccLocalPath0 = .
@@ -123,6 +127,14 @@ Global
 		SccProjectTopLevelParentUniqueName15 = CodingInterview.sln
 		SccProjectName15 = Algorithms/MergeSort/MergeSort
 		SccLocalPath15 = Algorithms\\MergeSort\\MergeSort
+		SccProjectUniqueName16 = Algorithms\\QuickSort\\QuickSort\\QuickSort.csproj
+		SccProjectTopLevelParentUniqueName16 = CodingInterview.sln
+		SccProjectName16 = Algorithms/QuickSort/QuickSort
+		SccLocalPath16 = Algorithms\\QuickSort\\QuickSort
+		SccProjectUniqueName17 = Algorithms\\QuickSort\\QuickSortTest\\QuickSortTest.csproj
+		SccProjectTopLevelParentUniqueName17 = CodingInterview.sln
+		SccProjectName17 = Algorithms/QuickSort/QuickSortTest
+		SccLocalPath17 = Algorithms\\QuickSort\\QuickSortTest
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -205,6 +217,14 @@ Global
 		{C7F6A001-E413-4FBD-A4AF-AF08442CF90C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7F6A001-E413-4FBD-A4AF-AF08442CF90C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7F6A001-E413-4FBD-A4AF-AF08442CF90C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AC580D1-39A9-4A82-8680-A35D931867BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AC580D1-39A9-4A82-8680-A35D931867BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AC580D1-39A9-4A82-8680-A35D931867BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AC580D1-39A9-4A82-8680-A35D931867BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC846162-81B1-4A59-8F4E-1B1A58A3E203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC846162-81B1-4A59-8F4E-1B1A58A3E203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC846162-81B1-4A59-8F4E-1B1A58A3E203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC846162-81B1-4A59-8F4E-1B1A58A3E203}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -235,5 +255,7 @@ Global
 		{290FF673-3B2E-4E97-AB9D-43D58D55DBB4} = {3E48A53E-C8B5-4DE3-A51F-4F84F2A83413}
 		{4671DFD2-AC16-4651-95B1-D7196959F267} = {F492185D-A056-41AA-8849-0465BFBC1993}
 		{C7F6A001-E413-4FBD-A4AF-AF08442CF90C} = {290FF673-3B2E-4E97-AB9D-43D58D55DBB4}
+		{7AC580D1-39A9-4A82-8680-A35D931867BD} = {290FF673-3B2E-4E97-AB9D-43D58D55DBB4}
+		{CC846162-81B1-4A59-8F4E-1B1A58A3E203} = {F492185D-A056-41AA-8849-0465BFBC1993}
 	EndGlobalSection
 EndGlobal
