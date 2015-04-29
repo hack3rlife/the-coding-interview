@@ -61,9 +61,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSort", "Algorithms\Qui
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSortTest", "Algorithms\QuickSort\QuickSortTest\QuickSortTest.csproj", "{CC846162-81B1-4A59-8F4E-1B1A58A3E203}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissingElement", "Strings\MissingElement\MissingElement\MissingElement.csproj", "{8175F7AD-4333-42EC-993C-836FB5C3DF85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Strings", "Strings", "{7011C068-0308-40F7-8145-02CED94A31D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissingElementTest", "Strings\MissingElement\MissingElementTest\MissingElementTest.csproj", "{82A2D763-FA61-4E5A-B3EB-F5239976EF8E}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 18
+		SccNumberOfProjects = 24
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
 		SccLocalPath0 = .
@@ -135,6 +141,30 @@ Global
 		SccProjectTopLevelParentUniqueName17 = CodingInterview.sln
 		SccProjectName17 = Algorithms/QuickSort/QuickSortTest
 		SccLocalPath17 = Algorithms\\QuickSort\\QuickSortTest
+		SccProjectUniqueName18 = Strings\\StringPermutation\\StringPermutation\\StringPermutation.csproj
+		SccProjectTopLevelParentUniqueName18 = CodingInterview.sln
+		SccProjectName18 = Strings/StringPermutation/StringPermutation
+		SccLocalPath18 = Strings\\StringPermutation\\StringPermutation
+		SccProjectUniqueName19 = Strings\\StringPermutation\\StringPermutationTest\\StringPermutationTest.csproj
+		SccProjectTopLevelParentUniqueName19 = CodingInterview.sln
+		SccProjectName19 = Strings/StringPermutation/StringPermutationTest
+		SccLocalPath19 = Strings\\StringPermutation\\StringPermutationTest
+		SccProjectUniqueName20 = Strings\\StringCombination\\StringCombination\\StringCombination.csproj
+		SccProjectTopLevelParentUniqueName20 = CodingInterview.sln
+		SccProjectName20 = Strings/StringCombination/StringCombination
+		SccLocalPath20 = Strings\\StringCombination\\StringCombination
+		SccProjectUniqueName21 = Strings\\StringCombination\\StringCombinationTest\\StringCombinationTest.csproj
+		SccProjectTopLevelParentUniqueName21 = CodingInterview.sln
+		SccProjectName21 = Strings/StringCombination/StringCombinationTest
+		SccLocalPath21 = Strings\\StringCombination\\StringCombinationTest
+		SccProjectUniqueName22 = Strings\\MissingElement\\MissingElement\\MissingElement.csproj
+		SccProjectTopLevelParentUniqueName22 = CodingInterview.sln
+		SccProjectName22 = Strings/MissingElement/MissingElement
+		SccLocalPath22 = Strings\\MissingElement\\MissingElement
+		SccProjectUniqueName23 = Strings\\MissingElement\\MissingElementTest\\MissingElementTest.csproj
+		SccProjectTopLevelParentUniqueName23 = CodingInterview.sln
+		SccProjectName23 = Strings/MissingElement/MissingElementTest
+		SccLocalPath23 = Strings\\MissingElement\\MissingElementTest
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -225,6 +255,14 @@ Global
 		{CC846162-81B1-4A59-8F4E-1B1A58A3E203}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC846162-81B1-4A59-8F4E-1B1A58A3E203}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC846162-81B1-4A59-8F4E-1B1A58A3E203}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8175F7AD-4333-42EC-993C-836FB5C3DF85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8175F7AD-4333-42EC-993C-836FB5C3DF85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8175F7AD-4333-42EC-993C-836FB5C3DF85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8175F7AD-4333-42EC-993C-836FB5C3DF85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82A2D763-FA61-4E5A-B3EB-F5239976EF8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82A2D763-FA61-4E5A-B3EB-F5239976EF8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82A2D763-FA61-4E5A-B3EB-F5239976EF8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82A2D763-FA61-4E5A-B3EB-F5239976EF8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -257,5 +295,8 @@ Global
 		{C7F6A001-E413-4FBD-A4AF-AF08442CF90C} = {290FF673-3B2E-4E97-AB9D-43D58D55DBB4}
 		{7AC580D1-39A9-4A82-8680-A35D931867BD} = {290FF673-3B2E-4E97-AB9D-43D58D55DBB4}
 		{CC846162-81B1-4A59-8F4E-1B1A58A3E203} = {F492185D-A056-41AA-8849-0465BFBC1993}
+		{8175F7AD-4333-42EC-993C-836FB5C3DF85} = {1BC65096-362C-4FBE-8787-C5B10ACA15D4}
+		{7011C068-0308-40F7-8145-02CED94A31D7} = {C915F492-E693-4BB3-B97B-C699FD581991}
+		{82A2D763-FA61-4E5A-B3EB-F5239976EF8E} = {7011C068-0308-40F7-8145-02CED94A31D7}
 	EndGlobalSection
 EndGlobal
