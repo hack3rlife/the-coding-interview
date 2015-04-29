@@ -67,9 +67,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Strings", "Strings", "{7011
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissingElementTest", "Strings\MissingElement\MissingElementTest\MissingElementTest.csproj", "{82A2D763-FA61-4E5A-B3EB-F5239976EF8E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubArrayGivenSum", "Arrays\SubArrayGivenSum\SubArrayGivenSum\SubArrayGivenSum.csproj", "{65F3BBA4-DF6F-4AB8-B329-43D73CB56213}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubArrayGivenSumTest", "Arrays\SubArrayGivenSum\SubArrayGivenSumTest\SubArrayGivenSumTest.csproj", "{DBB94268-773E-4E23-A29A-47F1FE2FA6B7}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 24
+		SccNumberOfProjects = 26
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
 		SccLocalPath0 = .
@@ -165,6 +169,14 @@ Global
 		SccProjectTopLevelParentUniqueName23 = CodingInterview.sln
 		SccProjectName23 = Strings/MissingElement/MissingElementTest
 		SccLocalPath23 = Strings\\MissingElement\\MissingElementTest
+		SccProjectUniqueName24 = Arrays\\SubArrayGivenSum\\SubArrayGivenSum\\SubArrayGivenSum.csproj
+		SccProjectTopLevelParentUniqueName24 = CodingInterview.sln
+		SccProjectName24 = Arrays/SubArrayGivenSum/SubArrayGivenSum
+		SccLocalPath24 = Arrays\\SubArrayGivenSum\\SubArrayGivenSum
+		SccProjectUniqueName25 = Arrays\\SubArrayGivenSum\\SubArrayGivenSumTest\\SubArrayGivenSumTest.csproj
+		SccProjectTopLevelParentUniqueName25 = CodingInterview.sln
+		SccProjectName25 = Arrays/SubArrayGivenSum/SubArrayGivenSumTest
+		SccLocalPath25 = Arrays\\SubArrayGivenSum\\SubArrayGivenSumTest
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -263,6 +275,14 @@ Global
 		{82A2D763-FA61-4E5A-B3EB-F5239976EF8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82A2D763-FA61-4E5A-B3EB-F5239976EF8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82A2D763-FA61-4E5A-B3EB-F5239976EF8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65F3BBA4-DF6F-4AB8-B329-43D73CB56213}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65F3BBA4-DF6F-4AB8-B329-43D73CB56213}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65F3BBA4-DF6F-4AB8-B329-43D73CB56213}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65F3BBA4-DF6F-4AB8-B329-43D73CB56213}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBB94268-773E-4E23-A29A-47F1FE2FA6B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBB94268-773E-4E23-A29A-47F1FE2FA6B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBB94268-773E-4E23-A29A-47F1FE2FA6B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBB94268-773E-4E23-A29A-47F1FE2FA6B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -298,5 +318,7 @@ Global
 		{8175F7AD-4333-42EC-993C-836FB5C3DF85} = {1BC65096-362C-4FBE-8787-C5B10ACA15D4}
 		{7011C068-0308-40F7-8145-02CED94A31D7} = {C915F492-E693-4BB3-B97B-C699FD581991}
 		{82A2D763-FA61-4E5A-B3EB-F5239976EF8E} = {7011C068-0308-40F7-8145-02CED94A31D7}
+		{65F3BBA4-DF6F-4AB8-B329-43D73CB56213} = {25077DF6-E1DF-4000-B603-2CC6B990A4D8}
+		{DBB94268-773E-4E23-A29A-47F1FE2FA6B7} = {01C8DDF2-9C69-4E45-96B5-CADE4D0AD758}
 	EndGlobalSection
 EndGlobal
