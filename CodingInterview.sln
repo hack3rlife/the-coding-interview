@@ -71,9 +71,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubArrayGivenSum", "Arrays\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubArrayGivenSumTest", "Arrays\SubArrayGivenSum\SubArrayGivenSumTest\SubArrayGivenSumTest.csproj", "{DBB94268-773E-4E23-A29A-47F1FE2FA6B7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargestSumSubArray", "Arrays\LargestSumSubArray\LargestSumSubArray\LargestSumSubArray.csproj", "{B2203823-9DC7-4774-9B5D-D4505FC03D61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargestSumSubArrayTest", "Arrays\LargestSumSubArray\LargestSumSubArrayTest\LargestSumSubArrayTest.csproj", "{2FF6D997-C857-424B-915B-736E5A5EE86C}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 26
+		SccNumberOfProjects = 28
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
 		SccLocalPath0 = .
@@ -177,6 +181,14 @@ Global
 		SccProjectTopLevelParentUniqueName25 = CodingInterview.sln
 		SccProjectName25 = Arrays/SubArrayGivenSum/SubArrayGivenSumTest
 		SccLocalPath25 = Arrays\\SubArrayGivenSum\\SubArrayGivenSumTest
+		SccProjectUniqueName26 = Arrays\\LargestSumSubArray\\LargestSumSubArray\\LargestSumSubArray.csproj
+		SccProjectTopLevelParentUniqueName26 = CodingInterview.sln
+		SccProjectName26 = Arrays/LargestSumSubArray/LargestSumSubArray
+		SccLocalPath26 = Arrays\\LargestSumSubArray\\LargestSumSubArray
+		SccProjectUniqueName27 = Arrays\\LargestSumSubArray\\LargestSumSubArrayTest\\LargestSumSubArrayTest.csproj
+		SccProjectTopLevelParentUniqueName27 = CodingInterview.sln
+		SccProjectName27 = Arrays/LargestSumSubArray/LargestSumSubArrayTest
+		SccLocalPath27 = Arrays\\LargestSumSubArray\\LargestSumSubArrayTest
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -283,6 +295,14 @@ Global
 		{DBB94268-773E-4E23-A29A-47F1FE2FA6B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBB94268-773E-4E23-A29A-47F1FE2FA6B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBB94268-773E-4E23-A29A-47F1FE2FA6B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2203823-9DC7-4774-9B5D-D4505FC03D61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2203823-9DC7-4774-9B5D-D4505FC03D61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2203823-9DC7-4774-9B5D-D4505FC03D61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2203823-9DC7-4774-9B5D-D4505FC03D61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FF6D997-C857-424B-915B-736E5A5EE86C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FF6D997-C857-424B-915B-736E5A5EE86C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FF6D997-C857-424B-915B-736E5A5EE86C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FF6D997-C857-424B-915B-736E5A5EE86C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -320,5 +340,7 @@ Global
 		{82A2D763-FA61-4E5A-B3EB-F5239976EF8E} = {7011C068-0308-40F7-8145-02CED94A31D7}
 		{65F3BBA4-DF6F-4AB8-B329-43D73CB56213} = {25077DF6-E1DF-4000-B603-2CC6B990A4D8}
 		{DBB94268-773E-4E23-A29A-47F1FE2FA6B7} = {01C8DDF2-9C69-4E45-96B5-CADE4D0AD758}
+		{B2203823-9DC7-4774-9B5D-D4505FC03D61} = {25077DF6-E1DF-4000-B603-2CC6B990A4D8}
+		{2FF6D997-C857-424B-915B-736E5A5EE86C} = {01C8DDF2-9C69-4E45-96B5-CADE4D0AD758}
 	EndGlobalSection
 EndGlobal
