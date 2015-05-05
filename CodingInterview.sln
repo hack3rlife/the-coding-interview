@@ -79,9 +79,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubsetSum", "Arrays\SubsetS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubsetSumTest", "Arrays\SubsetSum\SubsetSumTest\SubsetSumTest.csproj", "{D7E1DEF2-8EEE-4579-B3D2-A7FC6BB9C831}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildLowestNumber", "Strings\BuildLowestNumber\BuildLowestNumber\BuildLowestNumber.csproj", "{2FE42933-2617-42F4-A09A-EC3D77772886}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildLowestNumberTest", "Strings\BuildLowestNumber\BuildLowestNumberTest\BuildLowestNumberTest.csproj", "{B46863B4-A047-4955-BDEC-A656456A2FA7}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 30
+		SccNumberOfProjects = 32
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
 		SccLocalPath0 = .
@@ -201,6 +205,14 @@ Global
 		SccProjectTopLevelParentUniqueName29 = CodingInterview.sln
 		SccProjectName29 = Arrays/SubsetSum/SubsetSumTest
 		SccLocalPath29 = Arrays\\SubsetSum\\SubsetSumTest
+		SccProjectUniqueName30 = Strings\\BuildLowestNumber\\BuildLowestNumber\\BuildLowestNumber.csproj
+		SccProjectTopLevelParentUniqueName30 = CodingInterview.sln
+		SccProjectName30 = Strings/BuildLowestNumber/BuildLowestNumber
+		SccLocalPath30 = Strings\\BuildLowestNumber\\BuildLowestNumber
+		SccProjectUniqueName31 = Strings\\BuildLowestNumber\\BuildLowestNumberTest\\BuildLowestNumberTest.csproj
+		SccProjectTopLevelParentUniqueName31 = CodingInterview.sln
+		SccProjectName31 = Strings/BuildLowestNumber/BuildLowestNumberTest
+		SccLocalPath31 = Strings\\BuildLowestNumber\\BuildLowestNumberTest
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -323,6 +335,14 @@ Global
 		{D7E1DEF2-8EEE-4579-B3D2-A7FC6BB9C831}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7E1DEF2-8EEE-4579-B3D2-A7FC6BB9C831}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7E1DEF2-8EEE-4579-B3D2-A7FC6BB9C831}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FE42933-2617-42F4-A09A-EC3D77772886}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FE42933-2617-42F4-A09A-EC3D77772886}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FE42933-2617-42F4-A09A-EC3D77772886}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FE42933-2617-42F4-A09A-EC3D77772886}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B46863B4-A047-4955-BDEC-A656456A2FA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B46863B4-A047-4955-BDEC-A656456A2FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B46863B4-A047-4955-BDEC-A656456A2FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B46863B4-A047-4955-BDEC-A656456A2FA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -364,5 +384,7 @@ Global
 		{2FF6D997-C857-424B-915B-736E5A5EE86C} = {01C8DDF2-9C69-4E45-96B5-CADE4D0AD758}
 		{33EDB5D8-4F3E-4137-8E2B-F61D0B95110C} = {25077DF6-E1DF-4000-B603-2CC6B990A4D8}
 		{D7E1DEF2-8EEE-4579-B3D2-A7FC6BB9C831} = {01C8DDF2-9C69-4E45-96B5-CADE4D0AD758}
+		{2FE42933-2617-42F4-A09A-EC3D77772886} = {1BC65096-362C-4FBE-8787-C5B10ACA15D4}
+		{B46863B4-A047-4955-BDEC-A656456A2FA7} = {7011C068-0308-40F7-8145-02CED94A31D7}
 	EndGlobalSection
 EndGlobal
