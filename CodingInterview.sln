@@ -89,9 +89,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestCommonSubstring", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestCommonSubstringTest", "Strings\LongestCommonSubstring\LongestCommonSubstringTest\LongestCommonSubstringTest\LongestCommonSubstringTest.csproj", "{3B528FFA-0673-4E5F-B750-EF6DDF9F43EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriangleTriplets", "Arrays\TriangleTriplets\TriangleTriplets\TriangleTriplets.csproj", "{F02277A6-66A2-4D61-9198-23D83EA15F7A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Numbers", "Numbers", "{B867F11C-BF3A-412F-A368-A64253BB3A1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Numbers", "Numbers", "{9A88261A-A165-41AC-9DFB-824A6C4E8631}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcatenateTwoNumbersTest", "Numbers\ConcatenateTwoNumbers\ConcatenateTwoNumbersTest\ConcatenateTwoNumbersTest\ConcatenateTwoNumbersTest.csproj", "{A0F44505-797A-471B-8B2B-A6F2255C7BBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcatenateTwoNumbers", "Numbers\ConcatenateTwoNumbers\ConcatenateTwoNumbers\ConcatenateTwoNumbers.csproj", "{22A6C5C0-7AAD-4005-931C-CF4D8CF897BC}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 34
+		SccNumberOfProjects = 36
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
 		SccLocalPath0 = .
@@ -227,6 +237,14 @@ Global
 		SccProjectTopLevelParentUniqueName33 = CodingInterview.sln
 		SccProjectName33 = Strings/LongestCommonSubstring/LongestCommonSubstringTest/LongestCommonSubstringTest
 		SccLocalPath33 = Strings\\LongestCommonSubstring\\LongestCommonSubstringTest\\LongestCommonSubstringTest
+		SccProjectUniqueName34 = Numbers\\ConcatenateTwoNumbers\\ConcatenateTwoNumbersTest\\ConcatenateTwoNumbersTest\\ConcatenateTwoNumbersTest.csproj
+		SccProjectTopLevelParentUniqueName34 = CodingInterview.sln
+		SccProjectName34 = Numbers/ConcatenateTwoNumbers/ConcatenateTwoNumbersTest/ConcatenateTwoNumbersTest
+		SccLocalPath34 = Numbers\\ConcatenateTwoNumbers\\ConcatenateTwoNumbersTest\\ConcatenateTwoNumbersTest
+		SccProjectUniqueName35 = Numbers\\ConcatenateTwoNumbers\\ConcatenateTwoNumbers\\ConcatenateTwoNumbers.csproj
+		SccProjectTopLevelParentUniqueName35 = CodingInterview.sln
+		SccProjectName35 = Numbers/ConcatenateTwoNumbers/ConcatenateTwoNumbers
+		SccLocalPath35 = Numbers\\ConcatenateTwoNumbers\\ConcatenateTwoNumbers
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -365,6 +383,18 @@ Global
 		{3B528FFA-0673-4E5F-B750-EF6DDF9F43EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B528FFA-0673-4E5F-B750-EF6DDF9F43EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B528FFA-0673-4E5F-B750-EF6DDF9F43EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F02277A6-66A2-4D61-9198-23D83EA15F7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F02277A6-66A2-4D61-9198-23D83EA15F7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F02277A6-66A2-4D61-9198-23D83EA15F7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F02277A6-66A2-4D61-9198-23D83EA15F7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0F44505-797A-471B-8B2B-A6F2255C7BBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0F44505-797A-471B-8B2B-A6F2255C7BBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0F44505-797A-471B-8B2B-A6F2255C7BBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0F44505-797A-471B-8B2B-A6F2255C7BBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22A6C5C0-7AAD-4005-931C-CF4D8CF897BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22A6C5C0-7AAD-4005-931C-CF4D8CF897BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22A6C5C0-7AAD-4005-931C-CF4D8CF897BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22A6C5C0-7AAD-4005-931C-CF4D8CF897BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -411,5 +441,10 @@ Global
 		{B9478AC5-EE21-4910-950F-19EFE67E696B} = {C915F492-E693-4BB3-B97B-C699FD581991}
 		{EB615F75-CBDC-4A8F-9066-0FBC959D3A32} = {1BC65096-362C-4FBE-8787-C5B10ACA15D4}
 		{3B528FFA-0673-4E5F-B750-EF6DDF9F43EF} = {7011C068-0308-40F7-8145-02CED94A31D7}
+		{F02277A6-66A2-4D61-9198-23D83EA15F7A} = {25077DF6-E1DF-4000-B603-2CC6B990A4D8}
+		{B867F11C-BF3A-412F-A368-A64253BB3A1B} = {3E48A53E-C8B5-4DE3-A51F-4F84F2A83413}
+		{9A88261A-A165-41AC-9DFB-824A6C4E8631} = {C915F492-E693-4BB3-B97B-C699FD581991}
+		{A0F44505-797A-471B-8B2B-A6F2255C7BBE} = {9A88261A-A165-41AC-9DFB-824A6C4E8631}
+		{22A6C5C0-7AAD-4005-931C-CF4D8CF897BC} = {B867F11C-BF3A-412F-A368-A64253BB3A1B}
 	EndGlobalSection
 EndGlobal
