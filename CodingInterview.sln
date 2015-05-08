@@ -99,9 +99,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcatenateTwoNumbersTest",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcatenateTwoNumbers", "Numbers\ConcatenateTwoNumbers\ConcatenateTwoNumbers\ConcatenateTwoNumbers.csproj", "{22A6C5C0-7AAD-4005-931C-CF4D8CF897BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseNumber", "Numbers\ReverseNumber\ReverseNumber\ReverseNumber.csproj", "{460E670E-D81F-49E7-AF54-5DC11BF3E90D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseNumberTest", "Numbers\ReverseNumber\ReverseNumberTest\ReverseNumberTest.csproj", "{7D48297A-84B0-47F9-AEB9-13A27B8E8494}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 36
+		SccNumberOfProjects = 38
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
 		SccLocalPath0 = .
@@ -245,6 +249,14 @@ Global
 		SccProjectTopLevelParentUniqueName35 = CodingInterview.sln
 		SccProjectName35 = Numbers/ConcatenateTwoNumbers/ConcatenateTwoNumbers
 		SccLocalPath35 = Numbers\\ConcatenateTwoNumbers\\ConcatenateTwoNumbers
+		SccProjectUniqueName36 = Numbers\\ReverseNumber\\ReverseNumber\\ReverseNumber.csproj
+		SccProjectTopLevelParentUniqueName36 = CodingInterview.sln
+		SccProjectName36 = Numbers/ReverseNumber/ReverseNumber
+		SccLocalPath36 = Numbers\\ReverseNumber\\ReverseNumber
+		SccProjectUniqueName37 = Numbers\\ReverseNumber\\ReverseNumberTest\\ReverseNumberTest.csproj
+		SccProjectTopLevelParentUniqueName37 = CodingInterview.sln
+		SccProjectName37 = Numbers/ReverseNumber/ReverseNumberTest
+		SccLocalPath37 = Numbers\\ReverseNumber\\ReverseNumberTest
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -395,6 +407,14 @@ Global
 		{22A6C5C0-7AAD-4005-931C-CF4D8CF897BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22A6C5C0-7AAD-4005-931C-CF4D8CF897BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22A6C5C0-7AAD-4005-931C-CF4D8CF897BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{460E670E-D81F-49E7-AF54-5DC11BF3E90D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{460E670E-D81F-49E7-AF54-5DC11BF3E90D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{460E670E-D81F-49E7-AF54-5DC11BF3E90D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{460E670E-D81F-49E7-AF54-5DC11BF3E90D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D48297A-84B0-47F9-AEB9-13A27B8E8494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D48297A-84B0-47F9-AEB9-13A27B8E8494}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D48297A-84B0-47F9-AEB9-13A27B8E8494}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D48297A-84B0-47F9-AEB9-13A27B8E8494}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -446,5 +466,7 @@ Global
 		{9A88261A-A165-41AC-9DFB-824A6C4E8631} = {C915F492-E693-4BB3-B97B-C699FD581991}
 		{A0F44505-797A-471B-8B2B-A6F2255C7BBE} = {9A88261A-A165-41AC-9DFB-824A6C4E8631}
 		{22A6C5C0-7AAD-4005-931C-CF4D8CF897BC} = {B867F11C-BF3A-412F-A368-A64253BB3A1B}
+		{460E670E-D81F-49E7-AF54-5DC11BF3E90D} = {B867F11C-BF3A-412F-A368-A64253BB3A1B}
+		{7D48297A-84B0-47F9-AEB9-13A27B8E8494} = {9A88261A-A165-41AC-9DFB-824A6C4E8631}
 	EndGlobalSection
 EndGlobal
