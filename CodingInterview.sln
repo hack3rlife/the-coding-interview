@@ -85,9 +85,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildLowestNumberTest", "St
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataStructures", "DataStructures", "{B9478AC5-EE21-4910-950F-19EFE67E696B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestCommonSubstring", "Strings\LongestCommonSubstring\LongestCommonSubstring\LongestCommonSubstring.csproj", "{EB615F75-CBDC-4A8F-9066-0FBC959D3A32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestCommonSubstringTest", "Strings\LongestCommonSubstring\LongestCommonSubstringTest\LongestCommonSubstringTest\LongestCommonSubstringTest.csproj", "{3B528FFA-0673-4E5F-B750-EF6DDF9F43EF}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 32
+		SccNumberOfProjects = 34
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
 		SccLocalPath0 = .
@@ -215,6 +219,14 @@ Global
 		SccProjectTopLevelParentUniqueName31 = CodingInterview.sln
 		SccProjectName31 = Strings/BuildLowestNumber/BuildLowestNumberTest
 		SccLocalPath31 = Strings\\BuildLowestNumber\\BuildLowestNumberTest
+		SccProjectUniqueName32 = Strings\\LongestCommonSubstring\\LongestCommonSubstring\\LongestCommonSubstring.csproj
+		SccProjectTopLevelParentUniqueName32 = CodingInterview.sln
+		SccProjectName32 = Strings/LongestCommonSubstring/LongestCommonSubstring
+		SccLocalPath32 = Strings\\LongestCommonSubstring\\LongestCommonSubstring
+		SccProjectUniqueName33 = Strings\\LongestCommonSubstring\\LongestCommonSubstringTest\\LongestCommonSubstringTest\\LongestCommonSubstringTest.csproj
+		SccProjectTopLevelParentUniqueName33 = CodingInterview.sln
+		SccProjectName33 = Strings/LongestCommonSubstring/LongestCommonSubstringTest/LongestCommonSubstringTest
+		SccLocalPath33 = Strings\\LongestCommonSubstring\\LongestCommonSubstringTest\\LongestCommonSubstringTest
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -345,6 +357,14 @@ Global
 		{B46863B4-A047-4955-BDEC-A656456A2FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B46863B4-A047-4955-BDEC-A656456A2FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B46863B4-A047-4955-BDEC-A656456A2FA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB615F75-CBDC-4A8F-9066-0FBC959D3A32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB615F75-CBDC-4A8F-9066-0FBC959D3A32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB615F75-CBDC-4A8F-9066-0FBC959D3A32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB615F75-CBDC-4A8F-9066-0FBC959D3A32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B528FFA-0673-4E5F-B750-EF6DDF9F43EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B528FFA-0673-4E5F-B750-EF6DDF9F43EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B528FFA-0673-4E5F-B750-EF6DDF9F43EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B528FFA-0673-4E5F-B750-EF6DDF9F43EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -389,5 +409,7 @@ Global
 		{2FE42933-2617-42F4-A09A-EC3D77772886} = {1BC65096-362C-4FBE-8787-C5B10ACA15D4}
 		{B46863B4-A047-4955-BDEC-A656456A2FA7} = {7011C068-0308-40F7-8145-02CED94A31D7}
 		{B9478AC5-EE21-4910-950F-19EFE67E696B} = {C915F492-E693-4BB3-B97B-C699FD581991}
+		{EB615F75-CBDC-4A8F-9066-0FBC959D3A32} = {1BC65096-362C-4FBE-8787-C5B10ACA15D4}
+		{3B528FFA-0673-4E5F-B750-EF6DDF9F43EF} = {7011C068-0308-40F7-8145-02CED94A31D7}
 	EndGlobalSection
 EndGlobal
