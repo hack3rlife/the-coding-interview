@@ -1,4 +1,5 @@
 ﻿
+using System;
 namespace com.hack3rlife.numbers
 {
     public class FactorialNumber
@@ -10,6 +11,5 @@ namespace com.hack3rlife.numbers
             else
                 return Factorial(number - 1) * number;
         }
-
     }
 }
