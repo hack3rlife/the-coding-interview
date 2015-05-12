@@ -119,9 +119,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciNumberTest", "Numb
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciNumber", "Numbers\FibonacciNumber\FibonacciNumber\FibonacciNumber.csproj", "{A11C8883-CC07-43BC-8CAF-839C0FB83DE3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumbers", "Numbers\PrimeNumbers\PrimeNumbers\PrimeNumbers.csproj", "{820BC5DA-AA34-4192-A6FC-8645533002C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumbersTest", "Numbers\PrimeNumbers\PrimeNumbersTest\PrimeNumbersTest.csproj", "{DA2A8169-BBF3-4AB6-A35B-C4A738875E7E}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 46
+		SccNumberOfProjects = 48
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
 		SccLocalPath0 = .
@@ -305,6 +309,14 @@ Global
 		SccProjectTopLevelParentUniqueName45 = CodingInterview.sln
 		SccProjectName45 = Numbers/FibonacciNumber/FibonacciNumber
 		SccLocalPath45 = Numbers\\FibonacciNumber\\FibonacciNumber
+		SccProjectUniqueName46 = Numbers\\PrimeNumbers\\PrimeNumbers\\PrimeNumbers.csproj
+		SccProjectTopLevelParentUniqueName46 = CodingInterview.sln
+		SccProjectName46 = Numbers/PrimeNumbers/PrimeNumbers
+		SccLocalPath46 = Numbers\\PrimeNumbers\\PrimeNumbers
+		SccProjectUniqueName47 = Numbers\\PrimeNumbers\\PrimeNumbersTest\\PrimeNumbersTest.csproj
+		SccProjectTopLevelParentUniqueName47 = CodingInterview.sln
+		SccProjectName47 = Numbers/PrimeNumbers/PrimeNumbersTest
+		SccLocalPath47 = Numbers\\PrimeNumbers\\PrimeNumbersTest
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -777,6 +789,26 @@ Global
 		{A11C8883-CC07-43BC-8CAF-839C0FB83DE3}.Release|ARM.ActiveCfg = Release|Any CPU
 		{A11C8883-CC07-43BC-8CAF-839C0FB83DE3}.Release|x64.ActiveCfg = Release|Any CPU
 		{A11C8883-CC07-43BC-8CAF-839C0FB83DE3}.Release|x86.ActiveCfg = Release|Any CPU
+		{820BC5DA-AA34-4192-A6FC-8645533002C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{820BC5DA-AA34-4192-A6FC-8645533002C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{820BC5DA-AA34-4192-A6FC-8645533002C3}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{820BC5DA-AA34-4192-A6FC-8645533002C3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{820BC5DA-AA34-4192-A6FC-8645533002C3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{820BC5DA-AA34-4192-A6FC-8645533002C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{820BC5DA-AA34-4192-A6FC-8645533002C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{820BC5DA-AA34-4192-A6FC-8645533002C3}.Release|ARM.ActiveCfg = Release|Any CPU
+		{820BC5DA-AA34-4192-A6FC-8645533002C3}.Release|x64.ActiveCfg = Release|Any CPU
+		{820BC5DA-AA34-4192-A6FC-8645533002C3}.Release|x86.ActiveCfg = Release|Any CPU
+		{DA2A8169-BBF3-4AB6-A35B-C4A738875E7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA2A8169-BBF3-4AB6-A35B-C4A738875E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA2A8169-BBF3-4AB6-A35B-C4A738875E7E}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{DA2A8169-BBF3-4AB6-A35B-C4A738875E7E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DA2A8169-BBF3-4AB6-A35B-C4A738875E7E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DA2A8169-BBF3-4AB6-A35B-C4A738875E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA2A8169-BBF3-4AB6-A35B-C4A738875E7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA2A8169-BBF3-4AB6-A35B-C4A738875E7E}.Release|ARM.ActiveCfg = Release|Any CPU
+		{DA2A8169-BBF3-4AB6-A35B-C4A738875E7E}.Release|x64.ActiveCfg = Release|Any CPU
+		{DA2A8169-BBF3-4AB6-A35B-C4A738875E7E}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -838,5 +870,7 @@ Global
 		{D55ECF7F-A784-4B74-ACD6-FE55888A7BDA} = {9A88261A-A165-41AC-9DFB-824A6C4E8631}
 		{D73CD133-C282-4339-BB19-312CA6D627DE} = {9A88261A-A165-41AC-9DFB-824A6C4E8631}
 		{A11C8883-CC07-43BC-8CAF-839C0FB83DE3} = {B867F11C-BF3A-412F-A368-A64253BB3A1B}
+		{820BC5DA-AA34-4192-A6FC-8645533002C3} = {B867F11C-BF3A-412F-A368-A64253BB3A1B}
+		{DA2A8169-BBF3-4AB6-A35B-C4A738875E7E} = {9A88261A-A165-41AC-9DFB-824A6C4E8631}
 	EndGlobalSection
 EndGlobal
