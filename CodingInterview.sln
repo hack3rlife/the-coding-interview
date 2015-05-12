@@ -131,9 +131,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsPalindrome", "Strings\IsP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromeTest", "Strings\IsPalindrome\IsPalindromeTest\PalindromeTest.csproj", "{E9BA3F4D-6521-472B-8FC7-821A7695DC9F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsRotation", "Strings\IsRotation\IsRotation\IsRotation.csproj", "{C7E53146-D447-4B31-939C-7859A199DEC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsRotationTest", "Strings\IsRotation\IsRotationTest\IsRotationTest.csproj", "{CBC10166-FBB4-4AC4-9C20-0EDC23C47495}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 53
+		SccNumberOfProjects = 55
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
 		SccLocalPath0 = .
@@ -345,6 +349,14 @@ Global
 		SccProjectTopLevelParentUniqueName52 = CodingInterview.sln
 		SccProjectName52 = Strings/IsPalindrome/IsPalindromeTest
 		SccLocalPath52 = Strings\\IsPalindrome\\IsPalindromeTest
+		SccProjectUniqueName53 = Strings\\IsRotation\\IsRotation\\IsRotation.csproj
+		SccProjectTopLevelParentUniqueName53 = CodingInterview.sln
+		SccProjectName53 = Strings/IsRotation/IsRotation
+		SccLocalPath53 = Strings\\IsRotation\\IsRotation
+		SccProjectUniqueName54 = Strings\\IsRotation\\IsRotationTest\\IsRotationTest.csproj
+		SccProjectTopLevelParentUniqueName54 = CodingInterview.sln
+		SccProjectName54 = Strings/IsRotation/IsRotationTest
+		SccLocalPath54 = Strings\\IsRotation\\IsRotationTest
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -877,6 +889,26 @@ Global
 		{E9BA3F4D-6521-472B-8FC7-821A7695DC9F}.Release|ARM.ActiveCfg = Release|Any CPU
 		{E9BA3F4D-6521-472B-8FC7-821A7695DC9F}.Release|x64.ActiveCfg = Release|Any CPU
 		{E9BA3F4D-6521-472B-8FC7-821A7695DC9F}.Release|x86.ActiveCfg = Release|Any CPU
+		{C7E53146-D447-4B31-939C-7859A199DEC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7E53146-D447-4B31-939C-7859A199DEC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7E53146-D447-4B31-939C-7859A199DEC7}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{C7E53146-D447-4B31-939C-7859A199DEC7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C7E53146-D447-4B31-939C-7859A199DEC7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C7E53146-D447-4B31-939C-7859A199DEC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7E53146-D447-4B31-939C-7859A199DEC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7E53146-D447-4B31-939C-7859A199DEC7}.Release|ARM.ActiveCfg = Release|Any CPU
+		{C7E53146-D447-4B31-939C-7859A199DEC7}.Release|x64.ActiveCfg = Release|Any CPU
+		{C7E53146-D447-4B31-939C-7859A199DEC7}.Release|x86.ActiveCfg = Release|Any CPU
+		{CBC10166-FBB4-4AC4-9C20-0EDC23C47495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBC10166-FBB4-4AC4-9C20-0EDC23C47495}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBC10166-FBB4-4AC4-9C20-0EDC23C47495}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{CBC10166-FBB4-4AC4-9C20-0EDC23C47495}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CBC10166-FBB4-4AC4-9C20-0EDC23C47495}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CBC10166-FBB4-4AC4-9C20-0EDC23C47495}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBC10166-FBB4-4AC4-9C20-0EDC23C47495}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBC10166-FBB4-4AC4-9C20-0EDC23C47495}.Release|ARM.ActiveCfg = Release|Any CPU
+		{CBC10166-FBB4-4AC4-9C20-0EDC23C47495}.Release|x64.ActiveCfg = Release|Any CPU
+		{CBC10166-FBB4-4AC4-9C20-0EDC23C47495}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -944,5 +976,7 @@ Global
 		{3ED22222-440B-44F0-9541-02C8114FA0F4} = {7011C068-0308-40F7-8145-02CED94A31D7}
 		{5E0FBE8C-A22E-46D1-B2DA-DC68A37636D8} = {1BC65096-362C-4FBE-8787-C5B10ACA15D4}
 		{E9BA3F4D-6521-472B-8FC7-821A7695DC9F} = {7011C068-0308-40F7-8145-02CED94A31D7}
+		{C7E53146-D447-4B31-939C-7859A199DEC7} = {1BC65096-362C-4FBE-8787-C5B10ACA15D4}
+		{CBC10166-FBB4-4AC4-9C20-0EDC23C47495} = {7011C068-0308-40F7-8145-02CED94A31D7}
 	EndGlobalSection
 EndGlobal
