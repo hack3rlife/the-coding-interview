@@ -127,9 +127,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsAnagram", "Strings\IsAnag
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsAnagramTest", "Strings\IsAnagram\IsAnagramTest\IsAnagramTest.csproj", "{3ED22222-440B-44F0-9541-02C8114FA0F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsPalindrome", "Strings\IsPalindrome\IsPalindrome\IsPalindrome.csproj", "{5E0FBE8C-A22E-46D1-B2DA-DC68A37636D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromeTest", "Strings\IsPalindrome\IsPalindromeTest\PalindromeTest.csproj", "{E9BA3F4D-6521-472B-8FC7-821A7695DC9F}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 51
+		SccNumberOfProjects = 53
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
 		SccLocalPath0 = .
@@ -333,6 +337,14 @@ Global
 		SccProjectTopLevelParentUniqueName50 = CodingInterview.sln
 		SccProjectName50 = Strings/IsAnagram/IsAnagramTest
 		SccLocalPath50 = Strings\\IsAnagram\\IsAnagramTest
+		SccProjectUniqueName51 = Strings\\IsPalindrome\\IsPalindrome\\IsPalindrome.csproj
+		SccProjectTopLevelParentUniqueName51 = CodingInterview.sln
+		SccProjectName51 = Strings/IsPalindrome/IsPalindrome
+		SccLocalPath51 = Strings\\IsPalindrome\\IsPalindrome
+		SccProjectUniqueName52 = Strings\\IsPalindrome\\IsPalindromeTest\\PalindromeTest.csproj
+		SccProjectTopLevelParentUniqueName52 = CodingInterview.sln
+		SccProjectName52 = Strings/IsPalindrome/IsPalindromeTest
+		SccLocalPath52 = Strings\\IsPalindrome\\IsPalindromeTest
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -845,6 +857,26 @@ Global
 		{3ED22222-440B-44F0-9541-02C8114FA0F4}.Release|ARM.ActiveCfg = Release|Any CPU
 		{3ED22222-440B-44F0-9541-02C8114FA0F4}.Release|x64.ActiveCfg = Release|Any CPU
 		{3ED22222-440B-44F0-9541-02C8114FA0F4}.Release|x86.ActiveCfg = Release|Any CPU
+		{5E0FBE8C-A22E-46D1-B2DA-DC68A37636D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E0FBE8C-A22E-46D1-B2DA-DC68A37636D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E0FBE8C-A22E-46D1-B2DA-DC68A37636D8}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{5E0FBE8C-A22E-46D1-B2DA-DC68A37636D8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5E0FBE8C-A22E-46D1-B2DA-DC68A37636D8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5E0FBE8C-A22E-46D1-B2DA-DC68A37636D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E0FBE8C-A22E-46D1-B2DA-DC68A37636D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E0FBE8C-A22E-46D1-B2DA-DC68A37636D8}.Release|ARM.ActiveCfg = Release|Any CPU
+		{5E0FBE8C-A22E-46D1-B2DA-DC68A37636D8}.Release|x64.ActiveCfg = Release|Any CPU
+		{5E0FBE8C-A22E-46D1-B2DA-DC68A37636D8}.Release|x86.ActiveCfg = Release|Any CPU
+		{E9BA3F4D-6521-472B-8FC7-821A7695DC9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9BA3F4D-6521-472B-8FC7-821A7695DC9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9BA3F4D-6521-472B-8FC7-821A7695DC9F}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{E9BA3F4D-6521-472B-8FC7-821A7695DC9F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E9BA3F4D-6521-472B-8FC7-821A7695DC9F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E9BA3F4D-6521-472B-8FC7-821A7695DC9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9BA3F4D-6521-472B-8FC7-821A7695DC9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9BA3F4D-6521-472B-8FC7-821A7695DC9F}.Release|ARM.ActiveCfg = Release|Any CPU
+		{E9BA3F4D-6521-472B-8FC7-821A7695DC9F}.Release|x64.ActiveCfg = Release|Any CPU
+		{E9BA3F4D-6521-472B-8FC7-821A7695DC9F}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -910,5 +942,7 @@ Global
 		{DA2A8169-BBF3-4AB6-A35B-C4A738875E7E} = {9A88261A-A165-41AC-9DFB-824A6C4E8631}
 		{6D135CEB-B3BD-4836-96F4-EA2D6474AF32} = {1BC65096-362C-4FBE-8787-C5B10ACA15D4}
 		{3ED22222-440B-44F0-9541-02C8114FA0F4} = {7011C068-0308-40F7-8145-02CED94A31D7}
+		{5E0FBE8C-A22E-46D1-B2DA-DC68A37636D8} = {1BC65096-362C-4FBE-8787-C5B10ACA15D4}
+		{E9BA3F4D-6521-472B-8FC7-821A7695DC9F} = {7011C068-0308-40F7-8145-02CED94A31D7}
 	EndGlobalSection
 EndGlobal
