@@ -34,31 +34,17 @@ namespace IsPalindromeTest
         }
 
         [TestMethod]
-        public void LonguestPalindromeTestPass()
+        public void LonguestPalindromeTest()
         {
             //Arrange
             string input = "forgeeksskeegfor";
+            string expected = "geeksskeeg";
 
             //Act
-            string actual = Palindrome.LonguestPalindrome(input);
-            string expected = "geeksskeeg";
+            string actual = Palindrome.LonguestPalindrome(input.ToCharArray(0, input.Length - 1));
 
             //Assert 
             Assert.AreEqual(expected, actual);
-        }
-
-        [TestMethod]
-        public void LonguestPalindromeTestFail()
-        {
-            //Arrange
-            string input = "forgeeksskeegfor";
-
-            //Act
-            string actual = Palindrome.LonguestPalindrome(input);
-            string expected = "geeksskeegf";
-
-            //Assert 
-            Assert.AreNotEqual(expected, actual);
         }
     }
 }

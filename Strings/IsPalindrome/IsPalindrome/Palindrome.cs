@@ -1,4 +1,5 @@
-﻿namespace com.hack3rlife.strings
+﻿using System.Linq;
+namespace com.hack3rlife.strings
 {
     public class Palindrome
     {
@@ -31,54 +32,20 @@
             return true;
         }
 
-        /// <summary>
-        /// Brute Force
-        /// </summary>
-        /// <param name="input"></param>
-        /// <returns></returns>
-        public static string LonguestPalindrome(string input)
+        public static string LonguestPalindrome(char[] input)
         {
-            string palindrome = string.Empty;
-            string word = string.Empty;
+             int length = input.Length;
 
-            int i = 0;
-            while (i < input.Length)
-            {
-                word += input[i];
+             bool[][] table = new bool[length][];
 
-                int j = i + 1;
-                while (j < input.Length)
-                {
-                    word += input[j];
-
-                    if (IsPalindrome(word))
-                    {
-                        if (word.Trim().Length > palindrome.Trim().Length)
-                        {
-                            palindrome = word;
-                        }
-                    }
-
-                    j++;
-                }
-
-                i++;
-
-                word = string.Empty;
-            }
-
-            return palindrome;
-        }
-
-        public static string LonguestPalindrome(string[] input)
-        {
-            int length = input.Length;
-
-            bool[][] table = new bool[length][];
+             for (int i = 0; i < length; i++)
+             {
+                 table[i] = Enumerable.Repeat(false, length).ToArray();
+             }
 
             // All substrings of length 1 are palindromes
             int maxLength = 1;
-         
+
             for (int i = 0; i < length; ++i)
                 table[i][i] = true;
 
@@ -119,6 +86,14 @@
                     }
                 }
             }
+
+            string result = string.Empty;
+            for (int i = start; i <= start+maxLength-1; i++)
+            {
+                result += input[i];
+            }
+
+            return result;
         }
     }
 }
