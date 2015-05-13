@@ -32,5 +32,33 @@ namespace IsPalindromeTest
             //Assert 
             Assert.IsFalse(condition);
         }
+
+        [TestMethod]
+        public void LonguestPalindromeTestPass()
+        {
+            //Arrange
+            string input = "forgeeksskeegfor";
+
+            //Act
+            string actual = Palindrome.LonguestPalindrome(input);
+            string expected = "geeksskeeg";
+
+            //Assert 
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void LonguestPalindromeTestFail()
+        {
+            //Arrange
+            string input = "forgeeksskeegfor";
+
+            //Act
+            string actual = Palindrome.LonguestPalindrome(input);
+            string expected = "geeksskeegf";
+
+            //Assert 
+            Assert.AreNotEqual(expected, actual);
+        }
     }
 }
