@@ -135,9 +135,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsRotation", "Strings\IsRot
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsRotationTest", "Strings\IsRotation\IsRotationTest\IsRotationTest.csproj", "{CBC10166-FBB4-4AC4-9C20-0EDC23C47495}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberToString", "Strings\NumberToString\NumberToString\NumberToString.csproj", "{3F0AE69C-1C32-4C89-822E-AF08D8C88814}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberToStringTest", "Strings\NumberToString\NumberToStringTest\NumberToStringTest.csproj", "{37B31097-D486-49D0-AEF4-3136807072A9}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 55
+		SccNumberOfProjects = 57
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
 		SccLocalPath0 = .
@@ -357,6 +361,14 @@ Global
 		SccProjectTopLevelParentUniqueName54 = CodingInterview.sln
 		SccProjectName54 = Strings/IsRotation/IsRotationTest
 		SccLocalPath54 = Strings\\IsRotation\\IsRotationTest
+		SccProjectUniqueName55 = Strings\\NumberToString\\NumberToString\\NumberToString.csproj
+		SccProjectTopLevelParentUniqueName55 = CodingInterview.sln
+		SccProjectName55 = Strings/NumberToString/NumberToString
+		SccLocalPath55 = Strings\\NumberToString\\NumberToString
+		SccProjectUniqueName56 = Strings\\NumberToString\\NumberToStringTest\\NumberToStringTest.csproj
+		SccProjectTopLevelParentUniqueName56 = CodingInterview.sln
+		SccProjectName56 = Strings/NumberToString/NumberToStringTest
+		SccLocalPath56 = Strings\\NumberToString\\NumberToStringTest
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -909,6 +921,26 @@ Global
 		{CBC10166-FBB4-4AC4-9C20-0EDC23C47495}.Release|ARM.ActiveCfg = Release|Any CPU
 		{CBC10166-FBB4-4AC4-9C20-0EDC23C47495}.Release|x64.ActiveCfg = Release|Any CPU
 		{CBC10166-FBB4-4AC4-9C20-0EDC23C47495}.Release|x86.ActiveCfg = Release|Any CPU
+		{3F0AE69C-1C32-4C89-822E-AF08D8C88814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F0AE69C-1C32-4C89-822E-AF08D8C88814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F0AE69C-1C32-4C89-822E-AF08D8C88814}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{3F0AE69C-1C32-4C89-822E-AF08D8C88814}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3F0AE69C-1C32-4C89-822E-AF08D8C88814}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3F0AE69C-1C32-4C89-822E-AF08D8C88814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F0AE69C-1C32-4C89-822E-AF08D8C88814}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F0AE69C-1C32-4C89-822E-AF08D8C88814}.Release|ARM.ActiveCfg = Release|Any CPU
+		{3F0AE69C-1C32-4C89-822E-AF08D8C88814}.Release|x64.ActiveCfg = Release|Any CPU
+		{3F0AE69C-1C32-4C89-822E-AF08D8C88814}.Release|x86.ActiveCfg = Release|Any CPU
+		{37B31097-D486-49D0-AEF4-3136807072A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37B31097-D486-49D0-AEF4-3136807072A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37B31097-D486-49D0-AEF4-3136807072A9}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{37B31097-D486-49D0-AEF4-3136807072A9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{37B31097-D486-49D0-AEF4-3136807072A9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{37B31097-D486-49D0-AEF4-3136807072A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37B31097-D486-49D0-AEF4-3136807072A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37B31097-D486-49D0-AEF4-3136807072A9}.Release|ARM.ActiveCfg = Release|Any CPU
+		{37B31097-D486-49D0-AEF4-3136807072A9}.Release|x64.ActiveCfg = Release|Any CPU
+		{37B31097-D486-49D0-AEF4-3136807072A9}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -978,5 +1010,7 @@ Global
 		{E9BA3F4D-6521-472B-8FC7-821A7695DC9F} = {7011C068-0308-40F7-8145-02CED94A31D7}
 		{C7E53146-D447-4B31-939C-7859A199DEC7} = {1BC65096-362C-4FBE-8787-C5B10ACA15D4}
 		{CBC10166-FBB4-4AC4-9C20-0EDC23C47495} = {7011C068-0308-40F7-8145-02CED94A31D7}
+		{3F0AE69C-1C32-4C89-822E-AF08D8C88814} = {1BC65096-362C-4FBE-8787-C5B10ACA15D4}
+		{37B31097-D486-49D0-AEF4-3136807072A9} = {7011C068-0308-40F7-8145-02CED94A31D7}
 	EndGlobalSection
 EndGlobal
