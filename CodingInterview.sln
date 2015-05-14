@@ -139,9 +139,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberToString", "Strings\N
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberToStringTest", "Strings\NumberToString\NumberToStringTest\NumberToStringTest.csproj", "{37B31097-D486-49D0-AEF4-3136807072A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringReverse", "Strings\StringReverse\StringReverse\StringReverse.csproj", "{D7E83998-8D09-42AB-8841-056DA166E0CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NextGreaterNumber", "Strings\NextGreaterNumber\NextGreaterNumber\NextGreaterNumber.csproj", "{1AEDBBF9-989B-4E66-858B-DE92D998380E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NextGreaterNumberTest", "Strings\NextGreaterNumber\NextGreaterNumberTest\NextGreaterNumberTest.csproj", "{D322AA19-6DB5-4842-80A4-1EFE91FBA905}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 57
+		SccNumberOfProjects = 60
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
 		SccLocalPath0 = .
@@ -369,6 +375,18 @@ Global
 		SccProjectTopLevelParentUniqueName56 = CodingInterview.sln
 		SccProjectName56 = Strings/NumberToString/NumberToStringTest
 		SccLocalPath56 = Strings\\NumberToString\\NumberToStringTest
+		SccProjectUniqueName57 = Strings\\StringReverse\\StringReverse\\StringReverse.csproj
+		SccProjectTopLevelParentUniqueName57 = CodingInterview.sln
+		SccProjectName57 = Strings/StringReverse/StringReverse
+		SccLocalPath57 = Strings\\StringReverse\\StringReverse
+		SccProjectUniqueName58 = Strings\\NextGreaterNumber\\NextGreaterNumber\\NextGreaterNumber.csproj
+		SccProjectTopLevelParentUniqueName58 = CodingInterview.sln
+		SccProjectName58 = Strings/NextGreaterNumber/NextGreaterNumber
+		SccLocalPath58 = Strings\\NextGreaterNumber\\NextGreaterNumber
+		SccProjectUniqueName59 = Strings\\NextGreaterNumber\\NextGreaterNumberTest\\NextGreaterNumberTest.csproj
+		SccProjectTopLevelParentUniqueName59 = CodingInterview.sln
+		SccProjectName59 = Strings/NextGreaterNumber/NextGreaterNumberTest
+		SccLocalPath59 = Strings\\NextGreaterNumber\\NextGreaterNumberTest
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -941,6 +959,36 @@ Global
 		{37B31097-D486-49D0-AEF4-3136807072A9}.Release|ARM.ActiveCfg = Release|Any CPU
 		{37B31097-D486-49D0-AEF4-3136807072A9}.Release|x64.ActiveCfg = Release|Any CPU
 		{37B31097-D486-49D0-AEF4-3136807072A9}.Release|x86.ActiveCfg = Release|Any CPU
+		{D7E83998-8D09-42AB-8841-056DA166E0CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7E83998-8D09-42AB-8841-056DA166E0CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7E83998-8D09-42AB-8841-056DA166E0CD}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{D7E83998-8D09-42AB-8841-056DA166E0CD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D7E83998-8D09-42AB-8841-056DA166E0CD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D7E83998-8D09-42AB-8841-056DA166E0CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7E83998-8D09-42AB-8841-056DA166E0CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7E83998-8D09-42AB-8841-056DA166E0CD}.Release|ARM.ActiveCfg = Release|Any CPU
+		{D7E83998-8D09-42AB-8841-056DA166E0CD}.Release|x64.ActiveCfg = Release|Any CPU
+		{D7E83998-8D09-42AB-8841-056DA166E0CD}.Release|x86.ActiveCfg = Release|Any CPU
+		{1AEDBBF9-989B-4E66-858B-DE92D998380E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AEDBBF9-989B-4E66-858B-DE92D998380E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AEDBBF9-989B-4E66-858B-DE92D998380E}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{1AEDBBF9-989B-4E66-858B-DE92D998380E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1AEDBBF9-989B-4E66-858B-DE92D998380E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1AEDBBF9-989B-4E66-858B-DE92D998380E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AEDBBF9-989B-4E66-858B-DE92D998380E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AEDBBF9-989B-4E66-858B-DE92D998380E}.Release|ARM.ActiveCfg = Release|Any CPU
+		{1AEDBBF9-989B-4E66-858B-DE92D998380E}.Release|x64.ActiveCfg = Release|Any CPU
+		{1AEDBBF9-989B-4E66-858B-DE92D998380E}.Release|x86.ActiveCfg = Release|Any CPU
+		{D322AA19-6DB5-4842-80A4-1EFE91FBA905}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D322AA19-6DB5-4842-80A4-1EFE91FBA905}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D322AA19-6DB5-4842-80A4-1EFE91FBA905}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{D322AA19-6DB5-4842-80A4-1EFE91FBA905}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D322AA19-6DB5-4842-80A4-1EFE91FBA905}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D322AA19-6DB5-4842-80A4-1EFE91FBA905}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D322AA19-6DB5-4842-80A4-1EFE91FBA905}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D322AA19-6DB5-4842-80A4-1EFE91FBA905}.Release|ARM.ActiveCfg = Release|Any CPU
+		{D322AA19-6DB5-4842-80A4-1EFE91FBA905}.Release|x64.ActiveCfg = Release|Any CPU
+		{D322AA19-6DB5-4842-80A4-1EFE91FBA905}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1012,5 +1060,8 @@ Global
 		{CBC10166-FBB4-4AC4-9C20-0EDC23C47495} = {7011C068-0308-40F7-8145-02CED94A31D7}
 		{3F0AE69C-1C32-4C89-822E-AF08D8C88814} = {1BC65096-362C-4FBE-8787-C5B10ACA15D4}
 		{37B31097-D486-49D0-AEF4-3136807072A9} = {7011C068-0308-40F7-8145-02CED94A31D7}
+		{D7E83998-8D09-42AB-8841-056DA166E0CD} = {1BC65096-362C-4FBE-8787-C5B10ACA15D4}
+		{1AEDBBF9-989B-4E66-858B-DE92D998380E} = {1BC65096-362C-4FBE-8787-C5B10ACA15D4}
+		{D322AA19-6DB5-4842-80A4-1EFE91FBA905} = {7011C068-0308-40F7-8145-02CED94A31D7}
 	EndGlobalSection
 EndGlobal
