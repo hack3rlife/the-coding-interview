@@ -145,9 +145,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NextGreaterNumber", "String
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NextGreaterNumberTest", "Strings\NextGreaterNumber\NextGreaterNumberTest\NextGreaterNumberTest.csproj", "{D322AA19-6DB5-4842-80A4-1EFE91FBA905}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WildCardMatch", "Strings\WildCardMatch\WildCardMatch\WildCardMatch.csproj", "{CC16752A-0461-4AD9-A5E2-7E03B8550997}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WildCardMatchTest", "Strings\WildCardMatch\WildCardMatchTest\WildCardMatchTest.csproj", "{FAACE148-D0C1-4D29-8EAD-660265D2EBE7}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 60
+		SccNumberOfProjects = 62
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
 		SccLocalPath0 = .
@@ -387,6 +391,14 @@ Global
 		SccProjectTopLevelParentUniqueName59 = CodingInterview.sln
 		SccProjectName59 = Strings/NextGreaterNumber/NextGreaterNumberTest
 		SccLocalPath59 = Strings\\NextGreaterNumber\\NextGreaterNumberTest
+		SccProjectUniqueName60 = Strings\\WildCardMatch\\WildCardMatch\\WildCardMatch.csproj
+		SccProjectTopLevelParentUniqueName60 = CodingInterview.sln
+		SccProjectName60 = Strings/WildCardMatch/WildCardMatch
+		SccLocalPath60 = Strings\\WildCardMatch\\WildCardMatch
+		SccProjectUniqueName61 = Strings\\WildCardMatch\\WildCardMatchTest\\WildCardMatchTest.csproj
+		SccProjectTopLevelParentUniqueName61 = CodingInterview.sln
+		SccProjectName61 = Strings/WildCardMatch/WildCardMatchTest
+		SccLocalPath61 = Strings\\WildCardMatch\\WildCardMatchTest
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -989,6 +1001,26 @@ Global
 		{D322AA19-6DB5-4842-80A4-1EFE91FBA905}.Release|ARM.ActiveCfg = Release|Any CPU
 		{D322AA19-6DB5-4842-80A4-1EFE91FBA905}.Release|x64.ActiveCfg = Release|Any CPU
 		{D322AA19-6DB5-4842-80A4-1EFE91FBA905}.Release|x86.ActiveCfg = Release|Any CPU
+		{CC16752A-0461-4AD9-A5E2-7E03B8550997}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC16752A-0461-4AD9-A5E2-7E03B8550997}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC16752A-0461-4AD9-A5E2-7E03B8550997}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{CC16752A-0461-4AD9-A5E2-7E03B8550997}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CC16752A-0461-4AD9-A5E2-7E03B8550997}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CC16752A-0461-4AD9-A5E2-7E03B8550997}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC16752A-0461-4AD9-A5E2-7E03B8550997}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC16752A-0461-4AD9-A5E2-7E03B8550997}.Release|ARM.ActiveCfg = Release|Any CPU
+		{CC16752A-0461-4AD9-A5E2-7E03B8550997}.Release|x64.ActiveCfg = Release|Any CPU
+		{CC16752A-0461-4AD9-A5E2-7E03B8550997}.Release|x86.ActiveCfg = Release|Any CPU
+		{FAACE148-D0C1-4D29-8EAD-660265D2EBE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAACE148-D0C1-4D29-8EAD-660265D2EBE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAACE148-D0C1-4D29-8EAD-660265D2EBE7}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{FAACE148-D0C1-4D29-8EAD-660265D2EBE7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FAACE148-D0C1-4D29-8EAD-660265D2EBE7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FAACE148-D0C1-4D29-8EAD-660265D2EBE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAACE148-D0C1-4D29-8EAD-660265D2EBE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAACE148-D0C1-4D29-8EAD-660265D2EBE7}.Release|ARM.ActiveCfg = Release|Any CPU
+		{FAACE148-D0C1-4D29-8EAD-660265D2EBE7}.Release|x64.ActiveCfg = Release|Any CPU
+		{FAACE148-D0C1-4D29-8EAD-660265D2EBE7}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1063,5 +1095,7 @@ Global
 		{D7E83998-8D09-42AB-8841-056DA166E0CD} = {1BC65096-362C-4FBE-8787-C5B10ACA15D4}
 		{1AEDBBF9-989B-4E66-858B-DE92D998380E} = {1BC65096-362C-4FBE-8787-C5B10ACA15D4}
 		{D322AA19-6DB5-4842-80A4-1EFE91FBA905} = {7011C068-0308-40F7-8145-02CED94A31D7}
+		{CC16752A-0461-4AD9-A5E2-7E03B8550997} = {1BC65096-362C-4FBE-8787-C5B10ACA15D4}
+		{FAACE148-D0C1-4D29-8EAD-660265D2EBE7} = {7011C068-0308-40F7-8145-02CED94A31D7}
 	EndGlobalSection
 EndGlobal
