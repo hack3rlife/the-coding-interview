@@ -411,6 +411,28 @@ namespace com.hack3rlife.binarysearchtree
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="node"></param>
+        //TODO: Move this to a new project called BinaryTree
+        public void Mirror(Node<T> node)
+        {
+            if(node == null)
+            {
+                return;
+            }
+            else
+            {
+                Mirror(node.Left);
+                Mirror(node.Right);
+
+                Node<T> current = node.Left;
+                node.Left = node.Right;
+                node.Right = current;
+            }
+        }
+
+        /// <summary>
         ///  It starts at the tree root and explores the neighbor nodes first, before moving to the next level neighbours
         /// </summary>
         /// <param name="node"></param>

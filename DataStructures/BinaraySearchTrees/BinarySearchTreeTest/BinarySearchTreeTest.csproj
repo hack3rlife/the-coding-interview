@@ -54,12 +54,13 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="LowestCommonAncestorTest.cs" />
+    <Compile Include="MirrorTest.cs" />
+    <Compile Include="UnitTest1.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\BST\BinarySearchTree.csproj">
+    <ProjectReference Include="..\BST\BinarySearchTree.csproj">
       <Project>{9b3e64a7-ef17-4066-b283-8aa8463c740d}</Project>
       <Name>BinarySearchTree</Name>
     </ProjectReference>
