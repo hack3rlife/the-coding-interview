@@ -433,6 +433,28 @@ namespace com.hack3rlife.binarysearchtree
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="node"></param>
+        /// <returns></returns>
+        //BUG: 2487
+        public bool IsBinarySearchTree(Node<T> node)
+        {
+            if (node != null)
+            {
+                if (node.Left != null && node.Value.CompareTo(node.Left.Value) < 0)
+                    return false;
+                IsBinarySearchTree(node.Left);
+
+                if (node.Right != null && node.Value.CompareTo(node.Right.Value) > 0)
+                    return false;
+                IsBinarySearchTree(node.Right);
+            }
+
+            return true;
+        }
+
+        /// <summary>
         ///  It starts at the tree root and explores the neighbor nodes first, before moving to the next level neighbours
         /// </summary>
         /// <param name="node"></param>
@@ -506,7 +528,7 @@ namespace com.hack3rlife.binarysearchtree
         }
 
         /// <summary>
-        /// Display the BinarySearchTree<T> strcuture 
+        /// Display the BinarySearchTree strcuture 
         /// </summary>
         public void Display()
         {
@@ -582,7 +604,6 @@ namespace com.hack3rlife.binarysearchtree
         {
             get { throw new NotImplementedException(); }
         }
-
 
         /// <summary>
         /// Recursive version of Level Order Traversal

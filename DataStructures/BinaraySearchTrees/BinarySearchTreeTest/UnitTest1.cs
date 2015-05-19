@@ -10,7 +10,7 @@ namespace BinarySearchTreeTest
 {
 
     [TestClass]
-    public class BinarySearchTreeTest
+    public class UnitTest1
     {
         [TestMethod]
         public void AddTest()
