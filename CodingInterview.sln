@@ -151,9 +151,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTreeTest", "Dat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTree", "DataStructures\BinaraySearchTrees\BST\BinarySearchTree.csproj", "{9B3E64A7-EF17-4066-B283-8AA8463C740D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryTree", "DataStructures\BinaryTrees\BinaryTree\BinaryTree.csproj", "{CCD85C08-6FA8-4054-96EA-B2419615EE62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryTreeTest", "DataStructures\BinaryTrees\BinaryTreeTest\BinaryTreeTest.csproj", "{6CF3C960-00DF-4532-A8A4-CEFA7CE2B89C}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 63
+		SccNumberOfProjects = 65
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
 		SccLocalPath0 = .
@@ -405,6 +409,14 @@ Global
 		SccProjectTopLevelParentUniqueName62 = CodingInterview.sln
 		SccProjectName62 = DataStructures/BinaraySearchTrees/BST
 		SccLocalPath62 = DataStructures\\BinaraySearchTrees\\BST
+		SccProjectUniqueName63 = DataStructures\\BinaryTrees\\BinaryTree\\BinaryTree.csproj
+		SccProjectTopLevelParentUniqueName63 = CodingInterview.sln
+		SccProjectName63 = DataStructures/BinaryTrees/BinaryTree
+		SccLocalPath63 = DataStructures\\BinaryTrees\\BinaryTree
+		SccProjectUniqueName64 = DataStructures\\BinaryTrees\\BinaryTreeTest\\BinaryTreeTest.csproj
+		SccProjectTopLevelParentUniqueName64 = CodingInterview.sln
+		SccProjectName64 = DataStructures/BinaryTrees/BinaryTreeTest
+		SccLocalPath64 = DataStructures\\BinaryTrees\\BinaryTreeTest
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1037,6 +1049,26 @@ Global
 		{9B3E64A7-EF17-4066-B283-8AA8463C740D}.Release|ARM.ActiveCfg = Release|Any CPU
 		{9B3E64A7-EF17-4066-B283-8AA8463C740D}.Release|x64.ActiveCfg = Release|Any CPU
 		{9B3E64A7-EF17-4066-B283-8AA8463C740D}.Release|x86.ActiveCfg = Release|Any CPU
+		{CCD85C08-6FA8-4054-96EA-B2419615EE62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCD85C08-6FA8-4054-96EA-B2419615EE62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCD85C08-6FA8-4054-96EA-B2419615EE62}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{CCD85C08-6FA8-4054-96EA-B2419615EE62}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CCD85C08-6FA8-4054-96EA-B2419615EE62}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CCD85C08-6FA8-4054-96EA-B2419615EE62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCD85C08-6FA8-4054-96EA-B2419615EE62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCD85C08-6FA8-4054-96EA-B2419615EE62}.Release|ARM.ActiveCfg = Release|Any CPU
+		{CCD85C08-6FA8-4054-96EA-B2419615EE62}.Release|x64.ActiveCfg = Release|Any CPU
+		{CCD85C08-6FA8-4054-96EA-B2419615EE62}.Release|x86.ActiveCfg = Release|Any CPU
+		{6CF3C960-00DF-4532-A8A4-CEFA7CE2B89C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CF3C960-00DF-4532-A8A4-CEFA7CE2B89C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CF3C960-00DF-4532-A8A4-CEFA7CE2B89C}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{6CF3C960-00DF-4532-A8A4-CEFA7CE2B89C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6CF3C960-00DF-4532-A8A4-CEFA7CE2B89C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6CF3C960-00DF-4532-A8A4-CEFA7CE2B89C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CF3C960-00DF-4532-A8A4-CEFA7CE2B89C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CF3C960-00DF-4532-A8A4-CEFA7CE2B89C}.Release|ARM.ActiveCfg = Release|Any CPU
+		{6CF3C960-00DF-4532-A8A4-CEFA7CE2B89C}.Release|x64.ActiveCfg = Release|Any CPU
+		{6CF3C960-00DF-4532-A8A4-CEFA7CE2B89C}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1114,5 +1146,7 @@ Global
 		{DABFBD90-7AD2-45C3-B83F-D9B72C9BC869} = {7011C068-0308-40F7-8145-02CED94A31D7}
 		{F46F136D-3951-45C2-9324-95623EF2FF40} = {B9478AC5-EE21-4910-950F-19EFE67E696B}
 		{9B3E64A7-EF17-4066-B283-8AA8463C740D} = {BE56D31A-1457-454C-B084-B8F645E8D7F6}
+		{CCD85C08-6FA8-4054-96EA-B2419615EE62} = {BE56D31A-1457-454C-B084-B8F645E8D7F6}
+		{6CF3C960-00DF-4532-A8A4-CEFA7CE2B89C} = {B9478AC5-EE21-4910-950F-19EFE67E696B}
 	EndGlobalSection
 EndGlobal
