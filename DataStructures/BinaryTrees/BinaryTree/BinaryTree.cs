@@ -21,54 +21,6 @@ namespace com.hack3rlife.binarytree
             this._root = null;
         }
 
-        /// <summary>
-        /// Display the BinarySearchTree strcuture 
-        /// </summary>
-        public void Display(bool IsLeft)
-        {
-            if (IsLeft)
-                DisplayLeftRight(this.Root);
-            else
-                DisplayDownRight(this.Root);
-        }
-
-        /// <summary>
-        /// Based on http://stackoverflow.com/questions/1649027/how-do-i-print-out-a-tree-structure
-        /// </summary>
-        /// <param name="node">Usually BinarySearchTree<T> root</param>
-        /// <param name="prefix">If wanted, prefix value to be appended</param>
-        private void DisplayLeftRight(BinaryTreeNode<T> node, String prefix = "")
-        {
-            if (node == null)
-            {
-                Console.WriteLine(prefix + "+ ");
-                return;
-            }
-
-            Console.WriteLine(prefix + "+ " + node.Value);
-
-            DisplayLeftRight(node.Left, prefix + "|  ");
-            DisplayLeftRight(node.Right, prefix + "|  ");
-        }
-
-        /// <summary>
-        /// Based on http://stackoverflow.com/questions/1649027/how-do-i-print-out-a-tree-structure
-        /// </summary>
-        /// <param name="node">Usually BinarySearchTree<T> root</param>
-        /// <param name="prefix">If wanted, prefix value to be appended</param>
-        private void DisplayDownRight(BinaryTreeNode<T> node, String prefix = "")
-        {
-            if (node != null)
-            {
-                Console.Write(prefix + node.Value);
-
-                DisplayDownRight(node.Right, prefix + "-");
-                Console.WriteLine();
-                DisplayDownRight(node.Left, "");
-            }
-
-        }
-
         public void LeftRigthToDownRightRepresentation(BinaryTreeNode<T> node)
         {
             if (node == null)
@@ -117,9 +69,89 @@ namespace com.hack3rlife.binarytree
                     prev = current;
                     count--;
                 }
-                
+
                 prev.Right = null;
             }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="node"></param>
+        public void Mirror(BinaryTreeNode<T> node)
+        {
+            if (node == null)
+            {
+                return;
+            }
+            else
+            {
+                Mirror(node.Left);
+                Mirror(node.Right);
+
+                BinaryTreeNode<T> current = node.Left;
+                node.Left = node.Right;
+                node.Right = current;
+            }
+        }
+
+        public int SumOfAllLeaves(BinaryTreeNode<int> node)
+        {
+            if (node == null)
+                return 0;
+
+            if (node.Left == null && node.Right == null)
+                return node.Value;
+
+            return SumOfAllLeaves(node.Left) + SumOfAllLeaves(node.Right);
+        }        
+
+        /// <summary>
+        /// Display the BinarySearchTree strcuture 
+        /// </summary>
+        public void Display(bool IsLeft)
+        {
+            if (IsLeft)
+                DisplayLeftRight(this.Root);
+            else
+                DisplayDownRight(this.Root);
+        }
+
+        /// <summary>
+        /// Based on http://stackoverflow.com/questions/1649027/how-do-i-print-out-a-tree-structure
+        /// </summary>
+        /// <param name="node">Usually BinarySearchTree<T> root</param>
+        /// <param name="prefix">If wanted, prefix value to be appended</param>
+        private void DisplayLeftRight(BinaryTreeNode<T> node, String prefix = "")
+        {
+            if (node == null)
+            {
+                Console.WriteLine(prefix + "+ ");
+                return;
+            }
+
+            Console.WriteLine(prefix + "+ " + node.Value);
+
+            DisplayLeftRight(node.Left, prefix + "|  ");
+            DisplayLeftRight(node.Right, prefix + "|  ");
+        }
+
+        /// <summary>
+        /// Based on http://stackoverflow.com/questions/1649027/how-do-i-print-out-a-tree-structure
+        /// </summary>
+        /// <param name="node">Usually BinarySearchTree<T> root</param>
+        /// <param name="prefix">If wanted, prefix value to be appended</param>
+        private void DisplayDownRight(BinaryTreeNode<T> node, String prefix = "")
+        {
+            if (node != null)
+            {
+                Console.Write(prefix + node.Value);
+
+                DisplayDownRight(node.Right, prefix + "-");
+                Console.WriteLine();
+                DisplayDownRight(node.Left, "");
+            }
+
         }
     }
 }

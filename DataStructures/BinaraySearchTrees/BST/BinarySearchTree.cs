@@ -408,29 +408,7 @@ namespace com.hack3rlife.binarysearchtree
                 GivenLevelSpiral(node, i, reversed);
                 reversed = !reversed;
             }
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="node"></param>
-        //TODO: Move this to a new project called BinaryTree
-        public void Mirror(Node<T> node)
-        {
-            if(node == null)
-            {
-                return;
-            }
-            else
-            {
-                Mirror(node.Left);
-                Mirror(node.Right);
-
-                Node<T> current = node.Left;
-                node.Left = node.Right;
-                node.Right = current;
-            }
-        }
+        }        
 
         /// <summary>
         /// 
