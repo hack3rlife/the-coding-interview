@@ -4,11 +4,11 @@ namespace com.hack3rlife.binarytree
 {
     public class BinaryTreeNode<T>
     {
-        public int Value { get; set; }
+        public T Value { get; set; }
         public BinaryTreeNode<T> Left { get; set; }
         public BinaryTreeNode<T> Right { get; set; }
 
-        public BinaryTreeNode(int value)
+        public BinaryTreeNode(T value)
         {
             this.Left = null;
             this.Right = null;
