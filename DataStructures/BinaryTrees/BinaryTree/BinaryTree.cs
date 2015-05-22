@@ -119,6 +119,25 @@ namespace com.hack3rlife.binarytree
             return RootToLeafPathsSum(node.Left, val) + RootToLeafPathsSum(node.Right, val);
         }       
 
+        public void RootToLeafPathsMaxSum(BinaryTreeNode<int> node, int curent, ref int max)
+        {
+            if (node == null)
+                return;
+
+            curent = curent + node.Value;
+
+            if (node.Left == null && node.Right == null)
+            {
+                if (curent > max)
+                {
+                    max = curent;
+                }
+            }
+
+            RootToLeafPathsMaxSum(node.Left, curent, ref max);
+            RootToLeafPathsMaxSum(node.Right, curent, ref max);            
+        }       
+
         /// <summary>
         /// Display the BinarySearchTree strcuture 
         /// </summary>
