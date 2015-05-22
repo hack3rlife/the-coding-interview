@@ -104,7 +104,20 @@ namespace com.hack3rlife.binarytree
                 return node.Value;
 
             return SumOfAllLeaves(node.Left) + SumOfAllLeaves(node.Right);
-        }        
+        }
+
+        public int RootToLeafPathsSum(BinaryTreeNode<int> node, int val)
+        {
+            if (node == null)
+                return 0;
+
+            val = (val * 10 + node.Value);
+
+            if (node.Left == null && node.Right == null)
+                return val;
+
+            return RootToLeafPathsSum(node.Left, val) + RootToLeafPathsSum(node.Right, val);
+        }       
 
         /// <summary>
         /// Display the BinarySearchTree strcuture 
