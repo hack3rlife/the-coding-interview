@@ -443,6 +443,20 @@ namespace com.hack3rlife.datastructures
             return true;
         }
 
+        public IList<T> ToList()
+        {
+            if (this.Root == null)
+                return null;
+
+            var list = new List<T>();
+            foreach (var item in InLevelsEnumerable) 
+            {
+                list.Add(item);
+            }
+
+            return list;
+        }
+
         /// <summary>
         ///  It starts at the tree root and explores the neighbor nodes first, before moving to the next level neighbours
         /// </summary>

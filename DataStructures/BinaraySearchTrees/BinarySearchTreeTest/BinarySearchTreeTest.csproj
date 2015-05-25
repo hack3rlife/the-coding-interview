@@ -58,6 +58,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="LowestCommonAncestorTest.cs" />
     <Compile Include="IsBinarySearchTest.cs" />
+    <Compile Include="BstToListTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BST\BinarySearchTree.csproj">
