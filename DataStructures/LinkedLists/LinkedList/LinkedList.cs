@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace LinkedList
+namespace com.hack3rlife.datastructures
 {
     /// <summary>
     /// Represents a Single Linked List
@@ -13,12 +13,12 @@ namespace LinkedList
         /// <summary>
         /// Gets the first node of the LinkedList<T>.
         /// </summary>
-        public Node<T> Tail { get; internal set; }
+        public LinkedListNode<T> Tail { get; internal set; }
 
         /// <summary>
         /// Gets the last node of the LinkedList<T>.
         /// </summary>
-        public Node<T> Head { get; internal set; }
+        public LinkedListNode<T> Head { get; set; }
 
         /// <summary>
         /// Gets the number of nodes actually contained in the LinkedList<T>
@@ -36,7 +36,7 @@ namespace LinkedList
         /// <param name="value">The value to add at the start of the LinkedList<T>.</param>
         public void AddFirst(T value)
         {
-            Node<T> node = new Node<T>(value);
+            LinkedListNode<T> node = new LinkedListNode<T>(value);
 
             if (this.Head != null)
             {
@@ -58,7 +58,7 @@ namespace LinkedList
         /// <param name="value">The value to add at the end of the LinkedList<T>.</param>
         public void AddLast(T value)
         {
-            Node<T> node = new Node<T>(value);
+            LinkedListNode<T> node = new LinkedListNode<T>(value);
 
             if (this.Head != null)
             {
@@ -92,7 +92,7 @@ namespace LinkedList
                 }
                 else if(this.Count>=3)
                 {
-                    Node<T> current = this.Head.Next;
+                    LinkedListNode<T> current = this.Head.Next;
                     this.Head = current;
                 }
 
@@ -118,7 +118,7 @@ namespace LinkedList
                 }
                 else if (this.Count>=3)
                 {
-                    Node<T> current = this.Head;
+                    LinkedListNode<T> current = this.Head;
 
                     while (current.Next.Next != null)
                     {
@@ -143,8 +143,8 @@ namespace LinkedList
         {
             if (this.Head != null)
             {
-                Node<T> current = this.Head;
-                Node<T> previous = null;
+                LinkedListNode<T> current = this.Head;
+                LinkedListNode<T> previous = null;
 
                 while (current != null)
                 {
@@ -189,7 +189,7 @@ namespace LinkedList
         /// <param name="data"></param>
         /// <param name="current"></param>
         /// <returns></returns>
-        public Node<T> Remove(int data, Node<T> current)
+        public LinkedListNode<T> Remove(int data, LinkedListNode<T> current)
         {
             if (data == null)
                 return current;
@@ -212,7 +212,7 @@ namespace LinkedList
         /// </summary>        
         public void Display()
         {
-            Node<T> node = this.Head;
+            LinkedListNode<T> node = this.Head;
 
             while (node != null)
             {
@@ -246,7 +246,7 @@ namespace LinkedList
         /// <returns></returns>
         public bool Contains(T item)
         {
-            Node<T> current = this.Head;
+            LinkedListNode<T> current = this.Head;
 
             while (current != null)
             {
@@ -267,7 +267,7 @@ namespace LinkedList
         /// <returns></returns>
         IEnumerator<T> IEnumerable<T>.GetEnumerator()
         {
-            Node<T> current = this.Head;
+            LinkedListNode<T> current = this.Head;
 
             while (current != null)
             {
@@ -301,7 +301,7 @@ namespace LinkedList
         /// <param name="arrayIndex"></param>
         void ICollection<T>.CopyTo(T[] array, int arrayIndex)
         {
-            Node<T> current = this.Head;
+            LinkedListNode<T> current = this.Head;
 
             while (current != null && arrayIndex <= array.Length - 1)
             {

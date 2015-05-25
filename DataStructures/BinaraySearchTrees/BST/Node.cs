@@ -4,18 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace com.hack3rlife.binarysearchtree
+namespace com.hack3rlife.datastructures
 {
-    public class Node<T> : IComparable<T> where T: IComparable<T>
+    public class BinarySearchTreeNode<T> : IComparable<T> where T: IComparable<T>
     {
 
         public T Value { get; set; }
 
-        public Node<T> Left { get; set; }
+        public BinarySearchTreeNode<T> Left { get; set; }
 
-        public Node<T> Right { get; set; }
+        public BinarySearchTreeNode<T> Right { get; set; }
 
-        public Node(T value)
+        public BinarySearchTreeNode(T value)
         {
             Value = value;            
         }

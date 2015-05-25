@@ -1,22 +1,22 @@
-﻿namespace LinkedList
+﻿namespace com.hack3rlife.datastructures
 {
-    public class Node<T>
+    public class LinkedListNode<T>
     {
         public T Value { get; private set; }
-        public Node<T> Next { get; set; }
+        public LinkedListNode<T> Next { get; set; }
 
-        public Node()
+        public LinkedListNode()
         {
             this.Next = null;
         }
 
-        public Node(T value)
+        public LinkedListNode(T value)
             : this()
         {
             this.Value = value;
         }
 
-        public Node(T value, Node<T> next)
+        public LinkedListNode(T value, LinkedListNode<T> next)
             : this(value)
         {
             this.Next = next;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using LinkedList;
+using com.hack3rlife.datastructures;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace LinkedListTest

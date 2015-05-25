@@ -1,20 +1,17 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using com.hack3rlife.datastructures;
 
 namespace LinkedListTest
 {
     [TestClass]
     public class LinkedListBaseTest
     {
-        public LinkedList.LinkedList<int> list { get; set; }
+        public LinkedList<int> list { get; set; }
 
         [TestInitialize]
         public void Initialize(){
-            list = new LinkedList.LinkedList<int>();
+            list = new LinkedList<int>();
             list.AddLast(10);
             list.AddLast(20);
             list.AddLast(30);

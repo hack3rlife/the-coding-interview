@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using com.hack3rlife.binarysearchtree;
+using com.hack3rlife.datastructures;
 
 namespace BinarySearchTreeTest
 {

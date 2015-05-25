@@ -7,8 +7,8 @@
     <ProjectGuid>{FE94F32B-E9B9-4A31-85EE-BCA5366D963F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LinkedList</RootNamespace>
-    <AssemblyName>LinkedList</AssemblyName>
+    <RootNamespace>com.hack3rlife.datastructures</RootNamespace>
+    <AssemblyName>com.hack3rlife.datastructures</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>
@@ -41,6 +41,12 @@
     <Compile Include="LinkedListExtension.cs" />
     <Compile Include="Node.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BinaraySearchTrees\BST\BinarySearchTree.csproj">
+      <Project>{9b3e64a7-ef17-4066-b283-8aa8463c740d}</Project>
+      <Name>BinarySearchTree</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

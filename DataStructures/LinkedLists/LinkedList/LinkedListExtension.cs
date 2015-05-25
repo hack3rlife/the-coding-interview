@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace LinkedList
+namespace com.hack3rlife.datastructures
 {
     public static class LinkedListExtension
     {
@@ -13,11 +9,11 @@ namespace LinkedList
         /// </summary>
         /// <param name="position"></param>
         /// <returns></returns>
-        public static Node<T> FindNTh<T>(this LinkedList.LinkedList<T> list, int position)
+        public static LinkedListNode<T> FindNTh<T>(this LinkedList<T> list, int position)
         {
             if (list.Head != null)
             {
-                Node<T> current = list.Head;
+                LinkedListNode<T> current = list.Head;
 
                 for (int i = 0; i < position; i++)
                 {
@@ -31,7 +27,7 @@ namespace LinkedList
                     }
                 }
 
-                Node<T> nth = list.Head;
+                LinkedListNode<T> nth = list.Head;
 
                 while (current != null)
                 {
@@ -44,12 +40,12 @@ namespace LinkedList
             return null;
         }
 
-        public static Node<T> Findnth<T>(this LinkedList.LinkedList<T> list, int position)
+        public static LinkedListNode<T> Findnth<T>(this LinkedList<T> list, int position)
         {
             if (list.Head != null)
             {
-                Node<T> current = list.Head;
-                Node<T> nth = list.Head;
+                LinkedListNode<T> current = list.Head;
+                LinkedListNode<T> nth = list.Head;
 
                 while (current != null)
                 {
@@ -73,13 +69,13 @@ namespace LinkedList
         /// <summary>
         /// Reverse a LinkedList<T> (Iterative version)
         /// </summary>
-        public static void Reverse<T>(this LinkedList.LinkedList<T> list)
+        public static void Reverse<T>(this LinkedList<T> list)
         {
             if (list.Head != null)
             {
-                Node<T> previous = null;
-                Node<T> current = list.Head;
-                Node<T> next = null;
+                LinkedListNode<T> previous = null;
+                LinkedListNode<T> current = list.Head;
+                LinkedListNode<T> next = null;
 
                 while (current != null)
                 {
@@ -100,7 +96,7 @@ namespace LinkedList
         /// </summary>
         /// <param name="list"></param>
         /// <param name="current"></param>
-        public static void Reverse<T>(this LinkedList.LinkedList<T> list, Node<T> current)
+        public static void Reverse<T>(this LinkedList<T> list, LinkedListNode<T> current)
         {
             if (current.Next == null)
             {
@@ -110,7 +106,7 @@ namespace LinkedList
 
             Reverse(list, current.Next);
 
-            Node<T> node = current.Next;
+            LinkedListNode<T> node = current.Next;
             current.Next = null;
             node.Next = current;
         }
@@ -120,15 +116,15 @@ namespace LinkedList
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="list"></param>
-        public static void RemoveDulicatesUnsorted<T>(this LinkedList.LinkedList<T> list)
+        public static void RemoveDulicatesUnsorted<T>(this LinkedList<T> list)
         {
             if (list.Head != null)
             {
-                Node<T> current = list.Head;
+                LinkedListNode<T> current = list.Head;
 
                 while (current != null)
                 {
-                    Node<T> node = current.Next;
+                    LinkedListNode<T> node = current.Next;
 
                     while (node != null)
                     {
@@ -152,11 +148,11 @@ namespace LinkedList
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="list"></param>
-        public static void RemoveDuplicatesSorted<T>(this LinkedList.LinkedList<T> list)
+        public static void RemoveDuplicatesSorted<T>(this LinkedList<T> list)
         {
             if (list.Head != null)
             {
-                Node<T> current = list.Head;
+                LinkedListNode<T> current = list.Head;
 
                 while (current.Next != null)
                 {
@@ -177,7 +173,7 @@ namespace LinkedList
         /// </summary>
         /// <param name="list">LinkedList<T></param>
         /// <param name="k">Number of times the LinkedList is going to be rotated</param>
-        public static void Rotate<T>(this LinkedList.LinkedList<T> list, int k)
+        public static void Rotate<T>(this LinkedList<T> list, int k)
         {
             if (list.Head == null)
                 return;
@@ -185,8 +181,8 @@ namespace LinkedList
             if (list.Count < k)
                 return;
 
-            Node<T> current = list.Head;
-            Node<T> kthnode = null;
+            LinkedListNode<T> current = list.Head;
+            LinkedListNode<T> kthnode = null;
 
             while (current.Next != null)
             {
@@ -209,18 +205,18 @@ namespace LinkedList
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="list"></param>
-        public static void SwapConsecutives<T>(this LinkedList.LinkedList<T> list)
+        public static void SwapConsecutives<T>(this LinkedList<T> list)
         {
             if (list.Head != null && list.Head.Next != null)
             {
-                Node<T> current = list.Head;
+                LinkedListNode<T> current = list.Head;
                 list.Head = current.Next;
                 current.Next = list.Head.Next;
                 list.Head.Next = current;
 
                 while (current.Next != null && current.Next.Next != null)
                 {
-                    Node<T> temp = current.Next;
+                    LinkedListNode<T> temp = current.Next;
                     current.Next = current.Next.Next;
                     temp.Next = current.Next.Next;
                     current.Next.Next = temp;
@@ -230,17 +226,25 @@ namespace LinkedList
             }
         }
 
+        //TODO: Use generic values instead of just int values
+        public static BinarySearchTree<int> ToBinarySearchTree<T>(this LinkedList<int> list, int n)
+        {
+           var root= ToBinarySearchTreeNode(list, list.Count);
+
+           return new BinarySearchTree<int>(root);
+        }
+       
         /// <summary>
         /// 
         /// </summary>
         /// <param name="list"></param>
-        public static void ReverseAlternateNodesAndAppendAtTheEnd<T>(this LinkedList.LinkedList<T> list)
+        public static void ReverseAlternateNodesAndAppendAtTheEnd<T>(this LinkedList<T> list)
         {
             if (list.Head != null)
             {
-                Node<T> current = list.Head;
+                LinkedListNode<T> current = list.Head;
 
-                Node<T> prev = current.Next;
+                LinkedListNode<T> prev = current.Next;
                 current.Next = current.Next.Next;
                 prev.Next = null;
 
@@ -250,7 +254,7 @@ namespace LinkedList
 
                 while (current != null && current.Next != null)
                 {
-                    Node<T> temp = current.Next;
+                    LinkedListNode<T> temp = current.Next;
                     current.Next = current.Next.Next;
 
                     temp.Next = prev;
@@ -265,17 +269,17 @@ namespace LinkedList
             }
         }
 
-        public static void MergeAlternateNodes<T>(this LinkedList.LinkedList<T> list, LinkedList.LinkedList<T> alternate)
+        public static void MergeAlternateNodes<T>(this LinkedList<T> list, LinkedList<T> alternate)
         {
             if (list.Head != null)
             {
-                Node<T> current1 = list.Head;
-                Node<T> current2 = alternate.Head;
+                LinkedListNode<T> current1 = list.Head;
+                LinkedListNode<T> current2 = alternate.Head;
 
                 while (current1 != null)
                 {
-                    Node<T> temp1 = current1.Next;
-                    Node<T> temp2 = current2.Next;
+                    LinkedListNode<T> temp1 = current1.Next;
+                    LinkedListNode<T> temp2 = current2.Next;
 
                     current1.Next = current2;
                     current2.Next = temp1;
@@ -287,12 +291,12 @@ namespace LinkedList
             }
         }
 
-        public static void DeleteNAfterM<T>(this LinkedList.LinkedList<T> list, int m, int n)
+        public static void DeleteNAfterM<T>(this LinkedList<T> list, int m, int n)
         {
             if (list.Head != null)
             {
-                Node<T> current = list.Head;
-                Node<T> temp = new Node<T>();
+                LinkedListNode<T> current = list.Head;
+                LinkedListNode<T> temp = new LinkedListNode<T>();
 
                 bool skip = true;
 
@@ -320,6 +324,25 @@ namespace LinkedList
                     }
                 }
             }
+        }
+
+        private static BinarySearchTreeNode<int> ToBinarySearchTreeNode(LinkedList<int> list, int n)
+        {
+            if (n <= 0)
+                return null;
+
+            BinarySearchTreeNode<int> left = ToBinarySearchTreeNode(list, n / 2);
+
+            BinarySearchTreeNode<int> root = new BinarySearchTreeNode<int>(list.Head.Value);
+            root.Left = left;
+
+            list.Head = list.Head.Next;
+
+            BinarySearchTreeNode<int> right = ToBinarySearchTreeNode(list, n - n / 2 - 1);
+            root.Right = right;
+
+            return root;
+
         }
     }
 }

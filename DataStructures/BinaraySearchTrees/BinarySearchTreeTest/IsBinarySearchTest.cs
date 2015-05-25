@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using com.hack3rlife.binarysearchtree;
+using com.hack3rlife.datastructures;
 
 namespace BinarySearchTreeTest
 {

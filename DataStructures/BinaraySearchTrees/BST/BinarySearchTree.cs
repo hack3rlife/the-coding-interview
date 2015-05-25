@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace com.hack3rlife.binarysearchtree
+namespace com.hack3rlife.datastructures
 {
     /// <summary>
     /// Represents a BinarySearchTree<T>
@@ -42,7 +42,7 @@ namespace com.hack3rlife.binarysearchtree
         /// <summary>
         /// Gets the BinarySearchTree<T> root node
         /// </summary>
-        public Node<T> Root { get; private set; }
+        public BinarySearchTreeNode<T> Root { get; private set; }
 
         /// <summary>
         /// Get the BinarySearchTree<T> number of nodes
@@ -67,8 +67,8 @@ namespace com.hack3rlife.binarysearchtree
         {
             get
             {
-                Stack<Node<T>> stack = new Stack<Node<T>>();
-                Node<T> node = this.Root;
+                Stack<BinarySearchTreeNode<T>> stack = new Stack<BinarySearchTreeNode<T>>();
+                BinarySearchTreeNode<T> node = this.Root;
 
                 bool isLeft = true;
 
@@ -118,8 +118,8 @@ namespace com.hack3rlife.binarysearchtree
         {
             get
             {
-                Stack<Node<T>> stack = new Stack<Node<T>>();
-                Node<T> node = null;
+                Stack<BinarySearchTreeNode<T>> stack = new Stack<BinarySearchTreeNode<T>>();
+                BinarySearchTreeNode<T> node = null;
 
                 stack.Push(this.Root);
 
@@ -165,8 +165,8 @@ namespace com.hack3rlife.binarysearchtree
             //#BUG: 2435
             get
             {
-                Stack<Node<T>> stack = new Stack<Node<T>>();
-                Node<T> node = this.Root;
+                Stack<BinarySearchTreeNode<T>> stack = new Stack<BinarySearchTreeNode<T>>();
+                BinarySearchTreeNode<T> node = this.Root;
 
                 do
                 {
@@ -218,12 +218,12 @@ namespace com.hack3rlife.binarysearchtree
             {
                 if (Root == null) yield return default(T);
 
-                Queue<Node<T>> queue = new Queue<Node<T>>();
+                Queue<BinarySearchTreeNode<T>> queue = new Queue<BinarySearchTreeNode<T>>();
                 queue.Enqueue(this.Root);
 
                 while (queue.Count > 0)
                 {
-                    Node<T> current = queue.Dequeue();
+                    BinarySearchTreeNode<T> current = queue.Dequeue();
                     yield return current.Value;
 
                     if (current.Left != null)
@@ -239,7 +239,7 @@ namespace com.hack3rlife.binarysearchtree
             }
         }
 
-        public Node<T> Min {
+        public BinarySearchTreeNode<T> Min {
             get
             {
                 if (this.Root == null)
@@ -247,7 +247,7 @@ namespace com.hack3rlife.binarysearchtree
                     return null;
                 }
 
-                Node<T> node = this.Root;
+                BinarySearchTreeNode<T> node = this.Root;
 
                 //[ Iterative version ]
                 while (node != null && node.Left != null)
@@ -259,7 +259,7 @@ namespace com.hack3rlife.binarysearchtree
             }
         }
 
-        public Node<T> Max
+        public BinarySearchTreeNode<T> Max
         {
             get
             {
@@ -268,7 +268,7 @@ namespace com.hack3rlife.binarysearchtree
                     return null;
                 }
 
-                Node<T> node = this.Root;
+                BinarySearchTreeNode<T> node = this.Root;
 
                 //[ Iterative version ]
                 while (node != null && node.Right != null)
@@ -278,6 +278,17 @@ namespace com.hack3rlife.binarysearchtree
 
                 return node;
             }
+        }
+
+        public BinarySearchTree()
+        {
+            this.Root = null;
+            this.Count = 0;
+        }
+
+        public BinarySearchTree(BinarySearchTreeNode<T> root)
+        {
+            this.Root = root;
         }
 
         /// <summary>
@@ -310,7 +321,7 @@ namespace com.hack3rlife.binarysearchtree
 
             int counter = this.Count;
 
-            Node<T> result = Remove(this.Root, value);
+            BinarySearchTreeNode<T> result = Remove(this.Root, value);
 
             return (counter - this.Count >= 1) ? true : false;
         }
@@ -318,7 +329,7 @@ namespace com.hack3rlife.binarysearchtree
         /// <summary>
         /// In-Order: Left child, Root, Right child
         /// </summary>
-        public void InOrder(Node<T> node)
+        public void InOrder(BinarySearchTreeNode<T> node)
         {
 
             if (node != null)
@@ -332,7 +343,7 @@ namespace com.hack3rlife.binarysearchtree
         /// <summary>
         /// Pre-Order: Root, Left child, Right child
         /// </summary>
-        public void PreOrder(Node<T> node)
+        public void PreOrder(BinarySearchTreeNode<T> node)
         {
             if (node != null)
             {
@@ -345,7 +356,7 @@ namespace com.hack3rlife.binarysearchtree
         /// <summary>
         /// Post-Order: Left Child, Right child, Root
         /// </summary>
-        public void PostOrder(Node<T> node)
+        public void PostOrder(BinarySearchTreeNode<T> node)
         {
             if (node != null)
             {
@@ -359,19 +370,19 @@ namespace com.hack3rlife.binarysearchtree
         /// Breadth-first: Visit every node on a level before going to a lower level.
         /// </summary>
         /// <param name="node">Usually the BinarySearchTree<T> root node or some arbitrary node/></param>
-        public void InLevels(Node<T> node)
+        public void InLevels(BinarySearchTreeNode<T> node)
         {
             if (node == null)
             {
                 return;
             }
 
-            Queue<Node<T>> queue = new Queue<Node<T>>();
+            Queue<BinarySearchTreeNode<T>> queue = new Queue<BinarySearchTreeNode<T>>();
             queue.Enqueue(node);
 
             while (queue.Count > 0)
             {
-                Node<T> current = queue.Dequeue();
+                BinarySearchTreeNode<T> current = queue.Dequeue();
                 current.DisplayNode();
 
                 if (current.Left != null)
@@ -397,7 +408,7 @@ namespace com.hack3rlife.binarysearchtree
         ///  An additional Boolean variable ltr is used to change printing order of levels. If ltr is 1 then printGivenLevel() prints nodes from left to right 
         ///  else from right to left. Value of ltr is flipped in each iteration to change the order.
         /// </remarks>
-        public void InLevelSpiral(Node<T> node) 
+        public void InLevelSpiral(BinarySearchTreeNode<T> node) 
         {
             int level = GetLevels(node);
 
@@ -416,7 +427,7 @@ namespace com.hack3rlife.binarysearchtree
         /// <param name="node"></param>
         /// <returns></returns>
         //BUG: 2487
-        public bool IsBinarySearchTree(Node<T> node)
+        public bool IsBinarySearchTree(BinarySearchTreeNode<T> node)
         {
             if (node != null)
             {
@@ -437,7 +448,7 @@ namespace com.hack3rlife.binarysearchtree
         /// </summary>
         /// <param name="node"></param>
         /// <returns></returns>
-        public T FindMin(Node<T> node)
+        public T FindMin(BinarySearchTreeNode<T> node)
         {
             if (node != null && node.Left == null)
             {
@@ -454,7 +465,7 @@ namespace com.hack3rlife.binarysearchtree
         /// </summary>
         /// <param name="node"></param>
         /// <returns></returns>
-        public T FindMax(Node<T> node)
+        public T FindMax(BinarySearchTreeNode<T> node)
         {
             if (node != null && node.Right == null)
             {
@@ -518,7 +529,7 @@ namespace com.hack3rlife.binarysearchtree
         /// </summary>
         /// <param name="node">Usually BinarySearchTree<T> root</param>
         /// <param name="prefix">If wanted, prefix value to be appended</param>
-        private void Display(Node<T> node, String prefix = "")
+        private void Display(BinarySearchTreeNode<T> node, String prefix = "")
         {
             if (node == null)
             {
@@ -590,7 +601,7 @@ namespace com.hack3rlife.binarysearchtree
         /// <param name="node"></param>
         /// <param name="level"></param>
         /// <param name="reversed"></param>
-        private static void GivenLevelSpiral<T>(Node<T> node, int level, bool reversed) where T : IComparable<T>
+        private static void GivenLevelSpiral<T>(BinarySearchTreeNode<T> node, int level, bool reversed) where T : IComparable<T>
         {
             if (node == null)
             {
@@ -623,7 +634,7 @@ namespace com.hack3rlife.binarysearchtree
         /// <typeparam name="T"></typeparam>
         /// <param name="node"></param>
         /// <returns></returns>
-        private static int GetLevels<T>(Node<T> node) where T : IComparable<T>
+        private static int GetLevels<T>(BinarySearchTreeNode<T> node) where T : IComparable<T>
         {
             if (node == null)
                 return 0;
@@ -640,13 +651,13 @@ namespace com.hack3rlife.binarysearchtree
         /// <param name="node">Usually the BinarySearchTree<T> root node or some arbitrary node</param>
         /// <param name="value">The value to be added</param>
         /// <returns>Node<T></returns>
-        private Node<T> Add(Node<T> node, T value)
+        private BinarySearchTreeNode<T> Add(BinarySearchTreeNode<T> node, T value)
         {
             if (node == null)
             {
                 this.Count++;
 
-                return new Node<T>(value);
+                return new BinarySearchTreeNode<T>(value);
             }
             else if (node.Value.CompareTo(value) > 0) //if node.Value > value
             {
@@ -666,7 +677,7 @@ namespace com.hack3rlife.binarysearchtree
         /// <param name="node">Usually the BinarySearchTree<T> root node or some arbitrary node</param>
         /// <param name="value">Node value which will be deleted</param>
         /// <returns>Node<T></returns>
-        private Node<T> Remove(Node<T> node, T value)
+        private BinarySearchTreeNode<T> Remove(BinarySearchTreeNode<T> node, T value)
         {
             if (node == null)
             {
@@ -685,7 +696,7 @@ namespace com.hack3rlife.binarysearchtree
             {
                 if (node.Left == null)
                 {
-                    Node<T> right = node.Right;
+                    BinarySearchTreeNode<T> right = node.Right;
                     
                     node = null;
 
@@ -695,7 +706,7 @@ namespace com.hack3rlife.binarysearchtree
                 }
                 else if (node.Right == null)
                 {
-                    Node<T> left = node.Left;
+                    BinarySearchTreeNode<T> left = node.Left;
 
                     node = null;
 
@@ -723,7 +734,7 @@ namespace com.hack3rlife.binarysearchtree
         /// <param name="node"></param>
         /// <param name="value"></param>
         /// <returns></returns>
-        private bool Find(Node<T> node, T value)
+        private bool Find(BinarySearchTreeNode<T> node, T value)
         {
             if (node == null)
                 return false;

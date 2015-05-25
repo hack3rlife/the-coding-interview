@@ -1,12 +1,7 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using LinkedList;
+﻿using com.hack3rlife.datastructures;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace LinkedListTest
+namespace MyLinkedListTest
 {
     [TestClass]
     public class SwapConsecutivesTest
@@ -14,7 +9,7 @@ namespace LinkedListTest
         [TestMethod]
         public void SwapTest()
         {
-            LinkedList.LinkedList<int> list = new LinkedList.LinkedList<int>();
+            LinkedList<int> list = new LinkedList<int>();
             list.AddLast(10);
             list.AddLast(20);
             list.AddLast(30);

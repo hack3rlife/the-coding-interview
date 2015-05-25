@@ -1,5 +1,5 @@
 ﻿using System;
-using LinkedList;
+using com.hack3rlife.datastructures;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace LinkedListTest
