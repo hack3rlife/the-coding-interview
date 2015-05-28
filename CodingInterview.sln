@@ -167,9 +167,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearch", "Arrays\Bina
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTest", "Arrays\BinarySearch\BinarySearchTest\BinarySearchTest.csproj", "{28A6EDF6-2DAD-4B91-A63A-AD6D5F2C29C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargestPairSum", "Arrays\LargestPairSum\LargestPairSum\LargestPairSum.csproj", "{2D177735-BBDA-4BE8-B258-A1EBFE31249C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargestPairSumTest", "Arrays\LargestPairSum\LargestPairSumTest\LargestPairSumTest.csproj", "{AAC2E7F9-2F09-4770-8E46-14A8EA0BBAB1}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 71
+		SccNumberOfProjects = 73
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
 		SccLocalPath0 = .
@@ -453,6 +457,14 @@ Global
 		SccProjectTopLevelParentUniqueName70 = CodingInterview.sln
 		SccProjectName70 = Arrays/BinarySearch/BinarySearchTest
 		SccLocalPath70 = Arrays\\BinarySearch\\BinarySearchTest
+		SccProjectUniqueName71 = Arrays\\LargestPairSum\\LargestPairSum\\LargestPairSum.csproj
+		SccProjectTopLevelParentUniqueName71 = CodingInterview.sln
+		SccProjectName71 = Arrays/LargestPairSum/LargestPairSum
+		SccLocalPath71 = Arrays\\LargestPairSum\\LargestPairSum
+		SccProjectUniqueName72 = Arrays\\LargestPairSum\\LargestPairSumTest\\LargestPairSumTest.csproj
+		SccProjectTopLevelParentUniqueName72 = CodingInterview.sln
+		SccProjectName72 = Arrays/LargestPairSum/LargestPairSumTest
+		SccLocalPath72 = Arrays\\LargestPairSum\\LargestPairSumTest
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1165,6 +1177,26 @@ Global
 		{28A6EDF6-2DAD-4B91-A63A-AD6D5F2C29C9}.Release|ARM.ActiveCfg = Release|Any CPU
 		{28A6EDF6-2DAD-4B91-A63A-AD6D5F2C29C9}.Release|x64.ActiveCfg = Release|Any CPU
 		{28A6EDF6-2DAD-4B91-A63A-AD6D5F2C29C9}.Release|x86.ActiveCfg = Release|Any CPU
+		{2D177735-BBDA-4BE8-B258-A1EBFE31249C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D177735-BBDA-4BE8-B258-A1EBFE31249C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D177735-BBDA-4BE8-B258-A1EBFE31249C}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{2D177735-BBDA-4BE8-B258-A1EBFE31249C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2D177735-BBDA-4BE8-B258-A1EBFE31249C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2D177735-BBDA-4BE8-B258-A1EBFE31249C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D177735-BBDA-4BE8-B258-A1EBFE31249C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D177735-BBDA-4BE8-B258-A1EBFE31249C}.Release|ARM.ActiveCfg = Release|Any CPU
+		{2D177735-BBDA-4BE8-B258-A1EBFE31249C}.Release|x64.ActiveCfg = Release|Any CPU
+		{2D177735-BBDA-4BE8-B258-A1EBFE31249C}.Release|x86.ActiveCfg = Release|Any CPU
+		{AAC2E7F9-2F09-4770-8E46-14A8EA0BBAB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAC2E7F9-2F09-4770-8E46-14A8EA0BBAB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAC2E7F9-2F09-4770-8E46-14A8EA0BBAB1}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{AAC2E7F9-2F09-4770-8E46-14A8EA0BBAB1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AAC2E7F9-2F09-4770-8E46-14A8EA0BBAB1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AAC2E7F9-2F09-4770-8E46-14A8EA0BBAB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAC2E7F9-2F09-4770-8E46-14A8EA0BBAB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAC2E7F9-2F09-4770-8E46-14A8EA0BBAB1}.Release|ARM.ActiveCfg = Release|Any CPU
+		{AAC2E7F9-2F09-4770-8E46-14A8EA0BBAB1}.Release|x64.ActiveCfg = Release|Any CPU
+		{AAC2E7F9-2F09-4770-8E46-14A8EA0BBAB1}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1250,5 +1282,7 @@ Global
 		{1EF36E46-1025-46B9-929F-53BFE00D3B19} = {01C8DDF2-9C69-4E45-96B5-CADE4D0AD758}
 		{6591A475-C7F1-4D27-BB94-56B217D8051F} = {25077DF6-E1DF-4000-B603-2CC6B990A4D8}
 		{28A6EDF6-2DAD-4B91-A63A-AD6D5F2C29C9} = {01C8DDF2-9C69-4E45-96B5-CADE4D0AD758}
+		{2D177735-BBDA-4BE8-B258-A1EBFE31249C} = {25077DF6-E1DF-4000-B603-2CC6B990A4D8}
+		{AAC2E7F9-2F09-4770-8E46-14A8EA0BBAB1} = {01C8DDF2-9C69-4E45-96B5-CADE4D0AD758}
 	EndGlobalSection
 EndGlobal
