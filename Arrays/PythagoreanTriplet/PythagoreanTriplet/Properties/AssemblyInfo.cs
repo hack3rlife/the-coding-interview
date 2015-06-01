@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TriangleTriplets")]
+[assembly: AssemblyTitle("PythagoreanTriplet")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("TriangleTriplets")]
+[assembly: AssemblyProduct("PythagoreanTriplet")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("08924593-d87e-46ce-b717-dbabc5a9e5d4")]
+[assembly: Guid("f90e70be-11ce-40f4-80f5-99f9f185efb7")]
 
 // Version information for an assembly consists of the following four values:
 //

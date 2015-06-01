@@ -171,9 +171,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargestPairSum", "Arrays\La
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargestPairSumTest", "Arrays\LargestPairSum\LargestPairSumTest\LargestPairSumTest.csproj", "{AAC2E7F9-2F09-4770-8E46-14A8EA0BBAB1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PythagoreanTriplet", "Arrays\PythagoreanTriplet\PythagoreanTriplet\PythagoreanTriplet.csproj", "{2A9AE942-6534-4CCF-9990-1807BDBCB4B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PythagoreanTripletTest", "Arrays\TriangleTriplets\PythagoreanTripletTest\PythagoreanTripletTest.csproj", "{FF345EFC-AB46-4D0C-A09A-9EECC6D388BC}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 73
+		SccNumberOfProjects = 75
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
 		SccLocalPath0 = .
@@ -465,6 +469,14 @@ Global
 		SccProjectTopLevelParentUniqueName72 = CodingInterview.sln
 		SccProjectName72 = Arrays/LargestPairSum/LargestPairSumTest
 		SccLocalPath72 = Arrays\\LargestPairSum\\LargestPairSumTest
+		SccProjectUniqueName73 = Arrays\\PythagoreanTriplet\\PythagoreanTriplet\\PythagoreanTriplet.csproj
+		SccProjectTopLevelParentUniqueName73 = CodingInterview.sln
+		SccProjectName73 = Arrays/PythagoreanTriplet/PythagoreanTriplet
+		SccLocalPath73 = Arrays\\PythagoreanTriplet\\PythagoreanTriplet
+		SccProjectUniqueName74 = Arrays\\TriangleTriplets\\PythagoreanTripletTest\\PythagoreanTripletTest.csproj
+		SccProjectTopLevelParentUniqueName74 = CodingInterview.sln
+		SccProjectName74 = Arrays/TriangleTriplets/PythagoreanTripletTest
+		SccLocalPath74 = Arrays\\TriangleTriplets\\PythagoreanTripletTest
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1197,6 +1209,26 @@ Global
 		{AAC2E7F9-2F09-4770-8E46-14A8EA0BBAB1}.Release|ARM.ActiveCfg = Release|Any CPU
 		{AAC2E7F9-2F09-4770-8E46-14A8EA0BBAB1}.Release|x64.ActiveCfg = Release|Any CPU
 		{AAC2E7F9-2F09-4770-8E46-14A8EA0BBAB1}.Release|x86.ActiveCfg = Release|Any CPU
+		{2A9AE942-6534-4CCF-9990-1807BDBCB4B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A9AE942-6534-4CCF-9990-1807BDBCB4B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A9AE942-6534-4CCF-9990-1807BDBCB4B5}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{2A9AE942-6534-4CCF-9990-1807BDBCB4B5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2A9AE942-6534-4CCF-9990-1807BDBCB4B5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2A9AE942-6534-4CCF-9990-1807BDBCB4B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A9AE942-6534-4CCF-9990-1807BDBCB4B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A9AE942-6534-4CCF-9990-1807BDBCB4B5}.Release|ARM.ActiveCfg = Release|Any CPU
+		{2A9AE942-6534-4CCF-9990-1807BDBCB4B5}.Release|x64.ActiveCfg = Release|Any CPU
+		{2A9AE942-6534-4CCF-9990-1807BDBCB4B5}.Release|x86.ActiveCfg = Release|Any CPU
+		{FF345EFC-AB46-4D0C-A09A-9EECC6D388BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF345EFC-AB46-4D0C-A09A-9EECC6D388BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF345EFC-AB46-4D0C-A09A-9EECC6D388BC}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{FF345EFC-AB46-4D0C-A09A-9EECC6D388BC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FF345EFC-AB46-4D0C-A09A-9EECC6D388BC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FF345EFC-AB46-4D0C-A09A-9EECC6D388BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF345EFC-AB46-4D0C-A09A-9EECC6D388BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF345EFC-AB46-4D0C-A09A-9EECC6D388BC}.Release|ARM.ActiveCfg = Release|Any CPU
+		{FF345EFC-AB46-4D0C-A09A-9EECC6D388BC}.Release|x64.ActiveCfg = Release|Any CPU
+		{FF345EFC-AB46-4D0C-A09A-9EECC6D388BC}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1284,5 +1316,7 @@ Global
 		{28A6EDF6-2DAD-4B91-A63A-AD6D5F2C29C9} = {01C8DDF2-9C69-4E45-96B5-CADE4D0AD758}
 		{2D177735-BBDA-4BE8-B258-A1EBFE31249C} = {25077DF6-E1DF-4000-B603-2CC6B990A4D8}
 		{AAC2E7F9-2F09-4770-8E46-14A8EA0BBAB1} = {01C8DDF2-9C69-4E45-96B5-CADE4D0AD758}
+		{2A9AE942-6534-4CCF-9990-1807BDBCB4B5} = {25077DF6-E1DF-4000-B603-2CC6B990A4D8}
+		{FF345EFC-AB46-4D0C-A09A-9EECC6D388BC} = {01C8DDF2-9C69-4E45-96B5-CADE4D0AD758}
 	EndGlobalSection
 EndGlobal
