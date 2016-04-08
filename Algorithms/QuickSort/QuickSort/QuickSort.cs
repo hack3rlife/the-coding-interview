@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace com.hack3rlife.quicksort
+﻿namespace com.hack3rlife.quicksort
 {
     public class QuickSort
     {
+        /// <summary>
+        /// Receives an unsorted array of integers and sort it in ascending order
+        /// </summary>
+        /// <param name="input">Unsorted array of intergers</param>
+        /// <param name="left"></param>
+        /// <param name="right"></param>
         public static void Sort(int[] input, int left, int right)
         {
             if (left < right)
@@ -19,6 +19,13 @@ namespace com.hack3rlife.quicksort
             }            
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="input"></param>
+        /// <param name="left"></param>
+        /// <param name="right"></param>
+        /// <returns></returns>
         private static int Partition(int[] input, int left, int right)
         {
             var pivot = input[right]; //left + (right-left)/2
@@ -37,6 +44,13 @@ namespace com.hack3rlife.quicksort
             return storeIndex;
         }
 
+        /// <summary>
+        /// Swaps two integers if they are differents
+        /// </summary>
+        /// <param name="input">Input integer array</param>
+        /// <param name="a">Indice a</param>
+        /// <param name="b">Indice b</param>
+        /// <returns></returns>
         private static int[] Swap(int[] input, int a, int b)
         {
             if (a != b)

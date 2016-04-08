@@ -1,13 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace com.hack3rlife.quickselect
+﻿namespace com.hack3rlife.quickselect
 {
+    /// <summary>
+    /// Implements Quick Select algorithm 
+    /// </summary>
     public class QuickSelect
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="input"></param>
+        /// <param name="left"></param>
+        /// <param name="right"></param>
+        /// <param name="k"></param>
+        /// <returns></returns>
         public static int Select(int[] input, int left, int right, int k)
         {
             if (left == right)
@@ -23,6 +28,13 @@ namespace com.hack3rlife.quickselect
                 return Select(input, privotIndex + 1, right, k); //left = pivot + 1;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="input"></param>
+        /// <param name="left"></param>
+        /// <param name="right"></param>
+        /// <returns></returns>
         private static int Partition(int[] input, int left, int right)
         {
             var pivotValue = input[right]; ; // left + (right - left) / 2;

@@ -55,13 +55,15 @@
   </Choose>
   <ItemGroup>
     <Compile Include="StringReverseTest.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\StringReverse\StringReverse.csproj">
       <Project>{d7e83998-8d09-42ab-8841-056da166e0cd}</Project>
       <Name>StringReverse</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

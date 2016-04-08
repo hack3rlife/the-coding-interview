@@ -55,13 +55,15 @@
   </Choose>
   <ItemGroup>
     <Compile Include="SubArrayGivenSumTest.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SubArrayGivenSum\SubArrayGivenSum.csproj">
       <Project>{65f3bba4-df6f-4ab8-b329-43d73cb56213}</Project>
       <Name>SubArrayGivenSum</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
