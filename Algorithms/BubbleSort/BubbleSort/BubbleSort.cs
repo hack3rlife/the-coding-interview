@@ -8,7 +8,13 @@
         /// <summary>
         /// Receives an unsorted array of integers and sort it in ascending order
         /// </summary>
-        /// <param name="input"></param>
+        /// <remarks>
+        /// Worst case: О(n2)
+        /// Average case: О(n2)
+        /// Best Case: O(n)
+        /// Space Required: O(n)
+        /// </remarks>
+        /// <param name="input"></param>        
         /// <returns>/></returns>
         /// <see cref=""/>
         /// <![CDATA[input: |8|4|1|6|2|0| output: |0|1|2|4|6|8|]]>

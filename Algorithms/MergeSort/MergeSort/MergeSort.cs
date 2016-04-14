@@ -8,8 +8,14 @@
         /// <summary>
         /// Receives an unsorted array of integers and sort it in ascending order
         /// </summary>
-        /// <param name="input"></param>
-        /// <returns>A sorted array of <see cref="System.Int16"/></returns>
+        /// <remarks>
+        /// Worst case: О(n log n)
+        /// Average case: О(n log n)
+        /// Best Case: О(n log n)
+        /// Space Required: O(n)
+        /// </remarks>
+        /// <param name="input">Unordered array of <see cref="int"/></param>
+        /// <returns>A sorted array of <see cref="int"/></returns>
         /// <![CDATA[input: |8|4|1|6|2|0| output: |0|1|2|4|6|8|]]>
         public int[] Sort(int[] input)
         {

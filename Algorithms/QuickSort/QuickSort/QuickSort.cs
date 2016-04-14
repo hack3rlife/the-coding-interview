@@ -1,9 +1,25 @@
 ﻿namespace com.hack3rlife.quicksort
 {
+    /// <summary>
+    /// QuickSort is an efficient sorting algorithm, serving as a systematic method for placing the elements of an array in order.
+    /// When implemented well, it can be about two or three times faster than its main competitors, merge sort and heapsort.
+    /// Quicksort is a comparison sort, meaning that it can sort items of any type for which a "less-than" relation is defined. 
+    /// In efficient implementations it is not a stable sort, meaning that the relative order of equal sort items is not preserved. 
+    /// Quicksort can operate in-place on an array, requiring small additional amounts of memory to perform the sorting.
+    /// On average, the algorithm takes O(n log n) comparisons to sort n items. In the worst case, it makes O(n2) comparisons, though this behavior is rare.
+    /// </summary>
+    /// <remarks>
+    /// Worst case: О(n2)
+    /// Average case: О(n log n)
+    /// Best Case: О(n log n)
+    /// Space Required: O(n)
+    /// </remarks>
+    /// <see cref="https://en.wikipedia.org/wiki/Quicksort"/>
     public class QuickSort
     {
         /// <summary>
-        /// Receives an unsorted array of integers and sort it in ascending order
+        /// Quicksort is a divide and conquer algorithm. Quicksort first divides a large array into two smaller sub-arrays: the low elements and the high elements. 
+        /// Quicksort can then recursively sort the sub-arrays.
         /// </summary>
         /// <param name="input">Unsorted array of intergers</param>
         /// <param name="left"></param>
