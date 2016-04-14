@@ -189,6 +189,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeapSortTest", "Algorithms\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertionSortTest", "Algorithms\InsertionSort\InsertionSortTest\InsertionSortTest.csproj", "{6F63206E-8A81-4E38-A405-08476DD40426}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectionSortTest", "Algorithms\SelectionSort\SelectionSortTest\SelectionSortTest.csproj", "{5E4C6EE1-C3BC-4AA1-A8D9-0B4A8C0D107D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1053,6 +1055,22 @@ Global
 		{6F63206E-8A81-4E38-A405-08476DD40426}.Release|x64.Build.0 = Release|Any CPU
 		{6F63206E-8A81-4E38-A405-08476DD40426}.Release|x86.ActiveCfg = Release|Any CPU
 		{6F63206E-8A81-4E38-A405-08476DD40426}.Release|x86.Build.0 = Release|Any CPU
+		{5E4C6EE1-C3BC-4AA1-A8D9-0B4A8C0D107D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E4C6EE1-C3BC-4AA1-A8D9-0B4A8C0D107D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E4C6EE1-C3BC-4AA1-A8D9-0B4A8C0D107D}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{5E4C6EE1-C3BC-4AA1-A8D9-0B4A8C0D107D}.Debug|ARM.Build.0 = Debug|Any CPU
+		{5E4C6EE1-C3BC-4AA1-A8D9-0B4A8C0D107D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5E4C6EE1-C3BC-4AA1-A8D9-0B4A8C0D107D}.Debug|x64.Build.0 = Debug|Any CPU
+		{5E4C6EE1-C3BC-4AA1-A8D9-0B4A8C0D107D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5E4C6EE1-C3BC-4AA1-A8D9-0B4A8C0D107D}.Debug|x86.Build.0 = Debug|Any CPU
+		{5E4C6EE1-C3BC-4AA1-A8D9-0B4A8C0D107D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E4C6EE1-C3BC-4AA1-A8D9-0B4A8C0D107D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E4C6EE1-C3BC-4AA1-A8D9-0B4A8C0D107D}.Release|ARM.ActiveCfg = Release|Any CPU
+		{5E4C6EE1-C3BC-4AA1-A8D9-0B4A8C0D107D}.Release|ARM.Build.0 = Release|Any CPU
+		{5E4C6EE1-C3BC-4AA1-A8D9-0B4A8C0D107D}.Release|x64.ActiveCfg = Release|Any CPU
+		{5E4C6EE1-C3BC-4AA1-A8D9-0B4A8C0D107D}.Release|x64.Build.0 = Release|Any CPU
+		{5E4C6EE1-C3BC-4AA1-A8D9-0B4A8C0D107D}.Release|x86.ActiveCfg = Release|Any CPU
+		{5E4C6EE1-C3BC-4AA1-A8D9-0B4A8C0D107D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1149,9 +1167,10 @@ Global
 		{9F08CACB-F64E-436B-9EBE-FDF42763E8A3} = {290FF673-3B2E-4E97-AB9D-43D58D55DBB4}
 		{AB15AAC9-2334-4294-84A5-D2420C74439F} = {F492185D-A056-41AA-8849-0465BFBC1993}
 		{6F63206E-8A81-4E38-A405-08476DD40426} = {F492185D-A056-41AA-8849-0465BFBC1993}
+		{5E4C6EE1-C3BC-4AA1-A8D9-0B4A8C0D107D} = {F492185D-A056-41AA-8849-0465BFBC1993}
 	EndGlobalSection
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 83
+		SccNumberOfProjects = 84
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
 		SccLocalPath0 = .
@@ -1463,25 +1482,29 @@ Global
 		SccProjectTopLevelParentUniqueName77 = CodingInterview.sln
 		SccProjectName77 = Algorithms/SelectionSort/SelectionSort
 		SccLocalPath77 = Algorithms\\SelectionSort\\SelectionSort
-		SccProjectUniqueName78 = Algorithms\\HeapSort\\HeapSortTest\\HeapSortTest.csproj
+		SccProjectUniqueName78 = Algorithms\\InsertionSort\\InsertionSortTest\\InsertionSortTest.csproj
 		SccProjectTopLevelParentUniqueName78 = CodingInterview.sln
-		SccProjectName78 = Algorithms/HeapSort/HeapSortTest
-		SccLocalPath78 = Algorithms\\HeapSort\\HeapSortTest
-		SccProjectUniqueName79 = Algorithms\\InsertionSort\\InsertionSortTest\\InsertionSortTest.csproj
+		SccProjectName78 = Algorithms/InsertionSort/InsertionSortTest
+		SccLocalPath78 = Algorithms\\InsertionSort\\InsertionSortTest
+		SccProjectUniqueName79 = Algorithms\\HeapSort\\HeapSort\\HeapSort.csproj
 		SccProjectTopLevelParentUniqueName79 = CodingInterview.sln
-		SccProjectName79 = Algorithms/InsertionSort/InsertionSortTest
-		SccLocalPath79 = Algorithms\\InsertionSort\\InsertionSortTest
-		SccProjectUniqueName80 = Arrays\\TriangleTriplets\\PythagoreanTripletTest\\PythagoreanTripletTest.csproj
+		SccProjectName79 = Algorithms/HeapSort/HeapSort
+		SccLocalPath79 = Algorithms\\HeapSort\\HeapSort
+		SccProjectUniqueName80 = Algorithms\\InsertionSort\\InsertionSort\\InsertionSort.csproj
 		SccProjectTopLevelParentUniqueName80 = CodingInterview.sln
-		SccProjectName80 = Arrays/TriangleTriplets/PythagoreanTripletTest
-		SccLocalPath80 = Arrays\\TriangleTriplets\\PythagoreanTripletTest
-		SccProjectUniqueName81 = Algorithms\\HeapSort\\HeapSort\\HeapSort.csproj
+		SccProjectName80 = Algorithms/InsertionSort/InsertionSort
+		SccLocalPath80 = Algorithms\\InsertionSort\\InsertionSort
+		SccProjectUniqueName81 = Arrays\\TriangleTriplets\\PythagoreanTripletTest\\PythagoreanTripletTest.csproj
 		SccProjectTopLevelParentUniqueName81 = CodingInterview.sln
-		SccProjectName81 = Algorithms/HeapSort/HeapSort
-		SccLocalPath81 = Algorithms\\HeapSort\\HeapSort
-		SccProjectUniqueName82 = Algorithms\\InsertionSort\\InsertionSort\\InsertionSort.csproj
+		SccProjectName81 = Arrays/TriangleTriplets/PythagoreanTripletTest
+		SccLocalPath81 = Arrays\\TriangleTriplets\\PythagoreanTripletTest
+		SccProjectUniqueName82 = Algorithms\\HeapSort\\HeapSortTest\\HeapSortTest.csproj
 		SccProjectTopLevelParentUniqueName82 = CodingInterview.sln
-		SccProjectName82 = Algorithms/InsertionSort/InsertionSort
-		SccLocalPath82 = Algorithms\\InsertionSort\\InsertionSort
+		SccProjectName82 = Algorithms/HeapSort/HeapSortTest
+		SccLocalPath82 = Algorithms\\HeapSort\\HeapSortTest
+		SccProjectUniqueName83 = Algorithms\\SelectionSort\\SelectionSortTest\\SelectionSortTest.csproj
+		SccProjectTopLevelParentUniqueName83 = CodingInterview.sln
+		SccProjectName83 = Algorithms/SelectionSort/SelectionSortTest
+		SccLocalPath83 = Algorithms\\SelectionSort\\SelectionSortTest
 	EndGlobalSection
 EndGlobal
