@@ -1151,7 +1151,7 @@ Global
 		{6F63206E-8A81-4E38-A405-08476DD40426} = {F492185D-A056-41AA-8849-0465BFBC1993}
 	EndGlobalSection
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 82
+		SccNumberOfProjects = 83
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
 		SccLocalPath0 = .
@@ -1479,5 +1479,9 @@ Global
 		SccProjectTopLevelParentUniqueName81 = CodingInterview.sln
 		SccProjectName81 = Algorithms/HeapSort/HeapSort
 		SccLocalPath81 = Algorithms\\HeapSort\\HeapSort
+		SccProjectUniqueName82 = Algorithms\\InsertionSort\\InsertionSort\\InsertionSort.csproj
+		SccProjectTopLevelParentUniqueName82 = CodingInterview.sln
+		SccProjectName82 = Algorithms/InsertionSort/InsertionSort
+		SccLocalPath82 = Algorithms\\InsertionSort\\InsertionSort
 	EndGlobalSection
 EndGlobal
