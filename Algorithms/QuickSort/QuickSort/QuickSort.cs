@@ -51,11 +51,11 @@
             {
                 if (input[i] < pivot)
                 {
-                    input = Swap(input, i, storeIndex++);
+                    Swap(input, i, storeIndex++);
                 }
             }
 
-            input = Swap(input, storeIndex, right);
+            Swap(input, storeIndex, right);
 
             return storeIndex;
         }
@@ -67,7 +67,7 @@
         /// <param name="a">Indice a</param>
         /// <param name="b">Indice b</param>
         /// <returns></returns>
-        private static int[] Swap(int[] input, int a, int b)
+        private static void Swap(int[] input, int a, int b)
         {
             if (a != b)
             {
@@ -75,8 +75,6 @@
                 input[b] ^= input[a];
                 input[a] ^= input[b];
             }
-
-            return input;
         }
     }
 }

@@ -1,27 +1,40 @@
 ﻿namespace com.hack3rlife.quickselect
 {
     /// <summary>
-    /// Implements Quick Select algorithm 
+    /// Quickselect is a divide-and-conquer algorithm to find the kth smallest element in an unordered list. 
+    /// It is related to the quicksort sorting algorithm and  it is efficient in practice and has good average-case performance, but has poor worst-case performance.
+    /// As with quicksort, quickselect is generally implemented as an in-place algorithm, and beyond selecting the k'th element, it also partially sorts the data. 
     /// </summary>
+    /// <remarks>
+    /// Worst case: О(n2)
+    /// Average case: О(n)
+    /// Best Case: O(n)
+    /// Space Required: 
+    /// </remarks>
+    /// <see cref="https://en.wikipedia.org/wiki/Quickselect"/>
     public class QuickSelect
     {
         /// <summary>
-        /// 
+        /// Quickselect uses the same overall approach as quicksort, choosing one element as a pivot and partitioning the data in two based on the pivot, accordingly as less than or greater than
+        /// the pivot. However, instead of recursing into both sides, as in quicksort, quickselect only recurses into one side – the side with the element it is searching for. This reduces the 
+        /// average complexity from O(n log n) to O(n).
         /// </summary>
-        /// <param name="input"></param>
-        /// <param name="left"></param>
-        /// <param name="right"></param>
-        /// <param name="k"></param>
-        /// <returns></returns>
+        /// <param name="input">The unsorted array</param>
+        /// <param name="left">The left sub-array (k-1)</param>
+        /// <param name="right">The right sub-array(k+1)</param>
+        /// <param name="k">The  kth value</param>
+        /// <returns>Returns the n-th smallest element of the array within left..right inclusive</returns>
         public static int Select(int[] input, int left, int right, int k)
         {
             if (left == right)
-                return input[left-1];
+                return input[left];
 
-            var privotIndex = Partition(input, left, right);
+            var randomPivotIndex = new System.Random().Next(left, right);
+
+            var privotIndex = Partition(input, left, right, randomPivotIndex);
 
             if (privotIndex == k)
-                return input[privotIndex-1];
+                return input[k];
             else if (k < privotIndex)
                 return Select(input, left, privotIndex - 1, k); //right = pivot - 1;
             else
@@ -32,28 +45,34 @@
         /// 
         /// </summary>
         /// <param name="input"></param>
-        /// <param name="left"></param>
-        /// <param name="right"></param>
+        /// <param name="left">The left index</param>
+        /// <param name="right">The right index</param>
+        /// <param name="pivot">Random pivot between left and rigth</param>
         /// <returns></returns>
-        private static int Partition(int[] input, int left, int right)
+        private static int Partition(int[] input, int left, int right, int pivot)
         {
-            var pivotValue = input[right]; ; // left + (right - left) / 2;
+            var pivotValue = input[pivot];  // left + (right - left) / 2;
+
+            Swap(input, pivot, right); 
+
             var storeIndex = left;
 
-            for (int i = left; i < right; i++)
+            for (int i = left; i < right-1; i++)
             {
                 if (input[i] < pivotValue)
                 {
-                    input = Swap(input, i, storeIndex++);
+                    Swap(input, i, storeIndex);
+                    storeIndex++;
                 }
             }
 
-            input = Swap(input, storeIndex, right);
+            // Move pivot to its final place
+            Swap(input, storeIndex, right);  
 
             return storeIndex;
         }
 
-        private static int[] Swap(int[] input, int a, int b)
+        private static void Swap(int[] input, int a, int b)
         {
             if (a != b)
             {
@@ -61,8 +80,6 @@
                 input[b] ^= input[a];
                 input[a] ^= input[b];
             }
-
-            return input;
         }
     }
 }

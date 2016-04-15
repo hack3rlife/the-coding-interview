@@ -12,11 +12,11 @@ namespace QuickSelectTest
         {
             //Arrange
             int[] input = { 12, 3, 5, 7, 4, 19, 26 }; 
-            int k = 3;
+            int k = 1;
 
             //Act
             int actual = QuickSelect.Select(input, 0, input.Length-1, k);
-            int expected = 5;
+            int expected = 3;
 
             //Assert
             Assert.AreEqual<int>(expected, actual);
