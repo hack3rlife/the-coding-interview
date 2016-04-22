@@ -1,13 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace com.hack3rlife.dnf
+﻿namespace com.hack3rlife.dnf
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class DutchNationalFlagProblem
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="input"></param>
+        /// <param name="mid"></param>
+        /// <returns></returns>
         public int[] DNFSort(int[] input, int mid)
         {
             int i = 0;
@@ -29,7 +32,14 @@ namespace com.hack3rlife.dnf
             return input;
         }
 
-        private static int[] Swap(int[] input, int a, int b)
+        /// <summary>
+        /// Swaps two integers if they are differents
+        /// </summary>
+        /// <param name="input">Input integer array</param>
+        /// <param name="a">Indice a</param>
+        /// <param name="b">Indice b</param>
+        /// <returns></returns>
+        private static void Swap(int[] input, int a, int b)
         {
             if (a != b)
             {
@@ -37,8 +47,6 @@ namespace com.hack3rlife.dnf
                 input[b] ^= input[a];
                 input[a] ^= input[b];
             }
-
-            return input;
         }
     }
 }

@@ -1,7 +1,13 @@
-﻿
-namespace com.hack3rlife.phonenumberparser
+﻿/*
+ * @autor: Some smart guy in the milky way
+ * @date: 12/05/2015
+ * @project: Palindrome
+ * 
+ */
+
+namespace com.hack3rlife.strings
 {
-   public  class PhoneNumberParser
+   public  static class PhoneNumberParser
     {
         /// <summary>
         /// Print the actual phone number when given an alphanumeric phone number. 

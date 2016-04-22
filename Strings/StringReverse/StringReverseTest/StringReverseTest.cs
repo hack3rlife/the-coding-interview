@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using com.hack3rlife.stringreverse;
+using com.hack3rlife.strings;
 
 namespace StringReverseTest
 {
@@ -25,12 +25,12 @@ namespace StringReverseTest
         public void ReverseOptimizedTest()
         {
             // arrange
-            var input = "hack3rlife";
-            var expected = "efilr3kcah";
+            var input = "I am Hector"; // "hack3rlife";
+            var expected = "Hector am I"; //"efilr3kcah";
 
             // act
-            var actual = StringReverse.ReverseOptimized(input);
-
+            //var actual = StringReverse.Reverse(input.ToCharArray());
+            var actual = StringReverse.ReverseWordsInASentece(input);
             // arrange
             Assert.AreEqual(expected, actual);
         }

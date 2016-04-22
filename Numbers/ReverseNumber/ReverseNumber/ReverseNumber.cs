@@ -1,30 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿/*
+ * @autor: Elementes of Programming Interview
+ * @date: 04/04/2016
+ * @project: ReverseNumber
+ * 
+ */
 namespace com.hack3rlife.numbers
 {
+    /// <summary>
+    /// Implements reverse numbers
+    /// </summary>
     public class ReverseNumber
     {
+        /// <summary>
+        /// Reverse the given number (This version only supports positive numbers)
+        /// </summary>
+        /// <param name="number">The input number</param>
+        /// <returns>The reversed number based on the input number</returns>
         public static int Reverse(int number)
         {
-            int quotient = number;
-            int remainder = 0;
             int result = 0;
+            int remaining =  number;
 
-            do
+            while (remaining > 0)
             {
-                remainder = quotient % 10;
-                quotient /= 10;
-
-                result = (result * 10) + remainder;
-
-            } while (quotient > 0);
-
+                result = result * 10 + remaining % 10;
+                remaining /= 10;
+            }
             return result;
-        }
+        }            
 
     }
 }

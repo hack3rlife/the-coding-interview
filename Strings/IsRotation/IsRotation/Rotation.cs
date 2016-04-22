@@ -1,20 +1,38 @@
-﻿namespace com.hack3rlife.strings
+﻿/*
+ * @autor: Some smart guy in the milky way
+ * @date: 13/01/2015
+ * @project: String Combination
+ * 
+ */
+
+namespace com.hack3rlife.strings
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Rotation
     {
-        public static bool IsRotation(string source, string target)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="s1">The input string one</param>
+        /// <param name="s2">The input string two</param>
+        /// <returns></returns>
+        public static bool IsRotation(string s1, string s2)
         {
             bool result = false;
 
-            if (source.Length != target.Length)
+            // No ration is both string have different length
+            if (s1.Length != s2.Length)
                 return result;
-
-            source += source;
+            
+            //duplicate s1
+            s1 += s1;
 
             int i = 0, count = 0;
-            while (i < source.Length )
+            while (i < s1.Length )
             {
-                if (source[i] == target[count])
+                if (s1[i] == s2[count])
                 {
                     count++;
                 }
@@ -23,10 +41,9 @@
                     count = 0;
                 }
 
-                if (count == target.Length)
+                if (count == s2.Length)
                 {
                     result = true;
-
                     break;
                 }
 

@@ -1,55 +1,66 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*
+ * @autor: Some smart guy in the milky way
+ * @date: 13/01/2015
+ * @project: String Permutation
+ * 
+ */
 
-namespace com.hack3rlife.stringpermutation
+namespace com.hack3rlife.strings
 {
     /// <summary>
+    /// A permutation is an arrangement of objects in specific order. The order of the arrangement is important!
     /// 
+    /// The number of permutations of n distinct objects is n factorial usually written as n!, which means the product of all positive integers less than or equal to n.
     /// </summary>
+    /// <see cref="https://en.wikipedia.org/wiki/Permutation"/>
     public class StringPermutation
     {
         /// <summary>
-        /// 
+        /// Stores the result
         /// </summary>
-        /// <param name="input"></param>
+        public static System.Collections.Generic.List<string> Result = new System.Collections.Generic.List<string>();
+
+        /// <summary>
+        /// Permutates the given string
+        /// </summary>
+        /// <param name="input">The input string</param>
+        /// <seealso cref="http://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/"/>
+        /// <![CDATA[
+        /// input: ABC
+        /// output: ABC ACB BAC BCA CBA CAB]]>        
         public static void Permute(string input)
         {
-            Permutation(input.ToCharArray(), 0);
+            Permutation(input.ToCharArray());
         }
 
         /// <summary>
-        /// /
+        /// Recursive solution to get all permutations without duplicates allowed
         /// </summary>
-        /// <param name="input"></param>
-        /// <param name="current"></param>
-        private static void Permutation(char[] input, int current)
+        /// <param name="input">The input string as array of chars</param>
+        /// <param name="current">The start position. </param>
+        private static void Permutation(char[] input, int current = 0)
         {
             if (current == input.Length - 1)
             {
-                Console.WriteLine(input);
+                Result.Add(new string(input));
                 return;
             }
 
             for (int i = current; i < input.Length; i++)
             {
-                input = Swap(input, current, i);
+                Swap(input, current, i);
                 Permutation(input, current + 1);
-                input = Swap(input, current, i);
+                Swap(input, current, i);
             }
         }
 
         /// <summary>
-        /// 
-        /// 
+        /// Swap the values in the array
         /// </summary>
-        /// <param name="input"></param>
-        /// <param name="i"></param>
-        /// <param name="j"></param>
-        /// <returns></returns>
-        private static char[] Swap(char[] input, int i, int j)
+        /// <param name="input">The input array</param>
+        /// <param name="i">The left index</param>
+        /// <param name="j">The right index</param>
+        private static void Swap(char[] input, int i, int j)
         {
             if (i != j)
             {
@@ -57,8 +68,6 @@ namespace com.hack3rlife.stringpermutation
                 input[j] ^= input[i];
                 input[i] ^= input[j];
             }
-
-            return input;
         }
     }
 }

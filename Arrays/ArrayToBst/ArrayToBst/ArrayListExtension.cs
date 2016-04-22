@@ -4,6 +4,9 @@ using System.Collections.Generic;
 
 namespace com.hack3rlife.arrays
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public static class ListExtension
     {
         public static BinarySearchTree<int> ToBinarySearchTree(this IList<int> list, int start, int end)
@@ -13,6 +16,13 @@ namespace com.hack3rlife.arrays
             return bst;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="list"></param>
+        /// <param name="start"></param>
+        /// <param name="end"></param>
+        /// <returns></returns>
         private static BinarySearchTreeNode<int> ToBinarySearchTreeNode(this IList<int> list, int start, int end)
         {
             if (start > end)

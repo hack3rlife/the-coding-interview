@@ -1,38 +1,23 @@
 ﻿/*
- * @autor: hack3rlife
+ * @autor: Some smart guy in the milky way
  * @date: 13/01/2015
- * @project: Strings
+ * @project: String Reverse
  * 
  */
 
-namespace com.hack3rlife.stringreverse
+namespace com.hack3rlife.strings
 {
+    /// <summary>
+    /// Implemetns differentes approches to reverse a given string
+    /// </summary>
     public static class StringReverse
     {
         /// <summary>
-        /// Reverse the string passed as parameter
+        /// String reverse using a temporal array
         /// </summary>
-        /// <param name="input">Input string</param>        
-        /// <returns>Return a the param <para>input</para>reversed</returns>
+        /// <param name="input">The input string</param>
+        /// <returns>The reversed string</returns>
         public static string Reverse(string input)
-        {
-            if (input.Length <= 0 || input == null)
-                return string.Empty;
-
-            string reversed = string.Empty;
-
-            for (int i = input.Length - 1; i >= 0; i--)
-                reversed += input[i];
-
-            return reversed;
-        }
-
-        /// <summary>
-        /// Reverse a string (Optimized version)
-        /// </summary>
-        /// <param name="input">Input String</param>
-        /// <returns>Return a the param <para>input</para>reversed</returns>
-        public static string ReverseOptimized(string input)
         {
             if (input.Length <= 0 || input == null)
                 return string.Empty;
@@ -46,6 +31,54 @@ namespace com.hack3rlife.stringreverse
             }
 
             return new string(result);
+        }
+
+        /// <summary>
+        /// String reverse using XOR operator
+        /// </summary>
+        /// <param name="input">The string in a array of chars</param>
+        /// <returns>The reversed string</returns>
+        public static string Reverse(char[] input)
+        {
+            int i = 0;
+            int j = input.Length - 1;
+
+            while (i < j)
+            {
+                input[i] ^= input[j];
+                input[j] ^= input[i];
+                input[i] ^= input[j];
+
+                i++;
+                j--;
+            }
+
+            return new string(input);
+        }
+
+        public static string ReverseWordsInASentece(string input)
+        {
+            if (input.Length < 0)
+                return string.Empty;
+
+            string result = string.Empty;
+            string temp = string.Empty;
+
+            for (int i = 0; i < input.Length; i++)
+            {
+                if (input[i] != ' ')
+                {
+                    temp += input[i];
+                }
+                else
+                {
+                    result = temp + ' ' + result;
+                    temp = string.Empty;
+                }
+
+            }
+
+            return temp + ' ' + result;
         }
     }
 }

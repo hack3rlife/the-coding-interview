@@ -1,6 +1,5 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using com.hack3rlife.stringcombination;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using com.hack3rlife.strings;
 
 namespace StringCombinationTest
 {
@@ -12,12 +11,12 @@ namespace StringCombinationTest
         {
             // arrange
             var input = "abc";
-
+            var expected = new System.Collections.Generic.List<string>() { "a", "ab", "abc", "ac", "b", "bc", "c" };
             // act
             StringCombination.Combine(input, string.Empty, 0);
-
+            var actual = StringCombination.Result;
             // assert
-            Assert.IsTrue(true);
+            CollectionAssert.AreEqual(expected, actual);
         }
     }
 }

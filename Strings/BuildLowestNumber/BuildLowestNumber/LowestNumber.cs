@@ -1,13 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace com.hack3rlife.strings
+﻿namespace com.hack3rlife.strings
 {
     public  class LowestNumber
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="input"></param>
+        /// <param name="n"></param>
+        /// <param name="result"></param>
+        /// <see cref="http://www.geeksforgeeks.org/build-lowest-number-by-removing-n-digits-from-a-given-number/"/>
         public static void BuildLowestNumber(string input, int n, ref string result)
         {
             if (n == 0)
@@ -34,8 +35,6 @@ namespace com.hack3rlife.strings
             result += input[index];
 
             string substring = input.Substring(index + 1, length - index);
-
-            Console.WriteLine("result: {0} - substring: {1}", result, substring);
 
             BuildLowestNumber(substring, n - index, ref result);
         }

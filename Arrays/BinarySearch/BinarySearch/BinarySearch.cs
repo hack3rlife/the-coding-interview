@@ -1,13 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace com.hack3rlife.arrays
+﻿namespace com.hack3rlife.arrays
 {
+    /// <summary>
+    ///  BinarySearch is a search algorithm that finds the position of a target value, whether alone or part of a record, within a sorted array. 
+    ///  It works by comparing the target value to the middle element of the array; if they are not equal, the lower or upper half of the array is 
+    ///  eliminated depending on the result and the search is repeated until the position of the target value is found.
+    ///  Binary search only works on sorted arrays. 
+    /// </summary>
+    /// <remarks>
+    /// Worst case: О(log n)
+    /// Average case: О(log n)
+    /// Best Case: O(1)
+    /// Space Required: O(n)
+    /// </remarks>
+    /// <see cref="https://en.wikipedia.org/wiki/Binary_search_algorithm"/>
     public class BinarySearch
     {
+        /// <summary>
+        ///  A binary search begins by comparing the middle element of the array with the target value. If the target value matches the middle element, its position in the array is returned. If the target value is less or more than the middle element, the search continues the lower or upper half of the array respectively with a new middle element, eliminating the other half from consideration
+        /// </summary>
+        /// <param name="input">The sorted arra</param>
+        /// <param name="key">The element to be searched</param>
+        /// <param name="min">Left index</param>
+        /// <param name="max">Right index</param>
+        /// <returns>Returns the index of the key value: otherwise null</returns>
         public static int? StandardBinarySearchIterative(int[] input, int key, int min, int max)
         {
             while (max > min)

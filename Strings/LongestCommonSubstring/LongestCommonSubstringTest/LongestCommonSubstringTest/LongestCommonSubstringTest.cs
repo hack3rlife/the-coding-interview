@@ -8,7 +8,7 @@ namespace LongestCommonSubstringTest
     public class LongestCommonSubstringTest
     {
         [TestMethod]
-        public void GetLcsTest()
+        public void GetLengthTest()
         {
             //Arrange
             string input1 = "OldSite:GeeksforGeeks.org";
@@ -17,11 +17,26 @@ namespace LongestCommonSubstringTest
             int expected = 10;
 
             //Act
-            int actual = LongestCommonSubstring.GetLCS(input1, input2);
+            int actual = LongestCommonSubstring.GetLength(input1, input2);
 
             //Test
             Assert.AreEqual(expected, actual);
+        }
 
+        [TestMethod]
+        public void GetSubstringTest()
+        {
+            //Arrange
+            string input1 = "GeeksforGeeks";
+            string input2 = "GeeksQuiz";
+
+            System.Collections.Generic.List<string> expected = new System.Collections.Generic.List<string> { "Geeks", "Geeks" };
+
+            //Act
+            var actual = LongestCommonSubstring.GetSubstring(input1, input2);
+
+            //Test
+            CollectionAssert.AreEqual(expected, actual);
         }
     }
 }

@@ -29,7 +29,7 @@ namespace com.hack3rlife.strings
                     number[j] < number[indexSmallest])
                 {
                     indexSmallest = j;
-                }
+                    }
             }
 
             result = Swap(number.ToCharArray(0, number.Length), i-1, indexSmallest);
