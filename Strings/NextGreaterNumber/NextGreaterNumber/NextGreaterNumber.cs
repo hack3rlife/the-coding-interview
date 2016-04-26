@@ -1,10 +1,21 @@
-﻿using System;
-
+﻿/*
+ * @autor: Some smart guy on internet
+ * @date: 05/13/2015
+ * @project: NextGreaterNumber
+ * 
+ */
+ 
 namespace com.hack3rlife.strings
 {
     public class NextGreaterNumber
     {
-        public static string FindNext(string number)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns></returns>
+        /// <see cref="http://www.geeksforgeeks.org/find-next-greater-number-set-digits/"/>
+        public static string Next(string number)
         {
             string result = string.Empty;
             int i;

@@ -1,13 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*
+ * @autor: Some smart guy on internet
+ * @date: 05/102015
+ * @project: ConcatenateTwoNumbers
+ * 
+ */
 
 namespace com.hack3rlife.numbers
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class SumDigitsOfANumber
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns></returns>
         public static int SumDigits(int number)
         {
             int result;

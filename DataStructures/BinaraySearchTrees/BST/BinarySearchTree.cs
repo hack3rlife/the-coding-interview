@@ -547,11 +547,11 @@ namespace com.hack3rlife.datastructures
         {
             if (node == null)
             {
-                Console.WriteLine(prefix + "+- ");
+                System.Diagnostics.Debug.WriteLine(prefix + "+- ");
                 return;
             }
 
-            Console.WriteLine(prefix + "+- " + node.Value);
+            System.Diagnostics.Debug.WriteLine(prefix + "+- " + node.Value);
 
             Display(node.Left, prefix + "|  ");
             Display(node.Right, prefix + "|  ");

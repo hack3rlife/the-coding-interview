@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*
+ * @autor: Some smart guy on internet
+ * @date: 05/08/2015
+ * @project: ConcatenateTwoNumbers
+ * 
+ */
 
 namespace com.hack3rlife.numbers
 {
-    public class ConcatenateTwoNumbers
+    public static class ConcatenateTwoNumbers
     {
         /// <summary>
         /// Concatenate two numbers
@@ -19,6 +20,7 @@ namespace com.hack3rlife.numbers
             int c = number2;
             while (c > 0)
             {
+                //make room for number2 or add 0's to its right
                 number1 *= 10;
                 c /= 10;
             }

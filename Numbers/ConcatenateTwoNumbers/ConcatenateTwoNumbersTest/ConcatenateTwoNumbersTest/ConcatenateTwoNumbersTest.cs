@@ -17,7 +17,7 @@ namespace ConcatenateTwoNumbersTest
 
             // Act
             int actual = ConcatenateTwoNumbers.Concatenate(num1, num2);
-            int expected = num1*1000 + num2;
+            int expected = num1 * 10000 + num2;
 
             // Assert
             Assert.AreEqual(expected, actual);

@@ -15,10 +15,10 @@ namespace LargestSumSubArrayTest
             int expected = 7;
 
             //Act
-            int actual = LargestSumSubArray.GetLargestSum(input);
+            int[] actual = LargestSumSubArray.GetLargestSum(input);
 
             //Assert
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(expected, actual[0]);
         }
     }
 }

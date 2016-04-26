@@ -19,12 +19,11 @@ namespace com.hack3rlife.numbers
         public static int Reverse(int number)
         {
             int result = 0;
-            int remaining =  number;
 
-            while (remaining > 0)
+            while (number > 0)
             {
-                result = result * 10 + remaining % 10;
-                remaining /= 10;
+                result = (result * 10) + (number % 10);
+                number /= 10;
             }
             return result;
         }            

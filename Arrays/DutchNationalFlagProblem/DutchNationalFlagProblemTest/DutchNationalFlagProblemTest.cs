@@ -1,8 +1,7 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using com.hack3rlife.dnf;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using com.hack3rlife.array;
 
-namespace DutchNationalFlagProblemTest
+namespace com.hack3rlife.array
 {
     [TestClass]
     public class DutchNationalFlagProblemTest
@@ -14,8 +13,7 @@ namespace DutchNationalFlagProblemTest
             int[] input = new int[] { 0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1 };
 
             //Act
-            DutchNationalFlagProblem dnf = new DutchNationalFlagProblem();
-            int[] actual = dnf.DNFSort(input, 1);
+            int[] actual = DutchNationalFlagProblem.Sort(input, 1);
 
             //Assert
             int[] expected = new int[] { 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2 };

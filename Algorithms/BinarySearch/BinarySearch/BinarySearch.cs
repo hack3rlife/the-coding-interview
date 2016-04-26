@@ -1,4 +1,11 @@
-﻿namespace com.hack3rlife.arrays
+﻿/*
+ * @autor: Some smart guy on internet
+ * @date: 27/05/2015
+ * @project: ArrayToBinarySearchTree
+ * 
+ */
+
+namespace com.hack3rlife.arrays
 {
     /// <summary>
     ///  BinarySearch is a search algorithm that finds the position of a target value, whether alone or part of a record, within a sorted array. 
@@ -16,7 +23,9 @@
     public class BinarySearch
     {
         /// <summary>
-        ///  A binary search begins by comparing the middle element of the array with the target value. If the target value matches the middle element, its position in the array is returned. If the target value is less or more than the middle element, the search continues the lower or upper half of the array respectively with a new middle element, eliminating the other half from consideration
+        /// A binary search begins by comparing the middle element of the array with the target value. If the target value matches the middle element, its position in the array is returned. 
+        /// If the target value is less or more than the middle element, the search continues the lower or upper half of the array respectively with a new middle element, eliminating the 
+        /// other half from consideration.
         /// </summary>
         /// <param name="input">The sorted arra</param>
         /// <param name="key">The element to be searched</param>
@@ -27,12 +36,15 @@
         {
             while (max > min)
             {
+                //find mid index
                 int mid = min + ((max - min) / 2);
 
+                //if the value input[mid] is less than key, go to the right side of the array 
                 if (input[mid] < key)
                 {
                     min = mid + 1;
                 }
+                //else if input[mid] is more than key, then go to the left side of the array
                 else if (input[mid] > key)
                     max = mid - 1;
                 else
@@ -42,6 +54,14 @@
             return null;
         }
 
+        /// <summary>
+        /// Recurse method for Binary Search
+        /// </summary>
+        /// <param name="input">The input array</param>
+        /// <param name="key">The value we are looking for</param>
+        /// <param name="min">The left side of th array (A.K.A. values less than key)</param>
+        /// <param name="max">The rigth side of the array (A.K.A. values more than key)</param>
+        /// <returns></returns>
         public static int? StandardBinarySearchRecursive(int[] input, int key, int min, int max)
         {
             if (max < min)
@@ -51,6 +71,7 @@
 
             if (key == input[mid])
                 return mid;
+
             if (key > input[mid])
                 return StandardBinarySearchRecursive(input, key, (mid + 1), max);
             else

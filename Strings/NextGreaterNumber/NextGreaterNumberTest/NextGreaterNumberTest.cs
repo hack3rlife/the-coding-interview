@@ -14,7 +14,7 @@ namespace NextGreaterNumberTest
             string number = "534976";
             
             //Act
-            string actual = NextGreaterNumber.FindNext(number);
+            string actual = NextGreaterNumber.Next(number);
             string expected = "536479";
             
             //Assert

@@ -1,5 +1,5 @@
 ﻿/*
- * @autor: Some smart guy in the milky way
+ * @autor: Some smart guy on internet
  * @date: 13/01/2015
  * @project: String Reverse
  * 

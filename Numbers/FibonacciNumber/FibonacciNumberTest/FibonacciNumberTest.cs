@@ -23,6 +23,20 @@ namespace FibonacciNumberTest
         }
 
         [TestMethod]
+        public void FibonacciDynamicTest()
+        {
+            //Arrange
+            int input = 9;
+            //Act
+            int actual = FibonacciNumber.FibonacciDynamic(input);
+            int expected = 34;
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+
+        }
+
+        [TestMethod]
         public void FibonacciSequenceTest()
         {
             //Arrange
