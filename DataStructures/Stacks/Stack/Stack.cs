@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace com.hack3rlife.datastructures
 {
@@ -35,7 +32,6 @@ namespace com.hack3rlife.datastructures
         {
             StackNode<T> node = new StackNode<T>(value);
 
-
             if (Count >= 1)
             {
                 node.Next = _top;
@@ -51,12 +47,11 @@ namespace com.hack3rlife.datastructures
 
         /// <summary>
         /// Removes and returns the object at the top of the Stack<T>.
-        /// </summary>
+        /// </summary>-
         /// <returns></returns>
         /// <exception cref="NullReferenceException"/>When stack is empty (Count = 0)</exception>
         public T Pop()
         {
-
             if (Count > 0)
             {
                 T result = _top.Value;

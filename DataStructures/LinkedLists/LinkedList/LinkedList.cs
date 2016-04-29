@@ -5,9 +5,12 @@ using System.Collections.Generic;
 namespace com.hack3rlife.datastructures
 {
     /// <summary>
-    /// Represents a Single Linked List
+    /// In computer science, a linked list is a linear collection of data elements, called nodes pointing to the next node by means of a pointer. It is a data structure consisting of a 
+    /// group of nodes which together represent a sequence. Under the simplest form, each node is composed of data and a reference (in other words, a link) to the next node in the sequence;
+    /// more complex variants add additional links. This structure allows for efficient insertion or removal of elements from any position in the sequence.
     /// </summary>
     /// <typeparam name="T"></typeparam>
+    /// <see cref="https://en.wikipedia.org/wiki/Linked_list"/>
     public class LinkedList<T> : ICollection<T>
     {
         /// <summary>
@@ -155,18 +158,14 @@ namespace com.hack3rlife.datastructures
                             this.Head = current.Next;
 
                             if (this.Head == null)
-                            {
                                 this.Tail = null;
-                            }
                         }
                         else
                         {
                             previous.Next = current.Next;
 
                             if (current.Next == null)
-                            {
                                 this.Tail = previous;
-                            }
                         }
 
                         this.Count--;
@@ -189,11 +188,9 @@ namespace com.hack3rlife.datastructures
         /// <param name="data"></param>
         /// <param name="current"></param>
         /// <returns></returns>
-        public LinkedListNode<T> Remove(int data, LinkedListNode<T> current)
-        {
-            if (data == null)
-                return current;
-            if (current == null || current.Next == null)
+        public LinkedListNode<T> Remove(int? data, LinkedListNode<T> current)
+        {            
+            if (data == null || current == null || current.Next == null)
                 return current;
 
             if (current.Value.Equals(data))

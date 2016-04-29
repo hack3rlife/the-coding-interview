@@ -16,9 +16,9 @@ namespace LinkedListTest
             list.AddLast(20);
             list.AddLast(30);
             list.AddLast(40);
-            list.AddLast(50);
-            list.AddLast(60);
-            list.AddLast(70);
+            //list.AddLast(50);
+            //list.AddLast(60);
+            //list.AddLast(70);
            // list.AddLast(80);
             //list.AddLast(90);
             list.Display();

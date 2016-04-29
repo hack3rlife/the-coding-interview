@@ -27,10 +27,10 @@ namespace LongestCommonSubstringTest
         public void GetSubstringTest()
         {
             //Arrange
-            string input1 = "GeeksforGeeks";
-            string input2 = "GeeksQuiz";
+            string input1 = "abcdaf";
+            string input2 = "zbcdf";
 
-            System.Collections.Generic.List<string> expected = new System.Collections.Generic.List<string> { "Geeks", "Geeks" };
+            System.Collections.Generic.List<string> expected = new System.Collections.Generic.List<string> { "bcd", };
 
             //Act
             var actual = LongestCommonSubstring.GetSubstring(input1, input2);

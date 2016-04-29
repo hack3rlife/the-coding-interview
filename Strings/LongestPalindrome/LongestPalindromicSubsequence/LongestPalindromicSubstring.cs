@@ -27,7 +27,7 @@ namespace com.hack3rlife.strings
         {
             int m = input.Length;
             var max = 0;
-            bool[,] res = new bool[m,m];
+            bool[,] res = new bool[m, m];
 
             // Strings of length 1 are palindrome of lentgh 1
             for (int i = 0; i < m; i++)
@@ -37,7 +37,7 @@ namespace com.hack3rlife.strings
 
             // check for sub-string of length 2.
             int start = 0;
-            for (int i = 0; i < m-1; i++)
+            for (int i = 0; i < m - 1; i++)
             {
                 if (input[i] == input[i + 1])
                 {
@@ -66,14 +66,12 @@ namespace com.hack3rlife.strings
 
                         if (l > max)
                         {
-                     
-       start = i;
+                            start = i;
                             max = l;
                         }
                     }
                 }
             }
-
             return max;
         }
     }

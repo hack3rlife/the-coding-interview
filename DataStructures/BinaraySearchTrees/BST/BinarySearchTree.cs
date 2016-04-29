@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace com.hack3rlife.datastructures
 {
@@ -81,7 +78,6 @@ namespace com.hack3rlife.datastructures
                         while (node.Left != null)
                         {
                             stack.Push(node);
-
                             node = node.Left;
                         }
                     }
@@ -130,17 +126,12 @@ namespace com.hack3rlife.datastructures
                     yield return node.Value;
 
                     if (node.Right != null)
-                    {
                         stack.Push(node.Right);
-                    }
 
                     if (node.Left != null)
-                    {
                         stack.Push(node.Left);
-                    }
                 }
             }
-
         }
 
         /// <summary>
@@ -373,9 +364,7 @@ namespace com.hack3rlife.datastructures
         public void InLevels(BinarySearchTreeNode<T> node)
         {
             if (node == null)
-            {
                 return;
-            }
 
             Queue<BinarySearchTreeNode<T>> queue = new Queue<BinarySearchTreeNode<T>>();
             queue.Enqueue(node);
@@ -386,14 +375,10 @@ namespace com.hack3rlife.datastructures
                 current.DisplayNode();
 
                 if (current.Left != null)
-                {
                     queue.Enqueue(current.Left);
-                }
 
                 if (current.Right != null)
-                {
                     queue.Enqueue(node.Right);
-                }
             }
         }   
 
@@ -618,14 +603,10 @@ namespace com.hack3rlife.datastructures
         private static void GivenLevelSpiral<T>(BinarySearchTreeNode<T> node, int level, bool reversed) where T : IComparable<T>
         {
             if (node == null)
-            {
                 return;
-            }
 
             if (level == 0)
-            {
                 Console.Write(" {0} ", node.Value);
-            }
 
             if (level > 0)
             {

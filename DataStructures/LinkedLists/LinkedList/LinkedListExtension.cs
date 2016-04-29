@@ -82,7 +82,6 @@ namespace com.hack3rlife.datastructures
                     next = current.Next;
                     current.Next = previous;
                     previous = current;
-
                     current = next;
                 }
 

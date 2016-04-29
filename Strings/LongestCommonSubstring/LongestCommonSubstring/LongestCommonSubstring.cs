@@ -69,16 +69,16 @@ namespace com.hack3rlife.strings
             int m = input1.Length;
             int n = input2.Length;
 
-            int[,] num = new int[m, n];
+            int[,] num = new int[m+1, n+1];
 
             int max = 0;
             System.Collections.Generic.List<string> result = new System.Collections.Generic.List<string>();
 
-            for (int i = 1; i < m; i++)
+            for (int i = 1; i <= m; i++)
             {
-                for (int j = 1; j < n; j++)
+                for (int j = 1; j <= n; j++)
                 {
-                    if (input1[i] == input2[j])
+                    if (input1[i - 1] == input2[j - 1])
                     {
                         if (i == 1 || j == 1)
                         {
@@ -93,12 +93,12 @@ namespace com.hack3rlife.strings
                         {
                             max = num[i, j];
                             result.Clear();
-                            result.Add(input1.Substring(i - max, max + 1));
+                            result.Add(input1.Substring(i - max, max));
                         }
                         //if there is another long common substring, add it to the result it
                         else if (num[i, j] == max)
                         {
-                            result.Add(input1.Substring(i - max, max + 1));
+                            result.Add(input1.Substring(i - max, max));
                         }
                     }
                     else

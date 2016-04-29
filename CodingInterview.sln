@@ -225,6 +225,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixInSpiral", "Arrays\Ma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RotateMatrix90Degrees", "Arrays\RotateMatrix90Degrees\RotateMatrix90Degrees\RotateMatrix90Degrees.csproj", "{95010939-0172-42CF-AAAE-B1DBBACAE82A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindKth", "Arrays\FindKth\FindKth\FindKth.csproj", "{53292B76-29FC-420D-AE30-CFBFB63E37AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindKthTest", "Arrays\FindKth\FindKthTest\FindKthTest.csproj", "{2C53091E-C0D7-4457-B999-2159B7037E5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1331,6 +1335,38 @@ Global
 		{95010939-0172-42CF-AAAE-B1DBBACAE82A}.Release|x64.Build.0 = Release|Any CPU
 		{95010939-0172-42CF-AAAE-B1DBBACAE82A}.Release|x86.ActiveCfg = Release|Any CPU
 		{95010939-0172-42CF-AAAE-B1DBBACAE82A}.Release|x86.Build.0 = Release|Any CPU
+		{53292B76-29FC-420D-AE30-CFBFB63E37AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53292B76-29FC-420D-AE30-CFBFB63E37AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53292B76-29FC-420D-AE30-CFBFB63E37AC}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{53292B76-29FC-420D-AE30-CFBFB63E37AC}.Debug|ARM.Build.0 = Debug|Any CPU
+		{53292B76-29FC-420D-AE30-CFBFB63E37AC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{53292B76-29FC-420D-AE30-CFBFB63E37AC}.Debug|x64.Build.0 = Debug|Any CPU
+		{53292B76-29FC-420D-AE30-CFBFB63E37AC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{53292B76-29FC-420D-AE30-CFBFB63E37AC}.Debug|x86.Build.0 = Debug|Any CPU
+		{53292B76-29FC-420D-AE30-CFBFB63E37AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53292B76-29FC-420D-AE30-CFBFB63E37AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53292B76-29FC-420D-AE30-CFBFB63E37AC}.Release|ARM.ActiveCfg = Release|Any CPU
+		{53292B76-29FC-420D-AE30-CFBFB63E37AC}.Release|ARM.Build.0 = Release|Any CPU
+		{53292B76-29FC-420D-AE30-CFBFB63E37AC}.Release|x64.ActiveCfg = Release|Any CPU
+		{53292B76-29FC-420D-AE30-CFBFB63E37AC}.Release|x64.Build.0 = Release|Any CPU
+		{53292B76-29FC-420D-AE30-CFBFB63E37AC}.Release|x86.ActiveCfg = Release|Any CPU
+		{53292B76-29FC-420D-AE30-CFBFB63E37AC}.Release|x86.Build.0 = Release|Any CPU
+		{2C53091E-C0D7-4457-B999-2159B7037E5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C53091E-C0D7-4457-B999-2159B7037E5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C53091E-C0D7-4457-B999-2159B7037E5F}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{2C53091E-C0D7-4457-B999-2159B7037E5F}.Debug|ARM.Build.0 = Debug|Any CPU
+		{2C53091E-C0D7-4457-B999-2159B7037E5F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2C53091E-C0D7-4457-B999-2159B7037E5F}.Debug|x64.Build.0 = Debug|Any CPU
+		{2C53091E-C0D7-4457-B999-2159B7037E5F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2C53091E-C0D7-4457-B999-2159B7037E5F}.Debug|x86.Build.0 = Debug|Any CPU
+		{2C53091E-C0D7-4457-B999-2159B7037E5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C53091E-C0D7-4457-B999-2159B7037E5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C53091E-C0D7-4457-B999-2159B7037E5F}.Release|ARM.ActiveCfg = Release|Any CPU
+		{2C53091E-C0D7-4457-B999-2159B7037E5F}.Release|ARM.Build.0 = Release|Any CPU
+		{2C53091E-C0D7-4457-B999-2159B7037E5F}.Release|x64.ActiveCfg = Release|Any CPU
+		{2C53091E-C0D7-4457-B999-2159B7037E5F}.Release|x64.Build.0 = Release|Any CPU
+		{2C53091E-C0D7-4457-B999-2159B7037E5F}.Release|x86.ActiveCfg = Release|Any CPU
+		{2C53091E-C0D7-4457-B999-2159B7037E5F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1445,9 +1481,11 @@ Global
 		{28A6EDF6-2DAD-4B91-A63A-AD6D5F2C29C9} = {F492185D-A056-41AA-8849-0465BFBC1993}
 		{B28C107B-6569-42B1-B95D-2E8BA47BDE12} = {25077DF6-E1DF-4000-B603-2CC6B990A4D8}
 		{95010939-0172-42CF-AAAE-B1DBBACAE82A} = {25077DF6-E1DF-4000-B603-2CC6B990A4D8}
+		{53292B76-29FC-420D-AE30-CFBFB63E37AC} = {25077DF6-E1DF-4000-B603-2CC6B990A4D8}
+		{2C53091E-C0D7-4457-B999-2159B7037E5F} = {01C8DDF2-9C69-4E45-96B5-CADE4D0AD758}
 	EndGlobalSection
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 97
+		SccNumberOfProjects = 99
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
 		SccLocalPath0 = .
@@ -1835,5 +1873,13 @@ Global
 		SccProjectTopLevelParentUniqueName96 = CodingInterview.sln
 		SccProjectName96 = Arrays/RotateMatrix90Degrees/RotateMatrix90Degrees
 		SccLocalPath96 = Arrays\\RotateMatrix90Degrees\\RotateMatrix90Degrees
+		SccProjectUniqueName97 = Arrays\\FindKth\\FindKth\\FindKth.csproj
+		SccProjectTopLevelParentUniqueName97 = CodingInterview.sln
+		SccProjectName97 = Arrays/FindKth/FindKth
+		SccLocalPath97 = Arrays\\FindKth\\FindKth
+		SccProjectUniqueName98 = Arrays\\FindKth\\FindKthTest\\FindKthTest.csproj
+		SccProjectTopLevelParentUniqueName98 = CodingInterview.sln
+		SccProjectName98 = Arrays/FindKth/FindKthTest
+		SccLocalPath98 = Arrays\\FindKth\\FindKthTest
 	EndGlobalSection
 EndGlobal
