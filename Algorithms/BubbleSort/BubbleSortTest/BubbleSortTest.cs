@@ -1,24 +1,49 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using com.hack3rlife.bubblesort;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace BubbleSortTest
+namespace com.hack3rlife.algorithms.sorting
 {
     [TestClass]
     public class BubbleSortTest
     {
         [TestMethod]
-        public void BSortTest()
+        public void BubbleSort_AverageCaseTest()
         {
-            //Arrange
+            //arrange
             int[] input = new int[] { 8, 1, 3, 9, 4, 5, 0, 2, 7, 6 };
-
-            //Act
-            BubbleSort bubbleSort = new BubbleSort();
-            int[] actual = bubbleSort.Sort(input);
             int[] expected = new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+
+            //act
+            int[] actual = BubbleSort.Sort(input);
             
-            //Assert
+            //assert
+            CollectionAssert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void BubbleSort_BestCaseTest()
+        {
+            //arrange
+            int[] input = new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            int[] expected = new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+
+            //act
+            int[] actual = BubbleSort.Sort(input);
+
+            //assert
+            CollectionAssert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void BubbleSort_WorstCaseTest()
+        {
+            //arrange
+            int[] input = new int[] { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
+            int[] expected = new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+
+            //act
+            int[] actual = BubbleSort.Sort(input);
+
+            //assert
             CollectionAssert.AreEqual(expected, actual);
         }
     }

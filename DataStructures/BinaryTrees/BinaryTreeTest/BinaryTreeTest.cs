@@ -10,15 +10,15 @@ namespace BinaryTreeTest
         [TestMethod]
         public void BinaryTreeAddPass()
         {
-            //Arrange
+            //arrange
             BinaryTree<int> bt = new BinaryTree<int>();
            
-            //Act
+            //act
             bt.Root = new BinaryTreeNode<int>(1);
             bt.Root.Left = new BinaryTreeNode<int>(2);
             bt.Root.Right = new BinaryTreeNode<int>(3);
 
-            //Assert
+            //assert
             Assert.AreEqual(1, bt.Root.Value);
             Assert.AreEqual(2, bt.Root.Left.Value);
             Assert.AreEqual(3, bt.Root.Right.Value);
@@ -27,7 +27,7 @@ namespace BinaryTreeTest
         [TestMethod]
         public void LeftRigthToDownRightRepresentationTest()
         {
-            //Arrange
+            //arrange
             BinaryTree<int> bt = new BinaryTree<int>();
             bt.Root = new BinaryTreeNode<int>(1);
             bt.Root.Left = new BinaryTreeNode<int>(2);
@@ -41,10 +41,10 @@ namespace BinaryTreeTest
             bt.Root.Right.Right.Right = new BinaryTreeNode<int>(8);
 
             bt.Display(true);
-            //Act
+            //act
             bt.LeftRigthToDownRightRepresentation(bt.Root);
             bt.Display(false);
-            //Assert      
+            //assert      
 
             Assert.IsNotNull(bt);
         }

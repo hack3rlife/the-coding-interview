@@ -10,14 +10,14 @@ namespace FactorialNumberTest
         [TestMethod]
         public void FactorialTest()
         {
-            //Arrange
+            //arrange
             int input = 5;
 
-            //Act
+            //act
             int actual = FactorialNumber.Factorial(input);
             int expected = 120;
 
-            //Assert
+            //assert
             Assert.AreEqual(expected, actual);
         }
     }

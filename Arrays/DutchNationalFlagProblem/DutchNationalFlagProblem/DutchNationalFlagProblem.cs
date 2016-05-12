@@ -1,10 +1,10 @@
 ﻿/*
  * @autor: Some smart guy on the internet
- * @date: 25/05/2015
+ * @date: 04/28/2015
  * @project: DutchNationalFlagProblem
  * 
  */
-namespace com.hack3rlife.array
+namespace com.hack3rlife.algorithms.sorting
 {
     /// <summary>
     /// The Dutch national flag problem (DNF) is a computer science programming problem proposed by Edsger Dijkstra. The flag of the Netherlands consists of three colours: 
@@ -32,9 +32,7 @@ namespace com.hack3rlife.array
             while ( i <= q )
             {
                 if (input[i] < mid)
-                {
                     Swap(input, i++, p++);                    
-                }
                 else if (input[i] > mid)
                     Swap(input, i, q--);
                 else

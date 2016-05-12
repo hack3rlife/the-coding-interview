@@ -28,7 +28,7 @@ namespace com.hack3rlife.strings
             int m = x.Length;
             int n = y.Length;
 
-            int[,] num = new int[m+1, n+1];
+            int[,] num = new int[m + 1, n + 1];
 
             for (int i = 0; i <= m; i++)
             {
@@ -36,7 +36,7 @@ namespace com.hack3rlife.strings
                 {
                     if (i == 0 || j == 0)
                     {
-                        num[i, j] = 0;
+                        num[i, j] = 0; 
                     }
                     else if (x[i - 1] == y[j - 1])
                     {

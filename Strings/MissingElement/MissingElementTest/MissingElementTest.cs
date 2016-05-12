@@ -10,42 +10,42 @@ namespace MissingElementTest
         [TestMethod]
         public void FindMissingElementTest()
         {
-            //Arrange
+            //arrange
             int[] input = new int[] { 1, 2, 3, 4, 6, 7, 8 };
             int expected = 5;
 
-            //Act
+            //act
             int actual = MissingElement.Find(input);
 
-            //Assert
+            //assert
             Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
         public void FindMissingElementWithBinarySearchTest()
         {
-            //Arrange
+            //arrange
             int[] input = new int[] { 0, 1, 2, 3, 4, 6, 7, 8 };
             int expected = 5;
 
-            //Act
+            //act
             int actual = MissingElement.BinarySearch(input);
 
-            //Assert
+            //assert
             Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
         public void FindMissingElementUsingXOrTest()
         {
-            //Arrange
+            //arrange
             int[] input = new int[] { 1, 2, 3, 4, 6, 7, 8 };
             int expected = 5;
 
-            //Act
+            //act
             int actual = MissingElement.FindXOr(input);
 
-            //Assert
+            //assert
             Assert.AreEqual(expected, actual);
         }
     }

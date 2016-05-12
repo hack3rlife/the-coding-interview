@@ -5,7 +5,9 @@
  * 
  */
 
-namespace com.hack3rlife.arrays
+using System.Diagnostics;
+
+namespace com.hack3rlife.algorithms
 {
     /// <summary>
     /// In computer science, the maximum subarray problem is the task of finding the contiguous subarray within a one-dimensional array of numbers which has the largest sum. For example, 
@@ -52,11 +54,11 @@ namespace com.hack3rlife.arrays
                     max_sum = current_sum;
                     end = i;
 
-                    System.Diagnostics.Debug.WriteLine("Current Sum found between index {0} - {1}", begin, end);
+                    Debug.WriteLine("Current Sum found between index {0} - {1}", begin, end);
                 }
             }
 
-            System.Diagnostics.Debug.WriteLine("Max Sum: {0} found between index {1} - {2}", max_sum, begin, end);
+            Debug.WriteLine("Max Sum: {0} found between index {1} - {2}", max_sum, begin, end);
 
             return new int[] { max_sum, begin, end };           
         }

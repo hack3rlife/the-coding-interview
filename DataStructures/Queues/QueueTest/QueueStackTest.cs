@@ -10,22 +10,22 @@ namespace QueueTest
         [TestMethod]
         public void EnqueueTest()
         {
-            //Arrange
+            //arrange
             QueueStack<int> q = new QueueStack<int>();
 
-            //Act
+            //act
             q.Enqueue(1);
             q.Enqueue(2);
             q.Enqueue(3);
 
-            //Assert
+            //assert
             Assert.AreEqual(3, q.Count);
         }
 
         [TestMethod]
         public void DequeueTest()
         {
-            //Arrange
+            //arrange
             QueueStack<int> q = new QueueStack<int>();
             q.Enqueue(1);
             q.Enqueue(2);
@@ -33,12 +33,12 @@ namespace QueueTest
             q.Enqueue(4);
             q.Enqueue(5);
 
-            //Act
+            //act
             
            int actual = q.Dequeue();
            int expected = 1;
 
-            //Assert
+            //assert
            Assert.AreEqual<int>(expected,actual);
             Assert.AreEqual(4, q.Count);
         }

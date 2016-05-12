@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using com.hack3rlife.arrays;
+using com.hack3rlife.algorithms;
 
 namespace LargestPairSumTest
 {
@@ -10,14 +10,14 @@ namespace LargestPairSumTest
         [TestMethod]
         public void LargestPairSumFindTest()
         {
-            //Arrange
+            //arrange
             int[] input = { 12, 34, 10, 6, 40 };
 
-            //Act
+            //act
             int actual = LargestPairSum.Find(input);
             int expected = 74;
 
-            //Assert
+            //assert
             Assert.AreEqual<int>(expected, actual);
         }
     }

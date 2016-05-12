@@ -10,28 +10,28 @@ namespace StackTest
         [TestMethod]
         public void PushTest()
         {
-            //Arrange
+            //arrange
             StackQueue<int> stack = new StackQueue<int>();
 
-            //Act
+            //act
             stack.Push(0);
             stack.Push(1);
             stack.Push(2);
 
-            //Assert
+            //assert
             Assert.IsTrue(stack.Count == 3);
         }
 
         [TestMethod]
         public void PopTest()
         {
-            //Arrange
+            //arrange
             StackQueue<int> stack = new StackQueue<int>();
             stack.Push(0);
             stack.Push(1);
             stack.Push(2);
 
-            //Act
+            //act
             int actual = stack.Pop();
             int expected = 2;
 

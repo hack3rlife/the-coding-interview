@@ -1,5 +1,5 @@
 ﻿using System;
-using com.hack3rlife.arrays;
+using com.hack3rlife.algorithms;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace FindKthTest

@@ -10,18 +10,18 @@ namespace SwappingNumbersTest
         [TestMethod]
         public void SwapTest()
         {
-            // Arrange
+            // arrange
             int a = 10;
             int b = 5;
 
             int d = 10;
             int e = 5;
 
-            // Act
+            // act
             SwappingNumbers.BitwiseSwap(ref a, ref b);
             SwappingNumbers.BitwiseSwap(ref d, ref e);
 
-            // Assert
+            // assert
             Assert.AreEqual(a, d);
             Assert.AreEqual(b, e);
             
@@ -30,14 +30,14 @@ namespace SwappingNumbersTest
         [TestMethod]
         public void BitwiseSwapTest()
         {
-            // Arrange
+            // arrange
             int num1 = 10;
             int num2 = 5;
 
-            // Act
+            // act
             SwappingNumbers.BitwiseSwap(ref num1, ref num2);
 
-            // Assert
+            // assert
             Assert.AreEqual(5, num1);
             Assert.AreEqual(10, num2);
         }
@@ -45,14 +45,14 @@ namespace SwappingNumbersTest
         [TestMethod]
         public void ArithmeticSwapTest()
         {
-            // Arrange
+            // arrange
             int num1 = 10;
             int num2 = 5;
 
-            // Act
+            // act
             SwappingNumbers.ArithmeticSwap(ref num1, ref num2);
 
-            // Assert
+            // assert
             Assert.AreEqual(5, num1);
             Assert.AreEqual(10, num2);
         }

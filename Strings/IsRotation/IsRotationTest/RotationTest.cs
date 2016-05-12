@@ -10,15 +10,15 @@ namespace IsRotationTest
         [TestMethod]
         public void IsRotationTestPassed()
         {
-            //Arrange
+            //arrange
             string source = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget lorem sagittis, pretium dolor eget, fermentum dolor. In sed.";
             string target = " consectetur adipiscing elit. Morbi eget lorem sagittis, pretium dolor eget, fermentum dolor. In sed.Lorem ipsum dolor sit amet,";
             
 
-            //Act
+            //act
             bool condition = Rotation.IsRotation(source,target);
 
-            //Assert
+            //assert
             Assert.IsTrue(condition);
         }
     }

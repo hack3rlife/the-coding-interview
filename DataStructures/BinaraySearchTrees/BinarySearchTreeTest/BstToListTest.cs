@@ -11,7 +11,7 @@ namespace BinarySearchTreeTest
         [TestMethod]
         public void BstToListTestPass()
         {
-            //Arrange
+            //arrange
             BinarySearchTree<int> bst = new BinarySearchTree<int>();
             bst.Add(3);
             bst.Add(2);
@@ -20,11 +20,11 @@ namespace BinarySearchTreeTest
             bst.Add(5);
             bst.Add(6);
 
-            //Act
+            //act
             var actual = bst.ToList();
             var expected = new List<int>() { 3, 2, 4, 1, 5, 6 };
 
-            //Assert
+            //assert
             Assert.AreEqual(expected.Count, actual.Count);
             for (int i = 0; i < expected.Count; i++)
             {

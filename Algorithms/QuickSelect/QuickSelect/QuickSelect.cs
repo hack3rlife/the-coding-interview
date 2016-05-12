@@ -1,4 +1,11 @@
-﻿namespace com.hack3rlife.quickselect
+﻿/*
+ * @autor: Some smart guy on internet
+ * @date: 06/01/2015
+ * @project: QuickSelect
+ * 
+ */
+
+namespace com.hack3rlife.algorithms.sorting
 {
     /// <summary>
     /// Quickselect is a divide-and-conquer algorithm to find the kth smallest element in an unordered list. 
@@ -52,7 +59,8 @@
         private static int Partition(int[] input, int left, int right, int pivot)
         {
             var pivotValue = input[pivot];  // left + (right - left) / 2;
-
+            
+            //move pivot to the end
             Swap(input, pivot, right); 
 
             var storeIndex = left;
@@ -60,18 +68,21 @@
             for (int i = left; i < right-1; i++)
             {
                 if (input[i] < pivotValue)
-                {
-                    Swap(input, i, storeIndex);
-                    storeIndex++;
-                }
+                    Swap(input, i, storeIndex++);
             }
 
             // Move pivot to its final place
-            Swap(input, storeIndex, right);  
+            Swap(input, storeIndex, right); 
 
             return storeIndex;
         }
 
+        /// <summary>
+        /// Swaps two integers if they are differents
+        /// </summary>
+        /// <param name="input">Input integer array</param>
+        /// <param name="a">Indice a</param>
+        /// <param name="b">Indice b</param>
         private static void Swap(int[] input, int a, int b)
         {
             if (a != b)

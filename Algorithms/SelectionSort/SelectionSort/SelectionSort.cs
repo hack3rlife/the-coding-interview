@@ -1,4 +1,11 @@
-﻿namespace com.hack3rlife.selectionsort
+﻿/*
+ * @autor: Some smart guy on internet
+ * @date: 04/14/2016
+ * @project: SelectionSort
+ * 
+ */
+
+namespace com.hack3rlife.algorithms.sorting
 {
     /// <summary>
     /// Selection Sort is a sorting algorithm, specifically an in-place comparison sort. Is noted for its simplicity, and it has performance advantages over more complicated 
@@ -13,15 +20,15 @@
     /// Space Required: O(n)
     /// </remarks>
     /// <see cref="https://en.wikipedia.org/wiki/Selection_sort"/>
-    public class SelectionSort
+    public static class SelectionSort
     {
         /// <summary>
-        ///  The algorithm proceeds by finding the smallest (or largest, depending on sorting order) element in the unsorted sublist, exchanging (swapping) it with the leftmost unsorted element
-        ///  (putting it in sorted order), and moving the sublist boundaries one element to the right.
+        ///  The algorithm proceeds by finding the smallest (or largest, depending on sorting order) element in the unsorted sublist, exchanging (swapping) it with the leftmost unsorted
+        ///  element (putting it in sorted order), and moving the sublist boundaries one element to the right.
         /// </summary>
         /// <param name="input">The unsorted array</param>
         /// <returns>A sorted array</returns>
-        public int[] Sort(int[] input)
+        public static int[] Sort(int[] input)
         {
             for (int i = 0; i < input.Length; i++)
             {
@@ -29,9 +36,7 @@
                 for (int j = i+1; j < input.Length; j++)
                 {
                     if(input[smallest] > input[j])
-                    {
                         smallest = j;
-                    }
                 }
 
                 Swap(input, smallest, i);
@@ -46,8 +51,7 @@
         /// <param name="input">Input integer array</param>
         /// <param name="a">Indice a</param>
         /// <param name="b">Indice b</param>
-        /// <returns></returns>
-        private void Swap(int[] input, int a, int b)
+        private static void Swap(int[] input, int a, int b)
         {
             if (a != b)
             {

@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using com.hack3rlife.array;
+using com.hack3rlife.algorithms.sorting;
 
 namespace com.hack3rlife.array
 {
@@ -9,13 +9,13 @@ namespace com.hack3rlife.array
         [TestMethod]
         public void SortTest()
         {
-            //Arrange
+            //arrange
             int[] input = new int[] { 0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1 };
 
-            //Act
+            //act
             int[] actual = DutchNationalFlagProblem.Sort(input, 1);
 
-            //Assert
+            //assert
             int[] expected = new int[] { 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2 };
 
             CollectionAssert.AreEqual(expected, actual);            

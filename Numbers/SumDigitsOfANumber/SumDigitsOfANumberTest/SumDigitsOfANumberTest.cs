@@ -10,14 +10,14 @@ namespace SumDigitsOfANumberTest
         [TestMethod]
         public void SumDigitsTest()
         {
-            //Arrange
+            //arrange
             int input = 12345;            
 
-            //Act
+            //act
             int actual = SumDigitsOfANumber.SumDigits(input);
              int expected = 6;
 
-            //Assert
+            //assert
              Assert.AreEqual(expected, actual);
         }
     }

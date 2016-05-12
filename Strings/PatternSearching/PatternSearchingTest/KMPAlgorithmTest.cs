@@ -10,15 +10,15 @@ namespace PatternSearchingTest
         [TestMethod]
         public void SearchTest()
         {
-            //Arrange
+            //arrange
             string input = "AAAAAAAAAAAAAAAAAB";
             string pattern = "AAAAB";
 
-            //Act
+            //act
             int actual = KMPAlgorithm.Search(pattern, input);
             int expected = 13;
 
-            //Assert
+            //assert
             Assert.AreEqual(expected, actual);
 
         }

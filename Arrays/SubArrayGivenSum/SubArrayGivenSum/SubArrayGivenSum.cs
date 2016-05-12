@@ -5,7 +5,9 @@
  * 
  */
 
-namespace com.hack3rlife.arrays
+using System.Diagnostics;
+
+namespace com.hack3rlife.algorithms
 {
     /// <summary>
     /// Given an unsorted array of non-negative integers, find a continous subarray which adds to a given number.
@@ -41,7 +43,7 @@ namespace com.hack3rlife.arrays
                 {
                     end = i;
 
-                    System.Diagnostics.Debug.WriteLine("Sum found between index {0} - {1}", begin, end);
+                    Debug.WriteLine("Sum found between index {0} - {1}", begin, end);
                     return new int[] { 1, begin, end };
                 }
 
@@ -49,11 +51,11 @@ namespace com.hack3rlife.arrays
                 {
                     current_sum = 0;
                     i = begin++;
-                    end = i;
+                    end = begin;
                 }
             }
 
-            return new int[] { 0, begin, end };
+            return new int[] { 0, -1, -1 };
         }
 
         /// <summary>
@@ -78,7 +80,7 @@ namespace com.hack3rlife.arrays
                 {
                     end = i;
 
-                    System.Diagnostics.Debug.WriteLine("Sum found between index {0} - {1}", begin, end);
+                    Debug.WriteLine("Sum found between index {0} - {1}", begin, end);
                     return new int[] { 1, begin, end };
                 }
 
@@ -86,11 +88,11 @@ namespace com.hack3rlife.arrays
                 {
                     current_sum = 0;
                     i = begin++;
-                    end = i;
+                    end = begin;
                 }
             }
 
-            return new int[] { 0, begin, end };
+            return new int[] { 0, -1, -1 };
 
         }
     }

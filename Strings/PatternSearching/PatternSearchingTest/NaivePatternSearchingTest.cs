@@ -10,15 +10,15 @@ namespace PatternSearchingTest
         [TestMethod]
         public void SearchTest()
         {
-            //Arrange
-            string input = "My name is Hector";
-            string pattern = "name";
+            //arrange
+            string input = "this is a test";
+            string pattern = "test";
+            int expected = 10;
 
-            //Act
-            int actual = NaivePatternSearching.Search(pattern, input);
-            int expected = 3;
+            //act
+            int actual = NaivePatternSearching.Search(input, pattern);
 
-            //Assert
+            //assert
             Assert.AreEqual(expected, actual);
             
         }

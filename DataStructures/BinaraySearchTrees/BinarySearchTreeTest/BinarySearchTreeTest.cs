@@ -15,10 +15,10 @@ namespace BinarySearchTreeTest
         [TestMethod]
         public void AddTest()
         {
-            //Arrange
+            //arrange
             BinarySearchTree<int> bst = new BinarySearchTree<int>();
 
-            //Act
+            //act
             Random r = new Random();
             int count = r.Next(10);
 
@@ -27,7 +27,7 @@ namespace BinarySearchTreeTest
                bst.Add(r.Next(count));
             }
 
-            //Assert
+            //assert
             bst.Display();
             Assert.AreEqual(count, bst.Count);
         }
@@ -35,10 +35,10 @@ namespace BinarySearchTreeTest
         [TestMethod]
         public void DeleteTest()
         {
-            //Arrange
+            //arrange
             BinarySearchTree<int> bst = new BinarySearchTree<int>();
 
-            //Act
+            //act
             bst.Add(50);
             bst.Add(30);
             bst.Add(20);
@@ -49,7 +49,7 @@ namespace BinarySearchTreeTest
             bst.Display();
 
 
-            //Assert
+            //assert
             bst.InOrder(bst.Root);
 
             Console.WriteLine();
@@ -80,10 +80,10 @@ namespace BinarySearchTreeTest
         [TestMethod]
         public void ContainsTest()
         {
-            //Arrange
+            //arrange
             BinarySearchTree<int> bst = new BinarySearchTree<int>();
 
-            //Act
+            //act
             Random r = new Random();
 
             for (int i = 0; i < 10; i++)
@@ -93,7 +93,7 @@ namespace BinarySearchTreeTest
 
             bst.Add(5);
 
-            //Assert
+            //assert
             bst.Display();
 
             var expected = true;
@@ -107,10 +107,10 @@ namespace BinarySearchTreeTest
         [TestMethod]
         public void InOrderTest()
         {
-            //Arrange
+            //arrange
             BinarySearchTree<int> bst = new BinarySearchTree<int>();
 
-            //Act
+            //act
             Random r = new Random();
 
             for (int i = 0; i < 5; i++)
@@ -118,7 +118,7 @@ namespace BinarySearchTreeTest
                 bst.Add(r.Next(10));
             }
             
-            //Assert
+            //assert
             foreach (var node in bst.InOrderEnumerable)
             {
                 Console.Write(" {0} ", node);
@@ -128,10 +128,10 @@ namespace BinarySearchTreeTest
         [TestMethod]
         public void PreOrderTest()
         {
-            //Arrange
+            //arrange
             BinarySearchTree<int> bst = new BinarySearchTree<int>();
 
-            //Act
+            //act
             bst.Add(5);
             bst.Add(6);
             bst.Add(5);
@@ -146,7 +146,7 @@ namespace BinarySearchTreeTest
             bst.Display();
             Console.WriteLine();
 
-            //Assert
+            //assert
             bst.PreOrder(bst.Root);
             Console.WriteLine();
             foreach (var node in bst.PreOrderEnumerable)
@@ -159,10 +159,10 @@ namespace BinarySearchTreeTest
         [TestMethod]
         public void PostOrderTest()
         {
-            //Arrange
+            //arrange
             BinarySearchTree<int> bst = new BinarySearchTree<int>();
 
-            //Act
+            //act
             bst.Add(5);
             bst.Add(6);
             bst.Add(5);
@@ -177,7 +177,7 @@ namespace BinarySearchTreeTest
             bst.Display();
             Console.WriteLine();
 
-            //Assert
+            //assert
             bst.PostOrder(bst.Root);
 
             Console.WriteLine();
@@ -204,10 +204,10 @@ namespace BinarySearchTreeTest
         public void FindMinTest()
         {
 
-            //Arrange
+            //arrange
             BinarySearchTree<int> bst = new BinarySearchTree<int>();
 
-            //Act
+            //act
             Random r = new Random();
             int count = 10;
 
@@ -226,7 +226,7 @@ namespace BinarySearchTreeTest
 
             int expected = bst.Min.Value;
 
-            //Assert
+            //assert
             bst.Display();
             Assert.AreEqual(expected, actual);
         }
@@ -237,10 +237,10 @@ namespace BinarySearchTreeTest
         [TestMethod]
         public void FindMaxTest()
         {
-            //Arrange
+            //arrange
             BinarySearchTree<int> bst = new BinarySearchTree<int>();
 
-            //Act
+            //act
             Random r = new Random();
             int count = 10;
 
@@ -259,7 +259,7 @@ namespace BinarySearchTreeTest
 
             int expected = bst.Max.Value;
 
-            //Assert
+            //assert
             bst.Display();
             Assert.AreEqual(expected, actual);
         }

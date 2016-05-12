@@ -4,8 +4,9 @@
  * @project: SubSetSum
  * 
  */
+using System.Diagnostics;
 
-namespace com.hack3rlife.arrays
+namespace com.hack3rlife.algorithms
 {
     /// <summary>
     /// In computer science, the subset sum problem is an important problem in complexity theory and cryptography. The problem is this: given a set (or multiset) of integers, is there a 
@@ -60,13 +61,13 @@ namespace com.hack3rlife.arrays
 
             bool[,] subset = new bool[n + 1, sum + 1];
 
+            //if sum is 0, then answer is true
+            for (int i = 0; i <= n; i++)
+                subset[i, 0] = true;
+
             //if sum is not 0 and set is empty, then answer is false
             for (int i = 1; i <= sum; i++)
                 subset[0, i] = false;
-
-            //if sum is 0, then answer is true
-            for (int i = 0; i <= n; i++)
-                subset[i,0] = true;
 
             // Fill the subset table in bottom up manner
             for (int i = 1; i <= n; i++)
@@ -81,17 +82,18 @@ namespace com.hack3rlife.arrays
                 }
             }
 
-            for (int i = 0; i <= n; i++)
-            {
-                for (int j = 0; j <= sum; j++)
-                {
-                    System.Diagnostics.Debug.Write(subset[i, j] + "\t");
-                }
-                System.Diagnostics.Debug.WriteLine("");
-            }
+            //un-comment for print the matrix
+            //for (int i = 0; i <= n; i++)
+            //{
+            //    for (int j = 0; j <= sum; j++)
+            //    {
+            //        Debug.Write(subset[i, j] + "\t");
+            //    }
 
+            //    Debug.WriteLine("");
+            //}
 
             return subset[n, sum];
-        }      
+        }   
     }
 }

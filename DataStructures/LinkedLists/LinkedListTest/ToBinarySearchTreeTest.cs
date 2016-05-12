@@ -10,8 +10,8 @@ namespace LinkedListTest
         [TestMethod]
         public void ToBinarySearchTreeTestPass()
         {
-            //Arrange
-            LinkedList<int> list = new LinkedList<int>();
+            //arrange
+            LinkedList list = new LinkedList();
             list.AddFirst(6);
             list.AddFirst(5);
             list.AddFirst(4);
@@ -19,7 +19,7 @@ namespace LinkedListTest
             list.AddFirst(2);
             list.AddFirst(1);
 
-            LinkedList<int> expected = new LinkedList<int>();
+            LinkedList expected = new LinkedList();
             expected.AddFirst(6);
             expected.AddFirst(5);
             expected.AddFirst(4);
@@ -27,15 +27,15 @@ namespace LinkedListTest
             expected.AddFirst(2);
             expected.AddFirst(1);
 
-            //Act
-            BinarySearchTree<int> bst = list.ToBinarySearchTree<int>(list.Count);
+            //act
+            BinarySearchTree<int> bst = list.ToBinarySearchTree(list.Count);
             bst.Display();
            
 
-            //Assert
+            //assert
             foreach (var item in bst.InOrderEnumerable)
             {
-                Assert.AreEqual<int>(expected.Head.Value, item);
+                Assert.AreEqual(expected.Head.Value, item);
                 expected.Head = expected.Head.Next; 
             }
 

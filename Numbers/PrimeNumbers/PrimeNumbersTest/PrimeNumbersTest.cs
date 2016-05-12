@@ -10,26 +10,26 @@ namespace PrimeNumbersTest
         [TestMethod]
         public void isPrimeNumberTest()
         {
-            //Arrange
+            //arrange
             int number = 23;
 
-            //Act
+            //act
             bool condition = PrimeNumbers.isPrimeNumber(number);
 
-            //Assert
+            //assert
             Assert.IsTrue(condition);
         }
 
         [TestMethod]
         public void SieveOfEratosthenesTest()
         {
-            //Arrange
+            //arrange
             int number = 30;
 
-            //Act
+            //act
            PrimeNumbers.SieveOfEratosthenes(number);
 
-            //Assert
+            //assert
         }
     }
 }

@@ -56,16 +56,31 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="AddFirstUnitTest.cs" />
+    <Compile Include="AddLastUnitTest.cs" />
+    <Compile Include="ClearUnitTest.cs" />
+    <Compile Include="ContainsUnitTest.cs" />
     <Compile Include="DeleteNAfterMTest.cs" />
     <Compile Include="LinkedListBaseTest.cs" />
+    <Compile Include="FindKthTest.cs" />
     <Compile Include="LinkedListTests.cs" />
     <Compile Include="MergeAlternateNodesTest.cs" />
+    <Compile Include="MergeIterativeTest.cs" />
+    <Compile Include="MergeRecursiveTest.cs" />
+    <Compile Include="PartitionUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoveFirstUnitTest.cs" />
+    <Compile Include="RemoveLastUnitTest.cs" />
+    <Compile Include="RemoveUnitTest.cs" />
+    <Compile Include="RemoveAllUnitTest.cs" />
     <Compile Include="ReverseAlternateNodesAndAppendAtTheEndTest.cs" />
+    <Compile Include="ReverseIterativeTest.cs" />
     <Compile Include="RotateLinkedListTest.cs" />
+    <Compile Include="RotateUnitTest.cs" />
+    <Compile Include="SumUnitTest.cs" />
     <Compile Include="SwapConsecutivesTest.cs" />
     <Compile Include="ToBinarySearchTreeTest.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="ReverseRecursiveTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\BinaraySearchTrees\BST\BinarySearchTree.csproj">

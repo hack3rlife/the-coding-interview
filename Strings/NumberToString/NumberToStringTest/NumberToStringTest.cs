@@ -10,27 +10,27 @@ namespace NumberToStringTest
         [TestMethod]
         public void NumberToStringMappingTest()
         {
-            //Arrange
+            //arrange
             string number = "234";
 
-            //Act
+            //act
             PhoneNumberMnemonic.Map(number);
 
-            //Assert
+            //assert
             //Should print adg adh adi aeg aeh aei afg afh afi bdg bdh bdi beg beh bei bfg bfh bfi cdg cdh cdi ceg ceh cei cfg cfh cfi
         }
 
         [TestMethod]
         public void GetTest()
         {
-            //Arrange
+            //arrange
             string number = "234";
             var expected = 
                 new System.Collections.Generic.List<string> { "adg", "adh", "adi", "aeg", "aeh", "aei", "afg", "afh", "afi", "bdg", "bdh", "bdi", "beg", "beh", "bei", "bfg", "bfh", "bfi", "cdg", "cdh", "cdi", "ceg", "ceh", "cei", "cfg", "cfh", "cfi" };
-            //Act
+            //act
             var actual = PhoneNumberMnemonic.Get(number);
 
-            //Assert
+            //assert
             //Should print adg adh adi aeg aeh aei afg afh afi bdg bdh bdi beg beh bei bfg bfh bfi cdg cdh cdi ceg ceh cei cfg cfh cfi
             CollectionAssert.AreEqual(expected, actual);
         }

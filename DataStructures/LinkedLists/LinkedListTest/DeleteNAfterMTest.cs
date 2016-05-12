@@ -9,7 +9,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace LinkedListTest
 {
     [TestClass]
-    public class DeleteNAfterMTest:LinkedListBaseTest
+    public class DeleteNAfterMTest : LinkedListBaseTest
     {
         [TestMethod]
         public void DeleteNAfterM()

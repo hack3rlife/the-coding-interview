@@ -7,7 +7,7 @@
 
 using System;
 
-namespace com.hack3rlife.arrays
+namespace com.hack3rlife.algorithms
 {
     /// <summary>
     /// 

@@ -10,7 +10,7 @@ namespace BinarySearchTreeTest
         [TestMethod]
         public void IsBinarySearchTestPass()
         {
-            //Arrange
+            //arrange
             BinarySearchTree<int> bst = new BinarySearchTree<int>();
             bst.Add(4);
             bst.Add(2);
@@ -19,17 +19,17 @@ namespace BinarySearchTreeTest
             bst.Add(3);
             bst.Display();
 
-            //Act
+            //act
             bool condition = bst.IsBinarySearchTree(bst.Root);
 
-            //Assert
+            //assert
             Assert.IsTrue(condition);            
         }
 
         [TestMethod]
         public void IsBinarySearchTestFail()
         {
-            //Arrange
+            //arrange
             BinarySearchTree<int> bst = new BinarySearchTree<int>();
             bst.Add(4);
             bst.Add(2);
@@ -39,10 +39,10 @@ namespace BinarySearchTreeTest
             bst.Root.Left.Right.Value = 10;
             bst.Display();
 
-            //Act
+            //act
             bool condition = bst.IsBinarySearchTree(bst.Root);
 
-            //Assert
+            //assert
             Assert.IsFalse(condition);
 
         }

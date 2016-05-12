@@ -11,16 +11,16 @@ namespace QueueTest
         [TestMethod]
         public void EnqueueTest()
         {
-            //Arrange
+            //arrange
             Queue<int> q = new Queue<int>();
             
-            //Act
+            //act
             q.Enqueue(1);
             q.Enqueue(2);
             q.Enqueue(3);
             q.Display();
 
-            //Assert
+            //assert
             Assert.AreEqual(3, q.Count);
             Assert.AreEqual(1, q.Peek());
         }
@@ -28,10 +28,10 @@ namespace QueueTest
         [TestMethod]
         public void DequeueTest()
         {
-            //Arrange
+            //arrange
             Queue<int> q = new Queue<int>();
 
-            //Act
+            //act
             q.Enqueue(1);
             q.Enqueue(2);
             q.Enqueue(3);
@@ -40,7 +40,7 @@ namespace QueueTest
             q.Dequeue();
             q.Display();
 
-            //Assert
+            //assert
             Assert.AreEqual(4, q.Count);
             Assert.AreEqual(2, q.Peek());
         }
@@ -48,10 +48,10 @@ namespace QueueTest
         [TestMethod]
         public void ClearTest()
         {
-            //Arrange
+            //arrange
             Queue<int> q = new Queue<int>();
 
-            //Act
+            //act
             Random r = new Random(10);
             q.Enqueue(1);
             q.Enqueue(2);
@@ -62,7 +62,7 @@ namespace QueueTest
             q.Clear();
             q.Display();
 
-            //Assert
+            //assert
             Assert.AreEqual(0, q.Count);
             Assert.IsNull(q.head);
             Assert.IsNull(q.tail);

@@ -10,40 +10,40 @@ namespace IsPalindromeTest
         [TestMethod]
         public void IsPalindromeTestPass()
         {
-            //Arrange
+            //arrange
             string input = "radar";
 
-            //Act
+            //act
             bool condition = Palindrome.IsPalindrome(input);
 
-            //Assert 
+            //assert 
             Assert.IsTrue(condition);
         }
 
         [TestMethod]
         public void IsPalindromeTestFail()
         {
-            //Arrange
+            //arrange
             string input = "radars";
 
-            //Act
+            //act
             bool condition = Palindrome.IsPalindrome(input);
 
-            //Assert 
+            //assert 
             Assert.IsFalse(condition);
         }
 
         [TestMethod]
         public void LonguestPalindromeTest()
         {
-            //Arrange
+            //arrange
             string input = "forgeeksskeegfor";
             string expected = "geeksskeeg";
 
-            //Act
+            //act
             string actual = Palindrome.LonguestPalindrome(input.ToCharArray(0, input.Length - 1));
 
-            //Assert 
+            //assert 
             Assert.AreEqual(expected, actual);
         }
     }

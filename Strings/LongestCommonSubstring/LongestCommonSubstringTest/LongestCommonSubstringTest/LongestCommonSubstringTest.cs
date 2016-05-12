@@ -10,13 +10,13 @@ namespace LongestCommonSubstringTest
         [TestMethod]
         public void GetLengthTest()
         {
-            //Arrange
+            //arrange
             string input1 = "OldSite:GeeksforGeeks.org";
             string input2 = "NewSite:GeeksQuiz.com";
 
             int expected = 10;
 
-            //Act
+            //act
             int actual = LongestCommonSubstring.GetLength(input1, input2);
 
             //Test
@@ -26,13 +26,13 @@ namespace LongestCommonSubstringTest
         [TestMethod]
         public void GetSubstringTest()
         {
-            //Arrange
+            //arrange
             string input1 = "abcdaf";
             string input2 = "zbcdf";
 
             System.Collections.Generic.List<string> expected = new System.Collections.Generic.List<string> { "bcd", };
 
-            //Act
+            //act
             var actual = LongestCommonSubstring.GetSubstring(input1, input2);
 
             //Test

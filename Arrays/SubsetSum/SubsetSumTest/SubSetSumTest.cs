@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using com.hack3rlife.arrays;
+using com.hack3rlife.algorithms;
 
 namespace SubsetSumTest
 {
@@ -10,26 +10,26 @@ namespace SubsetSumTest
         [TestMethod]
         public void GetSubSetSumTest()
         {
-            //Arrange
+            //arrange
             int[] input = new int[] { 3, 34, 4, 12, 5, 2 };
 
-            //Act
+            //act
             bool condition = SubSetSum.IsSubSetSum(input, input.Length, 7);
 
-            //Assert
+            //assert
             Assert.IsTrue(condition);
         }
 
         [TestMethod]
         public void IsSubSetSumTest()
         {
-            //Arrange
+            //arrange
             int[] input = new int[] { 1, 3, 9, 2 };
 
-            //Act
+            //act
              bool condition = SubSetSum.IsSubSetSum(input, 5);
 
-            //Assert
+            //assert
             Assert.IsTrue(condition);
         }
     }

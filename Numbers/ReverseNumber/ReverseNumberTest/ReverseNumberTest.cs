@@ -9,14 +9,14 @@ namespace ReverseNumberTest
         [TestMethod]
         public void ReverseTest()
         {
-            // Arrange
+            // arrange
             int input = 1234;
 
-            // Act
+            // act
             int actual = ReverseNumber.Reverse(input);
             int expected = 4321;
 
-            // Assert
+            // assert
             Assert.AreEqual(expected, actual);
         }
     }

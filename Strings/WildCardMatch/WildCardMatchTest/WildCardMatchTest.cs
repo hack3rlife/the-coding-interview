@@ -10,28 +10,28 @@ namespace WildCardMatchTest
         [TestMethod]
         public void IsMatchTestPass()
         {
-            // Arrange
+            // arrange
             string input = "geeks";
             string wildcard = "g*ks";
 
-            // Act
+            // act
             bool condition = WildCardMatch.IsMatch(input, wildcard);
 
-            // Assert
+            // assert
             Assert.IsTrue(condition);
         }
 
         [TestMethod]
         public void IsMatchTestFail()
         {
-            // Arrange
+            // arrange
             string input = "abcd";
             string wildcard = "abc*c?d";
 
-            // Act
+            // act
             bool condition = WildCardMatch.IsMatch(input, wildcard);
 
-            // Assert
+            // assert
             Assert.IsTrue(condition);
         }
     }

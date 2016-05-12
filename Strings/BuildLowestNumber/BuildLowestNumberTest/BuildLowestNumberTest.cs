@@ -10,17 +10,17 @@ namespace BuildLowestNumberTest
         [TestMethod]
         public void LowestNumberBuildTest()
         {
-            //Arrange
+            //arrange
             string input = "4325043";
             string expected = "2043";
            string actual = string.Empty;
 
             int n = 3;            
 
-            //Act
+            //act
             LowestNumber.BuildLowestNumber(input, n, ref actual);
 
-            //Assert
+            //assert
 
             Assert.AreEqual(expected, actual);
         }

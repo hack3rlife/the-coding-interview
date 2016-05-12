@@ -10,14 +10,14 @@ namespace NextGreaterNumberTest
         [TestMethod]
         public void FindNextTest()
         {
-            //Arrange
+            //arrange
             string number = "534976";
             
-            //Act
+            //act
             string actual = NextGreaterNumber.Next(number);
             string expected = "536479";
             
-            //Assert
+            //assert
             Assert.AreEqual(expected, actual);
 
         }

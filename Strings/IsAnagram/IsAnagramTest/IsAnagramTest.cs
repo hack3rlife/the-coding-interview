@@ -9,28 +9,28 @@ namespace IsAnagramTest
         [TestMethod]
         public void ASCIIBasedSolutionTestPass()
         {
-            //Arrange
+            //arrange
             string source = "stream";
             string target = "master";
 
-            //Act
+            //act
             bool condition = IsAnagram.ASCIIBasedSolution(source, target);
 
-            //Assert
+            //assert
             Assert.IsTrue(condition);
         }
 
         [TestMethod]
         public void ASCIIBasedSolutionTestFail()
         {
-            //Arrange
+            //arrange
             string source = "song";
             string target = "home";
 
-            //Act
+            //act
             bool condition = IsAnagram.ASCIIBasedSolution(source, target);
 
-            //Assert
+            //assert
             Assert.IsFalse(condition);
         }
     }

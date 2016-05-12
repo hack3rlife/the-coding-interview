@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using com.hack3rlife.arrays;
+using com.hack3rlife.algorithms;
 
 namespace LargestSumSubArrayTest
 {
@@ -10,14 +10,14 @@ namespace LargestSumSubArrayTest
         [TestMethod]
         public void GetLargestSumTest()
         {
-            //Arrange
+            //arrange
             int[] input = new int[] { -2, -3, 4, -1, -2, 1, 5, -3 };
             int expected = 7;
 
-            //Act
+            //act
             int[] actual = LargestSumSubArray.GetLargestSum(input);
 
-            //Assert
+            //assert
             Assert.AreEqual(expected, actual[0]);
         }
     }

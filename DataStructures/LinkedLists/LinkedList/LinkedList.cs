@@ -9,43 +9,43 @@ namespace com.hack3rlife.datastructures
     /// group of nodes which together represent a sequence. Under the simplest form, each node is composed of data and a reference (in other words, a link) to the next node in the sequence;
     /// more complex variants add additional links. This structure allows for efficient insertion or removal of elements from any position in the sequence.
     /// </summary>
-    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="int"></typeparam>
     /// <see cref="https://en.wikipedia.org/wiki/Linked_list"/>
-    public class LinkedList<T> : ICollection<T>
+    public class LinkedList : ICollection<int>
     {
         /// <summary>
-        /// Gets the first node of the LinkedList<T>.
+        /// Gets the first node of the LinkedList.
         /// </summary>
-        public LinkedListNode<T> Tail { get; internal set; }
+        public LinkedListNode Tail { get; set; }
 
         /// <summary>
-        /// Gets the last node of the LinkedList<T>.
+        /// Gets the last node of the LinkedList.
         /// </summary>
-        public LinkedListNode<T> Head { get; set; }
+        public LinkedListNode Head { get; set; }
 
         /// <summary>
-        /// Gets the number of nodes actually contained in the LinkedList<T>
+        /// Gets the number of nodes actually contained in the LinkedList
         /// </summary>
         public int Count { get; private set; }
 
         public bool IsReadOnly
         {
-            get { throw new NotImplementedException(); }
+            get { return false; }
         }
 
         /// <summary>
-        /// Adds a new node containing the specified value at the start of the LinkedList<T>.
+        /// Adds a new node containing the specified value at the start of the LinkedList.
         /// </summary>
-        /// <param name="value">The value to add at the start of the LinkedList<T>.</param>
-        public void AddFirst(T value)
+        /// <param name="value">The value to add at the start of the LinkedList.</param>
+        public void AddFirst(int value)
         {
-            LinkedListNode<T> node = new LinkedListNode<T>(value);
+            LinkedListNode node = new LinkedListNode(value);
 
             if (this.Head != null)
             {
                 node.Next = this.Head;
                 this.Head = node;
-            }
+            }   
             else
             {
                 this.Head = node;
@@ -56,12 +56,12 @@ namespace com.hack3rlife.datastructures
         }
 
         /// <summary>
-        /// Adds a new node containing the specified value at the end of the LinkedList<T>.
+        /// Adds a new node containing the specified value at the end of the LinkedList.
         /// </summary>
-        /// <param name="value">The value to add at the end of the LinkedList<T>.</param>
-        public void AddLast(T value)
+        /// <param name="value">The value to add at the end of the LinkedList.</param>
+        public void AddLast(int value)
         {
-            LinkedListNode<T> node = new LinkedListNode<T>(value);
+            LinkedListNode node = new LinkedListNode(value);
 
             if (this.Head != null)
             {
@@ -78,7 +78,7 @@ namespace com.hack3rlife.datastructures
         }
 
         /// <summary>
-        /// Removes the node at the start of the LinkedList<T>.
+        /// Removes the node at the start of the LinkedList.
         /// </summary>
         public void RemoveFirst()
         {
@@ -95,7 +95,7 @@ namespace com.hack3rlife.datastructures
                 }
                 else if(this.Count>=3)
                 {
-                    LinkedListNode<T> current = this.Head.Next;
+                    LinkedListNode current = this.Head.Next;
                     this.Head = current;
                 }
 
@@ -104,7 +104,7 @@ namespace com.hack3rlife.datastructures
         }
 
         /// <summary>
-        /// Removes the node at the end of the LinkedList<T>.
+        /// Removes the node at the end of the LinkedList.
         /// </summary>
         public void RemoveLast()
         {
@@ -121,7 +121,7 @@ namespace com.hack3rlife.datastructures
                 }
                 else if (this.Count>=3)
                 {
-                    LinkedListNode<T> current = this.Head;
+                    LinkedListNode current = this.Head;
 
                     while (current.Next.Next != null)
                     {
@@ -138,20 +138,20 @@ namespace com.hack3rlife.datastructures
         }
 
         /// <summary>
-        /// 
+        /// Removes the first occurrence of the <para>value</para>
         /// </summary>
         /// <param name="value"></param>
-        /// <returns></returns>
-        public bool Remove(T value)
+        /// <returns>true if the value was found and remove; otherwise null</returns>
+        public bool Remove(int value)
         {
             if (this.Head != null)
             {
-                LinkedListNode<T> current = this.Head;
-                LinkedListNode<T> previous = null;
+                LinkedListNode current = this.Head;
+                LinkedListNode previous = null;
 
                 while (current != null)
                 {
-                    if (current.Value.Equals(value))
+                    if (current.Value == value)
                     {
                         if (previous == null)
                         {
@@ -184,22 +184,22 @@ namespace com.hack3rlife.datastructures
         /// <summary>
         /// Removes all the duplicates
         /// </summary>
-        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="int"></typeparam>
         /// <param name="data"></param>
         /// <param name="current"></param>
         /// <returns></returns>
-        public LinkedListNode<T> Remove(int? data, LinkedListNode<T> current)
+        public LinkedListNode RemoveAll(int data, LinkedListNode current)
         {            
-            if (data == null || current == null || current.Next == null)
+            if (current == null)
                 return current;
 
-            if (current.Value.Equals(data))
+            if (current.Value == data)
             {
-                return Remove(data, current.Next);
+                return RemoveAll(data, current.Next);
             }
             else
             {
-                current.Next = Remove(data, current.Next);
+                current.Next = RemoveAll(data, current.Next);
                 return current;
             }
         }
@@ -209,7 +209,7 @@ namespace com.hack3rlife.datastructures
         /// </summary>        
         public void Display()
         {
-            LinkedListNode<T> node = this.Head;
+            LinkedListNode node = this.Head;
 
             while (node != null)
             {
@@ -241,16 +241,14 @@ namespace com.hack3rlife.datastructures
         /// </summary>
         /// <param name="item"></param>
         /// <returns></returns>
-        public bool Contains(T item)
+        public bool Contains(int item)
         {
-            LinkedListNode<T> current = this.Head;
+            LinkedListNode current = this.Head;
 
             while (current != null)
             {
-                if (current.Value.Equals(item))
-                {
+                if (current.Value == item)
                     return true;
-                }
 
                 current = current.Next;
             }
@@ -262,9 +260,9 @@ namespace com.hack3rlife.datastructures
         /// 
         /// </summary>
         /// <returns></returns>
-        IEnumerator<T> IEnumerable<T>.GetEnumerator()
+        IEnumerator IEnumerable.GetEnumerator()
         {
-            LinkedListNode<T> current = this.Head;
+            LinkedListNode current = this.Head;
 
             while (current != null)
             {
@@ -277,16 +275,16 @@ namespace com.hack3rlife.datastructures
         /// 
         /// </summary>
         /// <returns></returns>
-        IEnumerator IEnumerable.GetEnumerator()
+        IEnumerator<int> IEnumerable<int>.GetEnumerator()
         {
-            return ((IEnumerable<T>)this).GetEnumerator();
+            return ((IEnumerable<int>)this).GetEnumerator();
         }
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="item"></param>
-        void ICollection<T>.Add(T item)
+        void ICollection<int>.Add(int item)
         {
             this.AddLast(item);
         }       
@@ -296,15 +294,15 @@ namespace com.hack3rlife.datastructures
         /// </summary>
         /// <param name="array"></param>
         /// <param name="arrayIndex"></param>
-        void ICollection<T>.CopyTo(T[] array, int arrayIndex)
+        void ICollection<int>.CopyTo(int[] array, int arrayIndex)
         {
-            LinkedListNode<T> current = this.Head;
+            LinkedListNode current = this.Head;
 
             while (current != null && arrayIndex <= array.Length - 1)
             {
                 array[arrayIndex++] = current.Value;
                 current = current.Next;
             }
-        }        
+        }
     }
 }

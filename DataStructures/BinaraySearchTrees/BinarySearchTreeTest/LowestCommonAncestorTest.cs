@@ -11,13 +11,13 @@ namespace BinarySearchTreeTest
         [TestMethod]
         public void LcaTest()
         {
-            //Arrange
+            //arrange
             BinarySearchTree<int> bst = new BinarySearchTree<int>();
 
-            //Act
+            //act
             
 
-            //Assert
+            //assert
 
         }
     }

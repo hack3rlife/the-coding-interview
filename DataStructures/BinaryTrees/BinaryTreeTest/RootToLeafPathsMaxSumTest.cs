@@ -10,7 +10,7 @@ namespace BinaryTreeTest
         [TestMethod]
         public void RootToLeafPathsMaxSumTestPass()
         {
-            //Arrange
+            //arrange
             BinaryTree<int> tree = new BinaryTree<int>();
 
             tree.Root = new BinaryTreeNode<int>(10);
@@ -22,12 +22,12 @@ namespace BinaryTreeTest
 
             tree.Display(true);
 
-            //Act
+            //act
             int actual = 0;
             tree.RootToLeafPathsMaxSum(tree.Root, 0, ref actual);
             int expected = 17;
 
-            //Assert
+            //assert
             Assert.AreEqual<int>(expected, actual);
         }
     }

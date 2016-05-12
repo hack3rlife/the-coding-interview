@@ -1,4 +1,11 @@
-﻿namespace com.hack3rlife.insertionsort
+﻿/*
+ * @autor: Some smart guy on internet
+ * @date: 04/14/2016
+ * @project: InsertionSort
+ * 
+ */
+
+namespace com.hack3rlife.algorithms.sorting
 {
     /// <summary>
     /// Insertion sort is a simple sorting algorithm that builds the final sorted array (or list) one item at a time. 
@@ -12,7 +19,7 @@
     /// Space Required: O(1)
     /// </remarks>
     /// <remarks>https://en.wikipedia.org/wiki/Insertion_sort</remarks>
-    public class InsertionSort
+    public static class InsertionSort
     {
         /// <summary>
         /// Receives an unsorted array of integers and sort it in ascending order
@@ -20,16 +27,12 @@
         /// <param name="input">Unsorted array of intergers</param>
         /// <![CDATA[input = { 3, 7, 4, 9, 5, 2, 6, 1 } - output = { 1, 2, 3, 4, 6, 7, 9 };]]>
         /// <returns>A sorted array of integeres</returns>
-        public int[] Sort(int[] input)
+        public static int[] Sort(int[] input)
         {
-            for (int i = 0; i < input.Length; i++)
+            for (int i = 1; i < input.Length; i++)
             {
-                int j = i;
-                while (j > 0 && input[j - 1] > input[j])
-                {
+                for (int j = i; j > 0 && input[j - 1] > input[j]; j--)
                     Swap(input, j, j - 1);
-                    j--;
-                }
             }
             return input;
         }
@@ -41,7 +44,7 @@
         /// <param name="a">Indice a</param>
         /// <param name="b">Indice b</param>
         /// <returns></returns>
-        private void Swap(int[] input, int a, int b)
+        private static void Swap(int[] input, int a, int b)
         {
             if (a != b)
             {

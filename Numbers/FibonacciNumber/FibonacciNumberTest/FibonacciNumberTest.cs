@@ -11,13 +11,13 @@ namespace FibonacciNumberTest
         [TestMethod]
         public void FibonacciTest()
         {
-            //Arrange
+            //arrange
             int input = 9;
-            //Act
+            //act
             int actual = FibonacciNumber.Fibonacci(input);
             int expected = 34;
 
-            //Assert
+            //assert
             Assert.AreEqual(expected, actual);
 
         }
@@ -25,13 +25,13 @@ namespace FibonacciNumberTest
         [TestMethod]
         public void FibonacciDynamicTest()
         {
-            //Arrange
+            //arrange
             int input = 9;
-            //Act
+            //act
             int actual = FibonacciNumber.FibonacciDynamic(input);
             int expected = 34;
 
-            //Assert
+            //assert
             Assert.AreEqual(expected, actual);
 
         }
@@ -39,15 +39,15 @@ namespace FibonacciNumberTest
         [TestMethod]
         public void FibonacciSequenceTest()
         {
-            //Arrange
+            //arrange
             int input = 9;
 
 
-            //Act
+            //act
             List<int> actual = FibonacciNumber.FibonacciSequence(input);
             List<int> expected = new List<int>() { 0, 1, 1, 2, 3, 5, 8, 13, 21, 34 };
 
-            //Assert
+            //assert
             CollectionAssert.AreEqual(expected, actual);
 
         }

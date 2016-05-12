@@ -1,4 +1,11 @@
-﻿namespace com.hack3rlife.quicksort
+﻿/*
+ * @autor: Some smart guy on internet
+ * @date: 04/28/2015
+ * @project: QuickSort
+ * 
+ */
+
+namespace com.hack3rlife.algorithms.sorting
 {
     /// <summary>
     /// QuickSort is an efficient sorting algorithm, serving as a systematic method for placing the elements of an array in order.
@@ -15,15 +22,15 @@
     /// Space Required: O(n)
     /// </remarks>
     /// <see cref="https://en.wikipedia.org/wiki/Quicksort"/>
-    public class QuickSort
+    public static class QuickSort
     {
         /// <summary>
         /// Quicksort is a divide and conquer algorithm. Quicksort first divides a large array into two smaller sub-arrays: the low elements and the high elements. 
         /// Quicksort can then recursively sort the sub-arrays.
         /// </summary>
         /// <param name="input">Unsorted array of intergers</param>
-        /// <param name="left"></param>
-        /// <param name="right"></param>
+        /// <param name="left">0..q</param>
+        /// <param name="right">q+1..input.length-1</param>
         public static void Sort(int[] input, int left, int right)
         {
             if (left < right)
@@ -36,7 +43,7 @@
         }
 
         /// <summary>
-        /// 
+        /// Sort the elements of the unsorted array based on the pivot
         /// </summary>
         /// <param name="input"></param>
         /// <param name="left"></param>
@@ -50,11 +57,10 @@
             for (int i = left; i < right; i++)
             {
                 if (input[i] < pivot)
-                {
                     Swap(input, i, storeIndex++);
-                }
             }
 
+            //restore pivot to its correct position
             Swap(input, storeIndex, right);
 
             return storeIndex;
@@ -66,7 +72,6 @@
         /// <param name="input">Input integer array</param>
         /// <param name="a">Indice a</param>
         /// <param name="b">Indice b</param>
-        /// <returns></returns>
         private static void Swap(int[] input, int a, int b)
         {
             if (a != b)

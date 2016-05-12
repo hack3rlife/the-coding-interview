@@ -9,7 +9,7 @@ namespace MyLinkedListTest
         [TestMethod]
         public void SwapTest()
         {
-            LinkedList<int> list = new LinkedList<int>();
+            LinkedList list = new LinkedList();
             list.AddLast(10);
             list.AddLast(20);
             list.AddLast(30);

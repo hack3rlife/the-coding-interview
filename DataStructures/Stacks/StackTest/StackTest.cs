@@ -11,28 +11,28 @@ namespace StackTest
         [TestMethod]
         public void PushTest()
         {
-            //Arrange
+            //arrange
             Stack<int> stack = new Stack<int>();
          
-            //Act
+            //act
             stack.Push(0);
             stack.Push(1);
             stack.Push(2);
 
-            //Assert
+            //assert
             Assert.IsTrue(stack.Count == 3);
         }
 
         [TestMethod]
         public void PopTest()
         {
-            //Arrange
+            //arrange
             Stack<int> stack = new Stack<int>();
             stack.Push(0);
             stack.Push(1);
             stack.Push(2);
 
-            //Act
+            //act
             int actual = stack.Pop();
             int expected = 2;
 
@@ -43,12 +43,12 @@ namespace StackTest
         [TestMethod]
         public void EmptyStackPopTest()
         {
-            //Arrange
+            //arrange
             Stack<int> stack = new Stack<int>();
             stack.Push(0);
             stack.Pop();
 
-            //Act
+            //act
             try
             {
                 int actual = stack.Pop();
@@ -67,13 +67,13 @@ namespace StackTest
         [TestMethod]
         public void PeekTest()
         {
-            //Arrange
+            //arrange
             Stack<int> stack = new Stack<int>();
             stack.Push(0);
             stack.Push(1);
             stack.Push(2);
 
-            //Act
+            //act
             int actual = stack.Peek();
             int expected = 2;
 
@@ -84,14 +84,14 @@ namespace StackTest
         [TestMethod]
         public void CountTest()
         {
-            //Arrange
+            //arrange
             Stack<int> stack = new Stack<int>();
             stack.Push(0);
             stack.Pop();
             stack.Push(1);
             stack.Push(2);
             stack.Pop();
-            //Act
+            //act
             int actual = stack.Count;
             int expected = 1;
 
@@ -102,13 +102,13 @@ namespace StackTest
         [TestMethod]
         public void GetEnumeratorTest()
         {
-            //Arrange
+            //arrange
             Stack<int> stack = new Stack<int>();
             stack.Push(0);
             stack.Push(1);
             stack.Push(2);
 
-            //Act
+            //act
             var enumerator = stack.GetEnumerator();
 
             var actualList = new ArrayList();
@@ -121,7 +121,7 @@ namespace StackTest
                 actualList.Add(enumerator.Current);
             } 
                        
-            //Assert
+            //assert
             CollectionAssert.AreEqual(extpectedList, actualList);
         }
     }

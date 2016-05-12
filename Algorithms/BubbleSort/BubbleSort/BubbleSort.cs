@@ -1,4 +1,11 @@
-﻿namespace com.hack3rlife.bubblesort
+﻿/*
+ * @autor: Some smart guy on internet
+ * @date: 04/28/2015
+ * @project: BubbleSort
+ * 
+ */
+
+namespace com.hack3rlife.algorithms.sorting
 {
     /// <summary>
     /// Bubble Sort is a simple sorting algorithm that repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order. 
@@ -12,7 +19,7 @@
     /// Space Required: O(n)
     /// </remarks>
     /// <see cref="https://en.wikipedia.org/wiki/Bubble_sort"/>
-    public class BubbleSort
+    public static class BubbleSort
     {
         /// <summary>
         /// Receives an unsorted array of integers and sort it in ascending order
@@ -20,13 +27,8 @@
         /// <param name="input">The unsorted array</param>        
         /// <returns>/>A sorted array</returns>
         /// <![CDATA[input: |8|4|1|6|2|0| output: |0|1|2|4|6|8|]]>
-        public int[] Sort(int[] input)
-        {
-            if (input == null)
-            {
-                throw new System.NullReferenceException("input");
-            }
-            
+        public static int[] Sort(int[] input)
+        {            
             //first loop to iterate through the full array
             for (int i = 0; i < input.Length; i++)
             {
@@ -34,7 +36,7 @@
                 for (int j = i + 1; j < input.Length; j++)
                 {
                     //check the lowest value and swap them: smaller in the left side; bigger in the right side
-                    if (input[i] < input[j])
+                    if (input[i] > input[j])
                     {
                         input[i] ^= input[j];
                         input[j] ^= input[i];

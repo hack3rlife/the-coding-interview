@@ -10,7 +10,7 @@ namespace BinaryTreeTest
         [TestMethod]
         public void LCATest()
         {
-            //Arrange
+            //arrange
             BinaryTree<int> bt = new BinaryTree<int>();
             //root
             bt.Root = new BinaryTreeNode<int>(1);

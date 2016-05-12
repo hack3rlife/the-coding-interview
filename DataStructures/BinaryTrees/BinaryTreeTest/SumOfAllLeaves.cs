@@ -11,7 +11,7 @@ namespace BinaryTreeTest
         [TestMethod]
         public void SumOfAllLeavesTest()
         {
-            //Arrange
+            //arrange
             BinaryTree<int> tree = new BinaryTree<int>();
             tree.Root = new BinaryTreeNode<int>(20);
             tree.Root.Left = new BinaryTreeNode<int>(9);
@@ -24,7 +24,7 @@ namespace BinaryTreeTest
             tree.Root.Right.Right = new BinaryTreeNode<int>(52);
             tree.Root.Right.Right.Left = new BinaryTreeNode<int>(50);
 
-            //Act
+            //act
             int actual = tree.SumOfAllLeaves(tree.Root);
             int expected = 93;
 

@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using com.hack3rlife.arrays;
+using com.hack3rlife.algorithms;
 
 namespace SubArrayGivenSumTest
 {
@@ -10,30 +10,30 @@ namespace SubArrayGivenSumTest
         [TestMethod]
         public void GetSubArrayTest()
         {
-            //Arrange
+            //arrange
             int[] input = { 1, 4, 20, 3, 10, 5 };
             int sum = 33;
             int expected = 1;
 
-            //Act
+            //act
              int[] actual = SubArrayGivenSum.GetSubArrayForGivenSum(input, sum);
 
-            //Assert
+            //assert
             Assert.AreEqual<int>(expected, actual[0]);
         }
 
         [TestMethod]
         public void GetSubArrayWithSumZeroTest()
         {
-            //Arrange
+            //arrange
             int[] input = { 15, -2, 2, -8, 1, 7, 10, 23 };
             int sum = 0;
             int expected = 1;
 
-            //Act
+            //act
             int[] actual = SubArrayGivenSum.GetSubArrayWithSumZero(input);
 
-            //Assert
+            //assert
             Assert.AreEqual<int>(expected, actual[0]);
         }
     }
