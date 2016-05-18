@@ -8,7 +8,7 @@ namespace com.hack3rlife.datastructures
     /// using LinkedList as underlaying datastructure.
     /// </summary>
     /// <typeparam name="int"></typeparam>
-    public class Stack : IEnumerable
+    public class StackMin : IEnumerable
     {
         private StackNode _top;
 
@@ -17,7 +17,7 @@ namespace com.hack3rlife.datastructures
         /// </summary>
         public int Count { get; private set; }
 
-        public Stack()
+        public StackMin()
         {
             _top = null;
             Count = 0;
@@ -27,7 +27,7 @@ namespace com.hack3rlife.datastructures
         /// Inserts an object at the top of the Stack.
         /// </summary>
         /// <param name="value"></param>
-        public virtual void Push(int value)
+        public void Push(int value)
         {
             StackNode node = new StackNode(value);
 
@@ -49,7 +49,7 @@ namespace com.hack3rlife.datastructures
         /// </summary>-
         /// <returns></returns>
         /// <exception cref="NullReferenceException"/>When stack is empty (Count = 0)</exception>
-        public virtual int Pop()
+        public int Pop()
         {
             if (Count > 0)
             {

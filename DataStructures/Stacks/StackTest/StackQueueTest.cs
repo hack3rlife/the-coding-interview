@@ -11,7 +11,7 @@ namespace StackTest
         public void PushTest()
         {
             //arrange
-            StackQueue<int> stack = new StackQueue<int>();
+            StackQueue stack = new StackQueue();
 
             //act
             stack.Push(0);
@@ -26,7 +26,7 @@ namespace StackTest
         public void PopTest()
         {
             //arrange
-            StackQueue<int> stack = new StackQueue<int>();
+            StackQueue stack = new StackQueue();
             stack.Push(0);
             stack.Push(1);
             stack.Push(2);
@@ -36,7 +36,7 @@ namespace StackTest
             int expected = 2;
 
             //Asset
-            Assert.AreEqual<int>(expected, actual);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

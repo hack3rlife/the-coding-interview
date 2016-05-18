@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using com.hack3rlife.datastructures;
 using System.Collections;
 
-namespace StackTest
+namespace com.hack3rlife.datastructures
 {
     [TestClass]
     public class StackTest
@@ -12,7 +12,7 @@ namespace StackTest
         public void PushTest()
         {
             //arrange
-            Stack<int> stack = new Stack<int>();
+            Stack stack = new Stack();
          
             //act
             stack.Push(0);
@@ -27,7 +27,7 @@ namespace StackTest
         public void PopTest()
         {
             //arrange
-            Stack<int> stack = new Stack<int>();
+            Stack stack = new Stack();
             stack.Push(0);
             stack.Push(1);
             stack.Push(2);
@@ -37,14 +37,14 @@ namespace StackTest
             int expected = 2;
 
             //Asset
-            Assert.AreEqual<int>(expected, actual);            
+            Assert.AreEqual(expected, actual);            
         }
 
         [TestMethod]
         public void EmptyStackPopTest()
         {
             //arrange
-            Stack<int> stack = new Stack<int>();
+            Stack stack = new Stack();
             stack.Push(0);
             stack.Pop();
 
@@ -68,7 +68,7 @@ namespace StackTest
         public void PeekTest()
         {
             //arrange
-            Stack<int> stack = new Stack<int>();
+            Stack stack = new Stack();
             stack.Push(0);
             stack.Push(1);
             stack.Push(2);
@@ -78,14 +78,14 @@ namespace StackTest
             int expected = 2;
 
             //Asset
-            Assert.AreEqual<int>(expected, actual);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
         public void CountTest()
         {
             //arrange
-            Stack<int> stack = new Stack<int>();
+            Stack stack = new Stack();
             stack.Push(0);
             stack.Pop();
             stack.Push(1);
@@ -96,14 +96,14 @@ namespace StackTest
             int expected = 1;
 
             //Asset
-            Assert.AreEqual<int>(expected, actual);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
         public void GetEnumeratorTest()
         {
             //arrange
-            Stack<int> stack = new Stack<int>();
+            Stack stack = new Stack();
             stack.Push(0);
             stack.Push(1);
             stack.Push(2);

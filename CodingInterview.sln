@@ -237,6 +237,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Math", "Math", "{0C447440-C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareRootTest", "Math\SquareRoot\SquareRootTest\SquareRootTest.csproj", "{BD2EDE78-3C30-4014-9D4E-E597C974AD56}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StairCase", "Arrays\StairCase\StairCase\StairCase.csproj", "{DCB8921A-3718-4AD2-AD22-2C240C9FE10E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StairCaseTUniTests", "StairCaseTUniTests\StairCaseTUniTests.csproj", "{F7031178-5380-4A9B-8004-2B53C7BDAC8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1407,6 +1411,38 @@ Global
 		{BD2EDE78-3C30-4014-9D4E-E597C974AD56}.Release|x64.Build.0 = Release|Any CPU
 		{BD2EDE78-3C30-4014-9D4E-E597C974AD56}.Release|x86.ActiveCfg = Release|Any CPU
 		{BD2EDE78-3C30-4014-9D4E-E597C974AD56}.Release|x86.Build.0 = Release|Any CPU
+		{DCB8921A-3718-4AD2-AD22-2C240C9FE10E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCB8921A-3718-4AD2-AD22-2C240C9FE10E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCB8921A-3718-4AD2-AD22-2C240C9FE10E}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{DCB8921A-3718-4AD2-AD22-2C240C9FE10E}.Debug|ARM.Build.0 = Debug|Any CPU
+		{DCB8921A-3718-4AD2-AD22-2C240C9FE10E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DCB8921A-3718-4AD2-AD22-2C240C9FE10E}.Debug|x64.Build.0 = Debug|Any CPU
+		{DCB8921A-3718-4AD2-AD22-2C240C9FE10E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DCB8921A-3718-4AD2-AD22-2C240C9FE10E}.Debug|x86.Build.0 = Debug|Any CPU
+		{DCB8921A-3718-4AD2-AD22-2C240C9FE10E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCB8921A-3718-4AD2-AD22-2C240C9FE10E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCB8921A-3718-4AD2-AD22-2C240C9FE10E}.Release|ARM.ActiveCfg = Release|Any CPU
+		{DCB8921A-3718-4AD2-AD22-2C240C9FE10E}.Release|ARM.Build.0 = Release|Any CPU
+		{DCB8921A-3718-4AD2-AD22-2C240C9FE10E}.Release|x64.ActiveCfg = Release|Any CPU
+		{DCB8921A-3718-4AD2-AD22-2C240C9FE10E}.Release|x64.Build.0 = Release|Any CPU
+		{DCB8921A-3718-4AD2-AD22-2C240C9FE10E}.Release|x86.ActiveCfg = Release|Any CPU
+		{DCB8921A-3718-4AD2-AD22-2C240C9FE10E}.Release|x86.Build.0 = Release|Any CPU
+		{F7031178-5380-4A9B-8004-2B53C7BDAC8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7031178-5380-4A9B-8004-2B53C7BDAC8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7031178-5380-4A9B-8004-2B53C7BDAC8B}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{F7031178-5380-4A9B-8004-2B53C7BDAC8B}.Debug|ARM.Build.0 = Debug|Any CPU
+		{F7031178-5380-4A9B-8004-2B53C7BDAC8B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F7031178-5380-4A9B-8004-2B53C7BDAC8B}.Debug|x64.Build.0 = Debug|Any CPU
+		{F7031178-5380-4A9B-8004-2B53C7BDAC8B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F7031178-5380-4A9B-8004-2B53C7BDAC8B}.Debug|x86.Build.0 = Debug|Any CPU
+		{F7031178-5380-4A9B-8004-2B53C7BDAC8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7031178-5380-4A9B-8004-2B53C7BDAC8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7031178-5380-4A9B-8004-2B53C7BDAC8B}.Release|ARM.ActiveCfg = Release|Any CPU
+		{F7031178-5380-4A9B-8004-2B53C7BDAC8B}.Release|ARM.Build.0 = Release|Any CPU
+		{F7031178-5380-4A9B-8004-2B53C7BDAC8B}.Release|x64.ActiveCfg = Release|Any CPU
+		{F7031178-5380-4A9B-8004-2B53C7BDAC8B}.Release|x64.Build.0 = Release|Any CPU
+		{F7031178-5380-4A9B-8004-2B53C7BDAC8B}.Release|x86.ActiveCfg = Release|Any CPU
+		{F7031178-5380-4A9B-8004-2B53C7BDAC8B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1527,9 +1563,11 @@ Global
 		{F4EE37E0-F2C0-4E72-88EC-491EB0E37E2D} = {0A60C40F-89C3-4C72-A679-3D5AEBC2EB73}
 		{0C447440-C531-4F3D-A5DA-22D58F609BDD} = {C915F492-E693-4BB3-B97B-C699FD581991}
 		{BD2EDE78-3C30-4014-9D4E-E597C974AD56} = {0C447440-C531-4F3D-A5DA-22D58F609BDD}
+		{DCB8921A-3718-4AD2-AD22-2C240C9FE10E} = {25077DF6-E1DF-4000-B603-2CC6B990A4D8}
+		{F7031178-5380-4A9B-8004-2B53C7BDAC8B} = {01C8DDF2-9C69-4E45-96B5-CADE4D0AD758}
 	EndGlobalSection
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 100
+		SccNumberOfProjects = 102
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
 		SccLocalPath0 = .
@@ -1929,6 +1967,14 @@ Global
 		SccProjectTopLevelParentUniqueName99 = CodingInterview.sln
 		SccProjectName99 = Math/SquareRoot/SquareRootTest
 		SccLocalPath99 = Math\\SquareRoot\\SquareRootTest
+		SccProjectUniqueName100 = Arrays\\StairCase\\StairCase\\StairCase.csproj
+		SccProjectTopLevelParentUniqueName100 = CodingInterview.sln
+		SccProjectName100 = Arrays/StairCase/StairCase
+		SccLocalPath100 = Arrays\\StairCase\\StairCase
+		SccProjectUniqueName101 = StairCaseTUniTests\\StairCaseTUniTests.csproj
+		SccProjectTopLevelParentUniqueName101 = CodingInterview.sln
+		SccProjectName101 = StairCaseTUniTests
+		SccLocalPath101 = StairCaseTUniTests
 	EndGlobalSection
 	GlobalSection(TeamFoundationVersionControl) = preSolution
 		SccNumberOfProjects = 100

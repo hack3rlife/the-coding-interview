@@ -10,8 +10,8 @@ namespace com.hack3rlife.datastructures
     /// <summary>
     /// Follow-up: Implment a Stack using a Queue
     /// </summary>
-    /// <typeparam name="T"></typeparam>
-    public class StackQueue<T>
+    /// <typeparam name="int"></typeparam>
+    public class StackQueue
     {
         private Queue _top;
         public int Count { get; private set; }

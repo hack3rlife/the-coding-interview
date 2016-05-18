@@ -12,14 +12,13 @@ namespace FibonacciNumberTest
         public void FibonacciTest()
         {
             //arrange
-            int input = 9;
+            int input = 4;
             //act
             int actual = FibonacciNumber.Fibonacci(input);
             int expected = 34;
 
             //assert
             Assert.AreEqual(expected, actual);
-
         }
 
         [TestMethod]
