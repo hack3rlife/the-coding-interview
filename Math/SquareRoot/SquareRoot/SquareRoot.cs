@@ -59,5 +59,6 @@ namespace com.hack3rlife.math
 
             return i - 1;
         }
+
     }
 }

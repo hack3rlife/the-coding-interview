@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{28A6EDF6-2DAD-4B91-A63A-AD6D5F2C29C9}</ProjectGuid>
+    <ProjectGuid>{B321A9FB-315B-4B17-A36A-7E0DC0E548C4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BinarySearchTest</RootNamespace>
-    <AssemblyName>BinarySearchTest</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>LongestIncreasingSubsequenceTest</RootNamespace>
+    <AssemblyName>LongestIncreasingSubsequenceTest</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -54,13 +54,13 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="BinarySearchTest.cs" />
+    <Compile Include="LongestIncreasingSubsequenceTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BinarySearch\BinarySearch.csproj">
-      <Project>{6591a475-c7f1-4d27-bb94-56b217d8051f}</Project>
-      <Name>BinarySearch</Name>
+    <ProjectReference Include="..\LongestIncreasingSubsequence\LongestIncreasingSubsequence.csproj">
+      <Project>{6CD7A19D-AF48-4449-8165-AF41613BBA17}</Project>
+      <Name>LongestIncreasingSubsequence</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

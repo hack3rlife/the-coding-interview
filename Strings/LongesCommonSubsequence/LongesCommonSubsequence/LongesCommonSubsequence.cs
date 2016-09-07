@@ -14,7 +14,7 @@ namespace com.hack3rlife.strings
     /// It is also widely used by revision control systems such as Git for reconciling multiple changes made to a revision-controlled collection of files.    /// </summary>
     /// <see cref=">https://en.wikipedia.org/wiki/Longest_common_subsequence_problem"/>
     /// <seealso cref="https://www.ics.uci.edu/~eppstein/161/960229.html"/>
-    public class LongesCommonSubsequence
+    public static class LongesCommonSubsequence
     {
         /// <summary>
         /// 

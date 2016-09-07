@@ -86,7 +86,8 @@ namespace com.hack3rlife.datastructures
             {
                 node = list1;
             }
-            else {
+            else
+            {
                 node = list2;
                 list2 = list1;
                 list1 = node;
@@ -266,7 +267,7 @@ namespace com.hack3rlife.datastructures
                 }
             }
         }
-       
+
         /// <summary>
         /// 
         /// </summary>
@@ -346,7 +347,7 @@ namespace com.hack3rlife.datastructures
 
                 bool skip = true;
 
-                int count = m-1;
+                int count = m - 1;
 
                 while (current.Next != null)
                 {
@@ -413,10 +414,10 @@ namespace com.hack3rlife.datastructures
 
             var k = Math.Abs(list1.Count - list2.Count);
 
-            if(list1.Count > list2.Count)
+            if (list1.Count > list2.Count)
             {
                 l = list1.Head;
-                s = list2.Head;               
+                s = list2.Head;
             }
             else
             {
@@ -427,7 +428,7 @@ namespace com.hack3rlife.datastructures
             while (k-- > 0)
                 l = l.Next;
 
-            while(l != null && s != null && l.Value != s.Value)
+            while (l != null && s != null && l.Value != s.Value)
             {
                 l = l.Next;
                 s = s.Next;
@@ -467,7 +468,7 @@ namespace com.hack3rlife.datastructures
                     greater = temp;
                 }
 
-                 current = current.Next;
+                current = current.Next;
             }
 
             list.Head = lesser;

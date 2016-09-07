@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3E48A53E-C8B5-4DE3-A51F-4F84F2A83413}"
 EndProject
@@ -248,6 +248,16 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Random", "Random", "{CDB7C835-C3E6-4788-B2C6-604D4649E510}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RatioIteratorTest", "Random\RatioIterator\RatioIteratorTest\RatioIteratorTest.csproj", "{1EBF5CE5-BCCC-4498-BDBE-04AAC07664BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestIncreasingSubsequenceTest", "Arrays\LongestIncreasingSubsequence\LongestIncreasingSubsequenceTest\LongestIncreasingSubsequenceTest.csproj", "{B321A9FB-315B-4B17-A36A-7E0DC0E548C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestIncreasingSubsequence", "Arrays\LongestIncreasingSubsequence\LongestIncreasingSubsequence\LongestIncreasingSubsequence.csproj", "{6CD7A19D-AF48-4449-8165-AF41613BBA17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxSumIncreasingSubsequence", "MaxSumIncreasingSubsequence\MaxSumIncreasingSubsequence\MaxSumIncreasingSubsequence.csproj", "{9C470900-8BE2-4E73-847D-3987E2683E8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestIncreasingSubsequenceSum", "Arrays\LongestIncreasingSubsequenceSum\LongestIncreasingSubsequenceSum\LongestIncreasingSubsequenceSum.csproj", "{A46D3E0A-B050-4C75-8ECA-B37204419233}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestIncreasingSubsequenceSumTest", "MaxSumIncreasingSubsequence\LongestIncreasingSubsequenceSumTest\LongestIncreasingSubsequenceSumTest.csproj", "{6517450F-18D5-4FDB-8AF8-3B218A151EAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1483,6 +1493,86 @@ Global
 		{1EBF5CE5-BCCC-4498-BDBE-04AAC07664BD}.Release|x64.Build.0 = Release|Any CPU
 		{1EBF5CE5-BCCC-4498-BDBE-04AAC07664BD}.Release|x86.ActiveCfg = Release|Any CPU
 		{1EBF5CE5-BCCC-4498-BDBE-04AAC07664BD}.Release|x86.Build.0 = Release|Any CPU
+		{B321A9FB-315B-4B17-A36A-7E0DC0E548C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B321A9FB-315B-4B17-A36A-7E0DC0E548C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B321A9FB-315B-4B17-A36A-7E0DC0E548C4}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{B321A9FB-315B-4B17-A36A-7E0DC0E548C4}.Debug|ARM.Build.0 = Debug|Any CPU
+		{B321A9FB-315B-4B17-A36A-7E0DC0E548C4}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B321A9FB-315B-4B17-A36A-7E0DC0E548C4}.Debug|x64.Build.0 = Debug|Any CPU
+		{B321A9FB-315B-4B17-A36A-7E0DC0E548C4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B321A9FB-315B-4B17-A36A-7E0DC0E548C4}.Debug|x86.Build.0 = Debug|Any CPU
+		{B321A9FB-315B-4B17-A36A-7E0DC0E548C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B321A9FB-315B-4B17-A36A-7E0DC0E548C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B321A9FB-315B-4B17-A36A-7E0DC0E548C4}.Release|ARM.ActiveCfg = Release|Any CPU
+		{B321A9FB-315B-4B17-A36A-7E0DC0E548C4}.Release|ARM.Build.0 = Release|Any CPU
+		{B321A9FB-315B-4B17-A36A-7E0DC0E548C4}.Release|x64.ActiveCfg = Release|Any CPU
+		{B321A9FB-315B-4B17-A36A-7E0DC0E548C4}.Release|x64.Build.0 = Release|Any CPU
+		{B321A9FB-315B-4B17-A36A-7E0DC0E548C4}.Release|x86.ActiveCfg = Release|Any CPU
+		{B321A9FB-315B-4B17-A36A-7E0DC0E548C4}.Release|x86.Build.0 = Release|Any CPU
+		{6CD7A19D-AF48-4449-8165-AF41613BBA17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CD7A19D-AF48-4449-8165-AF41613BBA17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CD7A19D-AF48-4449-8165-AF41613BBA17}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{6CD7A19D-AF48-4449-8165-AF41613BBA17}.Debug|ARM.Build.0 = Debug|Any CPU
+		{6CD7A19D-AF48-4449-8165-AF41613BBA17}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6CD7A19D-AF48-4449-8165-AF41613BBA17}.Debug|x64.Build.0 = Debug|Any CPU
+		{6CD7A19D-AF48-4449-8165-AF41613BBA17}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6CD7A19D-AF48-4449-8165-AF41613BBA17}.Debug|x86.Build.0 = Debug|Any CPU
+		{6CD7A19D-AF48-4449-8165-AF41613BBA17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CD7A19D-AF48-4449-8165-AF41613BBA17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CD7A19D-AF48-4449-8165-AF41613BBA17}.Release|ARM.ActiveCfg = Release|Any CPU
+		{6CD7A19D-AF48-4449-8165-AF41613BBA17}.Release|ARM.Build.0 = Release|Any CPU
+		{6CD7A19D-AF48-4449-8165-AF41613BBA17}.Release|x64.ActiveCfg = Release|Any CPU
+		{6CD7A19D-AF48-4449-8165-AF41613BBA17}.Release|x64.Build.0 = Release|Any CPU
+		{6CD7A19D-AF48-4449-8165-AF41613BBA17}.Release|x86.ActiveCfg = Release|Any CPU
+		{6CD7A19D-AF48-4449-8165-AF41613BBA17}.Release|x86.Build.0 = Release|Any CPU
+		{9C470900-8BE2-4E73-847D-3987E2683E8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C470900-8BE2-4E73-847D-3987E2683E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C470900-8BE2-4E73-847D-3987E2683E8C}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{9C470900-8BE2-4E73-847D-3987E2683E8C}.Debug|ARM.Build.0 = Debug|Any CPU
+		{9C470900-8BE2-4E73-847D-3987E2683E8C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9C470900-8BE2-4E73-847D-3987E2683E8C}.Debug|x64.Build.0 = Debug|Any CPU
+		{9C470900-8BE2-4E73-847D-3987E2683E8C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9C470900-8BE2-4E73-847D-3987E2683E8C}.Debug|x86.Build.0 = Debug|Any CPU
+		{9C470900-8BE2-4E73-847D-3987E2683E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C470900-8BE2-4E73-847D-3987E2683E8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C470900-8BE2-4E73-847D-3987E2683E8C}.Release|ARM.ActiveCfg = Release|Any CPU
+		{9C470900-8BE2-4E73-847D-3987E2683E8C}.Release|ARM.Build.0 = Release|Any CPU
+		{9C470900-8BE2-4E73-847D-3987E2683E8C}.Release|x64.ActiveCfg = Release|Any CPU
+		{9C470900-8BE2-4E73-847D-3987E2683E8C}.Release|x64.Build.0 = Release|Any CPU
+		{9C470900-8BE2-4E73-847D-3987E2683E8C}.Release|x86.ActiveCfg = Release|Any CPU
+		{9C470900-8BE2-4E73-847D-3987E2683E8C}.Release|x86.Build.0 = Release|Any CPU
+		{A46D3E0A-B050-4C75-8ECA-B37204419233}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A46D3E0A-B050-4C75-8ECA-B37204419233}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A46D3E0A-B050-4C75-8ECA-B37204419233}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{A46D3E0A-B050-4C75-8ECA-B37204419233}.Debug|ARM.Build.0 = Debug|Any CPU
+		{A46D3E0A-B050-4C75-8ECA-B37204419233}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A46D3E0A-B050-4C75-8ECA-B37204419233}.Debug|x64.Build.0 = Debug|Any CPU
+		{A46D3E0A-B050-4C75-8ECA-B37204419233}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A46D3E0A-B050-4C75-8ECA-B37204419233}.Debug|x86.Build.0 = Debug|Any CPU
+		{A46D3E0A-B050-4C75-8ECA-B37204419233}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A46D3E0A-B050-4C75-8ECA-B37204419233}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A46D3E0A-B050-4C75-8ECA-B37204419233}.Release|ARM.ActiveCfg = Release|Any CPU
+		{A46D3E0A-B050-4C75-8ECA-B37204419233}.Release|ARM.Build.0 = Release|Any CPU
+		{A46D3E0A-B050-4C75-8ECA-B37204419233}.Release|x64.ActiveCfg = Release|Any CPU
+		{A46D3E0A-B050-4C75-8ECA-B37204419233}.Release|x64.Build.0 = Release|Any CPU
+		{A46D3E0A-B050-4C75-8ECA-B37204419233}.Release|x86.ActiveCfg = Release|Any CPU
+		{A46D3E0A-B050-4C75-8ECA-B37204419233}.Release|x86.Build.0 = Release|Any CPU
+		{6517450F-18D5-4FDB-8AF8-3B218A151EAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6517450F-18D5-4FDB-8AF8-3B218A151EAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6517450F-18D5-4FDB-8AF8-3B218A151EAE}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{6517450F-18D5-4FDB-8AF8-3B218A151EAE}.Debug|ARM.Build.0 = Debug|Any CPU
+		{6517450F-18D5-4FDB-8AF8-3B218A151EAE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6517450F-18D5-4FDB-8AF8-3B218A151EAE}.Debug|x64.Build.0 = Debug|Any CPU
+		{6517450F-18D5-4FDB-8AF8-3B218A151EAE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6517450F-18D5-4FDB-8AF8-3B218A151EAE}.Debug|x86.Build.0 = Debug|Any CPU
+		{6517450F-18D5-4FDB-8AF8-3B218A151EAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6517450F-18D5-4FDB-8AF8-3B218A151EAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6517450F-18D5-4FDB-8AF8-3B218A151EAE}.Release|ARM.ActiveCfg = Release|Any CPU
+		{6517450F-18D5-4FDB-8AF8-3B218A151EAE}.Release|ARM.Build.0 = Release|Any CPU
+		{6517450F-18D5-4FDB-8AF8-3B218A151EAE}.Release|x64.ActiveCfg = Release|Any CPU
+		{6517450F-18D5-4FDB-8AF8-3B218A151EAE}.Release|x64.Build.0 = Release|Any CPU
+		{6517450F-18D5-4FDB-8AF8-3B218A151EAE}.Release|x86.ActiveCfg = Release|Any CPU
+		{6517450F-18D5-4FDB-8AF8-3B218A151EAE}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1609,9 +1699,14 @@ Global
 		{D9D15B62-2E0E-448B-A71D-9883FB94E6A5} = {D68639E3-9980-4FBE-A3E7-1A8012B6648E}
 		{CDB7C835-C3E6-4788-B2C6-604D4649E510} = {C915F492-E693-4BB3-B97B-C699FD581991}
 		{1EBF5CE5-BCCC-4498-BDBE-04AAC07664BD} = {CDB7C835-C3E6-4788-B2C6-604D4649E510}
+		{B321A9FB-315B-4B17-A36A-7E0DC0E548C4} = {01C8DDF2-9C69-4E45-96B5-CADE4D0AD758}
+		{6CD7A19D-AF48-4449-8165-AF41613BBA17} = {25077DF6-E1DF-4000-B603-2CC6B990A4D8}
+		{9C470900-8BE2-4E73-847D-3987E2683E8C} = {25077DF6-E1DF-4000-B603-2CC6B990A4D8}
+		{A46D3E0A-B050-4C75-8ECA-B37204419233} = {25077DF6-E1DF-4000-B603-2CC6B990A4D8}
+		{6517450F-18D5-4FDB-8AF8-3B218A151EAE} = {01C8DDF2-9C69-4E45-96B5-CADE4D0AD758}
 	EndGlobalSection
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 104
+		SccNumberOfProjects = 109
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs15
 		SccLocalPath0 = .
@@ -2027,5 +2122,25 @@ Global
 		SccProjectTopLevelParentUniqueName103 = CodingInterview.sln
 		SccProjectName103 = Math/SquareRoot/SquareRootTest
 		SccLocalPath103 = Math\\SquareRoot\\SquareRootTest
+		SccProjectUniqueName104 = Arrays\\LongestIncreasingSubsequence\\LongestIncreasingSubsequenceTest\\LongestIncreasingSubsequenceTest.csproj
+		SccProjectTopLevelParentUniqueName104 = CodingInterview.sln
+		SccProjectName104 = Arrays/LongestIncreasingSubsequence/LongestIncreasingSubsequenceTest
+		SccLocalPath104 = Arrays\\LongestIncreasingSubsequence\\LongestIncreasingSubsequenceTest
+		SccProjectUniqueName105 = MaxSumIncreasingSubsequence\\MaxSumIncreasingSubsequence\\MaxSumIncreasingSubsequence.csproj
+		SccProjectTopLevelParentUniqueName105 = CodingInterview.sln
+		SccProjectName105 = MaxSumIncreasingSubsequence/MaxSumIncreasingSubsequence
+		SccLocalPath105 = MaxSumIncreasingSubsequence\\MaxSumIncreasingSubsequence
+		SccProjectUniqueName106 = Arrays\\LongestIncreasingSubsequenceSum\\LongestIncreasingSubsequenceSum\\LongestIncreasingSubsequenceSum.csproj
+		SccProjectTopLevelParentUniqueName106 = CodingInterview.sln
+		SccProjectName106 = Arrays/LongestIncreasingSubsequenceSum/LongestIncreasingSubsequenceSum
+		SccLocalPath106 = Arrays\\LongestIncreasingSubsequenceSum\\LongestIncreasingSubsequenceSum
+		SccProjectUniqueName107 = MaxSumIncreasingSubsequence\\LongestIncreasingSubsequenceSumTest\\LongestIncreasingSubsequenceSumTest.csproj
+		SccProjectTopLevelParentUniqueName107 = CodingInterview.sln
+		SccProjectName107 = MaxSumIncreasingSubsequence/LongestIncreasingSubsequenceSumTest
+		SccLocalPath107 = MaxSumIncreasingSubsequence\\LongestIncreasingSubsequenceSumTest
+		SccProjectUniqueName108 = Arrays\\LongestIncreasingSubsequence\\LongestIncreasingSubsequence\\LongestIncreasingSubsequence.csproj
+		SccProjectTopLevelParentUniqueName108 = CodingInterview.sln
+		SccProjectName108 = Arrays/LongestIncreasingSubsequence/LongestIncreasingSubsequence
+		SccLocalPath108 = Arrays\\LongestIncreasingSubsequence\\LongestIncreasingSubsequence
 	EndGlobalSection
 EndGlobal

@@ -1,9 +1,10 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using com.hack3rlife.algorithms.searching;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace com.hack3rlife.algorithms.sorting
 {
     [TestClass]
-    public class BunarySearchTest
+    public class BinarySearchTest
     {
         [TestMethod]
         [TestCategory("BinarySearch")]
