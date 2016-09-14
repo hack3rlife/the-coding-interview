@@ -1,4 +1,4 @@
-﻿namespace ClassLibrary1
+﻿namespace com.hack3rlife.algorithms.searching
 {
     public static class SquareRoot
     {

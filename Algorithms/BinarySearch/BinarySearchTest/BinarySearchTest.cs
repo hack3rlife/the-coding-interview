@@ -1,7 +1,7 @@
 ﻿using com.hack3rlife.algorithms.searching;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace com.hack3rlife.algorithms.sorting
+namespace com.hack3rlife.algorithms.sorting.test
 {
     [TestClass]
     public class BinarySearchTest
@@ -15,7 +15,7 @@ namespace com.hack3rlife.algorithms.sorting
             int expected = 1;
 
             //act
-            int? actual = BinarySearch.IterativeSearch(input, 11, 0, input.Length - 1);
+            int? actual = BinarySearch.Search(input, 11);
 
             //assert
             Assert.AreEqual(expected, actual);
@@ -30,7 +30,7 @@ namespace com.hack3rlife.algorithms.sorting
             int expected = 4;
 
             //act
-            int? actual = BinarySearch.IterativeSearch(input, 48, 0, input.Length - 1);
+            int? actual = BinarySearch.Search(input, 48);
 
             //assert
             Assert.AreEqual(expected, actual);
@@ -45,7 +45,7 @@ namespace com.hack3rlife.algorithms.sorting
             int expected = 5;
 
             //act
-            int? actual = BinarySearch.IterativeSearch(input, 50, 0, input.Length - 1);
+            int? actual = BinarySearch.Search(input, 50);
 
             //assert
             Assert.AreEqual(expected, actual);
@@ -60,7 +60,7 @@ namespace com.hack3rlife.algorithms.sorting
             int expected = 0;
 
             //act
-            int? actual = BinarySearch.IterativeSearch(input, 10, 0, input.Length - 1);
+            int? actual = BinarySearch.Search(input, 10);
 
             //assert
             Assert.AreEqual(expected, actual);
@@ -75,7 +75,7 @@ namespace com.hack3rlife.algorithms.sorting
             int expected = 2;
 
             //act
-            int? actual = BinarySearch.IterativeSearch(input, 27, 0, input.Length - 1);
+            int? actual = BinarySearch.Search(input, 27);
 
             //assert
             Assert.AreEqual(expected, actual);
@@ -90,7 +90,7 @@ namespace com.hack3rlife.algorithms.sorting
             int? expected = null;
 
             //act
-            int? actual = BinarySearch.IterativeSearch(input, 0, 0, input.Length - 1);
+            int? actual = BinarySearch.Search(input, 0);
 
             //assert
             Assert.AreEqual(expected, actual);
@@ -105,7 +105,7 @@ namespace com.hack3rlife.algorithms.sorting
             int expected = 2;
 
             //act
-            int? actual = BinarySearch.IterativeSearch(input, -2, 0, input.Length - 1);
+            int? actual = BinarySearch.Search(input, -2);
 
             //assert
             Assert.AreEqual(expected, actual);

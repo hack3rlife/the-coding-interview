@@ -6,7 +6,7 @@ namespace com.hack3rlife.datastructures
     /// <summary>
     /// Represents a BinarySearchTree<T>
     /// </summary>
-    /// <typeparam name="T">Specifies the element type of the BinarySearchTree<T>.</typeparam>
+    /// <typeparam name="{T}">Specifies the element type of the BinarySearchTree<T>.</typeparam>
     public class BinarySearchTree<T> : ICollection<T> where T : IComparable<T>
     {
         /// <summary>

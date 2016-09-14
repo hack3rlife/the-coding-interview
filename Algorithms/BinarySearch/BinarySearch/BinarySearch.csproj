@@ -35,10 +35,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="BinarySearch.cs" />
-    <Compile Include="MatrixSearch.cs" />
-    <Compile Include="SearchFirstOccurenceOfK.cs" />
+    <Compile Include="BinarySearch.CountOcurrencesOfAnElement.cs" />
+    <Compile Include="BinarySearch.PivotedBinarySearch.cs" />
+    <Compile Include="BinarySearch.FindFirstOccurence.cs" />
+    <Compile Include="BinarySearch.FindLastOccurencet.cs" />
+    <Compile Include="BinarySearch.MatrixSearch.cs" />
+    <Compile Include="BinarySearch.MissingElement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SquareRoot.cs" />
+    <Compile Include="BinarySearch.FindPivot.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

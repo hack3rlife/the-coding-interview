@@ -20,30 +20,34 @@ namespace com.hack3rlife.algorithms.searching
     /// Space Required: O(n)
     /// </remarks>
     /// <see cref="https://en.wikipedia.org/wiki/Binary_search_algorithm"/>
-    public class BinarySearch
+    public static partial class BinarySearch
     {
         /// <summary>
-        /// A binary search begins by comparing the middle element of the array with the target value. If the target value matches the middle element, its position in the array is returned. 
-        /// If the target value is less or more than the middle element, the search continues the lower or upper half of the array respectively with a new middle element, eliminating the 
-        /// other half from consideration.
+        /// Iterative method for Binary Search 
         /// </summary>
         /// <param name="input">The sorted array</param>
         /// <param name="key">The element to be searched</param>
-        /// <param name="min">Left index</param>
-        /// <param name="max">Right index</param>
+        /// <remarks>
+        /// A binary search begins by comparing the middle element of the array with the target value. If the target value matches the middle element, its position in the array is returned. 
+        /// If the target value is less or more than the middle element, the search continues the lower or upper half of the array respectively with a new middle element, eliminating the 
+        /// other half from consideration.
+        /// </remarks>
         /// <example></example>
         /// <returns>Returns the index of the key value: otherwise null</returns>
-        public static int? IterativeSearch(int[] input, int key, int min, int max)
+        public static int? Search(int[] input, int key)
         {
-            while (max >= min)
+            int left = 0;
+            int right = input.Length;
+
+            while (right >= left)
             {
                 //find mid index
-                int mid = min + ((max - min) / 2);
+                int mid = left + ((right - left) / 2);
 
                 if (input[mid] < key)       //if the value input[mid] is less than key, go to the right side of the array 
-                    min = mid + 1;
+                    left = mid + 1;
                 else if (input[mid] > key)  //else if input[mid] is more than key, then go to the left side of the array
-                    max = mid - 1;
+                    right = mid - 1;
                 else
                     return mid;             //else we found the value
             }
@@ -58,8 +62,8 @@ namespace com.hack3rlife.algorithms.searching
         /// <param name="key">The value we are looking for</param>
         /// <param name="min">The left side of th array (A.K.A. values less than key)</param>
         /// <param name="max">The rigth side of the array (A.K.A. values more than key)</param>
-        /// <returns></returns>
-        public static int? RecursiveSearch(int[] input, int key, int min, int max)
+        /// <returns>Returns the index of the key value: otherwise null</returns>
+        public static int? Search(int[] input, int key, int min, int max)
         {
             if (max < min)
                 return null;
@@ -70,9 +74,9 @@ namespace com.hack3rlife.algorithms.searching
                 return mid;
 
             if (key > input[mid])
-                return RecursiveSearch(input, key, (mid + 1), max);
+                return Search(input, key, (mid + 1), max);
             else
-                return RecursiveSearch(input, key, min, (mid - 1));
+                return Search(input, key, min, (mid - 1));
         }
     }
 }

@@ -49,13 +49,20 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="BinarySearch.CountOccurrencesTest.cs" />
+    <Compile Include="BinarySearch.FindLastOccurrenceTest.cs" />
     <Compile Include="BinarySearchTest.cs" />
+    <Compile Include="BinarySearch.MatrixSearchTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BinarySearch.FindFirstOccurrenceTest.cs" />
+    <Compile Include="BinarySearch.FindMissingElement.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BinarySearch\BinarySearch.csproj">

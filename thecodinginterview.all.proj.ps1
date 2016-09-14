@@ -12,7 +12,8 @@ $slnName = "The Coding Interview"
 
 $dteObj.Solution.Create($scriptDirectory, $slnName)
 (ls . -Recurse *.csproj) | % { $dteObj.Solution.AddFromFile($_.FullName, $false) }
-
-$dteObj.Solution.SaveAs( (Join-Path $scriptDirectory 'The Coding Interview.sln') ) 
-
+$dteObj.Solution.SaveAs( (Join-Path $scriptDirectory 'The Coding Interview.sln') )
 $dteObj.Quit()
+
+
+ls -in *.sln -r | select -last 1 | %{ ii $_.FullName }

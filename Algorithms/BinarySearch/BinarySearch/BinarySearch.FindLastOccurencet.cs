@@ -1,8 +1,17 @@
 ﻿namespace com.hack3rlife.algorithms.searching
 {
-    public static class BinarySearchExtension
+    /// <summary>
+    /// 
+    /// </summary>
+    public static partial class BinarySearch
     {
-        public static int SearchFirstOccurenceOf(int[] input, int k)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="input"></param>
+        /// <param name="k"></param>
+        /// <returns></returns>
+        public static int FindLastOccurrence(int[] input, int k)
         {
             var left = 0;
             var right = input.Length - 1;
@@ -10,12 +19,12 @@
 
             while (left <= right)
             {
-                var mid = left - ((right - left) / 2);
+                var mid = left + ((right - left) / 2);
 
                 if (input[mid] == k)
                 {
                     result = mid;
-                    right = mid - 1;
+                    left = mid + 1;
                 }
                 else if (input[mid] > k)
                 {
@@ -29,6 +38,6 @@
             }
 
             return result;
-        }              
+        }
     }
 }
