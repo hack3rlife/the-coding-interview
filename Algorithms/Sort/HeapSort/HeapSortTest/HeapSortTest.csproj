@@ -3,12 +3,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6517450F-18D5-4FDB-8AF8-3B218A151EAE}</ProjectGuid>
+    <ProjectGuid>{AB15AAC9-2334-4294-84A5-D2420C74439F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LongestIncreasingSubsequenceSumTest</RootNamespace>
-    <AssemblyName>LongestIncreasingSubsequenceSumTest</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>HeapSortTest</RootNamespace>
+    <AssemblyName>HeapSortTest</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -54,14 +54,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="LongestIncreasingSubsequenceSumTest.cs" />
+    <Compile Include="HeapSortTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\LongestIncreasingSubsequenceSum\LongestIncreasingSubsequenceSum\LongestIncreasingSubsequenceSum.csproj">
-      <Project>{a46d3e0a-b050-4c75-8eca-b37204419233}</Project>
-      <Name>LongestIncreasingSubsequenceSum</Name>
-    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
