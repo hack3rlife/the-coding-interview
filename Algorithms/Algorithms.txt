@@ -1,0 +1,25 @@
+Algorithms (16) 
++QuickSelect
+		*QuickSelect\QuickSelect.csproj
+		*QuickSelectTest\QuickSelectTest.csproj
++BinarySearch
+		*BinarySearch\BinarySearch.csproj
+		*BinarySearchTest\BinarySearchTest.csproj
++BubbleSort
+		*BubbleSort\BubbleSort.csproj
+		*BubbleSortTest\BubbleSortTest.csproj
++HeapSort
+		*HeapSort\HeapSort.csproj
+		*HeapSortTest\HeapSortTest.csproj
++InsertionSort
+		*InsertionSort\InsertionSort.csproj
+		*InsertionSortTest\InsertionSortTest.csproj
++MergeSort
+		*MergeSort\MergeSort.csproj
+		*MergeSortTest\MergeSortTest.csproj
++QuickSort
+		*QuickSort\QuickSort.csproj
+		*QuickSortTest\QuickSortTest.csproj
++SelectionSort
+		*SelectionSort\SelectionSort.csproj
+		*SelectionSortTest\SelectionSortTest.csproj

@@ -1,0 +1,49 @@
+Strings (32) 
++BuildLowestNumber
+		*BuildLowestNumber\BuildLowestNumber.csproj
+		*BuildLowestNumberTest\BuildLowestNumberTest.csproj
++InterconvertStringAndIntegers
+		*InterconvertStringAndIntegers\InterconvertStringAndIntegers.csproj
+		*InterconvertStringAndIntegersTest\InterconvertStringAndIntegersTest.csproj
++IsAnagram
+		*IsAnagram\IsAnagram.csproj
+		*IsAnagramTest\IsAnagramTest.csproj
++IsPalindrome
+		*IsPalindrome\IsPalindrome.csproj
+		*IsPalindromeTest\PalindromeTest.csproj
++IsRotation
+		*IsRotation\IsRotation.csproj
+		*IsRotationTest\IsRotationTest.csproj
++LookAndSayProblem
+		*LookAndSay\LookAndSay.csproj
+		*LookAndSayTest\LookAndSayTest.csproj
++MissingElement
+		*MissingElement\MissingElement.csproj
+		*MissingElementTest\MissingElementTest.csproj
++NextGreaterNumber
+		*NextGreaterNumber\NextGreaterNumber.csproj
+		*NextGreaterNumberTest\NextGreaterNumberTest.csproj
++NumberToString
+		*NumberToString\PhoneMnemonic.csproj
+		*NumberToStringTest\NumberToStringTest.csproj
++PatternSearching
+		*PatternSearching\PatternSearching.csproj
+		*PatternSearchingTest\PatternSearchingTest.csproj
++PhoneNumberParser
+		*AlphanumericPhoneNumber\PhoneNumberParser.csproj
+		*AlphanumericPhoneNumberTest\PhoneNumberParserTest.csproj
++RomanNumbers
+		*RomanNumberConverter\RomanNumerals.csproj
+		*RomaNumeralsTest\RomaNumeralsTest.csproj
++StringCombination
+		*StringCombination\StringCombination.csproj
+		*StringCombinationTest\StringCombinationTest.csproj
++StringPermutation
+		*StringPermutation\StringPermutation.csproj
+		*StringPermutationTest\StringPermutationTest.csproj
++StringReverse
+		*StringReverse\StringReverse.csproj
+		*StringReverseTest\StringReverseTest.csproj
++WildCardMatch
+		*WildCardMatch\WildCardMatch.csproj
+		*WildCardMatchTest\WildCardMatchTest.csproj

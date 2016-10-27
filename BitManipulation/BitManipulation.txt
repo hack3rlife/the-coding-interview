@@ -1,0 +1,4 @@
+BitManipulation (2) 
++CountBits
+		*CountBits\CountBits.csproj
+		*CountBitsTest\CountBitsTest.csproj

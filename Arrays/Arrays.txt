@@ -1,0 +1,22 @@
+Arrays (13) 
++ArrayToBst
+		*ArrayToBst\ArrayToBinarySearchTree.csproj
+		*ArrayToBstTest\ArrayToBinarySearchTreeTest.csproj
++DutchNationalFlagProblem
+		*DutchNationalFlagProblem\DutchNationalFlagProblem.csproj
+		*DutchNationalFlagProblemTest\DutchNationalFlagProblemTest.csproj
++FindKth
+		*FindKth\FindKth.csproj
+		*FindKthTest\FindKthTest.csproj
++MatrixInSpiral
+		*MatrixInSpiral\MatrixInSpiral.csproj
++NextGreaterElement
+		*NextGreaterElement\NextGreaterElement.csproj
+		*NextGreaterElementTests\NextGreaterElementTests.csproj
++PythagoreanTriplet
+		*PythagoreanTriplet\PythagoreanTriplet.csproj
++RotateMatrix90Degrees
+		*RotateMatrix90Degrees\RotateMatrix90Degrees.csproj
++StairCase
+		*StairCase\StairCase.csproj
+		*StairCaseTUniTests\StairCaseTUniTests.csproj

@@ -1,0 +1,26 @@
+Numbers (16) 
++ConcatenateTwoNumbers
+		*ConcatenateTwoNumbers\ConcatenateTwoNumbers.csproj
++ConcatenateTwoNumbersTest
+		*ConcatenateTwoNumbersTest\ConcatenateTwoNumbersTest.csproj
++FactorialNumber
+		*FactorialNumber\FactorialNumber.csproj
+		*FactorialNumberTest\FactorialNumberTest.csproj
++FibonacciNumber
+		*FibonacciNumber\FibonacciNumber.csproj
+		*FibonacciNumberTest\FibonacciNumberTest.csproj
++LargestPairSum
+		*LargestPairSum\LargestPairSum.csproj
+		*LargestPairSumTest\LargestPairSumTest.csproj
++PrimeNumbers
+		*PrimeNumbers\PrimeNumbers.csproj
+		*PrimeNumbersTest\PrimeNumbersTest.csproj
++ReverseNumber
+		*ReverseNumber\ReverseNumber.csproj
+		*ReverseNumberTest\ReverseNumberTest.csproj
++SumDigitsOfANumber
+		*SumDigitsOfANumber\SumDigitsOfANumber.csproj
+		*SumDigitsOfANumberTest\SumDigitsOfANumberTest.csproj
++SwappingNumbers
+		*SwappingNumbers\SwappingNumbers.csproj
+		*SwappingNumbersTest\SwappingNumbersTest.csproj

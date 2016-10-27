@@ -1,0 +1,17 @@
+DataStructures (11) 
++BinaraySearchTrees
+		*BinarySearchTreeTest\BinarySearchTreeTest.csproj
+		*BinarySearchTreeTests\BinarySearchTreeTests.csproj
+		*BST\BinarySearchTree.csproj
++BinaryTrees
+		*BinaryTree\BinaryTree.csproj
+		*BinaryTreeTest\BinaryTreeTest.csproj
++LinkedLists
+		*LinkedList\LinkedList.csproj
+		*LinkedListTest\LinkedListTest.UnitTest.csproj
++Queues
+		*Queue\Queue.csproj
+		*QueueTest\QueueTest.csproj
++Stacks
+		*Stack\Stack.csproj
+		*StackTest\StackTest.csproj

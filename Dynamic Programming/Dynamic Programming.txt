@@ -1,0 +1,28 @@
+Dynamic Programming (17) 
++LargestSumSubArray
+		*LargestSumSubArray\MaximumSubarrayProblem.csproj
+		*LargestSumSubArrayTest\MaximumSubarrayProblemTest.csproj
++LongesCommonSubsequence
+		*LongesCommonSubsequence\LongesCommonSubsequence.csproj
+		*LongesCommonSubsequenceTest\LongesCommonSubsequenceTest.csproj
++LongestCommonSubstring
+		*LongestCommonSubstring\LongestCommonSubstring.csproj
++LongestCommonSubstringTest
+		*LongestCommonSubstringTest\LongestCommonSubstringTest.csproj
++LongestIncreasingSubsequence
+		*LongestIncreasingSubsequence\LongestIncreasingSubsequence.csproj
+		*LongestIncreasingSubsequenceTest\LongestIncreasingSubsequenceTest.csproj
++LongestIncreasingSubsequenceSum
+		*LongestIncreasingSubsequenceSum\LongestIncreasingSubsequenceSum.csproj
++LongestPalindrome
+		*LongestPalindromicSubsequence\LongestPalindromic.csproj
+		*LongestPalindromicTest\LongestPalindromicTest.csproj
++MaxSumIncreasingSubsequence
+		*LongestIncreasingSubsequenceSumTest\LongestIncreasingSubsequenceSumTest.csproj
+		*MaxSumIncreasingSubsequence\MaxSumIncreasingSubsequence.csproj
++SubArrayGivenSum
+		*SubArrayGivenSum\SubArrayGivenSum.csproj
+		*SubArrayGivenSumTest\SubArrayGivenSumTest.csproj
++SubsetSum
+		*SubsetSum\SubsetSum.csproj
+		*SubsetSumTest\SubsetSumTest.csproj
