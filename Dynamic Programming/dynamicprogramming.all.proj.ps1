@@ -11,4 +11,4 @@ $dteObj.Solution.Create($scriptDirectory, $slnName)
 $dteObj.Solution.SaveAs( (Join-Path $scriptDirectory 'Dynamic Programming.sln') ) 
 $dteObj.Quit()
 
-ls -in *.sln -r | select -last 1 | %{ ii $_.FullName }
+ls -in *.sln -r | select -first 1 | %{ ii $_.FullName }

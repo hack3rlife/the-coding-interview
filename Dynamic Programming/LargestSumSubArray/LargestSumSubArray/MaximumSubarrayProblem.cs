@@ -1,7 +1,7 @@
 ﻿/*
  * @autor: Some smart guy on internet
  * @date: 04/29/2015
- * @project: LargestSumSubArray
+ * @project: MaximumSubarrayProblem
  * 
  */
 
@@ -14,7 +14,7 @@ namespace com.hack3rlife.algorithms
     /// for the sequence of values −2, 1, −3, 4, −1, 2, 1, −5, 4; the contiguous subarray with the largest sum is 4, −1, 2, 1, with sum 6.
     /// </summary>
     /// <see cref="https://en.wikipedia.org/wiki/Maximum_subarray_problem"/>
-    public class LargestSumSubArray
+    public class MaximumSubarrayProblem
     {
         /// <summary>
         /// Kadane's algorithm consists of a scan through the array values, computing at each position the maximum (positive sum) subarray ending at that position. This subarray is either 

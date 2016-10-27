@@ -1,18 +1,16 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using com.hack3rlife.binarytree;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace BinaryTreeTest
+namespace com.hack3rlife.binarytree.test
 {
     [TestClass]
-    public class RootToLeafPathsSum
+    public class RootToLeafPathsSumTest
     {
         [TestMethod]
-        public void RootToLeafPathsSumTest()
+        public void BinaryTree_RootToLeafPathsSumTest_NoError()
         {
             //arrange
             BinaryTree<int> tree = new BinaryTree<int>();
-           
+
             tree.Root = new BinaryTreeNode<int>(6);
             tree.Root.Left = new BinaryTreeNode<int>(3);
             tree.Root.Left.Left = new BinaryTreeNode<int>(2);

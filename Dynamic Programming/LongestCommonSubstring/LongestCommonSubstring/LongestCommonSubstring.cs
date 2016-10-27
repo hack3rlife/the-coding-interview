@@ -1,9 +1,11 @@
 ﻿/*
- * @autor: Some smart guy on internet
- * @date: 21/04/2015
- * @project: LongestCommonSubstring
- * 
- */
+* @autor: Some smart guy on internet
+* @date: 21/04/2015
+* @project: LongestCommonSubstring
+* 
+*/
+
+using System.Diagnostics;
 
 namespace com.hack3rlife.dynamicprogramming
 {
@@ -37,14 +39,7 @@ namespace com.hack3rlife.dynamicprogramming
                 {
                     if (input1[i] == input2[j])
                     {
-                        if (i == 1 || j == 1)
-                        {
-                            num[i, j] = 1;
-                        }
-                        else
-                        {
-                            num[i, j] = num[i - 1, j - 1] + 1;
-                        }
+                        num[i, j] = num[i - 1, j - 1] + 1;
 
                         max = (max > num[i, j]) ? max : num[i, j];
                     }
@@ -54,6 +49,9 @@ namespace com.hack3rlife.dynamicprogramming
                     }
                 }
             }
+
+            Print(num);
+
             return max;
         }
 
@@ -109,7 +107,29 @@ namespace com.hack3rlife.dynamicprogramming
                     }
                 }
             }
+
+            Print(num);
+
             return result;
+        }
+
+        /// <summary>
+        /// Print the temporal DPT
+        /// </summary>
+        /// <param name="matrix">The table</param>
+        private static void Print(int[,] matrix)
+        {
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    Debug.Write(string.Format("{0} ", matrix[i, j]));
+                }
+
+                Debug.WriteLine("");
+            }
+
+            Debug.WriteLine("");
         }
     }
 }

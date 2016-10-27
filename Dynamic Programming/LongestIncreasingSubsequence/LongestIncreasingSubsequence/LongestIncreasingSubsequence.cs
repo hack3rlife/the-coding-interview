@@ -1,19 +1,24 @@
 ﻿
-namespace com.hack3rlife.thecodinginterview
+using System.Diagnostics;
+
+namespace com.hack3rlife.dynamicprogramming
 {
     /// <summary>
-    /// Longest Increasing Subsequence problem is to find a subsequence of a given sequence in which the subsequence's elements are in sorted order, lowest to highest, and in which the subsequence is as long as possible.
+    /// Longest Increasing Subsequence problem is to find a subsequence of a given sequence in which the subsequence's elements are in sorted order, lowest to highest, and in which the 
+    /// subsequence is as long as possible.
     /// </summary>
     /// <see cref="https://en.wikipedia.org/wiki/Longest_increasing_subsequence"/>
     public static class LongestIncreasingSubsequence
     {
         /// <summary>
-        /// The longest Increasing Subsequence (LIS) problem is to find the length of the longest subsequence of a given sequence such that all elements of the subsequence are sorted in increasing order. For example, length of LIS for { 10, 22, 9, 33, 21, 50, 41, 60, 80 } is 6 and LIS is {10, 22, 33, 50, 60, 80}.
+        /// The longest Increasing Subsequence (LIS) problem is to find the length of the longest subsequence of a given sequence such that all elements of the subsequence are sorted in 
+        /// increasing order. 
         /// </summary>
         /// <example>
-        /// 
+        /// For example, length of LIS for { 10, 22, 9, 33, 21, 50, 41, 60, 80 } is 6 and LIS is {10, 22, 33, 50, 60, 80}.
         /// </example>
         /// <param name="input"></param>
+        /// <see cref="http://www.geeksforgeeks.org/dynamic-programming-set-3-longest-increasing-subsequence/"/>
         public static int Get(int[] input)
         {
             int[] result = new int[input.Length];
@@ -21,7 +26,7 @@ namespace com.hack3rlife.thecodinginterview
             Initialize(ref result);
 
             int i = 1;
-            int max = 0;
+            int max = 1;
 
             while (i < input.Length)
             {
@@ -34,6 +39,8 @@ namespace com.hack3rlife.thecodinginterview
                     {
                         max = Max(result[j] + 1, result[i]);
                         result[i] = max;
+
+                        Print(result);
                     }
 
                     j++;
@@ -83,6 +90,20 @@ namespace com.hack3rlife.thecodinginterview
             }
 
             return input;
+        }
+
+        /// <summary>
+        /// Print the temporal DPT
+        /// </summary>
+        /// <param name="matrix">The table</param>
+        private static void Print(int[] matrix)
+        {
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                Debug.Write(string.Format("| {0} |", matrix[i]));
+            }
+
+            Debug.WriteLine("");
         }
     }
 }

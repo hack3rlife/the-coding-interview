@@ -53,7 +53,7 @@ namespace com.hack3rlife.datastructures
             {
                 int actual = stack.Pop();
             }
-            catch (NullReferenceException nre)
+            catch (NullReferenceException)
             {
                 //Asset
                 Assert.IsTrue(true);

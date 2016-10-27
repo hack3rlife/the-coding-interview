@@ -1,8 +1,6 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using com.hack3rlife.binarytree;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace BinaryTreeTest
+namespace com.hack3rlife.binarytree.test
 {
     [TestClass]
     public class BinaryTreeTest
@@ -12,7 +10,7 @@ namespace BinaryTreeTest
         {
             //arrange
             BinaryTree<int> bt = new BinaryTree<int>();
-           
+
             //act
             bt.Root = new BinaryTreeNode<int>(1);
             bt.Root.Left = new BinaryTreeNode<int>(2);

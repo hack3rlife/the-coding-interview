@@ -1,4 +1,4 @@
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+#Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 
 $scriptDirectory = (Get-Item $MyInvocation.MyCommand.Path).Directory.FullName
 $dteObj = New-Object -ComObject "VisualStudio.DTE.14.0"

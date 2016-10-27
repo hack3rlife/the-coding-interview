@@ -4,50 +4,31 @@ using System.Collections.Generic;
 namespace com.hack3rlife.datastructures
 {
     /// <summary>
-    /// Represents a BinarySearchTree<T>
+    /// In computer science, binary search trees (BST), sometimes called ordered or sorted binary trees, are a particular type of containers: data structures that store "items" 
+    /// (such as numbers, names etc.) in memory. They allow fast lookup, addition and removal of items, and can be used to implement either dynamic sets of items, or lookup tables that 
+    /// allow finding an item by its key (e.g., finding the phone number of a person by name).
+    /// 
+    /// Binary search trees keep their keys in sorted order, so that lookup and other operations can use the principle of binary search: when looking for a key in a tree(or a place to 
+    /// insert a new key), they traverse the tree from root to leaf, making comparisons to keys stored in the nodes of the tree and deciding, based on the comparison, to continue searching
+    /// in the left or right subtrees.On average, this means that each comparison allows the operations to skip about half of the tree, so that each lookup, insertion or deletion takes time proportional to the logarithm of the number of items stored in the tree. This is much better than the linear time required to find items by key in an (unsorted) array, but slower than the corresponding operations on hash tables.
     /// </summary>
+    /// <remarks>Even when the class is generic, the code is intended to manage numeric values (int, double, decimal, etc)</remarks>
     /// <typeparam name="{T}">Specifies the element type of the BinarySearchTree<T>.</typeparam>
+    /// <see cref="https://en.wikipedia.org/wiki/Binary_search_tree"/>
     public class BinarySearchTree<T> : ICollection<T> where T : IComparable<T>
     {
         /// <summary>
-        /// Traversing type
-        /// </summary>
-        /// <see cref="http://en.wikipedia.org/wiki/Tree_traversal#Types"/>
-        public enum TraversalType
-        {
-            /// <summary>
-            /// Depth-first - Inorder: Left child, Root, Right child
-            /// </summary>
-            InOrder = 0,
-
-            /// <summary>
-            /// Depth-first - Preorder: Root, Left child, Right child
-            /// </summary>
-            PreOrder = 1,
-
-            /// <summary>
-            /// Depth-first - Postorder: Left Child, Right child, Root
-            /// </summary>
-            PostOrder = 2,
-
-            /// <summary>
-            /// Breadth-first - Bylevel
-            /// </summary>
-            InLevels = 4
-        }
-
-        /// <summary>
-        /// Gets the BinarySearchTree<T> root node
+        /// Gets the <see cref="BinarySearchTree{T}"/> root node
         /// </summary>
         public BinarySearchTreeNode<T> Root { get; private set; }
 
         /// <summary>
-        /// Get the BinarySearchTree<T> number of nodes
+        /// Get the <see cref="BinarySearchTree{T}"/> number of nodes
         /// </summary>
         public int Count { get; private set; }
 
         /// <summary>
-        /// Returns the BinarySearchTree<T> as IEnumerable<T> traversed in Inorder
+        /// Returns the <see cref="BinarySearchTree{T}"/> as IEnumerable<T> traversed in Inorder
         /// </summary>
         /// <see cref="http://www.geeksforgeeks.org/inorder-tree-traversal-without-recursion/"/>
         /// <remarks>
@@ -64,12 +45,12 @@ namespace com.hack3rlife.datastructures
         {
             get
             {
-                Stack<BinarySearchTreeNode<T>> stack = new Stack<BinarySearchTreeNode<T>>();
-                BinarySearchTreeNode<T> node = this.Root;
-
-                bool isLeft = true;
+                var stack = new Stack<BinarySearchTreeNode<T>>();
+                var node = this.Root;
 
                 stack.Push(node);
+
+                bool isLeft = true;
 
                 while (stack.Count > 0)
                 {
@@ -230,7 +211,11 @@ namespace com.hack3rlife.datastructures
             }
         }
 
-        public BinarySearchTreeNode<T> Min {
+        /// <summary>
+        /// Gets the node with the lowest value
+        /// </summary>
+        public BinarySearchTreeNode<T> Min
+        {
             get
             {
                 if (this.Root == null)
@@ -250,6 +235,9 @@ namespace com.hack3rlife.datastructures
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public BinarySearchTreeNode<T> Max
         {
             get
@@ -271,12 +259,19 @@ namespace com.hack3rlife.datastructures
             }
         }
 
+        /// <summary>
+        /// Creates a new instance of type <see cref="BinarySearchTree{T}"/>
+        /// </summary>
         public BinarySearchTree()
         {
             this.Root = null;
             this.Count = 0;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="root"></param>
         public BinarySearchTree(BinarySearchTreeNode<T> root)
         {
             this.Root = root;
@@ -316,17 +311,17 @@ namespace com.hack3rlife.datastructures
 
             return (counter - this.Count >= 1) ? true : false;
         }
-       
+
         /// <summary>
         /// In-Order: Left child, Root, Right child
         /// </summary>
         public void InOrder(BinarySearchTreeNode<T> node)
         {
-
             if (node != null)
             {
                 InOrder(node.Left);
                 node.DisplayNode();
+                ToList();
                 InOrder(node.Right);
             }
         }
@@ -355,78 +350,7 @@ namespace com.hack3rlife.datastructures
                 PostOrder(node.Right);
                 node.DisplayNode();
             }
-        }
-
-        /// <summary>
-        /// Breadth-first: Visit every node on a level before going to a lower level.
-        /// </summary>
-        /// <param name="node">Usually the BinarySearchTree<T> root node or some arbitrary node/></param>
-        public void InLevels(BinarySearchTreeNode<T> node)
-        {
-            if (node == null)
-                return;
-
-            Queue<BinarySearchTreeNode<T>> queue = new Queue<BinarySearchTreeNode<T>>();
-            queue.Enqueue(node);
-
-            while (queue.Count > 0)
-            {
-                BinarySearchTreeNode<T> current = queue.Dequeue();
-                current.DisplayNode();
-
-                if (current.Left != null)
-                    queue.Enqueue(current.Left);
-
-                if (current.Right != null)
-                    queue.Enqueue(node.Right);
-            }
-        }   
-
-        /// <summary>
-        /// Modification of level order traversal
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="node"></param>
-        /// <see cref="http://www.geeksforgeeks.org/level-order-traversal-in-spiral-form/"/>
-        /// <remarks>
-        ///  To print the nodes in spiral order, nodes at different levels should be printed in alternating order. 
-        ///  An additional Boolean variable ltr is used to change printing order of levels. If ltr is 1 then printGivenLevel() prints nodes from left to right 
-        ///  else from right to left. Value of ltr is flipped in each iteration to change the order.
-        /// </remarks>
-        public void InLevelSpiral(BinarySearchTreeNode<T> node) 
-        {
-            int level = GetLevels(node);
-
-            bool reversed = false;
-
-            for (int i = 0; i < level; i++)
-            {
-                GivenLevelSpiral(node, i, reversed);
-                reversed = !reversed;
-            }
-        }        
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="node"></param>
-        /// <returns></returns>
-        //BUG: 2487
-        public bool IsBinarySearchTree(BinarySearchTreeNode<T> node)
-        {
-            if (node != null)
-            {
-                if (node.Left != null && node.Value.CompareTo(node.Left.Value) < 0)
-                    return false;
-                IsBinarySearchTree(node.Left);
-
-                if (node.Right != null && node.Value.CompareTo(node.Right.Value) > 0)
-                    return false;
-                IsBinarySearchTree(node.Right);
-            }
-
-            return true;
-        }
+        }             
 
         public IList<T> ToList()
         {
@@ -434,7 +358,7 @@ namespace com.hack3rlife.datastructures
                 return null;
 
             var list = new List<T>();
-            foreach (var item in InLevelsEnumerable) 
+            foreach (var item in InLevelsEnumerable)
             {
                 list.Add(item);
             }
@@ -456,7 +380,7 @@ namespace com.hack3rlife.datastructures
             else
             {
                 return FindMin(node.Left);
-            }            
+            }
         }
 
         /// <summary>
@@ -475,7 +399,7 @@ namespace com.hack3rlife.datastructures
                 return FindMax(node.Right);
             }
 
-            
+
         }
 
         /// <summary>
@@ -495,6 +419,32 @@ namespace com.hack3rlife.datastructures
         public bool Contains(T value)
         {
             return Find(this.Root, value);
+        }
+
+        public T FindSuccesor(BinarySearchTreeNode<T> root, BinarySearchTreeNode<T> node)
+        {
+            if (node.Right != null)
+                return FindMin(node.Right);
+
+            T succ = default(T);
+             
+            while (root != null)
+            {
+                if(node.Value.CompareTo(root.Value) < 0)        //node.Value < root.Value
+                {
+                    succ = root.Value;
+                    root = root.Left;
+                }else if(node.Value.CompareTo(root.Value) > 0)
+                {
+                    root = root.Right;
+                }
+                else
+                {
+                    break;
+                }
+            }
+
+            return succ;
         }
 
         /// <summary>
@@ -594,65 +544,18 @@ namespace com.hack3rlife.datastructures
         }
 
         /// <summary>
-        /// Recursive version of Level Order Traversal
+        /// Adds a new node
         /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="node"></param>
-        /// <param name="level"></param>
-        /// <param name="reversed"></param>
-        private static void GivenLevelSpiral<T>(BinarySearchTreeNode<T> node, int level, bool reversed) where T : IComparable<T>
-        {
-            if (node == null)
-                return;
-
-            if (level == 0)
-                Console.Write(" {0} ", node.Value);
-
-            if (level > 0)
-            {
-                if (reversed)
-                {
-                    GivenLevelSpiral(node.Left, level - 1, reversed);
-                    GivenLevelSpiral(node.Right, level - 1, reversed);
-                }
-                else
-                {
-                    GivenLevelSpiral(node.Right, level - 1, reversed);
-                    GivenLevelSpiral(node.Left, level - 1, reversed);
-                }
-            }
-        }
-
-        /// <summary>
-        /// Get the max level of a BinarySearchTree
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="node"></param>
-        /// <returns></returns>
-        private static int GetLevels<T>(BinarySearchTreeNode<T> node) where T : IComparable<T>
-        {
-            if (node == null)
-                return 0;
-
-            int left = GetLevels(node.Left) + 1;
-            int right = GetLevels(node.Right) + 1;
-
-            return left < right ? right : left;
-        }
-
-        /// <summary>
-        /// Add a new node
-        /// </summary>
-        /// <param name="node">Usually the BinarySearchTree<T> root node or some arbitrary node</param>
-        /// <param name="value">The value to be added</param>
-        /// <returns>Node<T></returns>
+        /// <param name="node">The <see cref="BinarySearchTreeNode{T}"/></param>
+        /// <param name="value">The <see cref="T"/> value</param>
+        /// <returns><see cref="BinarySearchTreeNode{T}"/></returns>
         private BinarySearchTreeNode<T> Add(BinarySearchTreeNode<T> node, T value)
         {
             if (node == null)
             {
                 this.Count++;
 
-                return new BinarySearchTreeNode<T>(value);
+                node = new BinarySearchTreeNode<T>(value);
             }
             else if (node.Value.CompareTo(value) > 0) //if node.Value > value
             {
@@ -669,9 +572,9 @@ namespace com.hack3rlife.datastructures
         /// <summary>
         /// Removes the first node wich matches the value passed as parameter
         /// </summary>
-        /// <param name="node">Usually the BinarySearchTree<T> root node or some arbitrary node</param>
+        /// <param name="node">The <see cref="BinarySearchTreeNode{T}"/></param>
         /// <param name="value">Node value which will be deleted</param>
-        /// <returns>Node<T></returns>
+        /// <returns><see cref="BinarySearchTreeNode{T}"/></returns>
         private BinarySearchTreeNode<T> Remove(BinarySearchTreeNode<T> node, T value)
         {
             if (node == null)
@@ -681,18 +584,18 @@ namespace com.hack3rlife.datastructures
 
             if (node.Value.CompareTo(value) > 0)            //if node.value is greater than value
             {
-                node.Left= Remove(node.Left, value);
+                node.Left = Remove(node.Left, value);
             }
             else if (node.Value.CompareTo(value) < 0)       //if node.value is lesser than value
             {
-                node.Right= Remove(node.Right, value);
+                node.Right = Remove(node.Right, value);
             }
             else
             {
                 if (node.Left == null)
                 {
-                    BinarySearchTreeNode<T> right = node.Right;
-                    
+                    var right = node.Right;
+
                     node = null;
 
                     this.Count--;
@@ -701,7 +604,7 @@ namespace com.hack3rlife.datastructures
                 }
                 else if (node.Right == null)
                 {
-                    BinarySearchTreeNode<T> left = node.Left;
+                    var left = node.Left;
 
                     node = null;
 
@@ -741,6 +644,6 @@ namespace com.hack3rlife.datastructures
                 return Find(node.Right, value);
             else
                 return false;
-        }
+        }       
     }
 }

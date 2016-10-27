@@ -56,12 +56,15 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="FindSuccesorTest.cs" />
+    <Compile Include="IsSymetricTest.cs" />
+    <Compile Include="IsBalancedTest.cs" />
     <Compile Include="BinaryTreeTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SumOfAllLeaves.cs" />
-    <Compile Include="RootToLeafPathsSum.cs" />
+    <Compile Include="SumOfAllLeavesTest.cs" />
+    <Compile Include="RootToLeafPathsSumTest.cs" />
     <Compile Include="RootToLeafPathsMaxSumTest.cs" />
-    <Compile Include="LowestCommonAncestor.cs" />
+    <Compile Include="LowestCommonAncestorTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BinaryTree\BinaryTree.csproj">

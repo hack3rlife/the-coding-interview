@@ -1,5 +1,4 @@
-﻿using com.hack3rlife.dynamicprogramming;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace com.hack3rlife.dynamicprogramming.test
 {
@@ -10,7 +9,7 @@ namespace com.hack3rlife.dynamicprogramming.test
         public void GetLongestIncreasingSubsequenceSumTest()
         {
             //arrange
-            int[] input = { 0, 6, 1, 3, 8, 4, 6 };           
+            int[] input = { 4, 6, 1, 3, 8, 4, 6 };
 
             //act
             var actual = LongestIncreasingSubsequenceSum.Get(input);
@@ -21,7 +20,7 @@ namespace com.hack3rlife.dynamicprogramming.test
         }
 
         [TestMethod]
-        public void GetLongestIncreasingSubsequenceSumTest2()
+        public void GetLongestIncreasingSubsequence_FirstIsMax()
         {
             //arrange
             int[] input = { 20, 6, 1, 3, 8, 4, 6 };
@@ -30,7 +29,49 @@ namespace com.hack3rlife.dynamicprogramming.test
             var actual = LongestIncreasingSubsequenceSum.Get(input);
 
             //assert
-            var expected = 18;
+            var expected = 20;
+            Assert.AreEqual<int>(expected, actual);
+        }
+
+        [TestMethod]
+        public void GetLongestIncreasingSubsequence_AllSame()
+        {
+            //arrange
+            int[] input = { 1, 1, 1, 1 };
+
+            //act
+            var actual = LongestIncreasingSubsequenceSum.Get(input);
+
+            //assert
+            var expected = 1;
+            Assert.AreEqual<int>(expected, actual);
+        }
+
+        [TestMethod]
+        public void GetLongestIncreasingSubsequence_DecreasingSequence()
+        {
+            //arrange
+            int[] input = { 5, 4, 3, 2, 1 };
+
+            //act
+            var actual = LongestIncreasingSubsequenceSum.Get(input);
+
+            //assert
+            var expected = 5;
+            Assert.AreEqual<int>(expected, actual);
+        }
+
+        [TestMethod]
+        public void GetLongestIncreasingSubsequence_FirstAndEnd()
+        {
+            //arrange
+            int[] input = { 1, 0, 0, 2 };
+
+            //act
+            var actual = LongestIncreasingSubsequenceSum.Get(input);
+
+            //assert
+            var expected = 3;
             Assert.AreEqual<int>(expected, actual);
         }
     }

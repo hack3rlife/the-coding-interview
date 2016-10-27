@@ -28,7 +28,7 @@ namespace com.hack3rlife.algorithms
         /// a[1] = begin
         /// a[2] = end
         /// </returns>
-        public static int[] GetSubArrayForGivenSum(int[] input, int sum)
+        public static int[] Get(int[] input, int sum)
         {
             int current_sum = 0;
 
@@ -59,9 +59,19 @@ namespace com.hack3rlife.algorithms
         }
 
         /// <summary>
-        /// 
+        /// Given an array of integers, find length of the largest subarray with sum equals to 0
         /// </summary>
         /// <param name="input"></param>
+        /// <![CDATA[
+        ///     Input: arr[] = {15, -2, 2, -8, 1, 7, 10, 23};
+        ///     The largest subarray with 0 sum is -2, 2, -8, 1, 7
+        ///     
+        ///     Input: arr[] = {1, 2, 3}
+        ///     Output: 0  (There is no subarray with 0 sum)
+        ///
+        ///     Input: arr[] = {1, 0, 3}
+        ///     Output: 1
+        /// ]]>
         /// <returns></returns>
         /// <see cref="http://www.geeksforgeeks.org/find-the-largest-subarray-with-0-sum/"/>
         public static int[] GetSubArrayWithSumZero(int[] input)
@@ -84,7 +94,7 @@ namespace com.hack3rlife.algorithms
                     return new int[] { 1, begin, end };
                 }
 
-                if (i == input.Length-1)
+                if (i == input.Length - 1)
                 {
                     current_sum = 0;
                     i = begin++;

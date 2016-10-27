@@ -7,7 +7,7 @@ namespace LongestCommonSubstringTest
     public class LongestCommonSubstringTest
     {
         [TestMethod]
-        public void GetLengthTest()
+        public void LongestCommonSubstring_GetLengthTest()
         {
             //arrange
             string input1 = "OldSite:GeeksforGeeks.org";
@@ -23,7 +23,7 @@ namespace LongestCommonSubstringTest
         }
 
         [TestMethod]
-        public void GetSubstringTest()
+        public void LongestCommonSubstring_GetSubstringTest()
         {
             //arrange
             string input1 = "abcdaf";

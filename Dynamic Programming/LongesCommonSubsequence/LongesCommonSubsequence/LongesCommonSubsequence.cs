@@ -5,23 +5,31 @@
  * 
  */
 
+using System.Diagnostics;
+
 namespace com.hack3rlife.dynamicprogramming
 {
     /// <summary>
     /// The longest common subsequence (LCS) problem is the problem of finding the longest subsequence common to all sequences in a set of sequences (often just two sequences). It differs 
     /// from problems of finding common substrings: unlike substrings, subsequences are not required to occupy consecutive positions within the original sequences. The longest common 
     /// subsequence problem is a classic computer science problem, the basis of data comparison programs such as the diff utility, and has applications in bioinformatics. 
-    /// It is also widely used by revision control systems such as Git for reconciling multiple changes made to a revision-controlled collection of files.    /// </summary>
+    /// It is also widely used by revision control systems such as Git for reconciling multiple changes made to a revision-controlled collection of files.    
+    /// </summary>
     /// <see cref=">https://en.wikipedia.org/wiki/Longest_common_subsequence_problem"/>
     /// <seealso cref="https://www.ics.uci.edu/~eppstein/161/960229.html"/>
     public static class LongesCommonSubsequence
     {
         /// <summary>
-        /// 
+        /// Given two sequences, find the length of longest subsequence present in both of them. A subsequence is a sequence that appears in the same relative order, but not necessarily 
+        /// contiguous. For example, “abc”, “abg”, “bdf”, “aeg”, ‘”acefg”, .. etc are subsequences of “abcdefg”. So a string of length n has 2^n different possible subsequences.
         /// </summary>
         /// <param name="x"></param>
         /// <param name="y"></param>
         /// <returns></returns>
+        /// <example>
+        /// LCS for input Sequences “ABCDGH” and “AEDFHR” is “ADH” of length 3.
+        /// LCS for input Sequences “AGGTAB” and “GXTXAYB” is “GTAB” of length 4.
+        /// </example>
         /// <see cref="http://www.geeksforgeeks.org/dynamic-programming-set-4-longest-common-subsequence/"/>
         public static int GetLength(string x, string y)
         {
@@ -30,15 +38,11 @@ namespace com.hack3rlife.dynamicprogramming
 
             int[,] num = new int[m + 1, n + 1];
 
-            for (int i = 0; i <= m; i++)
+            for (int i = 1; i <= m; i++)
             {
-                for (int j = 0; j <= n; j++)
+                for (int j = 1; j <= n; j++)
                 {
-                    if (i == 0 || j == 0)
-                    {
-                        num[i, j] = 0;
-                    }
-                    else if (x[i - 1] == y[j - 1])
+                    if (x[i - 1] == y[j - 1])
                     {
                         num[i, j] = num[i - 1, j - 1] + 1;
                     }
@@ -48,6 +52,8 @@ namespace com.hack3rlife.dynamicprogramming
                     }
                 }
             }
+
+            Print(num);
 
             return num[m, n];
         }
@@ -92,5 +98,24 @@ namespace com.hack3rlife.dynamicprogramming
         ////    }
         ////}
 
+
+        /// <summary>
+        /// Print the temporal DPT
+        /// </summary>
+        /// <param name="matrix">The table</param>
+        private static void Print(int[,] matrix)
+        {
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    Debug.Write(string.Format("{0} ", matrix[i, j]));
+                }
+
+                Debug.WriteLine("");
+            }
+
+            Debug.WriteLine("");
+        }
     }
 }

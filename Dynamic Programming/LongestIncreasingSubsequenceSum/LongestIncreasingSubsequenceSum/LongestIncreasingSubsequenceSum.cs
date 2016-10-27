@@ -1,7 +1,22 @@
 ﻿namespace com.hack3rlife.dynamicprogramming
 {
+    /// <summary>
+    /// Variaton of Longest increasing subsequence
+    /// </summary>
+    /// <see cref="http://www.geeksforgeeks.org/dynamic-programming-set-14-maximum-sum-increasing-subsequence/"/>
+    /// <seealso cref="https://www.youtube.com/watch?v=99ssGWhLPUE"/>
     public static class LongestIncreasingSubsequenceSum
     {
+        /// <summary>
+        /// Given an array of n positive integers. Write a program to find the sum of maximum sum subsequence of the given array such that the intgers in the subsequence are sorted in 
+        /// increasing order
+        /// </summary>
+        /// <example>
+        /// If input is {1, 101, 2, 3, 100, 4, 5}, then output should be 106 (1 + 2 + 3 + 100), if the input array is {3, 4, 5, 10}, then output should be 22 (3 + 4 + 5 + 10) and if the 
+        /// input array is {10, 5, 4, 3}, then output should be 10
+        /// </example>
+        /// <param name="input">The input array</param>
+        /// <returns>The Maximum Sum Increasing Subsequence</returns>
         public static int Get(int[] input)
         {
             int[] result = new int[input.Length];
@@ -27,9 +42,9 @@
             while (i < input.Length)
             {
                 j = 0;
+
                 while (j < i)
                 {
-
                     if (input[j] < input[i])
                     {
                         sum = input[i] + result[j];
@@ -41,7 +56,7 @@
                             result[i] = sum;
                             indexes[i] = j;
                         }
-                    }                    
+                    }
 
                     j++;
                 }
@@ -53,7 +68,11 @@
 
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
         private static int[] Initialize(int[] input)
         {
             for (int i = 0; i < input.Length; i++)

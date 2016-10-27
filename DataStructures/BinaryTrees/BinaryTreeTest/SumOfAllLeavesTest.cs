@@ -1,15 +1,12 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using com.hack3rlife.binarytree;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-
-namespace BinaryTreeTest
+namespace com.hack3rlife.binarytree.test
 {
     [TestClass]
-    public class SumOfAllLeaves
+    public class SumOfAllLeavesTest
     {
         [TestMethod]
-        public void SumOfAllLeavesTest()
+        public void BinaryTree_SumOfAllLeavesTest()
         {
             //arrange
             BinaryTree<int> tree = new BinaryTree<int>();

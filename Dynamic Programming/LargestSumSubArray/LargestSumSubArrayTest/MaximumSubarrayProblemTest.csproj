@@ -54,13 +54,13 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="LargestSumSubArrayTest.cs" />
+    <Compile Include="MaximumSubarrayProblemTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LargestSumSubArray\LargestSumSubArray.csproj">
+    <ProjectReference Include="..\LargestSumSubArray\MaximumSubarrayProblem.csproj">
       <Project>{b2203823-9dc7-4774-9b5d-d4505fc03d61}</Project>
-      <Name>LargestSumSubArray</Name>
+      <Name>MaximumSubarrayProblem</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
