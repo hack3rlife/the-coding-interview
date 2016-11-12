@@ -104,9 +104,6 @@ namespace com.hack3rlife.binarytree
             return CheckIsSymetric(root, root);
         }
 
-        BinaryTreeNode<T> curr = null;
-        BinaryTreeNode<T> parent = null;
-
         /// <summary>
         /// Inorder suc­ces­sor of a node is the next node in the inorder tra­ver­sal of the tree. For the last node in a tree, inorder suc­ces­sor will be NULL
         /// </summary>
@@ -234,6 +231,8 @@ namespace com.hack3rlife.binarytree
             RootToLeafPathsMaxSum(node.Right, curent, ref max);
         }
 
+
+
         /// <summary>
         /// 
         /// </summary>
@@ -305,6 +304,7 @@ namespace com.hack3rlife.binarytree
                 InOrder(node.Right);
             }
         }
+
         /// <summary>
         /// Display the BinarySearchTree strcuture 
         /// </summary>

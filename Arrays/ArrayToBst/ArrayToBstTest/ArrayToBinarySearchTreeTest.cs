@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace com.hack3rlife.algorithms
+namespace com.hack3rlife.arrays
 {
     [TestClass]
     public class ArrayToBinarySearchTreeTest

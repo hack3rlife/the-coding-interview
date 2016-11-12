@@ -1,4 +1,4 @@
-Strings (32) 
+Strings (30) 
 +BuildLowestNumber
 		*BuildLowestNumber\BuildLowestNumber.csproj
 		*BuildLowestNumberTest\BuildLowestNumberTest.csproj
@@ -17,9 +17,6 @@ Strings (32)
 +LookAndSayProblem
 		*LookAndSay\LookAndSay.csproj
 		*LookAndSayTest\LookAndSayTest.csproj
-+MissingElement
-		*MissingElement\MissingElement.csproj
-		*MissingElementTest\MissingElementTest.csproj
 +NextGreaterNumber
 		*NextGreaterNumber\NextGreaterNumber.csproj
 		*NextGreaterNumberTest\NextGreaterNumberTest.csproj

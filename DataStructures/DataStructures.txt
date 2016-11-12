@@ -1,7 +1,6 @@
-DataStructures (11) 
+DataStructures (10) 
 +BinaraySearchTrees
 		*BinarySearchTreeTest\BinarySearchTreeTest.csproj
-		*BinarySearchTreeTests\BinarySearchTreeTests.csproj
 		*BST\BinarySearchTree.csproj
 +BinaryTrees
 		*BinaryTree\BinaryTree.csproj

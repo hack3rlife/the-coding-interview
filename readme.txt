@@ -1,4 +1,4 @@
-The Coding Interview (112) 
+The Coding Interview (113) 
 + Algorithms (16) 
 	1: QuickSelect 
 	2: QuickSelectTest 
@@ -16,35 +16,38 @@ The Coding Interview (112)
 	14: QuickSortTest 
 	15: SelectionSort 
 	16: SelectionSortTest 
-+ Arrays (13) 
++ Arrays (17) 
 	1: ArrayToBinarySearchTree 
 	2: ArrayToBinarySearchTreeTest 
 	3: DutchNationalFlagProblem 
 	4: DutchNationalFlagProblemTest 
 	5: FindKth 
 	6: FindKthTest 
-	7: MatrixInSpiral 
-	8: NextGreaterElement 
-	9: NextGreaterElementTests 
-	10: PythagoreanTriplet 
-	11: RotateMatrix90Degrees 
-	12: StairCase 
-	13: StairCaseTUniTests 
+	7: MatrixInDiagonal 
+	8: MatrixInDiagonalTests 
+	9: MatrixInSpiral 
+	10: MissingElement 
+	11: MissingElementTest 
+	12: NextGreaterElement 
+	13: NextGreaterElementTests 
+	14: PythagoreanTriplet 
+	15: RotateMatrix90Degrees 
+	16: StairCase 
+	17: StairCaseTUniTests 
 + BitManipulation (2) 
 	1: CountBits 
 	2: CountBitsTest 
-+ DataStructures (11) 
++ DataStructures (10) 
 	1: BinarySearchTreeTest 
-	2: BinarySearchTreeTests 
-	3: BinarySearchTree 
-	4: BinaryTree 
-	5: BinaryTreeTest 
-	6: LinkedList 
-	7: LinkedListTest.UnitTest 
-	8: Queue 
-	9: QueueTest 
-	10: Stack 
-	11: StackTest 
+	2: BinarySearchTree 
+	3: BinaryTree 
+	4: BinaryTreeTest 
+	5: LinkedList 
+	6: LinkedListTest.UnitTest 
+	7: Queue 
+	8: QueueTest 
+	9: Stack 
+	10: StackTest 
 + Dynamic Programming (17) 
 	1: MaximumSubarrayProblem 
 	2: MaximumSubarrayProblemTest 
@@ -86,7 +89,7 @@ The Coding Interview (112)
 + Random (2) 
 	1: RatioIterator 
 	2: RatioIteratorTest 
-+ Strings (32) 
++ Strings (30) 
 	1: BuildLowestNumber 
 	2: BuildLowestNumberTest 
 	3: InterconvertStringAndIntegers 
@@ -99,25 +102,23 @@ The Coding Interview (112)
 	10: IsRotationTest 
 	11: LookAndSay 
 	12: LookAndSayTest 
-	13: MissingElement 
-	14: MissingElementTest 
-	15: NextGreaterNumber 
-	16: NextGreaterNumberTest 
-	17: PhoneMnemonic 
-	18: NumberToStringTest 
-	19: PatternSearching 
-	20: PatternSearchingTest 
-	21: PhoneNumberParser 
-	22: PhoneNumberParserTest 
-	23: RomanNumerals 
-	24: RomaNumeralsTest 
-	25: StringCombination 
-	26: StringCombinationTest 
-	27: StringPermutation 
-	28: StringPermutationTest 
-	29: StringReverse 
-	30: StringReverseTest 
-	31: WildCardMatch 
-	32: WildCardMatchTest 
+	13: NextGreaterNumber 
+	14: NextGreaterNumberTest 
+	15: PhoneMnemonic 
+	16: NumberToStringTest 
+	17: PatternSearching 
+	18: PatternSearchingTest 
+	19: PhoneNumberParser 
+	20: PhoneNumberParserTest 
+	21: RomanNumerals 
+	22: RomaNumeralsTest 
+	23: StringCombination 
+	24: StringCombinationTest 
+	25: StringPermutation 
+	26: StringPermutationTest 
+	27: StringReverse 
+	28: StringReverseTest 
+	29: WildCardMatch 
+	30: WildCardMatchTest 
 + Tools (1) 
 	1: ProjectsTree 

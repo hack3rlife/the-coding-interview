@@ -1,7 +1,6 @@
-﻿using com.hack3rlife.heapsort;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace com.hack3rlife.heapsortest
+namespace com.hack3rlife.heapsort
 {
     [TestClass]
     public class HeapSortTest

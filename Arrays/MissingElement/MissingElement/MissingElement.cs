@@ -22,9 +22,9 @@ namespace com.hectorea.number
         public static int Find(int[] input)
         {
             int length = input.Length;
-            int total = (length*(length + 1)) / 2; //n(n+1)/2
+            int total = (length * (length + 1)) / 2; //n(n+1)/2
 
-            for (int i = 0; i < length-1; i++)
+            for (int i = 0; i < length - 1; i++)
             {
                 total -= input[i];
             }

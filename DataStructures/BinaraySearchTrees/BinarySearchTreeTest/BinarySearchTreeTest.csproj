@@ -56,6 +56,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="BinarySearchTreeRemoveTests.cs" />
     <Compile Include="FindKthLargestElementsTest.cs" />
     <Compile Include="FindSuccesorTest.cs" />
     <Compile Include="RemoveTests.cs" />

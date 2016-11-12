@@ -57,6 +57,12 @@
     <Compile Include="HeapSortTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HeapSort\HeapSort.csproj">
+      <Project>{a9071e0a-24ec-41f0-b24b-b108db4e1a23}</Project>
+      <Name>HeapSort</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

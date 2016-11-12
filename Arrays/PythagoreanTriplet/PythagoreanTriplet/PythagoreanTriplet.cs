@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace com.hack3rlife.algorithms
+namespace com.hack3rlife.arrays
 {
     public class PythagoreanTriplet
     {

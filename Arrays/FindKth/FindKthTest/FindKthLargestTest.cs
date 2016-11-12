@@ -1,8 +1,8 @@
 ﻿using System;
-using com.hack3rlife.algorithms;
+
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace FindKthTest
+namespace com.hack3rlife.arrays
 {
     [TestClass]
     public class FindKthLargestTest

@@ -5,7 +5,7 @@
  * 
  */
 
-namespace com.hack3rlife.algorithms
+namespace com.hack3rlife.arrays
 {
     /// <summary>
     /// Given an of unsorted array of integers (you may assume the array may contain +ve, -ve and 0s and a number k where k is smaller than size of array, we need to find the k’th smallest

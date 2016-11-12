@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using com.hack3rlife.algorithms.sorting;
+using com.hack3rlife.arrays.sorting;
 
 namespace com.hack3rlife.array
 {
