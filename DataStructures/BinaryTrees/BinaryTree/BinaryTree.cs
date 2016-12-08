@@ -18,6 +18,26 @@ namespace com.hack3rlife.binarytree
         /// </summary>
         public BinaryTreeNode<T> Root { get; set; }
 
+        private List<T> _inorder; 
+
+        public List<T> InOderList
+        {
+            get
+            {
+                if(Root != null && _inorder.Count == 0)
+                {
+                    InOrder(Root);
+                }
+
+                return _inorder;
+            }
+        }
+
+        public BinaryTree()
+        {
+            _inorder = new List<T>();
+        }
+
         /// <summary>
         /// Find the Lowest Common Ancester 
         /// </summary>
@@ -117,39 +137,6 @@ namespace com.hack3rlife.binarytree
             return FindSuccesor(root, node, null);
         }
 
-        private BinaryTreeNode<T> FindLeftMostNode(BinaryTreeNode<T> right)
-        {
-            if (right.Left == null)
-                return right;
-
-            return FindLeftMostNode(right.Left);
-
-        }
-
-        private BinaryTreeNode<T> FindSuccesor(BinaryTreeNode<T> root, BinaryTreeNode<T> node, BinaryTreeNode<T> parent)
-        {
-            //base case
-            if (root == null)
-                return root;
-
-            if (root == node)
-            {
-                if (root.Right != null)
-                    return FindLeftMostNode(root.Right);
-
-                return parent;
-            }
-            else
-            {
-                var curr = FindSuccesor(root.Left, node, root);
-
-                if (curr != null)
-                    return curr;
-
-                return FindSuccesor(root.Right, node, parent);
-            }
-        }
-
         /// <summary>
         /// Mirror the <see cref="BinaryTree{T}"/>
         /// </summary>
@@ -231,8 +218,6 @@ namespace com.hack3rlife.binarytree
             RootToLeafPathsMaxSum(node.Right, curent, ref max);
         }
 
-
-
         /// <summary>
         /// 
         /// </summary>
@@ -290,6 +275,45 @@ namespace com.hack3rlife.binarytree
             }
         }
 
+        public void Serialize(BinaryTreeNode<int> node, IList<int> list)
+        {
+            if (node == null)
+            {
+                list.Add(-1);
+                Debug.Write(string.Format(" {0} ", -1));
+
+                return;
+            }
+
+            list.Add(node.Value);
+            Debug.Write(string.Format(" {0} ", node.Value));
+
+            Serialize(node.Left, list);
+            Serialize(node.Right, list);
+
+        }
+
+        int index = 0;
+        public BinaryTreeNode<int> Deserialize(IList<int> input)
+        {
+            if (input == null ||
+                input[index] == -1 ||
+                index == input.Count)
+            {
+                index += 1;
+                return null;
+            }
+
+            var root = new BinaryTreeNode<int>(input[index]);
+            index += 1;
+
+            root.Left = Deserialize(input);
+            root.Right = Deserialize(input);
+
+            return root;
+        }
+
+
         /// <summary>
         /// 
         /// </summary>
@@ -300,6 +324,7 @@ namespace com.hack3rlife.binarytree
             if (node != null)
             {
                 InOrder(node.Left);
+                _inorder.Add(node.Value);
                 node.DisplayNode();
                 InOrder(node.Right);
             }
@@ -364,6 +389,39 @@ namespace com.hack3rlife.binarytree
             return false;
         }
 
+        private BinaryTreeNode<T> FindLeftMostNode(BinaryTreeNode<T> right)
+        {
+            if (right.Left == null)
+                return right;
+
+            return FindLeftMostNode(right.Left);
+
+        }
+
+        private BinaryTreeNode<T> FindSuccesor(BinaryTreeNode<T> root, BinaryTreeNode<T> node, BinaryTreeNode<T> parent)
+        {
+            //base case
+            if (root == null)
+                return root;
+
+            if (root == node)
+            {
+                if (root.Right != null)
+                    return FindLeftMostNode(root.Right);
+
+                return parent;
+            }
+            else
+            {
+                var curr = FindSuccesor(root.Left, node, root);
+
+                if (curr != null)
+                    return curr;
+
+                return FindSuccesor(root.Right, node, parent);
+            }
+        }
+
         /// <summary>
         /// Based on http://stackoverflow.com/questions/1649027/how-do-i-print-out-a-tree-structure
         /// </summary>
@@ -401,31 +459,31 @@ namespace com.hack3rlife.binarytree
 
         }
 
-        //public bool IsBalanced(BinaryTreeNode<T> node)
-        //{
-        //    if (node == null)
-        //        return true;
+        ////public bool IsBalanced(BinaryTreeNode<T> node)
+        ////{
+        ////    if (node == null)
+        ////        return true;
 
-        //    var left = GetHeigth(node.Left);
-        //    var right = GetHeigth(node.Right);
+        ////    var left = GetHeigth(node.Left);
+        ////    var right = GetHeigth(node.Right);
 
-        //    if (Math.Abs(left - right) <= 1
-        //        && IsBalanced(node.Left)
-        //        && IsBalanced(node.Right))
-        //    {
-        //        return true;
-        //    }
+        ////    if (Math.Abs(left - right) <= 1
+        ////        && IsBalanced(node.Left)
+        ////        && IsBalanced(node.Right))
+        ////    {
+        ////        return true;
+        ////    }
 
-        //    return false;
-        //}
+        ////    return false;
+        ////}
 
-        //private int GetHeigth(BinaryTreeNode<T> node)
-        //{
-        //    if (node == null)
-        //        return 0;
+        ////private int GetHeigth(BinaryTreeNode<T> node)
+        ////{
+        ////    if (node == null)
+        ////        return 0;
 
 
-        //    return 1 + GetHeigth(node.Left) + GetHeigth(node.Right);
-        //}
+        ////    return 1 + GetHeigth(node.Left) + GetHeigth(node.Right);
+        ////}
     }
 }

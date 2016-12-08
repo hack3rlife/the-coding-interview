@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using com.hack3rlife.datastructures;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -123,7 +124,7 @@ namespace BinarySearchTreeTest
             {
                 foreach (var node in bst.PostOrderEnumerable)
                 {
-                    Console.Write(" {0} ", node);
+                    Debug.Write(string.Format(" {0} ", node.ToString()));
                 }
             }
             catch (Exception e)

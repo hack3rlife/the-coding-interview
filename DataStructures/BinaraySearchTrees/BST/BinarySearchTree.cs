@@ -137,45 +137,32 @@ namespace com.hack3rlife.datastructures
             //#BUG: 2435
             get
             {
-                Stack<BinarySearchTreeNode<T>> stack = new Stack<BinarySearchTreeNode<T>>();
+                Stack<T> stack = new Stack<T>();
+                Stack<BinarySearchTreeNode<T>> buffer = new Stack<BinarySearchTreeNode<T>>();
                 BinarySearchTreeNode<T> node = this.Root;
 
-                do
+                buffer.Push(node);
+
+                while (buffer.Count > 0)
                 {
-                    while (node != null)
-                    {
-                        if (node.Right != null)
-                        {
-                            stack.Push(node.Right);
-                        }
+                    var curr = buffer.Pop();
+                    stack.Push(curr.Value);
 
-                        stack.Push(node);
+                    if (curr.Left != null)
+                        buffer.Push(curr.Left);
 
-                        node = node.Left;
-                    }
+                    if (curr.Right != null)
+                        buffer.Push(curr.Right);
 
-                    node = stack.Pop();
+                    
+                }
 
-                    if (node.Right != null)
-                    {
-                        var peek = stack.Peek();
+                while(stack.Count>0)
+                {
+                    var curr = stack.Pop();
 
-                        if (node.Right.Value.Equals(peek.Value))
-                        {
-                            var right = stack.Pop();
-                            stack.Push(node);
-                            node = node = node.Right;
-                        }
-                    }
-                    else
-                    {
-                        yield return node.Value;
-                        node = null;
-                    }
-                } while (stack.Count > 0);
-
-
-
+                    yield return curr;
+                }
             }
         }
 

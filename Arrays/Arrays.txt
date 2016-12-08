@@ -1,4 +1,4 @@
-Arrays (17) 
+Arrays (19) 
 +ArrayToBst
 		*ArrayToBst\ArrayToBinarySearchTree.csproj
 		*ArrayToBstTest\ArrayToBinarySearchTreeTest.csproj
@@ -8,6 +8,9 @@ Arrays (17)
 +FindKth
 		*FindKth\FindKth.csproj
 		*FindKthTest\FindKthTest.csproj
++LightsOut
+		*LightsOut\LightsOut.csproj
+		*LightsOutTests\LightsOutTests.csproj
 +MatrixInDiagonal
 		*MatrixInDiagonal\MatrixInDiagonal.csproj
 		*MatrixInDiagonalTests\MatrixInDiagonalTests.csproj

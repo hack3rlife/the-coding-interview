@@ -8,7 +8,7 @@ namespace IsPalindromeTest
     public class PalindromeTest
     {
         [TestMethod]
-        public void IsPalindromeTestPass()
+        public void IsPalindrome()
         {
             //arrange
             string input = "radar";
@@ -31,20 +31,6 @@ namespace IsPalindromeTest
 
             //assert 
             Assert.IsFalse(condition);
-        }
-
-        [TestMethod]
-        public void LonguestPalindromeTest()
-        {
-            //arrange
-            string input = "forgeeksskeegfor";
-            string expected = "geeksskeeg";
-
-            //act
-            string actual = Palindrome.LonguestPalindrome(input.ToCharArray(0, input.Length - 1));
-
-            //assert 
-            Assert.AreEqual(expected, actual);
-        }
+        }     
     }
 }

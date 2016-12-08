@@ -58,27 +58,26 @@ namespace com.hack3rlife.strings
 
         public static string ReverseWordsInASentece(string input)
         {
-            if (input.Length < 0)
-                return string.Empty;
+            var reversed = Reverse(input.ToCharArray());
+
+            string reversedWords = string.Empty;
 
             string result = string.Empty;
-            string temp = string.Empty;
 
-            for (int i = 0; i < input.Length; i++)
+            for (int i = 0; i < reversed.Length; i++)
             {
-                if (input[i] != ' ')
+                if (reversed[i] != ' ')
                 {
-                    temp += input[i];
+                    result += reversed[i];
                 }
                 else
                 {
-                    result = temp + ' ' + result;
-                    temp = string.Empty;
+                    result = reversed[i] + result;
+                    reversedWords += Reverse(result);
+                    result = string.Empty;
                 }
-
             }
-
-            return temp + ' ' + result;
+            return reversedWords + Reverse(result);
         }
     }
 }

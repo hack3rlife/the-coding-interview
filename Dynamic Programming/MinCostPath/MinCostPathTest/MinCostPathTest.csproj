@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6CF3C960-00DF-4532-A8A4-CEFA7CE2B89C}</ProjectGuid>
+    <ProjectGuid>{0B06557E-CEDB-403B-962C-C2DE6AA9D3A9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BinaryTreeTest</RootNamespace>
-    <AssemblyName>BinaryTreeTest</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>MinCostPathTest</RootNamespace>
+    <AssemblyName>MinCostPathTest</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -49,29 +49,18 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
-          <Private>False</Private>
-        </Reference>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="DeserializeTest.cs" />
-    <Compile Include="SerializeTest.cs" />
-    <Compile Include="FindSuccesorTest.cs" />
-    <Compile Include="IsSymetricTest.cs" />
-    <Compile Include="IsBalancedTest.cs" />
-    <Compile Include="BinaryTreeTest.cs" />
+    <Compile Include="MinCosthPathTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SumOfAllLeavesTest.cs" />
-    <Compile Include="RootToLeafPathsSumTest.cs" />
-    <Compile Include="RootToLeafPathsMaxSumTest.cs" />
-    <Compile Include="LowestCommonAncestorTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BinaryTree\BinaryTree.csproj">
-      <Project>{ccd85c08-6fa8-4054-96ea-b2419615ee62}</Project>
-      <Name>BinaryTree</Name>
+    <ProjectReference Include="..\MinCostPath\MinCostPath.csproj">
+      <Project>{9DC6FDF3-7115-4FC4-B2C9-5689542A6040}</Project>
+      <Name>MinCostPath</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

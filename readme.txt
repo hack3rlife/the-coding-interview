@@ -1,4 +1,4 @@
-The Coding Interview (113) 
+The Coding Interview (120) 
 + Algorithms (16) 
 	1: QuickSelect 
 	2: QuickSelectTest 
@@ -16,24 +16,26 @@ The Coding Interview (113)
 	14: QuickSortTest 
 	15: SelectionSort 
 	16: SelectionSortTest 
-+ Arrays (17) 
++ Arrays (19) 
 	1: ArrayToBinarySearchTree 
 	2: ArrayToBinarySearchTreeTest 
 	3: DutchNationalFlagProblem 
 	4: DutchNationalFlagProblemTest 
 	5: FindKth 
 	6: FindKthTest 
-	7: MatrixInDiagonal 
-	8: MatrixInDiagonalTests 
-	9: MatrixInSpiral 
-	10: MissingElement 
-	11: MissingElementTest 
-	12: NextGreaterElement 
-	13: NextGreaterElementTests 
-	14: PythagoreanTriplet 
-	15: RotateMatrix90Degrees 
-	16: StairCase 
-	17: StairCaseTUniTests 
+	7: LightsOut 
+	8: LightsOutTests 
+	9: MatrixInDiagonal 
+	10: MatrixInDiagonalTests 
+	11: MatrixInSpiral 
+	12: MissingElement 
+	13: MissingElementTest 
+	14: NextGreaterElement 
+	15: NextGreaterElementTests 
+	16: PythagoreanTriplet 
+	17: RotateMatrix90Degrees 
+	18: StairCase 
+	19: StairCaseTUniTests 
 + BitManipulation (2) 
 	1: CountBits 
 	2: CountBitsTest 
@@ -48,7 +50,7 @@ The Coding Interview (113)
 	8: QueueTest 
 	9: Stack 
 	10: StackTest 
-+ Dynamic Programming (17) 
++ Dynamic Programming (19) 
 	1: MaximumSubarrayProblem 
 	2: MaximumSubarrayProblemTest 
 	3: LongesCommonSubsequence 
@@ -62,10 +64,12 @@ The Coding Interview (113)
 	11: LongestPalindromicTest 
 	12: LongestIncreasingSubsequenceSumTest 
 	13: MaxSumIncreasingSubsequence 
-	14: SubArrayGivenSum 
-	15: SubArrayGivenSumTest 
-	16: SubsetSum 
-	17: SubsetSumTest 
+	14: MinCostPath 
+	15: MinCostPathTest 
+	16: SubArrayGivenSum 
+	17: SubArrayGivenSumTest 
+	18: SubsetSum 
+	19: SubsetSumTest 
 + Math (2) 
 	1: SquareRoot 
 	2: SquareRootTest 
@@ -89,36 +93,39 @@ The Coding Interview (113)
 + Random (2) 
 	1: RatioIterator 
 	2: RatioIteratorTest 
-+ Strings (30) 
-	1: BuildLowestNumber 
-	2: BuildLowestNumberTest 
-	3: InterconvertStringAndIntegers 
-	4: InterconvertStringAndIntegersTest 
-	5: IsAnagram 
-	6: IsAnagramTest 
-	7: IsPalindrome 
-	8: PalindromeTest 
-	9: IsRotation 
-	10: IsRotationTest 
-	11: LookAndSay 
-	12: LookAndSayTest 
-	13: NextGreaterNumber 
-	14: NextGreaterNumberTest 
-	15: PhoneMnemonic 
-	16: NumberToStringTest 
-	17: PatternSearching 
-	18: PatternSearchingTest 
-	19: PhoneNumberParser 
-	20: PhoneNumberParserTest 
-	21: RomanNumerals 
-	22: RomaNumeralsTest 
-	23: StringCombination 
-	24: StringCombinationTest 
-	25: StringPermutation 
-	26: StringPermutationTest 
-	27: StringReverse 
-	28: StringReverseTest 
-	29: WildCardMatch 
-	30: WildCardMatchTest 
++ Strings (33) 
+	1: BalancedExpressions 
+	2: BalancedExpressionsTest 
+	3: BuildLowestNumber 
+	4: BuildLowestNumberTest 
+	5: InterconvertStringAndIntegers 
+	6: InterconvertStringAndIntegersTest 
+	7: IsAnagram 
+	8: IsAnagramTest 
+	9: IsIsomorphic 
+	10: IsPalindrome 
+	11: PalindromeTest 
+	12: IsRotation 
+	13: IsRotationTest 
+	14: LookAndSay 
+	15: LookAndSayTest 
+	16: NextGreaterNumber 
+	17: NextGreaterNumberTest 
+	18: PhoneMnemonic 
+	19: NumberToStringTest 
+	20: PatternSearching 
+	21: PatternSearchingTest 
+	22: PhoneNumberParser 
+	23: PhoneNumberParserTest 
+	24: RomanNumerals 
+	25: RomaNumeralsTest 
+	26: StringCombination 
+	27: StringCombinationTest 
+	28: StringPermutation 
+	29: StringPermutationTest 
+	30: StringReverse 
+	31: StringReverseTest 
+	32: WildCardMatch 
+	33: WildCardMatchTest 
 + Tools (1) 
 	1: ProjectsTree 

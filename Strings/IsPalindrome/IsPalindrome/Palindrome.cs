@@ -9,9 +9,8 @@ namespace com.hack3rlife.strings
 {
     /// <summary>
     /// A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward or forward. 
-    /// 
     /// </summary>
-    public class Palindrome
+    public static class Palindrome
     {
         /// <summary>
         ///  Check whether a string is palindrome or not
@@ -40,17 +39,6 @@ namespace com.hack3rlife.strings
             }
 
             return true;
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="input"></param>
-        /// <returns></returns>
-        /// <see cref="http://www.geeksforgeeks.org/dynamic-programming-set-12-longest-palindromic-subsequence/"/>
-        public static string LonguestPalindrome(char[] input)
-        {
-                        return string.Empty;
-        }
+        }     
     }
 }

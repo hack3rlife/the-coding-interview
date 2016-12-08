@@ -1,4 +1,4 @@
-Dynamic Programming (17) 
+Dynamic Programming (19) 
 +LargestSumSubArray
 		*LargestSumSubArray\MaximumSubarrayProblem.csproj
 		*LargestSumSubArrayTest\MaximumSubarrayProblemTest.csproj
@@ -20,6 +20,9 @@ Dynamic Programming (17)
 +MaxSumIncreasingSubsequence
 		*LongestIncreasingSubsequenceSumTest\LongestIncreasingSubsequenceSumTest.csproj
 		*MaxSumIncreasingSubsequence\MaxSumIncreasingSubsequence.csproj
++MinCostPath
+		*MinCostPath\MinCostPath.csproj
+		*MinCostPathTest\MinCostPathTest.csproj
 +SubArrayGivenSum
 		*SubArrayGivenSum\SubArrayGivenSum.csproj
 		*SubArrayGivenSumTest\SubArrayGivenSumTest.csproj

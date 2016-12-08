@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6CF3C960-00DF-4532-A8A4-CEFA7CE2B89C}</ProjectGuid>
+    <ProjectGuid>{924BC641-4F16-42C5-B157-3665BE1FA382}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BinaryTreeTest</RootNamespace>
-    <AssemblyName>BinaryTreeTest</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>BalancedExpressionsTests</RootNamespace>
+    <AssemblyName>BalancedExpressionsTests</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -16,10 +16,7 @@
     <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
     <IsCodedUITest>False</IsCodedUITest>
     <TestProjectType>UnitTest</TestProjectType>
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -49,29 +46,18 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
-          <Private>False</Private>
-        </Reference>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="DeserializeTest.cs" />
-    <Compile Include="SerializeTest.cs" />
-    <Compile Include="FindSuccesorTest.cs" />
-    <Compile Include="IsSymetricTest.cs" />
-    <Compile Include="IsBalancedTest.cs" />
-    <Compile Include="BinaryTreeTest.cs" />
+    <Compile Include="BalancedExpressionsTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SumOfAllLeavesTest.cs" />
-    <Compile Include="RootToLeafPathsSumTest.cs" />
-    <Compile Include="RootToLeafPathsMaxSumTest.cs" />
-    <Compile Include="LowestCommonAncestorTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BinaryTree\BinaryTree.csproj">
-      <Project>{ccd85c08-6fa8-4054-96ea-b2419615ee62}</Project>
-      <Name>BinaryTree</Name>
+    <ProjectReference Include="..\BalancedExpressions\BalancedExpressions.csproj">
+      <Project>{DB8741AB-8BC9-4A36-BEBB-471961EB3496}</Project>
+      <Name>BalancedExpressions</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

@@ -1,4 +1,7 @@
-Strings (30) 
+Strings (33) 
++BalancedExpressions
+		*BalancedExpressions\BalancedExpressions.csproj
+		*BalancedExpressionsTests\BalancedExpressionsTest.csproj
 +BuildLowestNumber
 		*BuildLowestNumber\BuildLowestNumber.csproj
 		*BuildLowestNumberTest\BuildLowestNumberTest.csproj
@@ -8,6 +11,8 @@ Strings (30)
 +IsAnagram
 		*IsAnagram\IsAnagram.csproj
 		*IsAnagramTest\IsAnagramTest.csproj
++IsIsomorphic
+		*IsIsomorphic\IsIsomorphic.csproj
 +IsPalindrome
 		*IsPalindrome\IsPalindrome.csproj
 		*IsPalindromeTest\PalindromeTest.csproj
