@@ -1,4 +1,4 @@
-The Coding Interview (120) 
+The Coding Interview (127) 
 + Algorithms (16) 
 	1: QuickSelect 
 	2: QuickSelectTest 
@@ -16,7 +16,7 @@ The Coding Interview (120)
 	14: QuickSortTest 
 	15: SelectionSort 
 	16: SelectionSortTest 
-+ Arrays (19) 
++ Arrays (25) 
 	1: ArrayToBinarySearchTree 
 	2: ArrayToBinarySearchTreeTest 
 	3: DutchNationalFlagProblem 
@@ -28,14 +28,20 @@ The Coding Interview (120)
 	9: MatrixInDiagonal 
 	10: MatrixInDiagonalTests 
 	11: MatrixInSpiral 
-	12: MissingElement 
-	13: MissingElementTest 
-	14: NextGreaterElement 
-	15: NextGreaterElementTests 
-	16: PythagoreanTriplet 
-	17: RotateMatrix90Degrees 
-	18: StairCase 
-	19: StairCaseTUniTests 
+	12: MatrixPaths 
+	13: MatrixPathsTest 
+	14: MissingElement 
+	15: MissingElementTest 
+	16: NextGreaterElement 
+	17: NextGreaterElementTests 
+	18: PythagoreanTriplet 
+	19: RatInAMaze 
+	20: RatInAMazeTest 
+	21: RotateMatrix90Degrees 
+	22: ShortestPathBinaryMaze 
+	23: ShortestPathBinaryMazeTests 
+	24: StairCase 
+	25: StairCaseTUniTests 
 + BitManipulation (2) 
 	1: CountBits 
 	2: CountBitsTest 
@@ -93,7 +99,7 @@ The Coding Interview (120)
 + Random (2) 
 	1: RatioIterator 
 	2: RatioIteratorTest 
-+ Strings (33) 
++ Strings (34) 
 	1: BalancedExpressions 
 	2: BalancedExpressionsTest 
 	3: BuildLowestNumber 
@@ -103,29 +109,30 @@ The Coding Interview (120)
 	7: IsAnagram 
 	8: IsAnagramTest 
 	9: IsIsomorphic 
-	10: IsPalindrome 
-	11: PalindromeTest 
-	12: IsRotation 
-	13: IsRotationTest 
-	14: LookAndSay 
-	15: LookAndSayTest 
-	16: NextGreaterNumber 
-	17: NextGreaterNumberTest 
-	18: PhoneMnemonic 
-	19: NumberToStringTest 
-	20: PatternSearching 
-	21: PatternSearchingTest 
-	22: PhoneNumberParser 
-	23: PhoneNumberParserTest 
-	24: RomanNumerals 
-	25: RomaNumeralsTest 
-	26: StringCombination 
-	27: StringCombinationTest 
-	28: StringPermutation 
-	29: StringPermutationTest 
-	30: StringReverse 
-	31: StringReverseTest 
-	32: WildCardMatch 
-	33: WildCardMatchTest 
+	10: IsIsomorphicTest 
+	11: IsPalindrome 
+	12: PalindromeTest 
+	13: IsRotation 
+	14: IsRotationTest 
+	15: LookAndSay 
+	16: LookAndSayTest 
+	17: NextGreaterNumber 
+	18: NextGreaterNumberTest 
+	19: PhoneMnemonic 
+	20: NumberToStringTest 
+	21: PatternSearching 
+	22: PatternSearchingTest 
+	23: PhoneNumberParser 
+	24: PhoneNumberParserTest 
+	25: RomanNumerals 
+	26: RomaNumeralsTest 
+	27: StringCombination 
+	28: StringCombinationTest 
+	29: StringPermutation 
+	30: StringPermutationTest 
+	31: StringReverse 
+	32: StringReverseTest 
+	33: WildCardMatch 
+	34: WildCardMatchTest 
 + Tools (1) 
 	1: ProjectsTree 
