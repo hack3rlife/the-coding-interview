@@ -1,4 +1,4 @@
-The Coding Interview (127) 
+The Coding Interview (129) 
 + Algorithms (16) 
 	1: QuickSelect 
 	2: QuickSelectTest 
@@ -99,7 +99,7 @@ The Coding Interview (127)
 + Random (2) 
 	1: RatioIterator 
 	2: RatioIteratorTest 
-+ Strings (34) 
++ Strings (36) 
 	1: BalancedExpressions 
 	2: BalancedExpressionsTest 
 	3: BuildLowestNumber 
@@ -124,15 +124,17 @@ The Coding Interview (127)
 	22: PatternSearchingTest 
 	23: PhoneNumberParser 
 	24: PhoneNumberParserTest 
-	25: RomanNumerals 
-	26: RomaNumeralsTest 
-	27: StringCombination 
-	28: StringCombinationTest 
-	29: StringPermutation 
-	30: StringPermutationTest 
-	31: StringReverse 
-	32: StringReverseTest 
-	33: WildCardMatch 
-	34: WildCardMatchTest 
+	25: ReversePolishNotation 
+	26: ReversePolishNotationTest 
+	27: RomanNumerals 
+	28: RomaNumeralsTest 
+	29: StringCombination 
+	30: StringCombinationTest 
+	31: StringPermutation 
+	32: StringPermutationTest 
+	33: StringReverse 
+	34: StringReverseTest 
+	35: WildCardMatch 
+	36: WildCardMatchTest 
 + Tools (1) 
 	1: ProjectsTree 

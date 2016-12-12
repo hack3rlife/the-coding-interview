@@ -1,4 +1,4 @@
-Strings (34) 
+Strings (36) 
 +BalancedExpressions
 		*BalancedExpressions\BalancedExpressions.csproj
 		*BalancedExpressionsTests\BalancedExpressionsTest.csproj
@@ -35,6 +35,9 @@ Strings (34)
 +PhoneNumberParser
 		*AlphanumericPhoneNumber\PhoneNumberParser.csproj
 		*AlphanumericPhoneNumberTest\PhoneNumberParserTest.csproj
++ReversePolishNotation
+		*ReversePolishNotation\ReversePolishNotation.csproj
+		*ReversePolishNotationTest\ReversePolishNotationTest.csproj
 +RomanNumbers
 		*RomanNumberConverter\RomanNumerals.csproj
 		*RomaNumeralsTest\RomaNumeralsTest.csproj
