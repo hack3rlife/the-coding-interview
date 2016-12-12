@@ -4,13 +4,12 @@ using System.Collections;
 namespace com.hack3rlife.datastructures
 {
     /// <summary>
-    /// Represents a variable size last-in-first-out (LIFO) collection of instances of the same specified implemened by
-    /// using LinkedList as underlaying datastructure.
-    /// </summary>
-    /// <typeparam name="int"></typeparam>
+    /// Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+    /// </summary>    
     public class StackMin : IEnumerable
     {
         private StackNode _top;
+        private int _min;
 
         /// <summary>
         /// Gets the number of elements contained in the Stack.
@@ -29,17 +28,22 @@ namespace com.hack3rlife.datastructures
         /// <param name="value"></param>
         public void Push(int value)
         {
-            StackNode node = new StackNode(value);
+            if (value < _min)
+                _min = value;
+
+            StackNode node = new StackNode(value, min: _min);
 
             if (Count >= 1)
             {
                 node.Next = _top;
                 _top = node;
+
             }
             else
             {
                 _top = node;
-            }            
+                _min = value;
+            }
 
             Count++;
         }
@@ -75,7 +79,23 @@ namespace com.hack3rlife.datastructures
 
             if (Count > 0)
             {
-                result = _top.Value;                
+                result = _top.Value;
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public int GetMin()
+        {
+            int result = default(int);
+
+            if (Count > 0)
+            {
+                result = _top.Min;
             }
 
             return result;
@@ -84,7 +104,8 @@ namespace com.hack3rlife.datastructures
         /// <summary>
         /// Removes all objects from the Stack.
         /// </summary>
-        public void Clear(){
+        public void Clear()
+        {
             _top = null;
             Count = 0;
         }
@@ -95,6 +116,7 @@ namespace com.hack3rlife.datastructures
         /// <returns></returns>
         public IEnumerator GetEnumerator()
         {
+            // TODO: Update this definition to include _min value
             while (_top != null)
             {
                 int result = _top.Value;
@@ -104,7 +126,7 @@ namespace com.hack3rlife.datastructures
             }
         }
 
-       IEnumerator IEnumerable.GetEnumerator()
+        IEnumerator IEnumerable.GetEnumerator()
         {
             return ((IEnumerable)this).GetEnumerator();
         }

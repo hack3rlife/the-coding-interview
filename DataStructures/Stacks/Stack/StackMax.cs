@@ -4,77 +4,115 @@ using System.Collections;
 namespace com.hack3rlife.datastructures
 {
     /// <summary>
-    /// Represents a variable size last-in-first-out (LIFO) collection of instances of the same specified implemened by
-    /// using LinkedList as underlaying datastructure.
+    /// Design a stack that supports push, pop, top, and retrieving the maximum element in constant time.
     /// </summary>
     /// <typeparam name="int"></typeparam>
-    public class StackMax : Stack
+    public class StackMax : IEnumerable
     {
-        private StackNode _max;
+        private int _max = int.MinValue;
 
-        public StackNode Max
+        private StackNode _top;
+
+        /// <summary>
+        /// Gets the number of elements contained in the Stack.
+        /// </summary>
+        public int Count { get; private set; }
+
+        public  void Push(int value)
         {
-            get
-            {
-                return _max;
-            }
-
-            private set
+            if (value > _max)
             {
                 _max = value;
+                Push(_max);
             }
-        }
 
-        public StackMax() : base()
-        {
-            _max = null;
-        }
+            StackNode node = new StackNode(value);
 
-        public override void Push(int value)
-        {
-            base.Push(value);
-            UpdateMaxOnPush();
-        }
-
-        public override int Pop()
-        {
-            var value = base.Pop();
-            UpdateMaxOnPop(value);
-
-            return value;
-        }
-
-        private void UpdateMaxOnPush()
-        {
-            int peek = this.Peek();
-            var curr = new StackNode(peek);
-
-            if (_max == null)
+            if (Count >= 1)
             {
-                _max = curr;
+                node.Next = _top;
+                _top = node;
             }
             else
             {
-                if (_max.Value < peek)
+                _top = node;                
+            }
+
+            Count++;
+        }
+
+        public int Pop()
+        {
+            if (Count > 0)
+            {
+                int result = _top.Value;
+
+                _top = _top.Next;
+
+                Count--;
+
+                if(result == _max)
                 {
-                    curr.Next = _max;
-                    Max = curr;
+                    _top = _top.Next;
+
+                    if (_top == null)
+                        _max = int.MinValue;
+                    else
+                        _max = _top.Value;
+
+                    Count--;
                 }
-                else
-                {
-                    var node = new StackNode(_max.Value);
-                    node.Next = _max;
-                    _max = node;
-                }
+
+                return result;
+            }
+
+            throw new NullReferenceException("The Stack is empty");
+        }
+
+        /// <summary>
+        /// Returns the object at the top of the Stack without removing it.
+        /// </summary>
+        /// <returns></returns>
+        public int Peek()
+        {
+            int result = default(int);
+
+            if (Count > 0)
+            {
+                result = _top.Value;
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public int GetMax()
+        {
+            return _max;
+        }
+
+        /// <summary>
+        /// Returns an enumerator for the Stack.
+        /// </summary>
+        /// <returns></returns>
+        public IEnumerator GetEnumerator()
+        {
+            // TODO: Update this definition to include _max value
+            while (_top != null)
+            {
+                int result = _top.Value;
+                _top = _top.Next;
+
+                yield return result;
             }
         }
 
-        private void UpdateMaxOnPop(int value)
+        IEnumerator IEnumerable.GetEnumerator()
         {
-            if (_max != null)
-            {
-                _max = _max.Next;
-            }
+            return ((IEnumerable)this).GetEnumerator();
         }
     }
 }
