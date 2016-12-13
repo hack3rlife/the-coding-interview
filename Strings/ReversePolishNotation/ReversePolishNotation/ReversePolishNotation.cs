@@ -53,39 +53,39 @@ namespace ReversePolishNotation
         private static int DoOperation(int x, int y, string o)
         {
 
-            switch (o)
+            //switch (o)
+            //{
+            //    case "+":
+            //        return x + y;
+            //    case "-":
+            //        return y - x;
+            //    case "*":
+            //        return x * y;
+            //    case "/":
+            //        return y / x;
+            //    default:
+            //        throw new InvalidOperationException("Invalid Operator");
+            //}
+            if (o == "+")
             {
-                case "+":
-                    return x + y;
-                case "-":
-                    return y - x;
-                case "*":
-                    return x * y;
-                case "/":
-                    return y / x;
-                default:
-                    throw new InvalidOperationException("Invalid Operator");
+                return x + y;
             }
-            //if (o == "+")
-            //{
-            //    return x + y;
-            //}
-            //else if (o == "-")
-            //{
-            //    return y - x;
-            //}
-            //else if (o == "*")
-            //{
-            //    return x * y;
-            //}
-            //else if (o == "/")
-            //{
-            //    return y / x;
-            //}
-            //else
-            //{
-            //    throw new InvalidOperationException("Invalid Operator");
-            //}
+            else if (o == "-")
+            {
+                return y - x;
+            }
+            else if (o == "*")
+            {
+                return x * y;
+            }
+            else if (o == "/")
+            {
+                return y / x;
+            }
+            else
+            {
+                throw new InvalidOperationException("Invalid Operator");
+            }
         }
     }
 }

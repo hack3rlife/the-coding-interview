@@ -1,4 +1,4 @@
-Dynamic Programming (19) 
+Dynamic Programming (21) 
 +LargestSumSubArray
 		*LargestSumSubArray\MaximumSubarrayProblem.csproj
 		*LargestSumSubArrayTest\MaximumSubarrayProblemTest.csproj
@@ -17,6 +17,9 @@ Dynamic Programming (19)
 +LongestPalindrome
 		*LongestPalindromicSubsequence\LongestPalindromic.csproj
 		*LongestPalindromicTest\LongestPalindromicTest.csproj
++MaximumSizeSquare
+		*MaximumSizeSquare\MaximumSizeSquare.csproj
+		*MaximumSizeSquareTest\MaximumSizeSquareTest.csproj
 +MaxSumIncreasingSubsequence
 		*LongestIncreasingSubsequenceSumTest\LongestIncreasingSubsequenceSumTest.csproj
 		*MaxSumIncreasingSubsequence\MaxSumIncreasingSubsequence.csproj

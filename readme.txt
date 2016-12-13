@@ -1,4 +1,4 @@
-The Coding Interview (129) 
+The Coding Interview (131) 
 + Algorithms (16) 
 	1: QuickSelect 
 	2: QuickSelectTest 
@@ -56,7 +56,7 @@ The Coding Interview (129)
 	8: QueueTest 
 	9: Stack 
 	10: StackTest 
-+ Dynamic Programming (19) 
++ Dynamic Programming (21) 
 	1: MaximumSubarrayProblem 
 	2: MaximumSubarrayProblemTest 
 	3: LongesCommonSubsequence 
@@ -68,14 +68,16 @@ The Coding Interview (129)
 	9: LongestIncreasingSubsequenceSum 
 	10: LongestPalindromic 
 	11: LongestPalindromicTest 
-	12: LongestIncreasingSubsequenceSumTest 
-	13: MaxSumIncreasingSubsequence 
-	14: MinCostPath 
-	15: MinCostPathTest 
-	16: SubArrayGivenSum 
-	17: SubArrayGivenSumTest 
-	18: SubsetSum 
-	19: SubsetSumTest 
+	12: MaximumSizeSquare 
+	13: MaximumSizeSquareTest 
+	14: LongestIncreasingSubsequenceSumTest 
+	15: MaxSumIncreasingSubsequence 
+	16: MinCostPath 
+	17: MinCostPathTest 
+	18: SubArrayGivenSum 
+	19: SubArrayGivenSumTest 
+	20: SubsetSum 
+	21: SubsetSumTest 
 + Math (2) 
 	1: SquareRoot 
 	2: SquareRootTest 
