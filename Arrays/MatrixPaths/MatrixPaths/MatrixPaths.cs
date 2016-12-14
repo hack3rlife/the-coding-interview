@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace PrintAllPathsMatrix
+namespace com.hack3rlife.arrays
 {
     public class MatrixPaths
     {

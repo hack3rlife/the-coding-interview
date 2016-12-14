@@ -25,8 +25,12 @@ namespace com.hack3rlife.strings
         /// <see cref="https://www.careercup.com/question?id=8641795"/>
         public static bool ASCIIBasedSolution( string source, string target)
         {
+            if (source.Length == 0 && target.Length == 0)
+                return true;
+
             if (source.Length <= 0 || target.Length <= 0)
                 return false;
+
             if (source.Length != target.Length)
                 return false;
 

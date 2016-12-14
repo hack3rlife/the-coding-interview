@@ -1,4 +1,4 @@
-Arrays (25) 
+Arrays (27) 
 +ArrayToBst
 		*ArrayToBst\ArrayToBinarySearchTree.csproj
 		*ArrayToBstTest\ArrayToBinarySearchTreeTest.csproj
@@ -25,6 +25,9 @@ Arrays (25)
 +NextGreaterElement
 		*NextGreaterElement\NextGreaterElement.csproj
 		*NextGreaterElementTests\NextGreaterElementTests.csproj
++NumberOfIslands
+		*NumberOfIslands\NumberOfIslands.csproj
+		*NumberOfIslandsTest\NumberOfIslandsTest.csproj
 +PythagoreanTriplet
 		*PythagoreanTriplet\PythagoreanTriplet.csproj
 +RatInAMaze

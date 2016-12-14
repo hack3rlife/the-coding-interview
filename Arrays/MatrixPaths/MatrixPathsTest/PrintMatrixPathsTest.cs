@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PrintAllPathsMatrix;
 
-namespace PrintAllMatrixPaths.Test
+namespace com.hack3rlife.arrays.test
 {
     [TestClass()]
     public class PrintMatrixPathsTest

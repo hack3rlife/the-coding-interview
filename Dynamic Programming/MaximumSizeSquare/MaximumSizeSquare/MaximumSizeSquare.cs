@@ -5,6 +5,11 @@ namespace MaximumSizeSquare
 {
     public class MaximumSizeSquare
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="matrix"></param>
+        /// <returns></returns>
         public static int Print(int[,] matrix)
         {
             var max = -1;

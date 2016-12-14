@@ -1,4 +1,4 @@
-The Coding Interview (131) 
+The Coding Interview (133) 
 + Algorithms (16) 
 	1: QuickSelect 
 	2: QuickSelectTest 
@@ -16,7 +16,7 @@ The Coding Interview (131)
 	14: QuickSortTest 
 	15: SelectionSort 
 	16: SelectionSortTest 
-+ Arrays (25) 
++ Arrays (27) 
 	1: ArrayToBinarySearchTree 
 	2: ArrayToBinarySearchTreeTest 
 	3: DutchNationalFlagProblem 
@@ -34,14 +34,16 @@ The Coding Interview (131)
 	15: MissingElementTest 
 	16: NextGreaterElement 
 	17: NextGreaterElementTests 
-	18: PythagoreanTriplet 
-	19: RatInAMaze 
-	20: RatInAMazeTest 
-	21: RotateMatrix90Degrees 
-	22: ShortestPathBinaryMaze 
-	23: ShortestPathBinaryMazeTests 
-	24: StairCase 
-	25: StairCaseTUniTests 
+	18: NumberOfIslands 
+	19: NumberOfIslandsTest 
+	20: PythagoreanTriplet 
+	21: RatInAMaze 
+	22: RatInAMazeTest 
+	23: RotateMatrix90Degrees 
+	24: ShortestPathBinaryMaze 
+	25: ShortestPathBinaryMazeTests 
+	26: StairCase 
+	27: StairCaseTUniTests 
 + BitManipulation (2) 
 	1: CountBits 
 	2: CountBitsTest 

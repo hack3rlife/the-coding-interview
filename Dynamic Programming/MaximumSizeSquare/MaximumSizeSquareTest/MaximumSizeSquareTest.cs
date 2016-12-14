@@ -15,7 +15,7 @@ namespace MaximumSizeSquare.Test
                 { 1,0,1,1,1 },
                 { 1,1,1,1,1 },
                 { 1,0,0,1,0 },
-            };
+            };           
 
             // act
             var actualValue = MaximumSizeSquare.Print(input);

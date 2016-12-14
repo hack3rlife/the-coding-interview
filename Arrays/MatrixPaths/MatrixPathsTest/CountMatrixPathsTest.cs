@@ -1,7 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PrintAllPathsMatrix;
 
-namespace PrintMatrixPaths.Test
+namespace com.hack3rlife.arrays.Test
 {
     [TestClass()]
     public class CountMatrixPathsTest

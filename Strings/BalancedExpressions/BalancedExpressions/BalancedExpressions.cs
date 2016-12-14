@@ -3,59 +3,7 @@
 namespace BalancedExpressions
 {
     public static class BalancedExpressions
-    {
-        /// <summary>
-        /// Verifies if the input string is balanced or not
-        /// </summary>
-        /// <param name="expression">Input string with the expresion to evaluate</param>
-        /// <returns>True is the input string is balanced; false in another case</returns>
-        /// <example>
-        /// Input: (a+b) * (c-d)            --> True
-        /// Input: (z(a + b(x + y)))        --> True
-        /// Input: { a/b * (x+y+z) - [c]    --> False
-        /// </example>
-        public static bool IsBalancedExpression(string expression)
-        {
-            if (expression.Length <= 0 || expression == string.Empty)
-                return false;
-
-            int openParentheses = 0;
-            int openBrackets = 0;
-            int openCurlyBraces = 0;
-            int GreaterOrLesserThan = 0;
-
-            for (int i = 0; i < expression.Length; i++)
-            {
-                if (expression[i] == '(')
-                    openParentheses++;
-                else if (expression[i] == '[')
-                    openBrackets++;
-                else if (expression[i] == '{')
-                    openCurlyBraces++;
-                else if (expression[i] == '<')
-                    GreaterOrLesserThan++;
-                else if (expression[i] == ')')
-                    openParentheses--;
-                else if (expression[i] == ']')
-                    openBrackets--;
-                else if (expression[i] == '}')
-                    openCurlyBraces--;
-                else if (expression[i] == '>')
-                    GreaterOrLesserThan--;
-
-                if (openParentheses < 0 || openBrackets < 0 || openCurlyBraces < 0)
-                    return false;
-            }
-
-            bool result =
-                (openBrackets == 0)
-                && (openCurlyBraces == 0)
-                && (openParentheses == 0)
-                && (GreaterOrLesserThan == 0) ? true : false;
-
-            return result;
-        }
-
+    {        
         /// <summary>
         /// Verifies if the input string is balanced or not using stacks
         /// </summary>
