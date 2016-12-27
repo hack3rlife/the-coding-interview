@@ -3,12 +3,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1CC4D5C6-9E4C-4CCC-AC10-3DFB4558B517}</ProjectGuid>
+    <ProjectGuid>{6517450F-18D5-4FDB-8AF8-3B218A151EAE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LongesCommonSubsequenceTest</RootNamespace>
-    <AssemblyName>LongesCommonSubsequenceTest</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RootNamespace>LongestIncreasingSubsequenceSumTest</RootNamespace>
+    <AssemblyName>LongestIncreasingSubsequenceSumTest</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -54,13 +54,13 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="LongesCommonSubsequenceTest.cs" />
+    <Compile Include="LongestIncreasingSubsequenceSumTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LongesCommonSubsequence\LongesCommonSubsequence.csproj">
-      <Project>{f49f09a7-976a-483d-9e71-98a7b86f4125}</Project>
-      <Name>LongesCommonSubsequence</Name>
+    <ProjectReference Include="..\..\LongestIncreasingSubsequenceSum\LongestIncreasingSubsequenceSum\LongestIncreasingSubsequenceSum.csproj">
+      <Project>{a46d3e0a-b050-4c75-8eca-b37204419233}</Project>
+      <Name>LongestIncreasingSubsequenceSum</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

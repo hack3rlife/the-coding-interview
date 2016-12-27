@@ -1,4 +1,6 @@
-﻿namespace com.hack3rlife.dynamicprogramming
+﻿using System.Diagnostics;
+
+namespace com.hack3rlife.dynamicprogramming
 {
     /// <summary>
     /// Variaton of Longest increasing subsequence
@@ -55,6 +57,9 @@
                             max = sum;
                             result[i] = sum;
                             indexes[i] = j;
+
+                            Print(result);
+                            Print(indexes);
                         }
                     }
 
@@ -86,6 +91,20 @@
         private static int GetMax(int a, int b)
         {
             return a > b ? a : b;
+        }
+
+        /// <summary>
+        /// Print the temporal DPT
+        /// </summary>
+        /// <param name="input">The table</param>
+        private static void Print(int[] input)
+        {
+            for (int i = 0; i < input.GetLength(0); i++)
+            {
+                Debug.Write(string.Format("| {0} |", input[i]));
+            }
+
+            Debug.WriteLine("");
         }
     }
 }

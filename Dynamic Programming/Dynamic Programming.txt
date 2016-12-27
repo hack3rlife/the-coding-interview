@@ -1,10 +1,10 @@
-Dynamic Programming (21) 
-+LargestSumSubArray
-		*LargestSumSubArray\MaximumSubarrayProblem.csproj
-		*LargestSumSubArrayTest\MaximumSubarrayProblemTest.csproj
+Dynamic Programming (22) 
++LargestSubarrayWithZeroSum
+		*LargestSubarrayWithZeroSum\LargestSubarrayWithZeroSum.csproj
+		*LargestSubarrayWithZeroSumTest\LargestSubarrayWithZeroSumTest.csproj
 +LongesCommonSubsequence
-		*LongesCommonSubsequence\LongesCommonSubsequence.csproj
-		*LongesCommonSubsequenceTest\LongesCommonSubsequenceTest.csproj
+		*LongesCommonSubsequence\LongestCommonSubsequence.csproj
+		*LongesCommonSubsequenceTest\LongestCommonSubsequenceTest.csproj
 +LongestCommonSubstring
 		*LongestCommonSubstring\LongestCommonSubstring.csproj
 +LongestCommonSubstringTest
@@ -14,15 +14,16 @@ Dynamic Programming (21)
 		*LongestIncreasingSubsequenceTest\LongestIncreasingSubsequenceTest.csproj
 +LongestIncreasingSubsequenceSum
 		*LongestIncreasingSubsequenceSum\LongestIncreasingSubsequenceSum.csproj
+		*LongestIncreasingSubsequenceSumTest\LongestIncreasingSubsequenceSumTest.csproj
 +LongestPalindrome
 		*LongestPalindromicSubsequence\LongestPalindromic.csproj
 		*LongestPalindromicTest\LongestPalindromicTest.csproj
 +MaximumSizeSquare
 		*MaximumSizeSquare\MaximumSizeSquare.csproj
 		*MaximumSizeSquareTest\MaximumSizeSquareTest.csproj
-+MaxSumIncreasingSubsequence
-		*LongestIncreasingSubsequenceSumTest\LongestIncreasingSubsequenceSumTest.csproj
-		*MaxSumIncreasingSubsequence\MaxSumIncreasingSubsequence.csproj
++MaximumSubarrayProblem
+		*MaximumSubarrayProblem\MaximumSubarrayProblem.csproj
+		*MaximumSubarrayProblemTest\MaximumSubarrayProblemTest.csproj
 +MinCostPath
 		*MinCostPath\MinCostPath.csproj
 		*MinCostPathTest\MinCostPathTest.csproj

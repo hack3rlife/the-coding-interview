@@ -1,7 +1,7 @@
-﻿using com.hack3rlife.algorithms;
+﻿
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace SubArrayGivenSumTest
+namespace com.hack3rlife.dynamicprogramming
 {
     [TestClass]
     public class SubArrayGivenSumTest
@@ -51,18 +51,6 @@ namespace SubArrayGivenSumTest
             Assert.AreEqual<int>(expected, actual[0]);
         }
 
-        [TestMethod]
-        public void GetSubArrayWithSumZeroTest()
-        {
-            //arrange
-            int[] input = { 15, -2, 2, -8, 1, 7, 10, 23 };
-            int expected = 1;
-
-            //act
-            int[] actual = SubArrayGivenSum.GetSubArrayWithSumZero(input);
-
-            //assert
-            Assert.AreEqual<int>(expected, actual[0]);
-        }
+      
     }
 }

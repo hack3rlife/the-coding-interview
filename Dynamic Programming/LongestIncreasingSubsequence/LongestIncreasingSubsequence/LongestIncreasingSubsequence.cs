@@ -11,13 +11,13 @@ namespace com.hack3rlife.dynamicprogramming
     public static class LongestIncreasingSubsequence
     {
         /// <summary>
-        /// The longest Increasing Subsequence (LIS) problem is to find the length of the longest subsequence of a given sequence such that all elements of the subsequence are sorted in 
+        /// The Longest Increasing Subsequence (LIS) problem is to find the length of the longest subsequence of a given sequence such that all elements of the subsequence are sorted in 
         /// increasing order. 
         /// </summary>
         /// <example>
         /// For example, length of LIS for { 10, 22, 9, 33, 21, 50, 41, 60, 80 } is 6 and LIS is {10, 22, 33, 50, 60, 80}.
         /// </example>
-        /// <param name="input"></param>
+        /// <param name="input">The input array</param>
         /// <see cref="http://www.geeksforgeeks.org/dynamic-programming-set-3-longest-increasing-subsequence/"/>
         public static int Get(int[] input)
         {
@@ -39,7 +39,6 @@ namespace com.hack3rlife.dynamicprogramming
                     {
                         max = Max(result[j] + 1, result[i]);
                         result[i] = max;
-
                         Print(result);
                     }
 

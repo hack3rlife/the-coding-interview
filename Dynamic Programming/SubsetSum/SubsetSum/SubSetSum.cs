@@ -6,7 +6,7 @@
  */
 using System.Diagnostics;
 
-namespace com.hack3rlife.algorithms
+namespace com.hack3rlife.dynamicprogramming
 {
     /// <summary>
     /// In computer science, the subset sum problem is an important problem in complexity theory and cryptography. The problem is this: given a set (or multiset) of integers, is there a 

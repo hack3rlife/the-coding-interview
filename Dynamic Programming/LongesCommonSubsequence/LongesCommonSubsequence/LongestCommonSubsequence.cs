@@ -17,7 +17,7 @@ namespace com.hack3rlife.dynamicprogramming
     /// </summary>
     /// <see cref=">https://en.wikipedia.org/wiki/Longest_common_subsequence_problem"/>
     /// <seealso cref="https://www.ics.uci.edu/~eppstein/161/960229.html"/>
-    public static class LongesCommonSubsequence
+    public static class LongestCommonSubsequence
     {
         /// <summary>
         /// Given two sequences, find the length of longest subsequence present in both of them. A subsequence is a sequence that appears in the same relative order, but not necessarily 
@@ -42,6 +42,7 @@ namespace com.hack3rlife.dynamicprogramming
             {
                 for (int j = 1; j <= n; j++)
                 {
+                    // if curr char is the same in both string
                     if (x[i - 1] == y[j - 1])
                     {
                         num[i, j] = num[i - 1, j - 1] + 1;
@@ -50,6 +51,9 @@ namespace com.hack3rlife.dynamicprogramming
                     {
                         num[i, j] = max(num[i - 1, j], num[i, j - 1]);
                     }
+
+                    Print(num);
+
                 }
             }
 

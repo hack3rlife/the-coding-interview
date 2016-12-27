@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("LongestCommonSubsequence")]
+[assembly: AssemblyTitle("LargestSubarrayWithZeroSumTest")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Hewlett-Packard")]
-[assembly: AssemblyProduct("LongestCommonSubsequence")]
+[assembly: AssemblyProduct("LargestSubarrayWithZeroSumTest")]
 [assembly: AssemblyCopyright("Copyright © Hewlett-Packard 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("f49f09a7-976a-483d-9e71-98a7b86f4125")]
+[assembly: Guid("b72d99b3-cb74-4263-93c7-36085b6b0ddc")]
 
 // Version information for an assembly consists of the following four values:
 //

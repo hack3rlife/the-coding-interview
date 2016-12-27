@@ -1,14 +1,14 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using com.hack3rlife.algorithms;
 
-namespace SubsetSumTest
+
+namespace com.hack3rlife.dynamicprogramming
 {
     [TestClass]
     public class SubSetSumTest
     {
         [TestMethod]
-        public void GetSubSetSumTest()
+        public void SubSetSum_IsSubsetSum_Test1()
         {
             //arrange
             int[] input = new int[] { 3, 34, 4, 12, 5, 2 };
@@ -21,7 +21,7 @@ namespace SubsetSumTest
         }
 
         [TestMethod]
-        public void IsSubSetSumTest()
+        public void SubSetSum_IsSubsetSum_Test2()
         {
             //arrange
             int[] input = new int[] { 1, 3, 9, 2 };

@@ -1,4 +1,4 @@
-The Coding Interview (133) 
+The Coding Interview (135) 
 + Algorithms (16) 
 	1: QuickSelect 
 	2: QuickSelectTest 
@@ -58,28 +58,29 @@ The Coding Interview (133)
 	8: QueueTest 
 	9: Stack 
 	10: StackTest 
-+ Dynamic Programming (21) 
-	1: MaximumSubarrayProblem 
-	2: MaximumSubarrayProblemTest 
-	3: LongesCommonSubsequence 
-	4: LongesCommonSubsequenceTest 
++ Dynamic Programming (22) 
+	1: LargestSubarrayWithZeroSum 
+	2: LargestSubarrayWithZeroSumTest 
+	3: LongestCommonSubsequence 
+	4: LongestCommonSubsequenceTest 
 	5: LongestCommonSubstring 
 	6: LongestCommonSubstringTest 
 	7: LongestIncreasingSubsequence 
 	8: LongestIncreasingSubsequenceTest 
 	9: LongestIncreasingSubsequenceSum 
-	10: LongestPalindromic 
-	11: LongestPalindromicTest 
-	12: MaximumSizeSquare 
-	13: MaximumSizeSquareTest 
-	14: LongestIncreasingSubsequenceSumTest 
-	15: MaxSumIncreasingSubsequence 
-	16: MinCostPath 
-	17: MinCostPathTest 
-	18: SubArrayGivenSum 
-	19: SubArrayGivenSumTest 
-	20: SubsetSum 
-	21: SubsetSumTest 
+	10: LongestIncreasingSubsequenceSumTest 
+	11: LongestPalindromic 
+	12: LongestPalindromicTest 
+	13: MaximumSizeSquare 
+	14: MaximumSizeSquareTest 
+	15: MaximumSubarrayProblem 
+	16: MaximumSubarrayProblemTest 
+	17: MinCostPath 
+	18: MinCostPathTest 
+	19: SubArrayGivenSum 
+	20: SubArrayGivenSumTest 
+	21: SubsetSum 
+	22: SubsetSumTest 
 + Math (2) 
 	1: SquareRoot 
 	2: SquareRootTest 
@@ -140,5 +141,6 @@ The Coding Interview (133)
 	34: StringReverseTest 
 	35: WildCardMatch 
 	36: WildCardMatchTest 
-+ Tools (1) 
-	1: ProjectsTree 
++ Tools (2) 
+	1: InputParser 
+	2: ProjectsTree 

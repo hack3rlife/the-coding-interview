@@ -13,17 +13,16 @@ namespace com.hack3rlife.dynamicprogramming
     /// In computer science, the longest common substring problem is to find the longest string (or strings) that is a substring (or are substrings) of two or more strings.
     /// </summary>
     /// <see cref="https://en.wikipedia.org/wiki/Longest_common_substring_problem"/>    
-    /// <example>The longest common substring of the strings "ABABC", "BABCA" and "ABCBA" is string "ABC" of length 3. Other common substrings are "A", "AB", "B", "BA", "BC" and "C".</example>
+    /// <remarks>The longest common substrings of a set of strings can be found by building a generalised suffix tree for the strings, and then finding the deepest internal nodes which have leaf nodes from all the strings in the subtree below it. </remarks>
     public class LongestCommonSubstring
     {
         /// <summary>
-        /// Finds the set of longest common substrings between two strings with dynamic programming:
+        /// Finds the set of longest common substrings between two strings <!--Given two strings, S of length m and T of length n, find the longest strings which are substrings of both S and T.-->
         /// </summary>
         /// <param name="input1">The input string one</param>
         /// <param name="input2">The input string two</param>
-        /// <remarks>The longest common substrings of a set of strings can be found by building a generalised suffix tree for the strings, and then finding the deepest internal nodes which have leaf nodes from all the strings in the subtree below it. </remarks>
-        /// <returns>The length of the longest common substring</returns>
-        /// <!--Given two strings, S of length m and T of length n, find the longest strings which are substrings of both S and T.-->
+        /// <returns>The length of the longest common substring</returns>       
+        /// <example>The longest common substring of the strings "ABABC", "BABCA" and "ABCBA" is string "ABC" of length 3. Other common substrings are "A", "AB", "B", "BA", "BC" and "C".</example>
         public static int GetLength(string input1, string input2)
         {
             int m = input1.Length;
@@ -47,10 +46,10 @@ namespace com.hack3rlife.dynamicprogramming
                     {
                         num[i, j] = 0;
                     }
+
+                    Print(num);
                 }
             }
-
-            Print(num);
 
             return max;
         }

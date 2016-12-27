@@ -31,12 +31,13 @@ namespace com.hack3rlife.dynamicprogramming
         {
             int m = input.Length;
             var max = 1;
-            bool[,] res = new bool[m, m];
+            int[,] res = new int[m, m];
 
             // Strings of length 1 are palindrome of lentgh 1
             for (int i = 0; i < m; i++)
             {
-                res[i, i] = true;
+                res[i, i] = 1;
+                Print(res);
             }
 
             // check for sub-string of length 2.
@@ -45,9 +46,10 @@ namespace com.hack3rlife.dynamicprogramming
             {
                 if (input[i] == input[i + 1])
                 {
-                    res[i, i + 1] = true;
+                    res[i, i + 1] = 1;
                     start = i;
                     max = 2;
+                    Print(res);
                 }
             }
 
@@ -57,18 +59,20 @@ namespace com.hack3rlife.dynamicprogramming
                 for (int i = 0; i < m - l + 1; i++)
                 {
                     // Get the ending index of substring from starting index i and length l
-                    int j = i + l - 1;
+                    int j = i + l - 1;  
 
                     // checking for sub-string from ith index to jth index iff str[i+1] to str[j-1] is a palindrome
-                    if (res[i + 1, j - 1] && input[i] == input[j])
+                    if (res[i + 1, j - 1] == 1 && input[i] == input[j])
                     {
-                        res[i, j] = true;
+                        res[i, j] = 1;
 
                         if (l > max)
                         {
                             start = i;
                             max = l;
                         }
+
+                        Print(res);
                     }
                 }
             }
@@ -82,7 +86,7 @@ namespace com.hack3rlife.dynamicprogramming
         /// Print the temporal DPT
         /// </summary>
         /// <param name="matrix">The table</param>
-        private static void Print(bool[,] matrix)
+        private static void Print(int[,] matrix)
         {
             for (int i = 0; i < matrix.GetLength(0); i++)
             {

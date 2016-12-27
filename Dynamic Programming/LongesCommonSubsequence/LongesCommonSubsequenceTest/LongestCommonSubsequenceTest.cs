@@ -1,7 +1,7 @@
 ﻿/*
  * @autor: Some smart guy on internet
  * @date: 21/04/2015
- * @project: LongesCommonSubsequence
+ * @project: LongestCommonSubsequence
  * 
  */
 
@@ -10,10 +10,10 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace com.hack3rlife.dynamicprogramming.test
 {
     [TestClass]
-    public class LongesCommonSubsequenceTest
+    public class LongestCommonSubsequenceTest
     {
         [TestMethod]
-        public void LongesCommonSubsequence_GetLengthTest()
+        public void LongestCommonSubsequence_GetLengthTest()
         {
             //arrange
             var x = "AGGTAB";
@@ -21,14 +21,14 @@ namespace com.hack3rlife.dynamicprogramming.test
 
             var expected = 4; //GTAB
             //act
-            var actual = LongesCommonSubsequence.GetLength(x, y);
+            var actual = LongestCommonSubsequence.GetLength(x, y);
 
             //assert
             Assert.AreEqual<int>(expected, actual);
         }
 
         [TestMethod]
-        public void LongesCommonSubsequence_GetLengthTest_AllSame()
+        public void LongestCommonSubsequence_GetLengthTest_AllSame()
         {
             //arrange
             var x = "AAAAAAAAAA";
@@ -36,14 +36,14 @@ namespace com.hack3rlife.dynamicprogramming.test
 
             var expected = 10;
             //act
-            var actual = LongesCommonSubsequence.GetLength(x, y);
+            var actual = LongestCommonSubsequence.GetLength(x, y);
 
             //assert
             Assert.AreEqual<int>(expected, actual);
         }
 
         [TestMethod]
-        public void LongesCommonSubsequence_GetLengthTest_AllDifferent()
+        public void LongestCommonSubsequence_GetLengthTest_AllDifferent()
         {
             //arrange
             var x = "abcde";
@@ -51,14 +51,14 @@ namespace com.hack3rlife.dynamicprogramming.test
 
             var expected = 0;
             //act
-            var actual = LongesCommonSubsequence.GetLength(x, y);
+            var actual = LongestCommonSubsequence.GetLength(x, y);
 
             //assert
             Assert.AreEqual<int>(expected, actual);
         }
 
         [TestMethod]
-        public void LongesCommonSubsequence_GetLengthTest_OneMatch()
+        public void LongestCommonSubsequence_GetLengthTest_OneMatch()
         {
             //arrange
             var x = "abcde";
@@ -66,14 +66,14 @@ namespace com.hack3rlife.dynamicprogramming.test
 
             var expected = 1; //e
             //act
-            var actual = LongesCommonSubsequence.GetLength(x, y);
+            var actual = LongestCommonSubsequence.GetLength(x, y);
 
             //assert
             Assert.AreEqual<int>(expected, actual);
         }
 
         [TestMethod]
-        public void LongesCommonSubsequence_GetLengthTest_TwoMatch()
+        public void LongestCommonSubsequence_GetLengthTest_TwoMatch()
         {
             //arrange
             var x = "abcda";
@@ -81,14 +81,14 @@ namespace com.hack3rlife.dynamicprogramming.test
 
             var expected = 2; //aa
             //act
-            var actual = LongesCommonSubsequence.GetLength(x, y);
+            var actual = LongestCommonSubsequence.GetLength(x, y);
 
             //assert
             Assert.AreEqual<int>(expected, actual);
         }
 
         [TestMethod]
-        public void LongesCommonSubsequence_GetLengthTest_StartEnd()
+        public void LongestCommonSubsequence_GetLengthTest_StartEnd()
         {
             //arrange
             var x = "abcda";
@@ -96,7 +96,7 @@ namespace com.hack3rlife.dynamicprogramming.test
 
             var expected = 3; //abc
             //act
-            var actual = LongesCommonSubsequence.GetLength(x, y);
+            var actual = LongestCommonSubsequence.GetLength(x, y);
 
             //assert
             Assert.AreEqual<int>(expected, actual);
