@@ -13,11 +13,14 @@ namespace com.hack3rlife.strings
     /// <see cref="https://en.wikipedia.org/wiki/Combination"/>
     public class StringCombination
     {
-        /// <summary>
-        /// Stores the result
-        /// </summary>
-        public static System.Collections.Generic.List<string> Result = new System.Collections.Generic.List<string>();
+        public static string Get(string input)
+        {
+            string result = string.Empty;
 
+            StringCombination.Combine(input, string.Empty, 0, ref result);
+
+            return result.TrimStart();
+        }
         /// <summary>
         /// Find all possible combinations of the given string
         /// </summary>
@@ -25,13 +28,13 @@ namespace com.hack3rlife.strings
         /// <param name="output">The current output, which normally starts as empty string</param>
         /// <param name="current">The current index, which normally start at 0</param>
         /// <see cref="http://www.geeksforgeeks.org/print-all-possible-combinations-of-r-elements-in-a-given-array-of-size-n/"/>
-        public static void Combine(string input, string output = "", int current = 0)
+        private static void Combine(string input, string output, int current, ref string result)
         {
             for (int i = current; i < input.Length; i++)
             {
                 output += input[i];
-                Result.Add(output);
-                Combine(input, output, i + 1);
+                result += " " + output;
+                Combine(input, output, i + 1, ref result);
                 output = output.Remove(output.Length - 1);
             }
         }

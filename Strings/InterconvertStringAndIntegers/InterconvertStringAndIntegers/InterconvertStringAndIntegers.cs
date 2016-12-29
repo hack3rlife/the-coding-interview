@@ -17,7 +17,7 @@ namespace com.hack3rlife.strings
         /// </summary>
         /// <param name="input">The input string</param>
         /// <returns></returns>
-        public static string ConvertToString(int input)
+        public static string ToString(int input)
         {
             string output = string.Empty;
 

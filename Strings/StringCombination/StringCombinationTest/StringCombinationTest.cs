@@ -1,22 +1,24 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using com.hack3rlife.strings;
 
-namespace StringCombinationTest
+namespace com.hack3rlife.strings.test
 {
     [TestClass]
     public class StringCombinationTest
     {
+        public TestContext TestContext { get; set; }
+
         [TestMethod]
-        public void CombineTest()
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\combinations.csv", "combinations#csv", DataAccessMethod.Sequential)]
+        public void StringCombination_Combine_Success()
         {
             // arrange
-            var input = "abc";
-            var expected = new System.Collections.Generic.List<string>() { "a", "ab", "abc", "ac", "b", "bc", "c" };
+            var input = TestContext.DataRow["input"].ToString();
+            var expected = TestContext.DataRow["output"].ToString();
             // act
-            StringCombination.Combine(input, string.Empty, 0);
-            var actual = StringCombination.Result;
+            var actual = StringCombination.Get(input);
+
             // assert
-            CollectionAssert.AreEqual(expected, actual);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

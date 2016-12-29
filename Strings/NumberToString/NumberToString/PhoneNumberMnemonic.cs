@@ -5,6 +5,8 @@
  * 
  */
 
+using System.Collections.Generic;
+
 namespace com.hack3rlife.strings
 {
     /// <summary>
@@ -18,14 +20,18 @@ namespace com.hack3rlife.strings
         /// </summary>
         /// <param name="number">The input string</param>
         /// <returns>All possible letter combinations that the number could represent.</returns>
+        /// <example>
+        /// For example if input number is 234, possible words which can be formed are (Alphabetical order):
+        /// adg adh adi aeg aeh aei afg afh afi bdg bdh bdi beg beh bei bfg bfh bfi cdg cdh cdi ceg ceh cei cfg cfh cfi
+        /// </example>
         /// <see cref="http://www.geeksforgeeks.org/find-possible-words-phone-digits/"/>
-        public static System.Collections.Generic.List<string> Get(string number)
+        public static string Get(string number)
         {
-            var result = new System.Collections.Generic.List<string>();
+            var result = string.Empty;
 
-            PhoneMnemonicHelper(number, string.Empty, result);
+            PhoneMnemonicHelper(number, string.Empty, ref result);
 
-            return result;
+            return result.TrimStart();
         }
 
         /// <summary>
@@ -35,20 +41,19 @@ namespace com.hack3rlife.strings
         /// <param name="current">The current (partial) phone mnemonic</param>
         /// <param name="result">List that holds the phone mnemonic</param>
         /// <see cref="http://blog.welkinlan.com/2015/10/25/letter-combinations-of-a-phone-number-leetcode-java/"/>
-        private static void PhoneMnemonicHelper(string number, string current, System.Collections.Generic.List<string> result)
+        private static void PhoneMnemonicHelper(string number, string current, ref string result)
         {
             if (number.Length == current.Length)
             {
-                result.Add(current.ToLowerInvariant());
+                result = result + " " + current.ToLowerInvariant();
                 return;
             }
 
             var currentLetters = GetLetters(number[current.Length]);
             foreach (var c in currentLetters)
             {
-                PhoneMnemonicHelper(number, current + c, result);
+                PhoneMnemonicHelper(number, current + c, ref result);
             }
-            
         }
 
         /// <summary>
@@ -75,7 +80,7 @@ namespace com.hack3rlife.strings
                 case '8':
                     return "TUV";
                 case '9':
-                    return "XYZ";
+                    return "WXYZ";
                 default:
                     return string.Empty;
             }
@@ -86,9 +91,13 @@ namespace com.hack3rlife.strings
         /// </summary>
         /// <param name="number"></param>
         /// <see cref="https://algorithmstuff.wordpress.com/tag/letter-combinations-of-a-phone-number/"/>
-        public static void Map(string number)
+        public static string Map(string number)
         {
-            Combinations(number, 0, string.Empty);
+            var result = string.Empty;
+
+            Combinations(number, 0, string.Empty, ref result);
+
+            return result.TrimStart();
         }
 
         /// <summary>
@@ -97,11 +106,12 @@ namespace com.hack3rlife.strings
         /// <param name="number">The input string<./param>
         /// <param name="index">The current index.</param>
         /// <param name="output">The current (temporary) output.</param>
-        private static void Combinations(string number, int index, string output)
+        private static void Combinations(string number, int index, string output, ref string result)
         {
             if (index == number.Length)
             {
                 System.Console.WriteLine(output);
+                result = result + " " + output.ToLowerInvariant();
                 return;
             }
 
@@ -115,11 +125,11 @@ namespace com.hack3rlife.strings
             for (int i = 0; i < currentLetters.Length; i++)
             {
                 output += currentLetters[i];
-                Combinations(number, index + 1, output);
+                Combinations(number, index + 1, output, ref result);
                 output = output.Remove(output.Length - 1);
             }
         }
 
-        
+
     }
 }

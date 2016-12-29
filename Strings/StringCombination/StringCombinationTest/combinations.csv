@@ -1,0 +1,7 @@
+input,output
+a,a
+ab, a ab b
+abc,a ab abc ac b bc c
+abcd,a ab abc abcd abd ac acd ad b bc bcd bd c cd d
+abcde,a ab abc abcd abcde abce abd abde abe ac acd acde ace ad ade ae b bc bcd bcde bce bd bde be c cd cde ce d de e
+

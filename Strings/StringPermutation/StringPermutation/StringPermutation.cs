@@ -16,11 +16,6 @@ namespace com.hack3rlife.strings
     public class StringPermutation
     {
         /// <summary>
-        /// Stores the result
-        /// </summary>
-        public static System.Collections.Generic.List<string> Result = new System.Collections.Generic.List<string>();
-
-        /// <summary>
         /// Permutates the given string
         /// </summary>
         /// <param name="input">The input string</param>
@@ -28,9 +23,12 @@ namespace com.hack3rlife.strings
         /// <![CDATA[
         /// input: ABC
         /// output: ABC ACB BAC BCA CBA CAB]]>        
-        public static void Permute(string input)
+        public static string Permute(string input)
         {
-            Permutation(input.ToCharArray());
+            var output = string.Empty;
+            Permutation(input.ToCharArray(), 0, ref output);
+
+            return output.TrimEnd();
         }
 
         /// <summary>
@@ -38,18 +36,18 @@ namespace com.hack3rlife.strings
         /// </summary>
         /// <param name="input">The input string as array of chars</param>
         /// <param name="current">The start position. </param>
-        private static void Permutation(char[] input, int current = 0)
+        private static void Permutation(char[] input, int current, ref string output)
         {
             if (current == input.Length - 1)
             {
-                Result.Add(new string(input));
+                output += new string(input) + " ";
                 return;
             }
 
             for (int i = current; i < input.Length; i++)
             {
                 Swap(input, current, i);
-                Permutation(input, current + 1);
+                Permutation(input, current + 1, ref output);
                 Swap(input, current, i);
             }
         }

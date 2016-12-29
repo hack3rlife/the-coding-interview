@@ -1,11 +1,10 @@
-﻿using System.Collections;
-
-namespace com.hack3rlife.strings
+﻿namespace com.hack3rlife.strings
 {
     /// <summary>
     /// Two strings str1 and str2 are called isomorphic if there is a one to one mapping possible for every character of str1 to every character of str2. And all occurrences of every 
     /// character in ‘str1’ map to same character in ‘str2’
     /// </summary>
+    /// <see cref="https://en.wikipedia.org/wiki/Isomorphism"/>
     public static class Isomorphic
     {
         /// <summary>
@@ -20,7 +19,11 @@ namespace com.hack3rlife.strings
         /// "paper", "title", returns true.
         /// "aab", "xxy", returns true
         /// </example>
-        /// <see cref=""/>
+        /// <remarks>
+        /// Time Complexity O(n)
+        /// Space Complexity O(2n)
+        /// </remarks>
+        /// <see cref="http://www.geeksforgeeks.org/check-if-two-given-strings-are-isomorphic-to-each-other/"/>
         public static bool IsIsomorphic(string input1, string input2)
         {
             if (input1.Length != input1.Length)

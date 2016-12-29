@@ -1,25 +1,25 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using com.hack3rlife.strings;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace StringPermutationTest
+namespace com.hack3rlife.strings.test
 {
     [TestClass]
     public class StringPermutationTest
     {
+        public TestContext TestContext { get; set; }
+
         [TestMethod]
-        public void PermuationTest()
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\permutations.csv", "permutations#csv", DataAccessMethod.Sequential)]
+        public void StringPermutation_Permute_Test()
         {
             // arrange
-            var input = "ABC";
-            var expected = new System.Collections.Generic.List<string> { "ABC", "ACB", "BAC", "BCA", "CBA", "CAB" };
+            var input = TestContext.DataRow["input"].ToString();
+            var expected = TestContext.DataRow["output"].ToString().ToString();
 
             // act
-            StringPermutation.Permute(input);
-            var actual = StringPermutation.Result;
+            var actual = StringPermutation.Permute(input);
 
             // assert
-            CollectionAssert.AreEqual(expected, actual);
+           Assert.AreEqual(expected, actual);
         }
     }
 }

@@ -10,16 +10,19 @@ namespace com.hack3rlife.strings
     /// <summary>
     /// A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward or forward. 
     /// </summary>
+    /// <see cref="https://en.wikipedia.org/wiki/Palindrome"/>
     public static class Palindrome
     {
         /// <summary>
-        ///  Check whether a string is palindrome or not
+        /// Given a string, write a function to check if it is palindrome or not.
         /// </summary>
+        /// <example>“abba” is palindrome, but “abbc” is not palindrome.</example>
         /// <param name="input">the input string</param>
         /// <returns>True if the string is palindrome; otherwise false</returns>
+        /// <see cref=">http://quiz.geeksforgeeks.org/c-program-check-given-string-palindrome/"/>
         public static bool IsPalindrome(string input)
         {
-            if (input == string.Empty || input.Length <= 1)
+            if (string.IsNullOrEmpty(input) || string.IsNullOrWhiteSpace(input))
                 return false;
 
             int i = 0, j = input.Length - 1;
@@ -39,6 +42,6 @@ namespace com.hack3rlife.strings
             }
 
             return true;
-        }     
+        }
     }
 }

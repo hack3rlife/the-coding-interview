@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using com.hack3rlife.strings;
 
-namespace NextGreaterNumberTest
+namespace com.hack3rlife.strings.test
 {
     [TestClass]
     public class NextGreaterNumberTest

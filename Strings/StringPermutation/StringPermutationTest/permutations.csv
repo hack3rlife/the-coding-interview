@@ -1,0 +1,6 @@
+input,output
+a,a
+ab,ab ba
+abc,abc acb bac bca cba cab
+abcd,abcd abdc acbd acdb adcb adbc bacd badc bcad bcda bdca bdac cbad cbda cabd cadb cdab cdba dbca dbac dcba dcab dacb dabc
+abcde,abcde abced abdce abdec abedc abecd acbde acbed acdbe acdeb acedb acebd adcbe adceb adbce adbec adebc adecb aecdb aecbd aedcb aedbc aebdc aebcd bacde baced badce badec baedc baecd bcade bcaed bcdae bcdea bceda bcead bdcae bdcea bdace bdaec bdeac bdeca becda becad bedca bedac beadc beacd cbade cbaed cbdae cbdea cbeda cbead cabde cabed cadbe cadeb caedb caebd cdabe cdaeb cdbae cdbea cdeba cdeab ceadb ceabd cedab cedba cebda cebad dbcae dbcea dbace dbaec dbeac dbeca dcbae dcbea dcabe dcaeb dceab dceba dacbe daceb dabce dabec daebc daecb decab decba deacb deabc debac debca ebcda ebcad ebdca ebdac ebadc ebacd ecbda ecbad ecdba ecdab ecadb ecabd edcba edcab edbca edbac edabc edacb eacdb eacbd eadcb eadbc eabdc eabcd

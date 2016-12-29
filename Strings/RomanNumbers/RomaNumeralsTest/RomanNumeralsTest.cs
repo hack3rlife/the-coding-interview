@@ -1,20 +1,22 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace com.hack3rlife.strings
+namespace com.hack3rlife.strings.test
 {
     [TestClass]
     public class RomanNumeralsTest
     {
+        public TestContext TestContext { get; set; }
+
         [TestMethod]
-        public void Test()
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\roman_numbers.csv", "roman_numbers#csv", DataAccessMethod.Sequential)]
+        public void RomanNumerals_NumberToRoman_Test()
         {
             //arrange
-            var number = 1663;
-            var expected = "MDCLXIII";
+            var number = (int)TestContext.DataRow["input"];
+            var expected = TestContext.DataRow["output"].ToString();
 
             //act
-           var actual = RomanNumerals.NumberToRoman(number);
+            var actual = RomanNumerals.NumberToRoman(number);
 
             //assert
             Assert.AreEqual<string>(expected, actual);

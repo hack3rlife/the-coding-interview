@@ -1,4 +1,4 @@
-The Coding Interview (135) 
+The Coding Interview (139) 
 + Algorithms (16) 
 	1: QuickSelect 
 	2: QuickSelectTest 
@@ -58,29 +58,35 @@ The Coding Interview (135)
 	8: QueueTest 
 	9: Stack 
 	10: StackTest 
-+ Dynamic Programming (22) 
++ Dynamic Programming (28) 
 	1: LargestSubarrayWithZeroSum 
 	2: LargestSubarrayWithZeroSumTest 
-	3: LongestCommonSubsequence 
-	4: LongestCommonSubsequenceTest 
-	5: LongestCommonSubstring 
-	6: LongestCommonSubstringTest 
-	7: LongestIncreasingSubsequence 
-	8: LongestIncreasingSubsequenceTest 
-	9: LongestIncreasingSubsequenceSum 
-	10: LongestIncreasingSubsequenceSumTest 
-	11: LongestPalindromic 
-	12: LongestPalindromicTest 
-	13: MaximumSizeSquare 
-	14: MaximumSizeSquareTest 
-	15: MaximumSubarrayProblem 
-	16: MaximumSubarrayProblemTest 
-	17: MinCostPath 
-	18: MinCostPathTest 
-	19: SubArrayGivenSum 
-	20: SubArrayGivenSumTest 
-	21: SubsetSum 
-	22: SubsetSumTest 
+	3: MaximumSubarrayProblem 
+	4: MaximumSubarrayProblemTest 
+	5: LongestCommonSubsequence 
+	6: LongestCommonSubsequenceTest 
+	7: LongestCommonSubstring 
+	8: LongestCommonSubstringTest 
+	9: LongestIncreasingSubsequence 
+	10: LongestIncreasingSubsequenceTest 
+	11: LongestIncreasingSubsequenceSum 
+	12: LongestIncreasingSubsequenceSumTest 
+	13: LongestPalindromic 
+	14: LongestPalindromicTest 
+	15: MaximumSizeSquare 
+	16: MaximumSizeSquareTest 
+	17: MaximumSubarrayProblem 
+	18: MaximumSubarrayProblemTest 
+	19: LongestIncreasingSubsequenceSumTest 
+	20: MaxSumIncreasingSubsequence 
+	21: MinCostPath 
+	22: MinCostPathTest 
+	23: SubArrayGivenSum 
+	24: SubArrayGivenSumTest 
+	25: SubsetSum 
+	26: SubsetSumTest 
+	27: WildCardMatch 
+	28: WildCardMatchTest 
 + Math (2) 
 	1: SquareRoot 
 	2: SquareRootTest 
@@ -104,7 +110,7 @@ The Coding Interview (135)
 + Random (2) 
 	1: RatioIterator 
 	2: RatioIteratorTest 
-+ Strings (36) 
++ Strings (34) 
 	1: BalancedExpressions 
 	2: BalancedExpressionsTest 
 	3: BuildLowestNumber 
@@ -116,7 +122,7 @@ The Coding Interview (135)
 	9: IsIsomorphic 
 	10: IsIsomorphicTest 
 	11: IsPalindrome 
-	12: PalindromeTest 
+	12: IsPalindromeTest 
 	13: IsRotation 
 	14: IsRotationTest 
 	15: LookAndSay 
@@ -124,7 +130,7 @@ The Coding Interview (135)
 	17: NextGreaterNumber 
 	18: NextGreaterNumberTest 
 	19: PhoneMnemonic 
-	20: NumberToStringTest 
+	20: PhoneNumberMnemonicTest 
 	21: PatternSearching 
 	22: PatternSearchingTest 
 	23: PhoneNumberParser 
@@ -139,8 +145,6 @@ The Coding Interview (135)
 	32: StringPermutationTest 
 	33: StringReverse 
 	34: StringReverseTest 
-	35: WildCardMatch 
-	36: WildCardMatchTest 
 + Tools (2) 
 	1: InputParser 
 	2: ProjectsTree 

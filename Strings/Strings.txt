@@ -1,4 +1,4 @@
-Strings (36) 
+Strings (34) 
 +BalancedExpressions
 		*BalancedExpressions\BalancedExpressions.csproj
 		*BalancedExpressionsTests\BalancedExpressionsTest.csproj
@@ -16,7 +16,7 @@ Strings (36)
 		*IsIsomorphicTest\IsIsomorphicTest.csproj
 +IsPalindrome
 		*IsPalindrome\IsPalindrome.csproj
-		*IsPalindromeTest\PalindromeTest.csproj
+		*IsPalindromeTest\IsPalindromeTest.csproj
 +IsRotation
 		*IsRotation\IsRotation.csproj
 		*IsRotationTest\IsRotationTest.csproj
@@ -28,7 +28,7 @@ Strings (36)
 		*NextGreaterNumberTest\NextGreaterNumberTest.csproj
 +NumberToString
 		*NumberToString\PhoneMnemonic.csproj
-		*NumberToStringTest\NumberToStringTest.csproj
+		*NumberToStringTest\PhoneNumberMnemonicTest.csproj
 +PatternSearching
 		*PatternSearching\PatternSearching.csproj
 		*PatternSearchingTest\PatternSearchingTest.csproj
@@ -50,6 +50,3 @@ Strings (36)
 +StringReverse
 		*StringReverse\StringReverse.csproj
 		*StringReverseTest\StringReverseTest.csproj
-+WildCardMatch
-		*WildCardMatch\WildCardMatch.csproj
-		*WildCardMatchTest\WildCardMatchTest.csproj

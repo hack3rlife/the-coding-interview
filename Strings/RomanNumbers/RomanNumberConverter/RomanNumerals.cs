@@ -11,10 +11,10 @@
  *  http://www.ehow.com/how_5060146_convert-number-roman-numerals.html
  *  http://www.ehow.com/how_8502493_convert-roman-characters-numbers.html
  *  http://www.ehow.com/how_7799048_convert-arabic-numbers.html
+ *  
 */
 
 using System;
-using System.Text;
 
 namespace com.hack3rlife.strings
 {
@@ -51,6 +51,7 @@ namespace com.hack3rlife.strings
         /// </summary>
         /// <param name="number">The input must be in the range of 1 - 3999</param>
         /// <returns>The equivalent represention of <para>number</para> in roman number</returns>
+        /// <see cref="http://www.rapidtables.com/convert/number/roman-numerals-converter.htm"/>
         public static string NumberToRoman(int number)
         {
             if (number < 1 || number > 3999)

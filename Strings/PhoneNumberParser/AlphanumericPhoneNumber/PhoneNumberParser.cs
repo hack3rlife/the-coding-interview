@@ -7,7 +7,7 @@
 
 namespace com.hack3rlife.strings
 {
-   public  static class PhoneNumberParser
+   public static class PhoneNumberParser
     {
         /// <summary>
         /// Print the actual phone number when given an alphanumeric phone number. 

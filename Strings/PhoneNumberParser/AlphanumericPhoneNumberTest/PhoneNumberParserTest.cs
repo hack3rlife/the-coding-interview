@@ -1,23 +1,22 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using com.hack3rlife.strings;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace AlphanumericPhoneNumberTest
+namespace com.hack3rlife.strings.test
 {
     [TestClass]
     public class PhoneNumberParserTest
     {
-        /// <summary>
-        /// dial 1800-CALL-ATT (18002255288) 
-        /// </summary>
+        public TestContext TestContext { get; set; }
+
         [TestMethod]
-        public void GetPhoneNumberTest()
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\numbers.csv", "numbers#csv", DataAccessMethod.Sequential)]
+        public void PhoneNumberParser_GetPhoneNumber_Test()
         {
             // arrange
-            var expected = "18002255288";
+            var number = TestContext.DataRow["input"].ToString();
+            var expected = TestContext.DataRow["output"].ToString();
 
             // act
-            var actual = PhoneNumberParser.GetPhoneNumber("1-800-CALL-ATT");
+            var actual = PhoneNumberParser.GetPhoneNumber(number);
 
             // assert
             Assert.AreEqual(expected, actual);

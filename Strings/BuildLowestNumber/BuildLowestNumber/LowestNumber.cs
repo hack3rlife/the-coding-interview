@@ -1,9 +1,12 @@
 ﻿namespace com.hack3rlife.strings
 {
-    public  class LowestNumber
+    /// <summary>
+    /// Build Lowest Number by Removing n digits from a given number
+    /// </summary>
+    public class LowestNumber
     {
         /// <summary>
-        /// 
+        /// Given a string ‘str’ of digits and an integer ‘n’, build the lowest possible number by removing ‘n’ digits from the string and not changing the order of input digits.
         /// </summary>
         /// <param name="input"></param>
         /// <param name="n"></param>

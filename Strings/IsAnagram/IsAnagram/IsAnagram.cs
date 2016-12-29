@@ -17,13 +17,19 @@ namespace com.hack3rlife.strings
     public class IsAnagram
     {
         /// <summary>
-        /// Checks if a pair of string are anagrams assuming the string use ASCII endoding.
+        /// Write a function to check whether two given strings are anagram of each other or not. An anagram of a string is another string that contains same characters, only the order of 
+        /// characters can be different
         /// </summary>
         /// <param name="source">The input string one</param>
         /// <param name="target">The input string two</param>
+        /// <example>“abcd” and “dabc” are anagram of each other.</example>
         /// <returns>True if input strings are anagrams; otherwise false.</returns>
+        /// <remarks>
+        /// Time Complexity O(n)
+        /// Space Complexity O(n)
+        /// </remarks>
         /// <see cref="https://www.careercup.com/question?id=8641795"/>
-        public static bool ASCIIBasedSolution( string source, string target)
+        public static bool ASCIIBasedSolution(string source, string target)
         {
             if (source.Length == 0 && target.Length == 0)
                 return true;
@@ -52,6 +58,6 @@ namespace com.hack3rlife.strings
             }
 
             return true;
-        }      
+        }
     }
 }

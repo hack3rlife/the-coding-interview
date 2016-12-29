@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{37B31097-D486-49D0-AEF4-3136807072A9}</ProjectGuid>
+    <ProjectGuid>{E9BA3F4D-6521-472B-8FC7-821A7695DC9F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NumberToStringTest</RootNamespace>
-    <AssemblyName>NumberToStringTest</AssemblyName>
+    <RootNamespace>IsPalindromeTest</RootNamespace>
+    <AssemblyName>IsPalindromeTest</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -40,6 +40,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -54,14 +55,19 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="NumberToStringTest.cs" />
+    <Compile Include="PalindromeTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NumberToString\PhoneMnemonic.csproj">
-      <Project>{3f0ae69c-1c32-4c89-822e-af08d8c88814}</Project>
-      <Name>PhoneMnemonic</Name>
+    <ProjectReference Include="..\IsPalindrome\IsPalindrome.csproj">
+      <Project>{5e0fbe8c-a22e-46d1-b2da-dc68a37636d8}</Project>
+      <Name>IsPalindrome</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="palindromes.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
