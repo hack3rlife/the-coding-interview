@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using com.hack3rlife.numbers;
 
-namespace ConcatenateTwoNumbersTest
+namespace com.hack3rlife.numbers.test
 {
     [TestClass]
     public class ConcatenateTwoNumbersTest

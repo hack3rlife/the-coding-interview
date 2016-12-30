@@ -26,7 +26,7 @@ namespace com.hack3rlife.numbers
                 number /= 10;
             }
             return result;
-        }            
+        }
 
     }
 }

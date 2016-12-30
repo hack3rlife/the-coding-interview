@@ -1,23 +1,25 @@
-﻿using System;
+﻿using com.hack3rlife.numbers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using com.hack3rlife.numbers;
 
-namespace FactorialNumberTest
+namespace om.hack3rlife.numbers.test
 {
     [TestClass]
     public class FactorialNumberTest
     {
+        public TestContext TestContext { get; set; }
+
         [TestMethod]
-        public void FactorialTest()
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\factorial_numbers.csv", "factorial_numbers#csv", DataAccessMethod.Sequential)]
+        public void FactorialNumber_Factorial_Succeed()
         {
-            //arrange
-            int input = 5;
+            // arrange
+            var input = int.Parse(TestContext.DataRow["input"].ToString());
+            var expected = long.Parse(TestContext.DataRow["output"].ToString());
 
-            //act
-            int actual = FactorialNumber.Factorial(input);
-            int expected = 120;
+            // act
+            var actual = FactorialNumber.Factorial(input);
 
-            //assert
+            // assert
             Assert.AreEqual(expected, actual);
         }
     }

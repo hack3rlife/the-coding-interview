@@ -1,33 +1,38 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace com.hack3rlife.algorithms
+﻿namespace com.hack3rlife.numbers
 {
+	/// <summary>
+	/// Find the largest pair sum in an unsorted array
+	/// </summary>
 	public class LargestPairSum
 	{
+		/// <summary>
+		/// Given an unsorted of distinct integers, find the largest pair sum in it.
+		/// </summary>
+		/// <param name="input"></param>
+		/// <returns>The largest pair sum</returns>
+		/// <example>
+		/// The largest pair sum in {12, 34, 10, 6, 40} is 74.
+		/// </example>
 		public static int Find(int[] input)
 		{
 			int first = input[0];
-			int second= input[1];
+			int second = input[1];
 
-			if(second>first)
+			if (second > first)
 			{
-				first^=second;
-				second^=first;
-				first^=second;
+				first ^= second;
+				second ^= first;
+				first ^= second;
 			}
 
-			for (int i = 3; i < input.Length; i++)
+			for (int i = 2; i < input.Length; i++)
 			{
 				if (input[i] > first)
 				{
 					second = first;
 					first = input[i];
 				}
-				else if(input[i] > second && input[i] <= first) 
+				else if (input[i] > second && input[i] <= first)
 				{
 					second = input[i];
 				}

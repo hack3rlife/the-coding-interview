@@ -22,9 +22,12 @@ namespace com.hack3rlife.numbers
         /// </summary>
         /// <param name="number">Integer Value</param>
         /// <returns>The Fibonnacci Number</returns>
-        public static int Fibonacci(int number)
+        public static long Fibonacci(int number)
         {
-            if (number <= 1)
+            if (number == 0)
+                return 0;
+
+            if (number == 1)
                 return 1;
 
             return Fibonacci(number - 1) + Fibonacci(number - 2);
@@ -35,14 +38,20 @@ namespace com.hack3rlife.numbers
         /// </summary>
         /// <param name="number"></param>
         /// <returns>The Fibonnacci number</returns>
-        public static int FibonacciDynamic(int number)
+        public static long FibonacciDynamic(int number)
         {
-            int[] result = new int[number + 1];
+            if (number == 0)
+                return 0;
+
+            if (number == 1)
+                return 1;
+
+            long[] result = new long[number + 1];
 
             result[0] = 0;
             result[1] = 1;
 
-            for (int  i = 2; i <= number; i++)
+            for (int i = 2; i <= number; i++)
             {
                 // Add the previous 2 numbers in the series and store it
                 result[i] = result[i - 1] + result[i - 2];
@@ -55,9 +64,9 @@ namespace com.hack3rlife.numbers
         /// Get the Fibonacci Sequence of a number
         /// </summary>
         /// <param name="number">Integer Value</param>
-        public static List<int> FibonacciSequence(int number)
+        public static List<long> FibonacciSequence(int number)
         {
-            List<int> result = new List<int>() { 0 };
+            List<long> result = new List<long>() { 0 };
 
             for (int i = 1; i <= number; i++)
                 result.Add(Fibonacci(i));

@@ -1,23 +1,25 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using com.hack3rlife.numbers;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace PrimeNumbersTest
+namespace com.hack3rlife.numbers.test
 {
     [TestClass]
     public class PrimeNumbersTest
     {
+        public TestContext TestContext { get; set; }
+
         [TestMethod]
-        public void isPrimeNumberTest()
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\prime_numbers.csv", "prime_numbers#csv", DataAccessMethod.Sequential)]
+        public void PrimeNumbers_IsPrimeNumber_Test()
         {
             //arrange
-            int number = 23;
+            var input = (int)TestContext.DataRow["number"];
+            var expected = TestContext.DataRow["isprime"].Equals(0) ? false : true;
 
             //act
-            bool condition = PrimeNumbers.isPrimeNumber(number);
+            bool condition = PrimeNumbers.IsPrimeNumber(input);
 
             //assert
-            Assert.IsTrue(condition);
+            Assert.IsTrue(condition == expected);
         }
 
         [TestMethod]
@@ -27,7 +29,7 @@ namespace PrimeNumbersTest
             int number = 30;
 
             //act
-           PrimeNumbers.SieveOfEratosthenes(number);
+            PrimeNumbers.SieveOfEratosthenes(number);
 
             //assert
         }

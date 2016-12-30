@@ -2,20 +2,23 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using com.hack3rlife.numbers;
 
-namespace SumDigitsOfANumberTest
+namespace com.hack3rlife.numbers.test
 {
     [TestClass]
     public class SumDigitsOfANumberTest
     {
+        public TestContext TestContext { get; set; }
+
         [TestMethod]
-        public void SumDigitsTest()
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\numbers.csv", "numbers#csv", DataAccessMethod.Sequential)]
+        public void SumDigitsOfANumber_SumDigits_Test()
         {
             //arrange
-            int input = 12345;            
+            var input = (int)TestContext.DataRow["input"];
+            var expected = (int)TestContext.DataRow["sum"];
 
             //act
             int actual = SumDigitsOfANumber.SumDigits(input);
-             int expected = 6;
 
             //assert
              Assert.AreEqual(expected, actual);

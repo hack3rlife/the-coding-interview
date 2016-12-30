@@ -1,44 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Diagnostics;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace com.hack3rlife.numbers
 {
+    /// <summary>
+    /// A prime number (or a prime) is a natural number greater than 1 that has no positive divisors other than 1 and itself. A natural number greater than 
+    /// 1 that is not a prime number is called a composite number.
+    /// </summary>
+    /// <example>5 is prime because 1 and 5 are its only positive integer factors, whereas 6 is composite because it has the divisors 2 and 3 in addition to
+    /// 1 and 6.</example>
+    /// <see cref="https://en.wikipedia.org/wiki/Prime_number"/>
     public class PrimeNumbers
     {
         /// <summary>
-        /// Checks if a number is prime or not using Prmality Test
+        /// Given a positive integer, check if the number is prime or not. A prime is a natural number greater than 1 that has no positive divisors other than 1 and itself.
         /// </summary>
         /// <param name="number"></param>
         /// <returns>True if the number is prime; otherwise false</returns>
+        /// <remarks>Checks if a number is prime or not using Prmality Test</remarks>
         /// <see cref="http://en.wikipedia.org/wiki/Primality_test"/>
-        public static bool isPrimeNumber(int number)
+        /// <seealso cref="http://www.geeksforgeeks.org/primality-test-set-1-introduction-and-school-method/"/>
+        public static bool IsPrimeNumber(int number)
         {
             if (number <= 1)
-            {
                 return false;
-            }
-            else if (number <= 3)
-            {
+            if (number <= 3)
                 return true;
-            }
-            else if (number % 2 == 0 || number % 3 == 0)
-            {
+
+            if (number % 2 == 0 || number % 3 == 0)
                 return false;
-            }
 
-            int i = 5;
-
-            while (i * i <= number)
+            for (int i = 5; i * i <= number; i += 6)
             {
                 if (number % i == 0 || number % (i + 2) == 0)
-                {
                     return false;
-                }
-
-                i += 6;
             }
 
             return true;
@@ -59,7 +54,7 @@ namespace com.hack3rlife.numbers
                 {
                     int j = i + 1;
 
-                    Console.Write(" {0} ", j);
+                    Debug.WriteLine(string.Format(" {0},{1}", j, 1));
 
                     int k = 2;
                     int num;
@@ -70,7 +65,7 @@ namespace com.hack3rlife.numbers
                         k++;
                     }
                 }
-            }           
+            }
         }
 
     }

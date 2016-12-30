@@ -20,9 +20,9 @@ namespace com.hack3rlife.numbers
         /// </summary>
         /// <param name="number"></param>
         /// <returns></returns>
-        public static int Factorial(int number)
+        public static long Factorial(int number)
         {
-            if (number == 1)
+            if (number <= 1)
                 return 1;
             else
                 return Factorial(number - 1) * number;

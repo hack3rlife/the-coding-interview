@@ -1,14 +1,12 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using com.hack3rlife.numbers;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace SwappingNumbersTest
+namespace com.hack3rlife.numbers.test
 {
     [TestClass]
     public class SwappingNumbersTest
     {
         [TestMethod]
-        public void SwapTest()
+        public void SwappingNumbers_Swap_Test()
         {
             // arrange
             int a = 10;
@@ -25,25 +23,10 @@ namespace SwappingNumbersTest
             Assert.AreEqual(a, d);
             Assert.AreEqual(b, e);
             
-        }
+        }      
 
         [TestMethod]
-        public void BitwiseSwapTest()
-        {
-            // arrange
-            int num1 = 10;
-            int num2 = 5;
-
-            // act
-            SwappingNumbers.BitwiseSwap(ref num1, ref num2);
-
-            // assert
-            Assert.AreEqual(5, num1);
-            Assert.AreEqual(10, num2);
-        }
-
-        [TestMethod]
-        public void ArithmeticSwapTest()
+        public void SwappingNumbers_ArithmeticSwap_Test()
         {
             // arrange
             int num1 = 10;

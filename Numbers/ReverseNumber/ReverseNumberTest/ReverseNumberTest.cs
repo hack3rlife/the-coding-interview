@@ -1,13 +1,12 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using com.hack3rlife.numbers;
 
-namespace ReverseNumberTest
+namespace com.hack3rlife.numbers.test
 {
     [TestClass]
     public class ReverseNumberTest
     {
         [TestMethod]
-        public void ReverseTest()
+        public void ReverseNumber_Reverse_Test()
         {
             // arrange
             int input = 1234;

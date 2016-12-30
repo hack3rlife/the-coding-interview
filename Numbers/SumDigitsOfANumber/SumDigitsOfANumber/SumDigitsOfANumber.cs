@@ -8,8 +8,9 @@
 namespace com.hack3rlife.numbers
 {
     /// <summary>
-    /// 
+    /// Sum the digits of a number 
     /// </summary>
+    /// <see cref="https://en.wikipedia.org/wiki/Digit_sum"/>
     public class SumDigitsOfANumber
     {
         /// <summary>
@@ -19,7 +20,7 @@ namespace com.hack3rlife.numbers
         /// <returns></returns>
         public static int SumDigits(int number)
         {
-            int result;
+            int result = 0;
 
             do
             {
@@ -34,7 +35,6 @@ namespace com.hack3rlife.numbers
                 number = result;
 
             } while (number > 10);
-
 
             return result;
         }
