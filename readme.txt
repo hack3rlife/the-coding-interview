@@ -1,9 +1,9 @@
-The Coding Interview (139) 
+The Coding Interview (141) 
 + Algorithms (16) 
-	1: QuickSelect 
-	2: QuickSelectTest 
-	3: BinarySearch 
-	4: BinarySearchTest 
+	1: BinarySearch 
+	2: BinarySearchTest 
+	3: QuickSelect 
+	4: QuickSelectTest 
 	5: BubbleSort 
 	6: BubbleSortTest 
 	7: HeapSort 
@@ -16,49 +16,43 @@ The Coding Interview (139)
 	14: QuickSortTest 
 	15: SelectionSort 
 	16: SelectionSortTest 
-+ Arrays (27) 
-	1: ArrayToBinarySearchTree 
-	2: ArrayToBinarySearchTreeTest 
-	3: DutchNationalFlagProblem 
-	4: DutchNationalFlagProblemTest 
-	5: FindKth 
-	6: FindKthTest 
-	7: LightsOut 
-	8: LightsOutTests 
-	9: MatrixInDiagonal 
-	10: MatrixInDiagonalTests 
-	11: MatrixInSpiral 
-	12: MatrixPaths 
-	13: MatrixPathsTest 
-	14: MissingElement 
-	15: MissingElementTest 
-	16: NextGreaterElement 
-	17: NextGreaterElementTests 
-	18: NumberOfIslands 
-	19: NumberOfIslandsTest 
-	20: PythagoreanTriplet 
-	21: RatInAMaze 
-	22: RatInAMazeTest 
-	23: RotateMatrix90Degrees 
-	24: ShortestPathBinaryMaze 
-	25: ShortestPathBinaryMazeTests 
-	26: StairCase 
-	27: StairCaseTUniTests 
++ Arrays (19) 
+	1: DutchNationalFlagProblem 
+	2: DutchNationalFlagProblemTest 
+	3: FindKth 
+	4: FindKthTest 
+	5: LightsOut 
+	6: LightsOutTests 
+	7: MatrixInDiagonal 
+	8: MatrixInDiagonalTests 
+	9: MatrixInSpiral 
+	10: MatrixInSpiralTest 
+	11: MatrixRotateTest 
+	12: MatrixRotate 
+	13: MissingElement 
+	14: MissingElementTest 
+	15: NextGreaterElement 
+	16: NextGreaterElementTests 
+	17: PythagoreanTriplet 
+	18: StairCase 
+	19: StairCaseTUniTests 
 + BitManipulation (2) 
 	1: CountBits 
 	2: CountBitsTest 
-+ DataStructures (10) 
-	1: BinarySearchTreeTest 
-	2: BinarySearchTree 
-	3: BinaryTree 
-	4: BinaryTreeTest 
-	5: LinkedList 
-	6: LinkedListTest.UnitTest 
-	7: Queue 
-	8: QueueTest 
-	9: Stack 
-	10: StackTest 
-+ Dynamic Programming (28) 
++ DataStructures (12) 
+	1: ArrayToBinarySearchTree 
+	2: ArrayToBinarySearchTreeTest 
+	3: BinarySearchTreeTest 
+	4: BinarySearchTree 
+	5: BinaryTree 
+	6: BinaryTreeTest 
+	7: LinkedList 
+	8: LinkedListTest.UnitTest 
+	9: Queue 
+	10: QueueTest 
+	11: Stack 
+	12: StackTest 
++ Dynamic Programming (36) 
 	1: LargestSubarrayWithZeroSum 
 	2: LargestSubarrayWithZeroSumTest 
 	3: MaximumSubarrayProblem 
@@ -73,20 +67,28 @@ The Coding Interview (139)
 	12: LongestIncreasingSubsequenceSumTest 
 	13: LongestPalindromic 
 	14: LongestPalindromicTest 
-	15: MaximumSizeSquare 
-	16: MaximumSizeSquareTest 
-	17: MaximumSubarrayProblem 
-	18: MaximumSubarrayProblemTest 
-	19: LongestIncreasingSubsequenceSumTest 
-	20: MaxSumIncreasingSubsequence 
-	21: MinCostPath 
-	22: MinCostPathTest 
-	23: SubArrayGivenSum 
-	24: SubArrayGivenSumTest 
-	25: SubsetSum 
-	26: SubsetSumTest 
-	27: WildCardMatch 
-	28: WildCardMatchTest 
+	15: MatrixPaths 
+	16: MatrixPathsTest 
+	17: MaximumSizeSquare 
+	18: MaximumSizeSquareTest 
+	19: MaximumSubarrayProblem 
+	20: MaximumSubarrayProblemTest 
+	21: LongestIncreasingSubsequenceSumTest 
+	22: MaxSumIncreasingSubsequence 
+	23: MinCostPath 
+	24: MinCostPathTest 
+	25: NumberOfIslands 
+	26: NumberOfIslandsTest 
+	27: RatInAMaze 
+	28: RatInAMazeTest 
+	29: ShortestPathBinaryMaze 
+	30: ShortestPathBinaryMazeTests 
+	31: SubArrayGivenSum 
+	32: SubArrayGivenSumTest 
+	33: SubsetSum 
+	34: SubsetSumTest 
+	35: WildCardMatch 
+	36: WildCardMatchTest 
 + Math (2) 
 	1: SquareRoot 
 	2: SquareRootTest 

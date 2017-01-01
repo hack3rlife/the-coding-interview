@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace LightsOut.Tests
+namespace com.hack3rlife.arrays.test
 {
     [TestClass()]
     public class LightsOutTests

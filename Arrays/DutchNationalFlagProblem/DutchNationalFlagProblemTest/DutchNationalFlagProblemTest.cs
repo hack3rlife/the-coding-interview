@@ -1,24 +1,28 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using com.hack3rlife.arrays.sorting;
+using com.hack3rlife.arrays;
+using System;
 
-namespace com.hack3rlife.array
+namespace com.hack3rlife.array.test
 {
     [TestClass]
     public class DutchNationalFlagProblemTest
     {
-        [TestMethod]
-        public void SortTest()
+        public TestContext TestContext { get; set; }
+
+        [TestMethod()]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\dnf.csv", "dnf#csv", DataAccessMethod.Sequential)]
+        public void DutchNationalFlagProblem_Sort_Test()
         {
             //arrange
-            int[] input = new int[] { 0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1 };
+            var input = TestContext.DataRow[0].ToString().Split(new char[] { ' ' });
+            var expected = TestContext.DataRow[1].ToString().Split(new char[] { ' ' });
 
             //act
-            int[] actual = DutchNationalFlagProblem.Sort(input, 1);
+            var actual = DutchNationalFlagProblem.Sort(Array.ConvertAll(input, s => int.Parse(s)), 1);
 
             //assert
-            int[] expected = new int[] { 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2 };
 
-            CollectionAssert.AreEqual(expected, actual);            
+            CollectionAssert.AreEqual(Array.ConvertAll(expected, s => int.Parse(s)), actual);            
         }
     }
 }

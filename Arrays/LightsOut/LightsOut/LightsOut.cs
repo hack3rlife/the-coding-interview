@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace LightsOut
+namespace com.hack3rlife.arrays
 {
     public static class LightsOut
     {
@@ -32,6 +32,7 @@ namespace LightsOut
                 Debug.WriteLine("");
             }
 
+            Debug.WriteLine("");
 
             for (int i = 0; i < rlength; i++)
             {
@@ -47,6 +48,8 @@ namespace LightsOut
 
                 Debug.WriteLine("");
             }
+            Debug.WriteLine("");
+
         }
     }
 }

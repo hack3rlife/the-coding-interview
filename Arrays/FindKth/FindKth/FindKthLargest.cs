@@ -1,19 +1,34 @@
 ﻿/*
  * @autor: Some smart guy on internet
  * @date: 04/28/2016
- * @project: SubSetSum
+ * @project: FindKthLargest
  * 
  */
 
 namespace com.hack3rlife.arrays
 {
     /// <summary>
-    /// Given an of unsorted array of integers (you may assume the array may contain +ve, -ve and 0s and a number k where k is smaller than size of array, we need to find the k’th smallest
-    /// element in the given array. 
+    /// K’th Smallest/Largest Element in Unsorted Array.
     /// </summary>
     /// <example>input[] = {7, 10, 4, 3, 20, 15} k=3, output = 7</example>
     public class FindKthLargest
     {
+        /// <summary>
+        /// Given an of unsorted array of integers (you may assume the array may contain +ve, -ve and 0s and a number k where k is smaller than size of array, we need to find the k’th smallest
+        /// element in the given array. 
+        /// </summary>
+        /// <param name="input"></param>
+        /// <param name="k"></param>
+        /// <returns></returns>
+        /// <see cref="http://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array/"/>
+        public static int Find(int[] input, int k)
+        {
+            if (input == null)
+                return -1;
+
+            return Select(input, 0, input.Length - 1, k-1);
+        }
+
         /// <summary>
         /// Finds the kth largest element of a unsorted arrray using QuickSelect algorithm assuming there are no duplicated values. 
         /// </summary>       
@@ -22,7 +37,7 @@ namespace com.hack3rlife.arrays
         /// <param name="right">The right sub-array(k+1)</param>
         /// <param name="k">The  kth value</param>
         /// <returns>Returns the k-th smallest element of the array within left..right inclusive</returns>
-        public static int Select(int[] input, int left, int right, int k)
+        private static int Select(int[] input, int left, int right, int k)
         {
             if (left == right)
                 return input[left];
@@ -55,12 +70,11 @@ namespace com.hack3rlife.arrays
 
             var storeIndex = left;
 
-            for (int i = left; i < right - 1; i++)
+            for (int i = left; i < right; i++)
             {
                 if (input[i] < pivotValue)
                 {
-                    Swap(input, i, storeIndex);
-                    storeIndex++;
+                    Swap(input, i, storeIndex++);
                 }
             }
 

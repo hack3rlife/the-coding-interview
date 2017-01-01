@@ -1,28 +1,42 @@
 ﻿/*
  * @autor: Some smart guy on internet
  * @date: 04/24/2016
- * @project: SubSetSum
+ * @project: RotateMatrix
  * 
  */
 
 using System;
+using System.Diagnostics;
 
-namespace RotateMatrix90Degrees
+namespace com.hack3rlife.arrays
 {
     /// <summary>
-    /// 
+    /// Turn an image by 90 degree
     /// </summary>
     /// <seealso cref="http://www.geeksforgeeks.org/inplace-m-x-n-size-matrix-transpose/"/>
     /// <see cref="https://www.careercup.com/question?id=5667482614366208"/>
-    public class RotateMatrix90Degrees
+    public class RotateMatrix
     {
-        /// First approach: Using temporal matrix
-        /// Usage: MxN & NxN
+        ///<summary>
+        /// Given an image, how will you turn it by 90 degrees?
+        /// First approach: Using temporal matrix.
+        /// Usage: MxN & NxN.
         /// </summary>
-        /// <param name="input"></param>
-        /// <returns></returns>
+        /// <param name="input">The input matrix</param>
+        /// <returns>A 90 Degrees rotated matrix of the original one.</returns>
+        /// <example>
+        /// Input
+        /// 1  2  3
+        /// 4  5  6
+        /// 7  8  9
+        /// 
+        /// Output:
+        /// 3  6  9 
+        /// 2  5  8 
+        /// 1  4  7 
+        /// </example>
         /// <see cref="http://www.geeksforgeeks.org/turn-an-image-by-90-degree/"/>
-        public static int[,] Rotate90Degrees(int[,] input)
+        public static int[,] NinetyDegrees(int[,] input)
         {
             int m = input.GetLength(0);
             int n = input.GetLength(1);
@@ -33,7 +47,8 @@ namespace RotateMatrix90Degrees
             {
                 for (int j = 0; j < n; j++)
                 {
-                    result[j, m - 1 - i] = input[i, j];
+                    result[j, m - i - 1] = input[i, j];
+                    Display(result);
                 }
             }
 
@@ -87,10 +102,13 @@ namespace RotateMatrix90Degrees
             {
                 for (int j = 0; j < input.GetLength(1); j++)
                 {
-                    Console.Write(" {0} ", input[i, j]);
+                    Debug.Write(string.Format(" {0} ", input[i, j]));
                 }
-                Console.WriteLine();
+
+                Debug.WriteLine("");
             }
+
+            Debug.WriteLine("");
         }
 
         private static int[,] Initialize(int[,] input)

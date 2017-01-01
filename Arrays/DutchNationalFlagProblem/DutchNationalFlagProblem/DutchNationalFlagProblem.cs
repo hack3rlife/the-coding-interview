@@ -4,7 +4,9 @@
  * @project: DutchNationalFlagProblem
  * 
  */
-namespace com.hack3rlife.arrays.sorting
+using System.Diagnostics;
+
+namespace com.hack3rlife.arrays
 {
     /// <summary>
     /// The Dutch national flag problem (DNF) is a computer science programming problem proposed by Edsger Dijkstra. The flag of the Netherlands consists of three colours: 
@@ -29,10 +31,10 @@ namespace com.hack3rlife.arrays.sorting
             int p = 0;                      // current position in the left side (for swaping)
             int q = input.Length - 1;       // current position in the rigth side (for swaping)
 
-            while ( i <= q )
+            while (i <= q)
             {
                 if (input[i] < mid)
-                    Swap(input, i++, p++);                    
+                    Swap(input, i++, p++);
                 else if (input[i] > mid)
                     Swap(input, i, q--);
                 else
@@ -56,6 +58,20 @@ namespace com.hack3rlife.arrays.sorting
                 input[b] ^= input[a];
                 input[a] ^= input[b];
             }
+
+            Print(input);
+        }
+
+        private static void Print(int[] input)
+        {
+            int length = input.GetLength(0);
+
+            for (int i = 0; i < length; i++)
+            {
+                Debug.Write(string.Format("{0} ", input[i]));
+            }
+
+            Debug.WriteLine("");
         }
     }
 }

@@ -1,41 +1,69 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 
-namespace StairCase
+namespace com.hack3rlife.arrays
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class StairCase
     {
-        public static void DrawRight(int n)
+        /// <summary>
+        /// Draw a staircase of height N in the format given below
+        /// </summary>
+        /// <example>
+        /// 
+        /// Draw(6)
+        /// #
+        /// ##
+        /// ###
+        /// ####
+        /// #####
+        /// ######
+        /// </example>
+        /// <param name="n">The height</param>
+        public static string[,] DrawRight(int n)
         {
             string[,] matrix = new string[n, n];
 
-            for (int i = n-1; i>0; i--)
+            for (int i = n - 1; i >= 0; i--)
             {
-                for (int j = 0; j < i; j++)
+                for (int j = 0; j <= i; j++)
                 {
                     matrix[i, i - j] = "#";
+                    Print(matrix);
                 }
-                
-                Print(matrix);
             }
+
+            return matrix;
         }
 
-        public static void DrawLeft(int n)
+        /// <summary>
+        /// Draw a staircase of height N in the format given below
+        /// </summary>
+        /// <example>
+        /// Draw(6)
+        ///       #
+        ///      ##
+        ///     ###
+        ///    ####
+        ///   #####
+        ///  ######
+        /// </example>
+        /// <param name="n">The height</param>
+        public static string[,] DrawLeft(int n)
         {
             string[,] matrix = new string[n, n];
 
-            for (int i =0; i <n; i++)
+            for (int i = 0; i < n; i++)
             {
-                for (int j = n-i-1; j < n; j++)
+                for (int j = n - i - 1; j < n; j++)
                 {
                     matrix[i, j] = "#";
+                    Print(matrix);
                 }
-
-                Print(matrix);
             }
+
+            return matrix;
         }
 
         public static void Print(string[,] m)
@@ -46,13 +74,14 @@ namespace StairCase
             {
                 for (int j = 0; j < length; j++)
                 {
-                    if(m[i,j] == null)
-                        System.Diagnostics.Debug.Write(" ");
+                    if (m[i, j] == null)
+                        Debug.Write(" ");
                     else
-                        System.Diagnostics.Debug.Write(m[i, j]);
+                        Debug.Write(m[i, j]);
                 }
-                System.Diagnostics.Debug.WriteLine("");
+                Debug.WriteLine("");
             }
+            Debug.WriteLine("");
         }
     }
 }

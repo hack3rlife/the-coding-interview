@@ -2,21 +2,24 @@
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace com.hack3rlife.arrays
+namespace com.hack3rlife.arrays.test
 {
     [TestClass]
     public class FindKthLargestTest
     {
-        [TestMethod]
+        public TestContext TestContext { get; set; }
+
+        [TestMethod()]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\numbers.csv", "numbers#csv", DataAccessMethod.Sequential)]
         public void FindKth_LargestTest()
         {
             //arrange
-            int[] input = { 7, 10, 4, 3, 20, 15 };
-            int k = 3;
-            var expected = 10;
+            var input = TestContext.DataRow[0].ToString().Split(new char[] { ' ' });
+            var k = (int)TestContext.DataRow[1];
+            var expected = (int)TestContext.DataRow[2];
 
             //act
-            int? actual = FindKthLargest.Select(input, 0, input.Length - 1, 3);
+            var actual = FindKthLargest.Find(Array.ConvertAll(input, s => int.Parse(s)), k);
 
             //assert
             Assert.AreEqual(expected, actual);

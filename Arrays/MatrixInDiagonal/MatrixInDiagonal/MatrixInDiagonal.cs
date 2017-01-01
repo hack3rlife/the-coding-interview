@@ -3,23 +3,39 @@
 namespace com.hack3rlife.arrays
 {
     /// <summary>
-    /// Given a matrix of MxN, print the elements of the matrix in diagonal order
+    /// How can I print all elements of a matrix in diagonal order?
     /// </summary>
     public class MatrixInDiagonal
     {
         /// <summary>
-        /// 
+        /// Given a matrix of MxN, print the elements of the matrix in diagonal order
         /// </summary>
         /// <param name="input"></param>
-        public static void Print(int[,] input)
+        /// <see cref="https://www.quora.com/How-can-I-print-all-elements-of-a-matrix-in-diagonal-order"/>
+        /// <example>
+        /// Matrix:
+        /// 1 2 3
+        /// 4 5 6
+        /// 7 8 9
+        /// 
+        /// Output:
+        /// 1
+        /// 4 2
+        /// 7 5 3
+        /// 8 6
+        /// 9
+        /// </example>
+        public static int[,] Print(int[,] input)
         {
             if (input == null)
-                return;
+                return null;
 
             var rowCount = input.GetLength(0);
             var colCount = input.GetLength(1);
 
-            var length = rowCount + colCount - 1;
+            var output = new int[rowCount + colCount - 1, rowCount];
+            var x = 0;
+            var y = 0;
 
             // 1. Print row diagonals 
             for (int i = 0; i < rowCount; i++)
@@ -30,11 +46,15 @@ namespace com.hack3rlife.arrays
                 while (row >= 0 && col < colCount)
                 {
                     Debug.Write(string.Format(" {0} ", input[row, col]));
+                    output[x, y] = input[row, col];
 
                     row--;
                     col++;
+                    y++;
                 }
 
+                x++;
+                y = 0;
                 Debug.WriteLine("");
             }
 
@@ -47,13 +67,19 @@ namespace com.hack3rlife.arrays
                 while (row >= 0 && col < colCount)
                 {
                     Debug.Write(string.Format(" {0} ", input[row, col]));
+                    output[x, y] = input[row, col];
 
                     row--;
                     col++;
+                    y++;
                 }
 
+                x++;
+                y = 0;
                 Debug.WriteLine("");
             }
+
+            return output;
         }
     }
 }

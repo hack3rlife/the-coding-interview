@@ -5,10 +5,10 @@
  * 
  */
 
-namespace com.hectorea.number
+namespace com.hack3rlife.arrays
 {
     /// <summary>
-    /// 
+    /// Find the Missing Number
     /// </summary>
     public class MissingElement
     {
@@ -18,6 +18,11 @@ namespace com.hectorea.number
         /// </summary>
         /// <param name="input">The input array</param>
         /// <returns>The issing number</returns>
+        /// <example>
+        /// Input:  [1, 2, 4, ,6, 3, 7, 8]
+        /// Output: 5
+        /// </example>
+        /// <remarks>Time Complexity: O(n)</remarks>
         /// <see cref="http://www.geeksforgeeks.org/find-the-missing-number/"/>
         public static int Find(int[] input)
         {
@@ -38,6 +43,8 @@ namespace com.hectorea.number
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
+        /// <example></example>
+        /// <remarks>Time Complexity: O(n)</remarks>
         /// <see cref="http://www.geeksforgeeks.org/find-the-missing-number/"/>
         /// <seealso cref="http://stackoverflow.com/questions/18335587/finding-the-number-missing-in-the-sequence"/>
         public static int FindXOr(int[] input)
@@ -57,6 +64,6 @@ namespace com.hectorea.number
 
             //XOR of X1 and X2 gives the missing number.
             return (x1 ^ x2);
-        }       
+        }
     }
 }

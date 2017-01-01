@@ -1,4 +1,4 @@
-Dynamic Programming (28) 
+Dynamic Programming (36) 
 +LargestSubarrayWithZeroSum
 		*LargestSubarrayWithZeroSum\LargestSubarrayWithZeroSum.csproj
 		*LargestSubarrayWithZeroSumTest\LargestSubarrayWithZeroSumTest.csproj
@@ -21,6 +21,9 @@ Dynamic Programming (28)
 +LongestPalindrome
 		*LongestPalindromicSubsequence\LongestPalindromic.csproj
 		*LongestPalindromicTest\LongestPalindromicTest.csproj
++MatrixPaths
+		*MatrixPaths\MatrixPaths.csproj
+		*MatrixPathsTest\MatrixPathsTest.csproj
 +MaximumSizeSquare
 		*MaximumSizeSquare\MaximumSizeSquare.csproj
 		*MaximumSizeSquareTest\MaximumSizeSquareTest.csproj
@@ -33,6 +36,15 @@ Dynamic Programming (28)
 +MinCostPath
 		*MinCostPath\MinCostPath.csproj
 		*MinCostPathTest\MinCostPathTest.csproj
++NumberOfIslands
+		*NumberOfIslands\NumberOfIslands.csproj
+		*NumberOfIslandsTest\NumberOfIslandsTest.csproj
++RatInAMaze
+		*RatInAMaze\RatInAMaze.csproj
+		*RatInAMazeTest\RatInAMazeTest.csproj
++ShortestPathBinaryMaze
+		*ShortestPathBinaryMaze\ShortestPathBinaryMaze.csproj
+		*ShortestPathBinaryMazeTests\ShortestPathBinaryMazeTests.csproj
 +SubArrayGivenSum
 		*SubArrayGivenSum\SubArrayGivenSum.csproj
 		*SubArrayGivenSumTest\SubArrayGivenSumTest.csproj

@@ -1,7 +1,4 @@
-Arrays (27) 
-+ArrayToBst
-		*ArrayToBst\ArrayToBinarySearchTree.csproj
-		*ArrayToBstTest\ArrayToBinarySearchTreeTest.csproj
+Arrays (19) 
 +DutchNationalFlagProblem
 		*DutchNationalFlagProblem\DutchNationalFlagProblem.csproj
 		*DutchNationalFlagProblemTest\DutchNationalFlagProblemTest.csproj
@@ -16,28 +13,18 @@ Arrays (27)
 		*MatrixInDiagonalTests\MatrixInDiagonalTests.csproj
 +MatrixInSpiral
 		*MatrixInSpiral\MatrixInSpiral.csproj
-+MatrixPaths
-		*MatrixPaths\MatrixPaths.csproj
-		*MatrixPathsTest\MatrixPathsTest.csproj
+		*MatrixInSpiralTest\MatrixInSpiralTest.csproj
++MatrixRotate90Degrees
+		*MatrixRotateTest\MatrixRotateTest.csproj
+		*RotateMatrix90Degrees\MatrixRotate.csproj
 +MissingElement
 		*MissingElement\MissingElement.csproj
 		*MissingElementTest\MissingElementTest.csproj
 +NextGreaterElement
 		*NextGreaterElement\NextGreaterElement.csproj
 		*NextGreaterElementTests\NextGreaterElementTests.csproj
-+NumberOfIslands
-		*NumberOfIslands\NumberOfIslands.csproj
-		*NumberOfIslandsTest\NumberOfIslandsTest.csproj
 +PythagoreanTriplet
 		*PythagoreanTriplet\PythagoreanTriplet.csproj
-+RatInAMaze
-		*RatInAMaze\RatInAMaze.csproj
-		*RatInAMazeTest\RatInAMazeTest.csproj
-+RotateMatrix90Degrees
-		*RotateMatrix90Degrees\RotateMatrix90Degrees.csproj
-+ShortestPathBinaryMaze
-		*ShortestPathBinaryMaze\ShortestPathBinaryMaze.csproj
-		*ShortestPathBinaryMazeTests\ShortestPathBinaryMazeTests.csproj
 +StairCase
 		*StairCase\StairCase.csproj
 		*StairCaseTUniTests\StairCaseTUniTests.csproj

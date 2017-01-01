@@ -1,14 +1,12 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using com.hectorea.number;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace MissingElementTest
+namespace com.hack3rlife.arrays.test
 {
     [TestClass]
     public class MissingElementTest
     {
         [TestMethod]
-        public void FindMissingElementTest()
+        public void MissingElement_Find_Test()
         {
             //arrange
             int[] input = new int[] { 1, 2, 3, 4, 6, 7, 8 };
@@ -19,10 +17,10 @@ namespace MissingElementTest
 
             //assert
             Assert.AreEqual(expected, actual);
-        }       
+        }
 
         [TestMethod]
-        public void FindMissingElementUsingXOrTest()
+        public void MissingElement_FindXOr_Test()
         {
             //arrange
             int[] input = new int[] { 1, 2, 3, 4, 6, 7, 8 };
