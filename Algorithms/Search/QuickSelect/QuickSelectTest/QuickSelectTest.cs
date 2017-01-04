@@ -2,7 +2,7 @@
 using com.hack3rlife.algorithms.sorting;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace QuickSelectTest
+namespace com.hack3rlife.algorithms.sorting.test
 {
     [TestClass]
     public class QuickSelectTest

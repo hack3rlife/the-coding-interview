@@ -1,4 +1,4 @@
-﻿namespace com.hack3rlife.heapsort
+﻿namespace com.hack3rlife.algorithms.sorting
 {
     /// <summary>
     ///  Heapsort is a comparison-based sorting algorithm.  Heapsort can be thought of as an improved selection sort: like that algorithm, 
@@ -14,14 +14,14 @@
     /// Space Required: O(1)
     /// </remarks>
     /// <see cref="https://en.wikipedia.org/wiki/Heapsort"/>
-    public class HeapSort
+    public static class HeapSort
     {
         /// <summary>
         /// Receives an unsorted array of integers and sort it in ascending order
         /// </summary>
         /// <param name="input">The unsorted array</param>
         /// <returns>A sorted array of integers</returns>
-        public int[] Sort(int[] input)
+        public static int[] Sort(int[] input)
         {
             //Build the heap into an array so such a way the largest value is at root.
             Heapify(input);
@@ -45,7 +45,7 @@
         /// </summary>
         /// <remarks>Put the elements of <para>input</para> in heap order, in-place</remarks>
         /// <param name="input">The unsorted array</param>
-        private void Heapify(int[] input)
+        private static void Heapify(int[] input)
         {
             int heapsize = input.Length - 1;
 
@@ -60,7 +60,7 @@
             }
         }
 
-        private void SiftDown(int[] input, int start, int end)
+        private static void SiftDown(int[] input, int start, int end)
         {
             int root = start;
 
@@ -102,7 +102,7 @@
         /// <param name="a">Indice a</param>
         /// <param name="b">Indice b</param>
         /// <returns></returns>
-        private void Swap(int[] input, int a, int b)
+        private static void Swap(int[] input, int a, int b)
         {
             if (a != b)
             {

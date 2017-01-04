@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace com.hack3rlife.algorithms.searching.tests
+namespace com.hack3rlife.algorithms.searching.test
 {
     [TestClass()]
     public class FindPeakElementTest

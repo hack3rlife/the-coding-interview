@@ -1,50 +1,27 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace com.hack3rlife.algorithms.sorting
+namespace com.hack3rlife.algorithms.sorting.test
 {
     [TestClass]
     public class InsertionSortTest
     {
-        [TestMethod]
-        public void InsertionSort_AverageCaseTest()
-        {
-            //arrange
-            int[] input =    { 3, 7, 4, 9, 5, 2, 6, 1 };
-            int[] expected = { 1, 2, 3, 4, 5, 6, 7, 9 };
-           
-            //act
-            int[] actual = InsertionSort.Sort(input);
-
-            //assert
-            CollectionAssert.AreEqual(expected, actual);
-        }
+        public TestContext TestContext { get; set; }
 
         [TestMethod]
-        public void InsertionSort_BestCaseTest()
+        [TestCategory("InsertionSort")]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\insertion_sort.csv", "insertion_sort#csv", DataAccessMethod.Sequential)]
+        public void InsertionSort_Sort_Test()
         {
             //arrange
-            int[] input = { 1, 2, 3, 4, 5, 6, 7, 9 };
-            int[] expected = { 1, 2, 3, 4, 5, 6, 7, 9 };
+            var input = TestContext.DataRow[0].ToString().Split(new char[] { ' ' });
+            var expected = TestContext.DataRow[1].ToString().Split(new char[] { ' ' });
 
             //act
-            int[] actual = InsertionSort.Sort(input);
+            var actual = InsertionSort.Sort(Array.ConvertAll(input, s => int.Parse(s)));
 
             //assert
-            CollectionAssert.AreEqual(expected, actual);
-        }
-
-        [TestMethod]
-        public void InsertionSort_WorstCaseTest()
-        {
-            //arrange
-            int[] input = { 9, 8, 7, 6, 5, 4, 3, 2, 1 };
-            int[] expected = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-
-            //act
-            int[] actual = InsertionSort.Sort(input);
-
-            //assert
-            CollectionAssert.AreEqual(expected, actual);
+            CollectionAssert.AreEqual(Array.ConvertAll(expected, s => int.Parse(s)), actual);
         }
     }
 }
