@@ -1,17 +1,14 @@
 ﻿namespace com.hack3rlife.algorithms.searching
 {
-    /// <summary>
-    /// 
-    /// </summary>
     public static partial class BinarySearch
     {
         /// <summary>
-        /// Given an n x n matrix, where every row and column is sorted in increasing order. Given a number x, how to decide whether this x is in the matrix. 
+        /// Given an n x n matrix, where every row and column . Given a number x, how to decide whether this x is in the matrix. 
         /// </summary>
-        /// <param name="input"></param>
-        /// <param name="k"></param>
+        /// <param name="input">The input matrix</param>
+        /// <param name="k">The given number to be searched</param>
         /// <see cref="http://www.geeksforgeeks.org/search-in-row-wise-and-column-wise-sorted-matrix/"/>
-        /// <returns></returns>
+        /// <returns>true if the number is in the matrix; otherwise false</returns>
         public static bool MatrixSearch(int[,] input, int k)
         {
             var row = 0;

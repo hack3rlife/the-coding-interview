@@ -5,6 +5,8 @@
  * 
  */
 
+using System;
+
 namespace com.hack3rlife.algorithms.sorting
 {
     /// <summary>
@@ -36,16 +38,16 @@ namespace com.hack3rlife.algorithms.sorting
             if (left == right)
                 return input[left];
 
-            var randomPivotIndex = new System.Random().Next(left, right);
+            var randomPivotIndex = new Random().Next(left, right);
 
-            var privotIndex = Partition(input, left, right, randomPivotIndex);
+            var pivotIndex = Partition(input, left, right, randomPivotIndex);
 
-            if (privotIndex == k)
+            if (pivotIndex == k)
                 return input[k];
-            else if (k < privotIndex)
-                return Select(input, left, privotIndex - 1, k); //right = pivot - 1;
+            else if (k < pivotIndex)
+                return Select(input, left, pivotIndex - 1, k); //right = pivot - 1;
             else
-                return Select(input, privotIndex + 1, right, k); //left = pivot + 1;
+                return Select(input, pivotIndex + 1, right, k); //left = pivot + 1;
         }
 
         /// <summary>
@@ -65,7 +67,7 @@ namespace com.hack3rlife.algorithms.sorting
 
             var storeIndex = left;
 
-            for (int i = left; i < right-1; i++)
+            for (int i = left; i < right; i++)
             {
                 if (input[i] < pivotValue)
                     Swap(input, i, storeIndex++);

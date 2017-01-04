@@ -5,8 +5,6 @@
  * 
  */
 
-using System;
-
 namespace com.hack3rlife.algorithms.sorting
 {
     /// <summary>
@@ -56,12 +54,13 @@ namespace com.hack3rlife.algorithms.sorting
         }
 
         /// <summary>
-        /// 
+        /// Receives an unsorted array of integers and sort it in ascending order
         /// </summary>
         /// <param name="input"></param>
         /// <param name="left"></param>
         /// <param name="right"></param>
         /// <see cref="http://www.geeksforgeeks.org/iterative-merge-sort/"/>
+        /// <remarks>Iterative solution</remarks>
         public static void Sort(int[] input, int left, int right)
         {
             if (left < right)
@@ -108,6 +107,13 @@ namespace com.hack3rlife.algorithms.sorting
             return merged;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="input"></param>
+        /// <param name="l"></param>
+        /// <param name="m"></param>
+        /// <param name="r"></param>
         private static void Merge(int[] input, int l, int m, int r)
         {
             int i, j, k;

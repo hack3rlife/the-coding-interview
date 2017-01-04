@@ -25,10 +25,10 @@ namespace com.hack3rlife.algorithms.sorting
         /// Receives an unsorted array of integers and sort it in ascending order
         /// </summary>        
         /// <param name="input">The unsorted array</param>        
-        /// <returns>/>A sorted array</returns>
+        /// <returns>/>A sorted array in ascending order</returns>
         /// <![CDATA[input: |8|4|1|6|2|0| output: |0|1|2|4|6|8|]]>
         public static int[] Sort(int[] input)
-        {            
+        {
             //first loop to iterate through the full array
             for (int i = 0; i < input.Length; i++)
             {

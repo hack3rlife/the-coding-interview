@@ -25,14 +25,14 @@
         /// ]]>
         /// <see cref="http://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/"/></remarks>
         /// <returns>If found, returns the position of the number otherwise -1</returns>
-        public static int? PivotedBinarySearch(int[] input, int k)
+        public static int PivotedBinarySearch(int[] input, int k)
         {
             int left = 0;
             int right = input.Length - 1;
 
             while (left <= right)
             {
-                int mid = left + (right - left) >> 1;
+                int mid = left + (right - left) /2;
 
                 if (input[mid] == k)
                     return mid;

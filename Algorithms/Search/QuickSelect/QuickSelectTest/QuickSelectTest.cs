@@ -1,55 +1,31 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using com.hack3rlife.algorithms.sorting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace QuickSelectTest
 {
     [TestClass]
     public class QuickSelectTest
     {
-        [TestMethod]
-        public void QuickSelect_AverageCaseTest()
-        {
-            //arrange
-            int[] input = { 12, 3, 5, 7, 4, 19, 26 }; 
-            int k = 1;
-
-            //act
-            int actual = QuickSelect.Select(input, 0, input.Length-1, k);
-            int expected = 4;
-
-            //assert
-            Assert.AreEqual<int>(expected, actual);
-        }
+        public TestContext TestContext { get; set; }
 
         [TestMethod]
-        public void QuickSelect_BestCaseTest()
+        [TestCategory("QuickSelect")]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\quickselect_sort.csv", "quickselect_sort#csv", DataAccessMethod.Sequential)]
+        public void QuickSelect_Sort_Test()
         {
             //arrange
-            int[] input = { 12, 3, 5, 7, 4, 19, 26 };
-            int k = 3;
+            var input = TestContext.DataRow[0].ToString().Split(new char[] { ' ' });
+            var k = (int)TestContext.DataRow[1];
+            var expected = (int)TestContext.DataRow[2];
+
+            var arr = Array.ConvertAll(input, s => int.Parse(s));
 
             //act
-            int actual = QuickSelect.Select(input, 0, input.Length - 1, k);
-            int expected = 7;
+            var actual = QuickSelect.Select(arr, 0, arr.Length-1, k);
 
             //assert
-            Assert.AreEqual<int>(expected, actual);
-        }
-
-        [TestMethod]
-        public void QuickSelect_WorstCaseTest()
-        {
-            //arrange
-            int[] input = { 12, 3, 5, 7, 4, 19, 26 };
-            int k = 6;
-
-            //act
-            int actual = QuickSelect.Select(input, 0, input.Length - 1, k);
-            int expected = 26;
-
-            //assert
-            Assert.AreEqual<int>(expected, actual);
+            Assert.AreEqual(expected,actual);
         }
     }
 }

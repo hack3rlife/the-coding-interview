@@ -40,6 +40,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -60,6 +61,8 @@
     <Compile Include="BinarySearch.FindLastOccurrenceTest.cs" />
     <Compile Include="BinarySearchTest.cs" />
     <Compile Include="BinarySearch.MatrixSearchTest.cs" />
+    <Compile Include="BinarySearchTest.FindPivotTest.cs" />
+    <Compile Include="BinarySearchTest.PivotedBinarySearchTest.cs" />
     <Compile Include="BinarySearchTests.FindPeakElementTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BinarySearch.FindFirstOccurrenceTest.cs" />
@@ -70,6 +73,26 @@
       <Project>{6591a475-c7f1-4d27-bb94-56b217d8051f}</Project>
       <Name>BinarySearch</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="binary_search_missing.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="binary_search_pivoted.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="binary_search_pivot.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="binary_search_peak.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="binary_search_count.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="binary_search.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

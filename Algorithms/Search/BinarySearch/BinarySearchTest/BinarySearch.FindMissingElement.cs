@@ -7,15 +7,19 @@ namespace com.hack3rlife.algorithms.sorting.test
     [TestClass]
     public class FindMissingElementTest
     {
+        public TestContext TestContext { get; set; }
+
         [TestMethod]
-        public void FindMissingElementWithBinarySearchTest()
+        [TestCategory("BinarySearch")]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\binary_search_missing.csv", "binary_search_missing#csv", DataAccessMethod.Sequential)]
+        public void BinarySearch_FindMissingElement_Test()
         {
             //arrange
-            int[] input = new int[] { 10, 11, 12, 13, 14, 16, 17, 18 };
-            int expected = 15;
+            var input = TestContext.DataRow[0].ToString().Split(new char[] { ' ' });
+            var expected = (int)TestContext.DataRow[1];
 
             //act
-            int actual = BinarySearch.FindMissingElement(input);
+            int actual = BinarySearch.FindMissingElement(Array.ConvertAll(input, s => int.Parse(s)));
 
             //assert
             Assert.AreEqual(expected, actual);

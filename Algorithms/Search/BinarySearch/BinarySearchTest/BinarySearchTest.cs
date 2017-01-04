@@ -1,21 +1,25 @@
-﻿using com.hack3rlife.algorithms.searching;
+﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace com.hack3rlife.algorithms.sorting.test
+namespace com.hack3rlife.algorithms.searching.test
 {
     [TestClass]
     public class BinarySearchTest
     {
+        public TestContext TestContext { get; set; }
+
         [TestMethod]
         [TestCategory("BinarySearch")]
-        public void BinarySearch_KeyIsInLeftSideTest()
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\binary_search.csv", "binary_search#csv", DataAccessMethod.Sequential)]
+        public void BinarySearch_IterativeSearch_Test()
         {
             //arrange
-            int[] input = new int[] { 10, 11, 27, 29, 48, 50 };
-            int expected = 1;
+            var input = TestContext.DataRow[0].ToString().Split(new char[] { ' ' });
+            var k = (int)TestContext.DataRow[1];
+            var expected = (int)TestContext.DataRow[2];
 
             //act
-            int? actual = BinarySearch.Search(input, 11);
+            var actual = BinarySearch.Search(Array.ConvertAll(input, s => int.Parse(s)), k);
 
             //assert
             Assert.AreEqual(expected, actual);
@@ -23,92 +27,20 @@ namespace com.hack3rlife.algorithms.sorting.test
 
         [TestMethod]
         [TestCategory("BinarySearch")]
-        public void BinarySearch_KeyIsInRightSideTest()
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\binary_search.csv", "binary_search#csv", DataAccessMethod.Sequential)]
+        public void BinarySearch_RecursiveSearch_Test()
         {
             //arrange
-            int[] input = new int[] { 10, 11, 27, 29, 48, 50 };
-            int expected = 4;
+            var input = TestContext.DataRow[0].ToString().Split(new char[] { ' ' });
+            var k = (int)TestContext.DataRow[1];
+            var expected = (int)TestContext.DataRow[2];
 
             //act
-            int? actual = BinarySearch.Search(input, 48);
+            var arr = Array.ConvertAll(input, s => int.Parse(s));
+            int actual = BinarySearch.Search(arr, k, 0, arr.Length - 1);
 
             //assert
             Assert.AreEqual(expected, actual);
         }
-
-        [TestMethod]
-        [TestCategory("BinarySearch")]
-        public void BinarySearch_KeyIsLastElementTest()
-        {
-            //arrange
-            int[] input = new int[] { 10, 11, 27, 29, 48, 50 };
-            int expected = 5;
-
-            //act
-            int? actual = BinarySearch.Search(input, 50);
-
-            //assert
-            Assert.AreEqual(expected, actual);
-        }
-
-        [TestMethod]
-        [TestCategory("BinarySearch")]
-        public void BinarySearch_KeyIsFirstElementTest()
-        {
-            //arrange
-            int[] input = new int[] { 10, 11, 27, 29, 48, 50 };
-            int expected = 0;
-
-            //act
-            int? actual = BinarySearch.Search(input, 10);
-
-            //assert
-            Assert.AreEqual(expected, actual);
-        }
-
-        [TestMethod]
-        [TestCategory("BinarySearch")]
-        public void BinarySearch_KeyIsMiddleElementTest()
-        {
-            //arrange
-            int[] input = new int[] { 10, 11, 27, 29, 48 };
-            int expected = 2;
-
-            //act
-            int? actual = BinarySearch.Search(input, 27);
-
-            //assert
-            Assert.AreEqual(expected, actual);
-        }
-
-        [TestMethod]
-        [TestCategory("BinarySearch")]
-        public void BinarySearch_NoKeyFoundTest()
-        {
-            //arrange
-            int[] input = new int[] { 10, 11, 27, 29, 48, 50 };
-            int? expected = null;
-
-            //act
-            int? actual = BinarySearch.Search(input, 0);
-
-            //assert
-            Assert.AreEqual(expected, actual);
-        }
-
-        [TestMethod]
-        [TestCategory("BinarySearch")]
-        public void BinarySearch_NegativeNumbersTest()
-        {
-            //arrange
-            int[] input = new int[] { -10, -4, -2, 0, 1, 2, 10 };
-            int expected = 2;
-
-            //act
-            int? actual = BinarySearch.Search(input, -2);
-
-            //assert
-            Assert.AreEqual(expected, actual);
-        }      
     }
 }

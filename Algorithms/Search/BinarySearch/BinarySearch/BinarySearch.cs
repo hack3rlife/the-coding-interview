@@ -34,10 +34,10 @@ namespace com.hack3rlife.algorithms.searching
         /// </remarks>
         /// <example></example>
         /// <returns>Returns the index of the key value: otherwise null</returns>
-        public static int? Search(int[] input, int key)
+        public static int Search(int[] input, int key)
         {
             int left = 0;
-            int right = input.Length;
+            int right = input.Length - 1;
 
             while (right >= left)
             {
@@ -52,7 +52,7 @@ namespace com.hack3rlife.algorithms.searching
                     return mid;             //else we found the value
             }
 
-            return null;
+            return -1;                      // the value is not within array values
         }
 
         /// <summary>
@@ -63,10 +63,13 @@ namespace com.hack3rlife.algorithms.searching
         /// <param name="min">The left side of th array (A.K.A. values less than key)</param>
         /// <param name="max">The rigth side of the array (A.K.A. values more than key)</param>
         /// <returns>Returns the index of the key value: otherwise null</returns>
-        public static int? Search(int[] input, int key, int min, int max)
+        public static int Search(int[] input, int key, int min, int max)
         {
+            //int left = 0;
+            //int right = input.Length;
+
             if (max < min)
-                return null;
+                return -1;
 
             int mid = min + ((max - min) / 2);
 
@@ -74,9 +77,9 @@ namespace com.hack3rlife.algorithms.searching
                 return mid;
 
             if (key > input[mid])
-                return Search(input, key, (mid + 1), max);
+                return Search(input, key, mid + 1, max);
             else
-                return Search(input, key, min, (mid - 1));
+                return Search(input, key, min, mid - 1);
         }
     }
 }
