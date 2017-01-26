@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using com.hack3rlife.datastructures;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace com.hack3rlife.arrays
 {

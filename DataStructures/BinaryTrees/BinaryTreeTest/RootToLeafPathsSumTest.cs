@@ -1,12 +1,13 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace com.hack3rlife.binarytree.test
+namespace com.hack3rlife.datastructures.test
 {
     [TestClass]
     public class RootToLeafPathsSumTest
     {
         [TestMethod]
-        public void BinaryTree_RootToLeafPathsSumTest_NoError()
+        [TestCategory("BinaryTree")]
+        public void BinaryTree_RootToLeafPathsSum_Test()
         {
             //arrange
             BinaryTree<int> tree = new BinaryTree<int>();

@@ -1,12 +1,13 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace com.hack3rlife.binarytree.test
+namespace com.hack3rlife.datastructures.test
 {
     [TestClass]
     public class SumOfAllLeavesTest
     {
         [TestMethod]
-        public void BinaryTree_SumOfAllLeavesTest()
+        [TestCategory("BinaryTree")]
+        public void BinaryTree_SumOfAllLeaves_Test()
         {
             //arrange
             BinaryTree<int> tree = new BinaryTree<int>();
@@ -25,7 +26,7 @@ namespace com.hack3rlife.binarytree.test
             int actual = tree.SumOfAllLeaves(tree.Root);
             int expected = 93;
 
-            //Test
+            //test
             Assert.AreEqual<int>(expected, actual);
         }
     }

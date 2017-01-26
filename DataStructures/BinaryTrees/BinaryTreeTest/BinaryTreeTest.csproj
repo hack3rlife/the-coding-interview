@@ -57,6 +57,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="DeserializeTest.cs" />
+    <Compile Include="MirrorTest.cs" />
     <Compile Include="SerializeTest.cs" />
     <Compile Include="FindSuccesorTest.cs" />
     <Compile Include="IsSymetricTest.cs" />

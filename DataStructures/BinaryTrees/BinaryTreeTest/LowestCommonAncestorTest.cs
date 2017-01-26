@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace com.hack3rlife.binarytree.test
+namespace com.hack3rlife.datastructures.test
 {
     [TestClass]
     public class LowestCommonAncestorTest

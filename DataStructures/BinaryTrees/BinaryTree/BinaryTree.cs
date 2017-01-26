@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace com.hack3rlife.binarytree
+namespace com.hack3rlife.datastructures
 {
     /// <summary>
     /// A binary tree is a tree data structure in which each node has at most two child nodes, usually distinguished as "left" and "right". 
@@ -18,14 +18,15 @@ namespace com.hack3rlife.binarytree
         /// </summary>
         public BinaryTreeNode<T> Root { get; set; }
 
-        private List<T> _inorder; 
+        private List<T> _inorder;
 
         public List<T> InOderList
         {
             get
             {
-                if(Root != null && _inorder.Count == 0)
+                if (Root != null && _inorder.Count == 0)
                 {
+                    _inorder = new List<T>();
                     InOrder(Root);
                 }
 
@@ -110,8 +111,8 @@ namespace com.hack3rlife.binarytree
             return CheckIsBalanced(node) > 0 ? true : false;
         }
 
-        /// <summary>seealso
-        /// Check if the root is symetric or not
+        /// <summary>
+        /// Check if the root is symetric or not.
         /// </summary>
         /// <param name="node">The root of the <see cref="BinaryTree{T}"/>.</param>
         /// <returns>True if the <see cref="BinaryTree{T}"/> is symetric; otherwise false.</returns>
@@ -121,14 +122,17 @@ namespace com.hack3rlife.binarytree
             if (root == null)
                 return false;
 
-            return CheckIsSymetric(root, root);
+            return CheckIsSymetric(root.Left, root.Right);
         }
 
         /// <summary>
-        /// Inorder suc­ces­sor of a node is the next node in the inorder tra­ver­sal of the tree. For the last node in a tree, inorder suc­ces­sor will be NULL
+        /// Given a Binary tree (Not binary Search Tree ), find the inorder suc­ces­sor of a node.
         /// </summary>
         /// <param name="root"></param>
-        /// <returns></returns>
+        /// <remarks>Inorder suc­ces­sor of a node is the next node in the inorder tra­ver­sal of the tree. For the last node in a tree, inorder 
+        /// suc­ces­sor will be NULL</remarks>
+        /// <see cref="http://algorithms.tutorialhorizon.com/inorder-successor-in-binary-tree/"/>
+        /// <returns>Inorder suc­ces­sor of node.</returns>
         public BinaryTreeNode<T> FindSuccesor(BinaryTreeNode<T> root, BinaryTreeNode<T> node)
         {
             if (root == null)
@@ -138,9 +142,10 @@ namespace com.hack3rlife.binarytree
         }
 
         /// <summary>
-        /// Mirror the <see cref="BinaryTree{T}"/>
+        /// Mirror of a Binary Tree T is another Binary Tree M(T) with left and right children of all non-leaf nodes interchanged.
         /// </summary>
         /// <param name="node">Normally, the <see cref="BinaryTree{T}.Root"/></param>
+        /// <see cref="http://www.geeksforgeeks.org/write-an-efficient-c-function-to-convert-a-tree-into-its-mirror-tree/"/>
         public void Mirror(BinaryTreeNode<T> node)
         {
             if (node == null)
@@ -163,6 +168,7 @@ namespace com.hack3rlife.binarytree
         /// </summary>
         /// <param name="node">Normally, the <see cref="BinaryTree{T}.Root"/></param>
         /// <returns>The sum of all the values stored in the all the leaves of the <see cref="BinaryTree{T}"/></returns>
+        /// <see cref="http://www.geeksforgeeks.org/find-sum-left-leaves-given-binary-tree/"/>
         public int SumOfAllLeaves(BinaryTreeNode<int> node)
         {
             if (node == null)
@@ -179,7 +185,8 @@ namespace com.hack3rlife.binarytree
         /// </summary>
         /// <param name="node">Usually, the <see cref="BinaryTree{T}.Root"/></param>
         /// <param name="sum"></param>
-        /// <returns></returns>
+        /// <returns>The sum of all the numbers which are formed from root to leaf paths.</returns>
+        /// <see cref=">http://www.geeksforgeeks.org/sum-numbers-formed-root-leaf-paths/"/>
         public int RootToLeafPathsSum(BinaryTreeNode<int> node, int sum)
         {
             if (node == null)
@@ -194,28 +201,34 @@ namespace com.hack3rlife.binarytree
         }
 
         /// <summary>
-        /// 
+        /// Given a binary tree in which each node element contains a number. Find the maximum possible sum from one leaf node to another.
         /// </summary>
         /// <param name="node"></param>
         /// <param name="curent"></param>
-        /// <param name="max"></param>
-        public void RootToLeafPathsMaxSum(BinaryTreeNode<int> node, int curent, ref int max)
+        /// <returns>The max sum</returns>
+        /// <see cref="http://www.geeksforgeeks.org/find-maximum-path-sum-two-leaves-binary-tree/"/>
+        public int MaxPathSum(BinaryTreeNode<int> node, int curent)
         {
             if (node == null)
-                return;
+                return 0;
 
-            curent = curent + node.Value;
+            return MaxPathSumHelper(node, curent);
+        }
+
+        private int MaxPathSumHelper(BinaryTreeNode<int> node, int curent)
+        {
+            if (node == null)
+                return 0;
+
+            curent += node.Value;
 
             if (node.Left == null && node.Right == null)
-            {
-                if (curent > max)
-                {
-                    max = curent;
-                }
-            }
+                return curent;
 
-            RootToLeafPathsMaxSum(node.Left, curent, ref max);
-            RootToLeafPathsMaxSum(node.Right, curent, ref max);
+            var left = MaxPathSumHelper(node.Left, curent);
+            var right = MaxPathSumHelper(node.Right, curent);
+
+            return left > right ? left : right;
         }
 
         /// <summary>
@@ -275,6 +288,13 @@ namespace com.hack3rlife.binarytree
             }
         }
 
+        /// <summary>
+        /// Serialize and Deserialize a Binary Tree: A simple solution is to store both Inorder and Preorder traversals. This solution requires 
+        /// space twice the size of Binary Tree.  We can save space by storing Preorder traversal and a marker for NULL pointers.
+        /// </summary>
+        /// <param name="node">The <see cref="BinaryTreeNode{T}"/></param>
+        /// <param name="list">The storage list</param>
+        /// <see cref="http://www.geeksforgeeks.org/serialize-deserialize-binary-tree/"/>
         public void Serialize(BinaryTreeNode<int> node, IList<int> list)
         {
             if (node == null)
@@ -293,8 +313,13 @@ namespace com.hack3rlife.binarytree
 
         }
 
-        int index = 0;
-        public BinaryTreeNode<int> Deserialize(IList<int> input)
+        /// <summary>
+        /// Serialize and Deserialize a Binary Tree: Deserialization can be done by simply reading data from file one by one.
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        /// <see cref="http://www.geeksforgeeks.org/serialize-deserialize-binary-tree/"/>
+        public BinaryTreeNode<int> Deserialize(IList<int> input, ref int index)
         {
             if (input == null ||
                 input[index] == -1 ||
@@ -307,12 +332,11 @@ namespace com.hack3rlife.binarytree
             var root = new BinaryTreeNode<int>(input[index]);
             index += 1;
 
-            root.Left = Deserialize(input);
-            root.Right = Deserialize(input);
+            root.Left = Deserialize(input, ref index);
+            root.Right = Deserialize(input, ref index);
 
             return root;
         }
-
 
         /// <summary>
         /// 
@@ -368,7 +392,7 @@ namespace com.hack3rlife.binarytree
         }
 
         /// <summary>
-        /// Helper function to check if the root is symetric or not
+        /// Helper function to check if the root is symetric or not.
         /// </summary>
         /// <param name="left">The left <see cref="BinaryTreeNode{T}"/>.</param>
         /// <param name="right">The right <see cref="BinaryTreeNode{T}.</param>
@@ -389,6 +413,11 @@ namespace com.hack3rlife.binarytree
             return false;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="right"></param>
+        /// <returns></returns>
         private BinaryTreeNode<T> FindLeftMostNode(BinaryTreeNode<T> right)
         {
             if (right.Left == null)
@@ -398,6 +427,15 @@ namespace com.hack3rlife.binarytree
 
         }
 
+        /// <summary>
+        /// Case 1: If the <para>node</para> has a right child then its inorder suc­ces­sor will be the left most ele­ment in the right sub tree of <para>node</para>.
+        /// Case 2: 
+        /// Case 3: if <para>node</para> is the right most node in the tree then its inorder suc­ces­sor will be NULL.
+        /// </summary>
+        /// <param name="root">The root</param>
+        /// <param name="node">The node</param>
+        /// <param name="parent">The parent node</param>
+        /// <returns>Inorder suc­ces­sor of node</returns>
         private BinaryTreeNode<T> FindSuccesor(BinaryTreeNode<T> root, BinaryTreeNode<T> node, BinaryTreeNode<T> parent)
         {
             //base case

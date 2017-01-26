@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace com.hack3rlife.binarytree.test
+namespace com.hack3rlife.datastructures.test
 {
     [TestClass()]
     public class DeserializeTest
@@ -27,7 +27,8 @@ namespace com.hack3rlife.binarytree.test
 
             // act
             var actualTree = new BinaryTree<int>();
-            actualTree.Root = actualTree.Deserialize(list);
+            var index = 0;
+            actualTree.Root = actualTree.Deserialize(list, ref index);
 
             // assert
             AreEqual(expectedTree, actualTree);

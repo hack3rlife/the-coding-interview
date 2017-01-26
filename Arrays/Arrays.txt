@@ -1,4 +1,4 @@
-Arrays (19) 
+Arrays (25) 
 +DutchNationalFlagProblem
 		*DutchNationalFlagProblem\DutchNationalFlagProblem.csproj
 		*DutchNationalFlagProblemTest\DutchNationalFlagProblemTest.csproj
@@ -14,6 +14,9 @@ Arrays (19)
 +MatrixInSpiral
 		*MatrixInSpiral\MatrixInSpiral.csproj
 		*MatrixInSpiralTest\MatrixInSpiralTest.csproj
++MatrixPaths
+		*MatrixPaths\MatrixPaths.csproj
+		*MatrixPathsTest\MatrixPathsTest.csproj
 +MatrixRotate90Degrees
 		*MatrixRotateTest\MatrixRotateTest.csproj
 		*RotateMatrix90Degrees\MatrixRotate.csproj
@@ -23,8 +26,14 @@ Arrays (19)
 +NextGreaterElement
 		*NextGreaterElement\NextGreaterElement.csproj
 		*NextGreaterElementTests\NextGreaterElementTests.csproj
++NumberOfIslands
+		*NumberOfIslands\NumberOfIslands.csproj
+		*NumberOfIslandsTest\NumberOfIslandsTest.csproj
 +PythagoreanTriplet
 		*PythagoreanTriplet\PythagoreanTriplet.csproj
++ShortestPathBinaryMaze
+		*ShortestPathBinaryMaze\ShortestPathBinaryMaze.csproj
+		*ShortestPathBinaryMazeTests\ShortestPathBinaryMazeTests.csproj
 +StairCase
 		*StairCase\StairCase.csproj
 		*StairCaseTUniTests\StairCaseTUniTests.csproj

@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace com.hack3rlife.binarytree
+namespace com.hack3rlife.datastructures
 {
     public class BinaryTreeNode<T>
     {

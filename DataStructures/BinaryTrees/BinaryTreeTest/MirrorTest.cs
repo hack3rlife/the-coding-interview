@@ -1,34 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using com.hack3rlife.binarysearchtree;
 
-namespace BinarySearchTreeTest
+namespace com.hack3rlife.datastructures.test
 {
     [TestClass]
-    //TODO: Move this to a new project called BinaryTreeTest
     public class MirrorTest
     {
         [TestMethod]
-        public void TestMethod1()
+        [TestCategory("BinaryTree")]
+        public void BinaryTree_Mirror_Test()
         {
             //Arrange
-            BinarySearchTree<int> bst = new BinarySearchTree<int>();
-            bst.Add(5);
-            bst.Add(4);
-            bst.Add(3);
-            bst.Add(2);
-            bst.Add(1);
-            bst.InOrder(bst.Root);
+            BinaryTree<int> bt = new BinaryTree<int>();
+            bt.Root = new BinaryTreeNode<int>(1);
+            bt.Root.Left = new BinaryTreeNode<int>(2);
+            bt.Root.Right = new BinaryTreeNode<int>(3);
+
+            bt.Root.Left.Left = new BinaryTreeNode<int>(4);
+            bt.Root.Left.Right = new BinaryTreeNode<int>(5);
+
+            bt.Root.Right.Left = new BinaryTreeNode<int>(6);
+            bt.Root.Right.Right = new BinaryTreeNode<int>(7);
+            var expected = new List<int>() { 7, 3, 6, 1, 5, 2, 4 };
 
             //Act
-            bst.Mirror(bst.Root);
-            bst.InOrder(bst.Root);
-
-            var actual = bst.InOrderEnumerable;
-            IEnumerable<int> expected = new List<int>() { 5, 4, 3, 2, 1 };
+            bt.Mirror(bt.Root);
+            var actual = bt.InOderList;
 
             //Assert
+            CollectionAssert.AreEqual(expected, actual);
         }
     }
 }

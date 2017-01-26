@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace com.hack3rlife.binarytree.test
+namespace com.hack3rlife.datastructures.test
 {
     [TestClass()]
     public class SerializeTest
@@ -26,7 +26,8 @@ namespace com.hack3rlife.binarytree.test
             // act
             var actual = new List<int>();
             bt.Serialize(bt.Root, actual);
-            var actualTree = bt.Deserialize(actual);
+            var index = 0;
+            var actualTree = bt.Deserialize(actual, ref index);
 
             // assert
             var expected = new List<int>() { 20, 8, 4, -1, -1, 12, 10, -1, -1, 4, -1, -1, 22, -1, -1 };

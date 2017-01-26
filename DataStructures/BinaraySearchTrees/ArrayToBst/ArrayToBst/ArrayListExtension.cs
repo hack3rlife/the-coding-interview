@@ -7,7 +7,7 @@
 
 using System.Collections.Generic;
 
-namespace com.hack3rlife.arrays
+namespace com.hack3rlife.datastructures
 {
     /// <summary>
     /// Extension method which implements conversion from a List to a BinarySearchTree (BST)

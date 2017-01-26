@@ -1,11 +1,13 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using com.hack3rlife.datastructures;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace com.hack3rlife.binarytree.test
+namespace com.hack3rlife.datastructures.test
 {
     [TestClass]
     public class BinaryTreeTest
     {
         [TestMethod]
+        [TestCategory("BinaryTree")]
         public void BinaryTreeAddPass()
         {
             //arrange
@@ -23,6 +25,7 @@ namespace com.hack3rlife.binarytree.test
         }
 
         [TestMethod]
+        [TestCategory("BinaryTree")]
         public void LeftRigthToDownRightRepresentationTest()
         {
             //arrange

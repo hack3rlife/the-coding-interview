@@ -1,14 +1,14 @@
 ﻿using System.Diagnostics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace com.hack3rlife.binarytree.test
+namespace com.hack3rlife.datastructures.test
 {
     [TestClass()]
     public class FindSuccesorTest
     {
         [TestMethod()]
-        [TestCategory("BinarySearch")]
-        public void BinarySearch_FindSuccesor_Root_HasRight()
+        [TestCategory("BinaryTree")]
+        public void BinaryTree_FindSuccesor_Root_HasRight()
         {
             //arrnge
             BinaryTree<int> bt = new BinaryTree<int>();
@@ -43,8 +43,8 @@ namespace com.hack3rlife.binarytree.test
         }
 
         [TestMethod()]
-        [TestCategory("BinarySearch")]
-        public void BinarySearch_FindSuccesor_LeftChild_WithRigthChild()
+        [TestCategory("BinaryTree")]
+        public void BinaryTree_FindSuccesor_LeftChild_WithRigthChild()
         {
             //arrnge
             BinaryTree<int> bt = new BinaryTree<int>();
@@ -79,8 +79,8 @@ namespace com.hack3rlife.binarytree.test
         }
 
         [TestMethod()]
-        [TestCategory("BinarySearch")]
-        public void BinarySearch_FindSuccesor_RightChild_WithRightChild()
+        [TestCategory("BinaryTree")]
+        public void BinaryTree_FindSuccesor_RightChild_WithRightChild()
         {
             //arrnge
             BinaryTree<int> bt = new BinaryTree<int>();
@@ -115,8 +115,8 @@ namespace com.hack3rlife.binarytree.test
         }
 
         [TestMethod()]
-        [TestCategory("BinarySearch")]
-        public void BinarySearch_FindSuccesor_LeftLeaf_InLeft()
+        [TestCategory("BinaryTree")]
+        public void BinaryTree_FindSuccesor_LeftLeaf_InLeft()
         {
             //arrnge
             BinaryTree<int> bt = new BinaryTree<int>();
@@ -151,8 +151,8 @@ namespace com.hack3rlife.binarytree.test
         }
 
         [TestMethod()]
-        [TestCategory("BinarySearch")]
-        public void BinarySearch_FindSuccesor_RightLeaf_InLeft()
+        [TestCategory("BinaryTree")]
+        public void BinaryTree_FindSuccesor_RightLeaf_InLeft()
         {
             //arrnge
             BinaryTree<int> bt = new BinaryTree<int>();
@@ -187,8 +187,8 @@ namespace com.hack3rlife.binarytree.test
         }
 
         [TestMethod()]
-        [TestCategory("BinarySearch")]
-        public void BinarySearch_FindSuccesor_LeftLeaf_InRight()
+        [TestCategory("BinaryTree")]
+        public void BinaryTree_FindSuccesor_LeftLeaf_InRight()
         {
             //arrnge
             BinaryTree<int> bt = new BinaryTree<int>();
@@ -223,8 +223,8 @@ namespace com.hack3rlife.binarytree.test
         }
 
         [TestMethod()]
-        [TestCategory("BinarySearch")]
-        public void BinarySearch_FindSuccesor_RightLeafInRight()
+        [TestCategory("BinaryTree")]
+        public void BinaryTree_FindSuccesor_RightLeafInRight()
         {
             //arrnge
             BinaryTree<int> bt = new BinaryTree<int>();
