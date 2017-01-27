@@ -1,4 +1,4 @@
-The Coding Interview (147) 
+The Coding Interview (145) 
 + Algorithms (16) 
 	1: BinarySearch 
 	2: BinarySearchTest 
@@ -58,43 +58,41 @@ The Coding Interview (147)
 	10: QueueTest 
 	11: Stack 
 	12: StackTest 
-+ Dynamic Programming (36) 
++ Dynamic Programming (34) 
 	1: LargestSubarrayWithZeroSum 
 	2: LargestSubarrayWithZeroSumTest 
-	3: MaximumSubarrayProblem 
-	4: MaximumSubarrayProblemTest 
-	5: LongestCommonSubsequence 
-	6: LongestCommonSubsequenceTest 
-	7: LongestCommonSubstring 
-	8: LongestCommonSubstringTest 
-	9: LongestIncreasingSubsequence 
-	10: LongestIncreasingSubsequenceTest 
-	11: LongestIncreasingSubsequenceSum 
-	12: LongestIncreasingSubsequenceSumTest 
-	13: LongestPalindromic 
-	14: LongestPalindromicTest 
-	15: MatrixPaths 
-	16: MatrixPathsTest 
-	17: MaximumSizeSquare 
-	18: MaximumSizeSquareTest 
-	19: MaximumSubarrayProblem 
-	20: MaximumSubarrayProblemTest 
-	21: LongestIncreasingSubsequenceSumTest 
-	22: MaxSumIncreasingSubsequence 
-	23: MinCostPath 
-	24: MinCostPathTest 
-	25: NumberOfIslands 
-	26: NumberOfIslandsTest 
-	27: RatInAMaze 
-	28: RatInAMazeTest 
-	29: ShortestPathBinaryMaze 
-	30: ShortestPathBinaryMazeTests 
-	31: SubArrayGivenSum 
-	32: SubArrayGivenSumTest 
-	33: SubsetSum 
-	34: SubsetSumTest 
-	35: WildCardMatch 
-	36: WildCardMatchTest 
+	3: LongestCommonSubsequence 
+	4: LongestCommonSubsequenceTest 
+	5: LongestCommonSubstring 
+	6: LongestCommonSubstringTest 
+	7: LongestIncreasingSubsequence 
+	8: LongestIncreasingSubsequenceTest 
+	9: LongestIncreasingSubsequenceSum 
+	10: LongestIncreasingSubsequenceSumTest 
+	11: LongestPalindromic 
+	12: LongestPalindromicTest 
+	13: MatrixPaths 
+	14: MatrixPathsTest 
+	15: MaximumSizeSquare 
+	16: MaximumSizeSquareTest 
+	17: MaximumSubarrayProblem 
+	18: MaximumSubarrayProblemTest 
+	19: MinCostPath 
+	20: MinCostPathTest 
+	21: NumberOfIslands 
+	22: NumberOfIslandsTest 
+	23: RatInAMaze 
+	24: RatInAMazeTest 
+	25: ShortestPathBinaryMaze 
+	26: ShortestPathBinaryMazeTests 
+	27: SubArrayGivenSum 
+	28: SubArrayGivenSumTest 
+	29: SubsetSum 
+	30: SubsetSumTest 
+	31: WildCardMatch 
+	32: WildCardMatchTest 
+	33: WordSearch 
+	34: WordSearchTest 
 + Math (2) 
 	1: SquareRoot 
 	2: SquareRootTest 

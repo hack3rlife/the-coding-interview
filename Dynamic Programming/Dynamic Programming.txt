@@ -1,10 +1,7 @@
-Dynamic Programming (36) 
+Dynamic Programming (34) 
 +LargestSubarrayWithZeroSum
 		*LargestSubarrayWithZeroSum\LargestSubarrayWithZeroSum.csproj
 		*LargestSubarrayWithZeroSumTest\LargestSubarrayWithZeroSumTest.csproj
-+LargestSumSubArray
-		*LargestSumSubArray\MaximumSubarrayProblem.csproj
-		*LargestSumSubArrayTest\MaximumSubarrayProblemTest.csproj
 +LongesCommonSubsequence
 		*LongesCommonSubsequence\LongestCommonSubsequence.csproj
 		*LongesCommonSubsequenceTest\LongestCommonSubsequenceTest.csproj
@@ -30,9 +27,6 @@ Dynamic Programming (36)
 +MaximumSubarrayProblem
 		*MaximumSubarrayProblem\MaximumSubarrayProblem.csproj
 		*MaximumSubarrayProblemTest\MaximumSubarrayProblemTest.csproj
-+MaxSumIncreasingSubsequence
-		*LongestIncreasingSubsequenceSumTest\LongestIncreasingSubsequenceSumTest.csproj
-		*MaxSumIncreasingSubsequence\MaxSumIncreasingSubsequence.csproj
 +MinCostPath
 		*MinCostPath\MinCostPath.csproj
 		*MinCostPathTest\MinCostPathTest.csproj
@@ -54,3 +48,6 @@ Dynamic Programming (36)
 +WildCardMatch
 		*WildCardMatch\WildCardMatch.csproj
 		*WildCardMatchTest\WildCardMatchTest.csproj
++WordSearch
+		*WordSearch\WordSearch.csproj
+		*WordSearchTest\WordSearchTest.csproj

@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2FF6D997-C857-424B-915B-736E5A5EE86C}</ProjectGuid>
+    <ProjectGuid>{7113A4A1-D13B-43D4-9BF4-006C1E3C5905}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LargestSumSubArrayTest</RootNamespace>
-    <AssemblyName>LargestSumSubArrayTest</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>WordSearchTest</RootNamespace>
+    <AssemblyName>WordSearchTest</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -54,13 +54,13 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="MaximumSubarrayProblemTest.cs" />
+    <Compile Include="WordSearchTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LargestSumSubArray\MaximumSubarrayProblem.csproj">
-      <Project>{b2203823-9dc7-4774-9b5d-d4505fc03d61}</Project>
-      <Name>MaximumSubarrayProblem</Name>
+    <ProjectReference Include="..\WordSearch\WordSearch.csproj">
+      <Project>{5f490373-44a8-4440-a2fe-45f950ed5b12}</Project>
+      <Name>WordSearch</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

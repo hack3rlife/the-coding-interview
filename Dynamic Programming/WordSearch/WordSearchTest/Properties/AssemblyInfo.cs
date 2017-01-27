@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MaximumSubarrayProblem")]
+[assembly: AssemblyTitle("WordSearchTest")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MaximumSubarrayProblem")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
+[assembly: AssemblyCompany("Hewlett-Packard")]
+[assembly: AssemblyProduct("WordSearchTest")]
+[assembly: AssemblyCopyright("Copyright © Hewlett-Packard 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c0522831-0940-43e6-aa5a-6fdbf9f4db10")]
+[assembly: Guid("7113a4a1-d13b-43d4-9bf4-006c1e3c5905")]
 
 // Version information for an assembly consists of the following four values:
 //
