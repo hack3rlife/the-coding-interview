@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace com.hack3rlife.arrays
+namespace com.hack3rlife.dynamicprogramming
 {
     public class NumberOfIslands
     {
-
 
         public static int Find(int[,] input)
         {
@@ -19,13 +18,13 @@ namespace com.hack3rlife.arrays
             int n = input.GetLength(1);
 
             // keep track of visited cells
-            var visited = new bool[m , n ];
+            var visited = new bool[m, n];
 
             var adjRow = new int[] { -1, -1, -1, 0, 0, 1, 1, 1 };
             var adjCol = new int[] { -1, 0, 1, -1, 1, -1, 0, 1 };
 
 
-            for (int i = 0; i <m; i++)
+            for (int i = 0; i < m; i++)
             {
                 for (int j = 0; j < n; j++)
                 {

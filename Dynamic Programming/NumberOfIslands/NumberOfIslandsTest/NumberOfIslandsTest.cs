@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace com.hack3rlife.arrays.test
+namespace com.hack3rlife.dynamicprogramming.test
 {
     [TestClass()]
     public class NumberOfIslandsTest

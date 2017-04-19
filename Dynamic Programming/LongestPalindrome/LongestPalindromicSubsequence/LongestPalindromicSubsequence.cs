@@ -59,10 +59,11 @@ namespace com.hack3rlife.dynamicprogramming
                     {
                         res[i, j] = GetMax(res[i, j - 1], res[i + 1, j]);
                     }
+
+                    Print(res);
                 }
             }
 
-            Print(res);
             return res[0, m - 1];
         }
 

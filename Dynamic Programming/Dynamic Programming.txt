@@ -1,7 +1,13 @@
-Dynamic Programming (34) 
+Dynamic Programming (40) 
++KnapsackProblem
+		*KnapsackProblem\KnapsackProblem.csproj
+		*KnapsackProblemTest\KnapsackProblemTest.csproj
 +LargestSubarrayWithZeroSum
 		*LargestSubarrayWithZeroSum\LargestSubarrayWithZeroSum.csproj
 		*LargestSubarrayWithZeroSumTest\LargestSubarrayWithZeroSumTest.csproj
++LavenshteinDistance
+		*LavenshteinDistance\LavenshteinDistance.csproj
+		*LavenshteinDistanceTest\LavenshteinDistanceTest.csproj
 +LongesCommonSubsequence
 		*LongesCommonSubsequence\LongestCommonSubsequence.csproj
 		*LongesCommonSubsequenceTest\LongestCommonSubsequenceTest.csproj
@@ -27,6 +33,9 @@ Dynamic Programming (34)
 +MaximumSubarrayProblem
 		*MaximumSubarrayProblem\MaximumSubarrayProblem.csproj
 		*MaximumSubarrayProblemTest\MaximumSubarrayProblemTest.csproj
++MaxSumIncreasingSubsequence
+		*LongestIncreasingSubsequenceSumTest\LongestIncreasingSubsequenceSumTest.csproj
+		*MaxSumIncreasingSubsequence\MaxSumIncreasingSubsequence.csproj
 +MinCostPath
 		*MinCostPath\MinCostPath.csproj
 		*MinCostPathTest\MinCostPathTest.csproj

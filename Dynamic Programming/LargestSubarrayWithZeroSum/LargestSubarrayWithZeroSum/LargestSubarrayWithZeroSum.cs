@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 
 namespace com.hack3rlife.dynamicprogramming
 {
@@ -23,7 +18,12 @@ namespace com.hack3rlife.dynamicprogramming
         ///     Input: arr[] = {1, 0, 3}
         ///     Output: 1
         /// ]]>
-        /// <returns></returns>
+        /// <returns>
+        /// An array where 
+        /// arr[0] indicates if there is an array with sum = 0
+        /// arr[1] indicates where the subarray begins
+        /// arr[2] indicates where the subarray ends
+        /// </returns>
         /// <see cref="http://www.geeksforgeeks.org/find-the-largest-subarray-with-0-sum/"/>
         public static int[] Get(int[] input)
         {

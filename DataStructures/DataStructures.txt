@@ -1,10 +1,11 @@
-DataStructures (12) 
+DataStructures (13) 
 +ArrayToBst
 		*ArrayToBst\ArrayToBinarySearchTree.csproj
 		*ArrayToBstTest\ArrayToBinarySearchTreeTest.csproj
 +BinaraySearchTrees
 		*BinarySearchTree\BinarySearchTree.csproj
 		*BinarySearchTreeTest\BinarySearchTreeTest.csproj
+		*BinarySearchTreeTests\BinarySearchTreeTests.csproj
 +BinaryTrees
 		*BinaryTree\BinaryTree.csproj
 		*BinaryTreeTest\BinaryTreeTest.csproj

@@ -20,8 +20,8 @@ namespace MinCostPath
             var xlength = matrix.GetLength(0);
             var ylength = matrix.GetLength(1);
 
-            //fill firs cell
-            result[0, 0] = matrix[0, 0];
+            //fill first cell
+            //result[0, 0] = matrix[0, 0];
 
             // fill first row
             for (int j = 1; j < ylength; j++)

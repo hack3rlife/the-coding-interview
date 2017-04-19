@@ -1,5 +1,6 @@
 ﻿
 using System.Diagnostics;
+using System.Linq;
 
 namespace com.hack3rlife.dynamicprogramming
 {
@@ -21,9 +22,7 @@ namespace com.hack3rlife.dynamicprogramming
         /// <see cref="http://www.geeksforgeeks.org/dynamic-programming-set-3-longest-increasing-subsequence/"/>
         public static int Get(int[] input)
         {
-            int[] result = new int[input.Length];
-
-            Initialize(ref result);
+            int[] result = Enumerable.Repeat(0, input.Length).ToArray();
 
             int i = 1;
             int max = 1;

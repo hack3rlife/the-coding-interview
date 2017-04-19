@@ -4,7 +4,6 @@
  * @project: SubSetSum
  * 
  */
-using System.Diagnostics;
 
 namespace com.hack3rlife.dynamicprogramming
 {
@@ -77,8 +76,8 @@ namespace com.hack3rlife.dynamicprogramming
                     subset[i, j] = subset[i - 1, j];
 
                     if (j >= input[i - 1] && subset[i, j] == false)
-                        subset[i, j] = subset[i, j]
-                                    || subset[i - 1, j - input[i - 1]];
+                        subset[i, j] = subset[i, j] ||
+                                       subset[i - 1, j - input[i - 1]];
                 }
             }
 
@@ -94,6 +93,6 @@ namespace com.hack3rlife.dynamicprogramming
             //}
 
             return subset[n, sum];
-        }   
+        }
     }
 }

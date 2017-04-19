@@ -16,7 +16,7 @@ namespace com.hack3rlife.arrays.test
                                   };
 
             // act
-            var condition = ShortestPathBinaryMaze.Find(maze);
+            var condition = RatInAMaze.Find(maze);
 
             // assert
             Assert.IsTrue(condition);

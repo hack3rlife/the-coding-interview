@@ -3,12 +3,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8B5CEAB4-5BAC-41C8-B431-B19491D26CDE}</ProjectGuid>
+    <ProjectGuid>{3A0725EE-B2C5-47E5-9271-41359697AA58}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BinarySearchTreeTests</RootNamespace>
-    <AssemblyName>BinarySearchTreeTests</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>KnapsackProblemTest</RootNamespace>
+    <AssemblyName>KnapsackProblemTest</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -16,6 +16,7 @@
     <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
     <IsCodedUITest>False</IsCodedUITest>
     <TestProjectType>UnitTest</TestProjectType>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -50,13 +51,13 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="BinarySearchTreeRemoveTests.cs" />
+    <Compile Include="KnapsackProblemTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BinarySearchTree\BinarySearchTree.csproj">
-      <Project>{9B3E64A7-EF17-4066-B283-8AA8463C740D}</Project>
-      <Name>BinarySearchTree</Name>
+    <ProjectReference Include="..\KnapsackProblem\KnapsackProblem.csproj">
+      <Project>{746A1C76-5CD5-493C-9F43-C571DF95C692}</Project>
+      <Name>KnapsackProblem</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

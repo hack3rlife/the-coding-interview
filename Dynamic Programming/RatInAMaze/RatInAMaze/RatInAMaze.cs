@@ -5,7 +5,7 @@ namespace com.hack3rlife.arrays
     /// <summary>
     /// 
     /// </summary>
-    public class ShortestPathBinaryMaze
+    public static class RatInAMaze
     {
         /// <summary>
         /// 
@@ -42,6 +42,7 @@ namespace com.hack3rlife.arrays
             if (i == x && j == y)
             {
                 res[i, j] = 1;
+                Print(res);
                 return true;
             }
 
@@ -59,6 +60,7 @@ namespace com.hack3rlife.arrays
                     return true;
 
                 res[i, j] = 0;
+
                 return false;
             }
 

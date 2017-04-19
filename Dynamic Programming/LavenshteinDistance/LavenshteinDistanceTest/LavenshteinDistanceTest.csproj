@@ -3,12 +3,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8B5CEAB4-5BAC-41C8-B431-B19491D26CDE}</ProjectGuid>
+    <ProjectGuid>{241EC6B0-28F2-4CCE-B7CA-CC14DFF2E1A3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BinarySearchTreeTests</RootNamespace>
-    <AssemblyName>BinarySearchTreeTests</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>LavenshteinDistanceTest</RootNamespace>
+    <AssemblyName>LavenshteinDistanceTest</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -50,13 +50,13 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="BinarySearchTreeRemoveTests.cs" />
+    <Compile Include="LavenshteinDistanceTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BinarySearchTree\BinarySearchTree.csproj">
-      <Project>{9B3E64A7-EF17-4066-B283-8AA8463C740D}</Project>
-      <Name>BinarySearchTree</Name>
+    <ProjectReference Include="..\LavenshteinDistance\LavenshteinDistance.csproj">
+      <Project>{F9442888-08E1-4233-B3D7-116AB2E19811}</Project>
+      <Name>LavenshteinDistance</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

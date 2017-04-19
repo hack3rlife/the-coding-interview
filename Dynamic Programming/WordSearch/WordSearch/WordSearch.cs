@@ -6,6 +6,16 @@
         static int[] adjRow = { -1, -1, -1, 0, 0, 1, 1, 1 };
         static int[] adjCol = { -1, 0, 1, -1, 1, -1, 0, 1 };
 
+        /// <summary>
+        /// Given a 2D matrix of char­ac­ters. Check whether the word exist in the matrix or not. If it exists then print its path. All move­ments are allowed (right, left, up, down and diagonally).
+        /// 
+        /// The 8 directions are, Horizontally Left, Horizontally Right, Vertically Up and 4 Diagonal directions.
+        /// </summary>
+        /// <param name="matrix"></param>
+        /// <param name="word"></param>
+        /// <returns></returns>
+        /// <see cref="http://algorithms.tutorialhorizon.com/backtracking-search-a-word-in-a-matrix/"/>
+        /// <seealso cref="http://www.geeksforgeeks.org/search-a-word-in-a-2d-grid-of-characters/"/>
         public static bool Search(char[,] matrix, string word)
         {
             int m = matrix.GetLength(0);

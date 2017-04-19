@@ -19,6 +19,7 @@ namespace LongestCommonSubstringTest
             int actual = LongestCommonSubstring.GetLength(input1, input2);
 
             //Test
+
             Assert.AreEqual(expected, actual);
         }
 
