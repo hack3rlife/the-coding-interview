@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B0FEB2F4-19AE-46B7-8627-92714BEC622B}</ProjectGuid>
+    <ProjectGuid>{2FF6D997-C857-424B-915B-736E5A5EE86C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PrintAllPathsMatrixTest</RootNamespace>
-    <AssemblyName>PrintAllPathsMatrixTest</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>LargestSumSubArrayTest</RootNamespace>
+    <AssemblyName>LargestSumSubArrayTest</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -20,7 +20,6 @@
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -55,14 +54,13 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="CountMatrixPathsTest.cs" />
-    <Compile Include="PrintMatrixPathsTest.cs" />
+    <Compile Include="MaximumSubarrayProblemTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MatrixPaths\MatrixPaths.csproj">
-      <Project>{4B3A5DAB-71E5-4768-972C-354DEFB3B4BA}</Project>
-      <Name>MatrixPaths</Name>
+    <ProjectReference Include="..\LargestSumSubArray\MaximumSubarrayProblem.csproj">
+      <Project>{b2203823-9dc7-4774-9b5d-d4505fc03d61}</Project>
+      <Name>MaximumSubarrayProblem</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

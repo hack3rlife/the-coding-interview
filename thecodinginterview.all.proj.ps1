@@ -16,4 +16,4 @@ $dteObj.Solution.SaveAs( (Join-Path $scriptDirectory 'TheCodingInterview.sln') )
 $dteObj.Quit()
 
 
-ls -in *.sln -r | select -last 1 | %{ ii $_.FullName }
+ls -in *.sln -r | select "TheCodingInterview.sln" |   %{ ii $_.FullName }
