@@ -354,6 +354,41 @@ namespace com.hack3rlife.datastructures
             }
         }
 
+        public int Diameter(BinaryTreeNode<T> node)
+        {
+            //base case
+            if (node == null)
+                return 0;
+
+            //get left and rigth heigth
+            int lheight = Height(node.Left);
+            int rheight = Height(node.Right);
+
+            Debug.WriteLine("Node: {0} lheight: {1} rheight: {2}", node.Value, lheight, rheight);
+
+            int ldiameter = Diameter(node.Left);
+            int rdiameter = Diameter(node.Right);
+
+            Debug.WriteLine("Node: {0} ldiameter: {1} rdiameter: {2}", node.Value, ldiameter, rdiameter);
+
+            int result = Math.Max(lheight + rheight, Math.Max(ldiameter, rdiameter));
+
+            Debug.WriteLine("Node: {0} result: {1}", node.Value, result);
+
+            return result;
+        }
+
+
+        public int Height(BinaryTreeNode<T> node)
+        {
+            if (node == null)
+                return 0;
+
+            return 1 + Math.Max(Height(node.Left), Height(node.Right));
+        }
+
+
+
         /// <summary>
         /// Display the BinarySearchTree strcuture 
         /// </summary>

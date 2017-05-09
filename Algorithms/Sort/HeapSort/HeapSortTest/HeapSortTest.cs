@@ -23,5 +23,20 @@ namespace com.hack3rlife.algorithms.sorting
             //assert
             CollectionAssert.AreEqual(Array.ConvertAll(expected, s => int.Parse(s)), actual);
         }
+
+        [TestMethod]
+        [TestCategory("HeapSort")]
+        public void MaxHeapSortTest()
+        {
+            //arrange
+            var input = new int[] { 3, 5, 10, 1, 8 };
+            var expected = new int[] { 10, 8, 5, 3, 1 };
+
+            //act
+            var actual = HeapSort.Sort(input);
+
+            //assert
+            CollectionAssert.AreEqual(expected, actual);
+        }
     }
 }

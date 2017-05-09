@@ -1,5 +1,4 @@
-﻿using com.hack3rlife.datastructures;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace com.hack3rlife.datastructures.test
 {
@@ -48,6 +47,26 @@ namespace com.hack3rlife.datastructures.test
             //assert      
 
             Assert.IsNotNull(bt);
+        }
+
+        [TestMethod()]
+        public void DiameterTest()
+        {
+            //arrange
+            BinaryTree<int> bt = new BinaryTree<int>();
+            bt.Root = new BinaryTreeNode<int>(1);
+            bt.Root.Left = new BinaryTreeNode<int>(2);
+            bt.Root.Right = new BinaryTreeNode<int>(3);
+
+            bt.Root.Left.Left = new BinaryTreeNode<int>(4);
+            bt.Root.Left.Right = new BinaryTreeNode<int>(5);
+            bt.Display();
+
+            //act
+            var actualResult = bt.Diameter(bt.Root);
+
+            //assert
+            Assert.AreEqual(3, actualResult);
         }
     }
 }
