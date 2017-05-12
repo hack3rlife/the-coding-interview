@@ -1,4 +1,4 @@
-Strings (36) 
+Strings (38) 
 +BalancedExpressions
 		*BalancedExpressions\BalancedExpressions.csproj
 		*BalancedExpressionsTests\BalancedExpressionsTest.csproj
@@ -26,6 +26,9 @@ Strings (36)
 +LookAndSayProblem
 		*LookAndSay\LookAndSay.csproj
 		*LookAndSayTest\LookAndSayTest.csproj
++MakingAnagrams
+		*MakingAnagrams\MakingAnagrams.csproj
+		*MakingAnagramsTests\MakingAnagramsTests.csproj
 +NextGreaterNumber
 		*NextGreaterNumber\NextGreaterNumber.csproj
 		*NextGreaterNumberTest\NextGreaterNumberTest.csproj

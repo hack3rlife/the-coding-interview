@@ -1,4 +1,5 @@
-The Coding Interview (154) 
+The Coding Interview (167) 
++ .git (0) 
 + Algorithms (16) 
 	1: BinarySearch 
 	2: BinarySearchTest 
@@ -16,37 +17,39 @@ The Coding Interview (154)
 	14: QuickSortTest 
 	15: SelectionSort 
 	16: SelectionSortTest 
-+ Arrays (25) 
++ Arrays (27) 
 	1: DutchNationalFlagProblem 
 	2: DutchNationalFlagProblemTest 
 	3: FindKth 
 	4: FindKthTest 
-	5: LightsOut 
-	6: LightsOutTests 
-	7: MatrixInDiagonal 
-	8: MatrixInDiagonalTests 
-	9: MatrixInSpiral 
-	10: MatrixInSpiralTest 
-	11: MatrixPaths 
-	12: MatrixPathsTest 
-	13: MatrixRotateTest 
-	14: MatrixRotate 
-	15: MissingElement 
-	16: MissingElementTest 
-	17: NextGreaterElement 
-	18: NextGreaterElementTests 
-	19: NumberOfIslands 
-	20: NumberOfIslandsTest 
-	21: PythagoreanTriplet 
-	22: ShortestPathBinaryMaze 
-	23: ShortestPathBinaryMazeTests 
-	24: StairCase 
-	25: StairCaseTUniTests 
+	5: ArrayRotation 
+	6: ArrayRotationTests 
+	7: LightsOut 
+	8: LightsOutTests 
+	9: MatrixInDiagonal 
+	10: MatrixInDiagonalTests 
+	11: MatrixInSpiral 
+	12: MatrixInSpiralTest 
+	13: MatrixPaths 
+	14: MatrixPathsTest 
+	15: MatrixRotateTest 
+	16: MatrixRotate 
+	17: MissingElement 
+	18: MissingElementTest 
+	19: NextGreaterElement 
+	20: NextGreaterElementTests 
+	21: NumberOfIslands 
+	22: NumberOfIslandsTest 
+	23: PythagoreanTriplet 
+	24: ShortestPathBinaryMaze 
+	25: ShortestPathBinaryMazeTests 
+	26: StairCase 
+	27: StairCaseTUniTests 
 + Backtracking (0) 
 + BitManipulation (2) 
 	1: CountBits 
 	2: CountBitsTest 
-+ DataStructures (13) 
++ DataStructures (15) 
 	1: ArrayToBinarySearchTree 
 	2: ArrayToBinarySearchTreeTest 
 	3: BinarySearchTree 
@@ -54,53 +57,61 @@ The Coding Interview (154)
 	5: BinarySearchTreeTests 
 	6: BinaryTree 
 	7: BinaryTreeTest 
-	8: LinkedList 
-	9: LinkedListTest.UnitTest 
-	10: Queue 
-	11: QueueTest 
-	12: Stack 
-	13: StackTest 
-+ Dynamic Programming (40) 
-	1: KnapsackProblem 
-	2: KnapsackProblemTest 
-	3: LargestSubarrayWithZeroSum 
-	4: LargestSubarrayWithZeroSumTest 
-	5: LavenshteinDistance 
-	6: LavenshteinDistanceTest 
-	7: LongestCommonSubsequence 
-	8: LongestCommonSubsequenceTest 
-	9: LongestCommonSubstring 
-	10: LongestCommonSubstringTest 
-	11: LongestIncreasingSubsequence 
-	12: LongestIncreasingSubsequenceTest 
-	13: LongestIncreasingSubsequenceSum 
-	14: LongestIncreasingSubsequenceSumTest 
-	15: LongestPalindromic 
-	16: LongestPalindromicTest 
-	17: MatrixPaths 
-	18: MatrixPathsTest 
-	19: MaximumSizeSquare 
-	20: MaximumSizeSquareTest 
-	21: MaximumSubarrayProblem 
-	22: MaximumSubarrayProblemTest 
-	23: LongestIncreasingSubsequenceSumTest 
-	24: MaxSumIncreasingSubsequence 
-	25: MinCostPath 
-	26: MinCostPathTest 
-	27: NumberOfIslands 
-	28: NumberOfIslandsTest 
-	29: RatInAMaze 
-	30: RatInAMazeTest 
-	31: ShortestPathBinaryMaze 
-	32: ShortestPathBinaryMazeTests 
-	33: SubArrayGivenSum 
-	34: SubArrayGivenSumTest 
-	35: SubsetSum 
-	36: SubsetSumTest 
-	37: WildCardMatch 
-	38: WildCardMatchTest 
-	39: WordSearch 
-	40: WordSearchTest 
+	8: Heap 
+	9: HeapTest 
+	10: LinkedList 
+	11: LinkedListTest.UnitTest 
+	12: Queue 
+	13: QueueTest 
+	14: Stack 
+	15: StackTest 
++ DynamicProgramming (46) 
+	1: CoinChange 
+	2: CoinChangeTest 
+	3: JumpGame 
+	4: JumpGameTest 
+	5: KnapsackProblem 
+	6: KnapsackProblemTest 
+	7: LargestSubarrayWithZeroSum 
+	8: LargestSubarrayWithZeroSumTest 
+	9: MaximumSubarrayProblem 
+	10: MaximumSubarrayProblemTest 
+	11: LavenshteinDistance 
+	12: LavenshteinDistanceTest 
+	13: LongestCommonSubsequence 
+	14: LongestCommonSubsequenceTest 
+	15: LongestCommonSubstring 
+	16: LongestCommonSubstringTest 
+	17: LongestIncreasingSubsequence 
+	18: LongestIncreasingSubsequenceTest 
+	19: LongestIncreasingSubsequenceSum 
+	20: LongestIncreasingSubsequenceSumTest 
+	21: LongestPalindromic 
+	22: LongestPalindromicTest 
+	23: MatrixPaths 
+	24: MatrixPathsTest 
+	25: MaximumSizeSquare 
+	26: MaximumSizeSquareTest 
+	27: MaximumSubarrayProblem 
+	28: MaximumSubarrayProblemTest 
+	29: LongestIncreasingSubsequenceSumTest 
+	30: MaxSumIncreasingSubsequence 
+	31: MinCostPath 
+	32: MinCostPathTest 
+	33: NumberOfIslands 
+	34: NumberOfIslandsTest 
+	35: RatInAMaze 
+	36: RatInAMazeTest 
+	37: ShortestPathBinaryMaze 
+	38: ShortestPathBinaryMazeTests 
+	39: SubArrayGivenSum 
+	40: SubArrayGivenSumTest 
+	41: SubsetSum 
+	42: SubsetSumTest 
+	43: WildCardMatch 
+	44: WildCardMatchTest 
+	45: WordSearch 
+	46: WordSearchTest 
 + Math (2) 
 	1: SquareRoot 
 	2: SquareRootTest 
@@ -121,10 +132,12 @@ The Coding Interview (154)
 	14: SumDigitsOfANumberTest 
 	15: SwappingNumbers 
 	16: SwappingNumbersTest 
-+ Random (2) 
-	1: RatioIterator 
-	2: RatioIteratorTest 
-+ Strings (36) 
++ Random (4) 
+	1: CouchBase 
+	2: CouchBaseTest 
+	3: RatioIterator 
+	4: RatioIteratorTest 
++ Strings (38) 
 	1: BalancedExpressions 
 	2: BalancedExpressionsTest 
 	3: BuildLowestNumber 
@@ -143,25 +156,25 @@ The Coding Interview (154)
 	16: IsRotationTest 
 	17: LookAndSay 
 	18: LookAndSayTest 
-	19: NextGreaterNumber 
-	20: NextGreaterNumberTest 
-	21: PhoneMnemonic 
-	22: PhoneNumberMnemonicTest 
-	23: PatternSearching 
-	24: PatternSearchingTest 
-	25: PhoneNumberParser 
-	26: PhoneNumberParserTest 
-	27: ReversePolishNotation 
-	28: ReversePolishNotationTest 
-	29: RomanNumerals 
-	30: RomaNumeralsTest 
-	31: StringCombination 
-	32: StringCombinationTest 
-	33: StringPermutation 
-	34: StringPermutationTest 
-	35: StringReverse 
-	36: StringReverseTest 
-+ TestResults (0) 
-+ Tools (2) 
-	1: InputParser 
-	2: ProjectsTree 
+	19: MakingAnagrams 
+	20: MakingAnagramsTests 
+	21: NextGreaterNumber 
+	22: NextGreaterNumberTest 
+	23: PhoneMnemonic 
+	24: PhoneNumberMnemonicTest 
+	25: PatternSearching 
+	26: PatternSearchingTest 
+	27: PhoneNumberParser 
+	28: PhoneNumberParserTest 
+	29: ReversePolishNotation 
+	30: ReversePolishNotationTest 
+	31: RomanNumerals 
+	32: RomaNumeralsTest 
+	33: StringCombination 
+	34: StringCombinationTest 
+	35: StringPermutation 
+	36: StringPermutationTest 
+	37: StringReverse 
+	38: StringReverseTest 
++ Tools (1) 
+	1: ProjectsTree 

@@ -1,0 +1,71 @@
+DynamicProgramming (46) 
++CoinChange
+		*CoinChange\CoinChange.csproj
+		*CoinChangeTest\CoinChangeTest.csproj
++JumpGame
+		*JumpGame\JumpGame.csproj
+		*JumpGameTest\JumpGameTest.csproj
++KnapsackProblem
+		*KnapsackProblem\KnapsackProblem.csproj
+		*KnapsackProblemTest\KnapsackProblemTest.csproj
++LargestSubarrayWithZeroSum
+		*LargestSubarrayWithZeroSum\LargestSubarrayWithZeroSum.csproj
+		*LargestSubarrayWithZeroSumTest\LargestSubarrayWithZeroSumTest.csproj
++LargestSumSubArray
+		*LargestSumSubArray\MaximumSubarrayProblem.csproj
+		*LargestSumSubArrayTest\MaximumSubarrayProblemTest.csproj
++LavenshteinDistance
+		*LavenshteinDistance\LavenshteinDistance.csproj
+		*LavenshteinDistanceTest\LavenshteinDistanceTest.csproj
++LongesCommonSubsequence
+		*LongesCommonSubsequence\LongestCommonSubsequence.csproj
+		*LongesCommonSubsequenceTest\LongestCommonSubsequenceTest.csproj
++LongestCommonSubstring
+		*LongestCommonSubstring\LongestCommonSubstring.csproj
++LongestCommonSubstringTest
+		*LongestCommonSubstringTest\LongestCommonSubstringTest.csproj
++LongestIncreasingSubsequence
+		*LongestIncreasingSubsequence\LongestIncreasingSubsequence.csproj
+		*LongestIncreasingSubsequenceTest\LongestIncreasingSubsequenceTest.csproj
++LongestIncreasingSubsequenceSum
+		*LongestIncreasingSubsequenceSum\LongestIncreasingSubsequenceSum.csproj
+		*LongestIncreasingSubsequenceSumTest\LongestIncreasingSubsequenceSumTest.csproj
++LongestPalindrome
+		*LongestPalindromicSubsequence\LongestPalindromic.csproj
+		*LongestPalindromicTest\LongestPalindromicTest.csproj
++MatrixPaths
+		*MatrixPaths\MatrixPaths.csproj
+		*MatrixPathsTest\MatrixPathsTest.csproj
++MaximumSizeSquare
+		*MaximumSizeSquare\MaximumSizeSquare.csproj
+		*MaximumSizeSquareTest\MaximumSizeSquareTest.csproj
++MaximumSubarrayProblem
+		*MaximumSubarrayProblem\MaximumSubarrayProblem.csproj
+		*MaximumSubarrayProblemTest\MaximumSubarrayProblemTest.csproj
++MaxSumIncreasingSubsequence
+		*LongestIncreasingSubsequenceSumTest\LongestIncreasingSubsequenceSumTest.csproj
+		*MaxSumIncreasingSubsequence\MaxSumIncreasingSubsequence.csproj
++MinCostPath
+		*MinCostPath\MinCostPath.csproj
+		*MinCostPathTest\MinCostPathTest.csproj
++NumberOfIslands
+		*NumberOfIslands\NumberOfIslands.csproj
+		*NumberOfIslandsTest\NumberOfIslandsTest.csproj
++RatInAMaze
+		*RatInAMaze\RatInAMaze.csproj
+		*RatInAMazeTest\RatInAMazeTest.csproj
++ShortestPathBinaryMaze
+		*ShortestPathBinaryMaze\ShortestPathBinaryMaze.csproj
+		*ShortestPathBinaryMazeTests\ShortestPathBinaryMazeTests.csproj
++SubArrayGivenSum
+		*SubArrayGivenSum\SubArrayGivenSum.csproj
+		*SubArrayGivenSumTest\SubArrayGivenSumTest.csproj
++SubsetSum
+		*SubsetSum\SubsetSum.csproj
+		*SubsetSumTest\SubsetSumTest.csproj
++WildCardMatch
+		*WildCardMatch\WildCardMatch.csproj
+		*WildCardMatchTest\WildCardMatchTest.csproj
++WordSearch
+		*WordSearch\WordSearch.csproj
+		*WordSearchTest\WordSearchTest.csproj

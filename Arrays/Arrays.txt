@@ -1,10 +1,13 @@
-Arrays (25) 
+Arrays (27) 
 +DutchNationalFlagProblem
 		*DutchNationalFlagProblem\DutchNationalFlagProblem.csproj
 		*DutchNationalFlagProblemTest\DutchNationalFlagProblemTest.csproj
 +FindKth
 		*FindKth\FindKth.csproj
 		*FindKthTest\FindKthTest.csproj
++LeftRotation
+		*LeftRotation\ArrayRotation.csproj
+		*LeftRotationTests\ArrayRotationTests.csproj
 +LightsOut
 		*LightsOut\LightsOut.csproj
 		*LightsOutTests\LightsOutTests.csproj

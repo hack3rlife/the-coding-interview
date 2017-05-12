@@ -1,4 +1,4 @@
-DataStructures (13) 
+DataStructures (15) 
 +ArrayToBst
 		*ArrayToBst\ArrayToBinarySearchTree.csproj
 		*ArrayToBstTest\ArrayToBinarySearchTreeTest.csproj
@@ -9,6 +9,9 @@ DataStructures (13)
 +BinaryTrees
 		*BinaryTree\BinaryTree.csproj
 		*BinaryTreeTest\BinaryTreeTest.csproj
++Heaps
+		*Heap\Heap.csproj
+		*HeapTest\HeapTest.csproj
 +LinkedLists
 		*LinkedList\LinkedList.csproj
 		*LinkedListTest\LinkedListTest.UnitTest.csproj
