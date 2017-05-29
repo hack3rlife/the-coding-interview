@@ -43,7 +43,7 @@
     <Compile Include="BinarySearch.MissingElement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SquareRoot.cs" />
-    <Compile Include="BinarySearch.FindPivot.cs" />
+    <Compile Include="BinarySearch.FindMinimumElement.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

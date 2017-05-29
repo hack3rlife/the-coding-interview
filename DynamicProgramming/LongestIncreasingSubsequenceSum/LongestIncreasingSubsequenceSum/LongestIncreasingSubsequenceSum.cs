@@ -52,9 +52,11 @@ namespace com.hack3rlife.dynamicprogramming
                         sum = input[i] + result[j];
                         curr = result[i];
 
-                        if (sum > curr && sum > max)
+                        if (sum > curr)
                         {
-                            max = sum;
+                            if (sum > max)
+                                max = sum;
+
                             result[i] = sum;
                             indexes[i] = j;
 

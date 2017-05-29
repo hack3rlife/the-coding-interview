@@ -17,34 +17,32 @@ The Coding Interview (167)
 	14: QuickSortTest 
 	15: SelectionSort 
 	16: SelectionSortTest 
-+ Arrays (27) 
++ Arrays (25) 
 	1: DutchNationalFlagProblem 
 	2: DutchNationalFlagProblemTest 
 	3: FindKth 
 	4: FindKthTest 
 	5: ArrayRotation 
 	6: ArrayRotationTests 
-	7: LightsOut 
-	8: LightsOutTests 
-	9: MatrixInDiagonal 
-	10: MatrixInDiagonalTests 
-	11: MatrixInSpiral 
-	12: MatrixInSpiralTest 
-	13: MatrixPaths 
-	14: MatrixPathsTest 
-	15: MatrixRotateTest 
-	16: MatrixRotate 
-	17: MissingElement 
-	18: MissingElementTest 
-	19: NextGreaterElement 
-	20: NextGreaterElementTests 
-	21: NumberOfIslands 
-	22: NumberOfIslandsTest 
-	23: PythagoreanTriplet 
-	24: ShortestPathBinaryMaze 
-	25: ShortestPathBinaryMazeTests 
-	26: StairCase 
-	27: StairCaseTUniTests 
+	7: MatrixInDiagonal 
+	8: MatrixInDiagonalTests 
+	9: MatrixInSpiral 
+	10: MatrixInSpiralTest 
+	11: MatrixPaths 
+	12: MatrixPathsTest 
+	13: MatrixRotateTest 
+	14: MatrixRotate 
+	15: MissingElement 
+	16: MissingElementTest 
+	17: NextGreaterElement 
+	18: NextGreaterElementTests 
+	19: NumberOfIslands 
+	20: NumberOfIslandsTest 
+	21: PythagoreanTriplet 
+	22: ShortestPathBinaryMaze 
+	23: ShortestPathBinaryMazeTests 
+	24: StairCase 
+	25: StairCaseTUniTests 
 + Backtracking (0) 
 + BitManipulation (2) 
 	1: CountBits 
@@ -132,32 +130,34 @@ The Coding Interview (167)
 	14: SumDigitsOfANumberTest 
 	15: SwappingNumbers 
 	16: SwappingNumbersTest 
-+ Random (4) 
-	1: CouchBase 
-	2: CouchBaseTest 
-	3: RatioIterator 
-	4: RatioIteratorTest 
++ Random (6) 
+	1: CashiersProblem 
+	2: CashiersProblemTest 
+	3: LightsOut 
+	4: LightsOutTests 
+	5: RatioIterator 
+	6: RatioIteratorTest 
 + Strings (38) 
 	1: BalancedExpressions 
 	2: BalancedExpressionsTest 
 	3: BuildLowestNumber 
 	4: BuildLowestNumberTest 
-	5: InterconvertStringAndIntegers 
-	6: InterconvertStringAndIntegersTest 
-	7: IsAnagram 
-	8: IsAnagramTest 
-	9: IsIsomorphic 
-	10: IsIsomorphicTest 
-	11: IsPalindrome 
-	12: IsPalindromeTest 
-	13: IsPangram 
-	14: IsPangramTests 
-	15: IsRotation 
-	16: IsRotationTest 
-	17: LookAndSay 
-	18: LookAndSayTest 
-	19: MakingAnagrams 
-	20: MakingAnagramsTests 
+	5: FirstUniqueChar 
+	6: FirstUniqueCharTest 
+	7: InterconvertStringAndIntegers 
+	8: InterconvertStringAndIntegersTest 
+	9: IsAnagram 
+	10: IsAnagramTest 
+	11: IsIsomorphic 
+	12: IsIsomorphicTest 
+	13: IsPalindrome 
+	14: IsPalindromeTest 
+	15: IsPangram 
+	16: IsPangramTests 
+	17: IsRotation 
+	18: IsRotationTest 
+	19: LookAndSay 
+	20: LookAndSayTest 
 	21: NextGreaterNumber 
 	22: NextGreaterNumberTest 
 	23: PhoneMnemonic 

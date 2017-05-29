@@ -28,12 +28,6 @@ namespace com.hack3rlife.strings.test
             FirstUniqueChar.FindInStream(input.ToCharArray());
 
             //arrange
-        }
-
-        [TestMethod()]
-        public void FindInStreamTest()
-        {
-            Assert.Fail();
-        }
+        }       
     }
 }

@@ -47,7 +47,8 @@ namespace com.hack3rlife.arrays
             {
                 for (int j = 0; j < n; j++)
                 {
-                    result[j, m - i - 1] = input[i, j];
+                    result[j, m - i - 1] = input[i, j];     //clockwise
+                    //result[n - j - 1, i] = input[i, j];   //counter clockwise
                     Display(result);
                 }
             }
@@ -65,24 +66,24 @@ namespace com.hack3rlife.arrays
         public static int[,] Rotate90DegreesInPlace(int[,] input)
         {
             //TODO: Expand this approach for MxN
+            Display(input);
 
             int n = input.GetLength(0);
             int m = input.GetLength(1);
 
             //Transpose the matrix
-            for (int i = 0; i < n - 2; i++)
+            for (int i = 0; i < n - 1; i++)
             {
                 for (int j = i + 1; j < m; j++)
                 {
                     input[j, i] ^= input[i, j];
                     input[i, j] ^= input[j, i];
                     input[j, i] ^= input[i, j];
+                    Display(input);
                 }
-                Display(input);
-                Console.WriteLine();
             }
 
-            //Reverse rows
+            //Reverse cols
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0, k = m - 1; j < m / 2; j++, k--)
@@ -90,6 +91,7 @@ namespace com.hack3rlife.arrays
                     input[i, j] ^= input[i, k];
                     input[i, k] ^= input[i, j];
                     input[i, j] ^= input[i, k];
+                    Display(input);
                 }
             }
 

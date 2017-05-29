@@ -5,6 +5,9 @@ Strings (38)
 +BuildLowestNumber
 		*BuildLowestNumber\BuildLowestNumber.csproj
 		*BuildLowestNumberTest\BuildLowestNumberTest.csproj
++FirstUniqueChar
+		*FirstUniqueChar\FirstUniqueChar.csproj
+		*FirstUniqueCharTest\FirstUniqueCharTest.csproj
 +InterconvertStringAndIntegers
 		*InterconvertStringAndIntegers\InterconvertStringAndIntegers.csproj
 		*InterconvertStringAndIntegersTest\InterconvertStringAndIntegersTest.csproj
@@ -26,9 +29,6 @@ Strings (38)
 +LookAndSayProblem
 		*LookAndSay\LookAndSay.csproj
 		*LookAndSayTest\LookAndSayTest.csproj
-+MakingAnagrams
-		*MakingAnagrams\MakingAnagrams.csproj
-		*MakingAnagramsTests\MakingAnagramsTests.csproj
 +NextGreaterNumber
 		*NextGreaterNumber\NextGreaterNumber.csproj
 		*NextGreaterNumberTest\NextGreaterNumberTest.csproj

@@ -15,6 +15,7 @@
 */
 
 using System;
+using System.Diagnostics;
 
 namespace com.hack3rlife.strings
 {
@@ -64,7 +65,10 @@ namespace com.hack3rlife.strings
                 while (number >= values[i])
                 {
                     number -= values[i];
+                    Debug.WriteLine(string.Format("Number: {0}", number));
+
                     result += numerals[i];
+                    Debug.WriteLine(string.Format("Result: {0}", result));
                 }
             }
 

@@ -39,7 +39,7 @@ namespace com.hack3rlife.strings
             CalculateLpsArray(pattern);
 
             int i = 0;
-            int j =0;
+            int j = 0;
 
             while (i < inputLength)
             {

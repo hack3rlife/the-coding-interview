@@ -8,7 +8,7 @@ namespace PatternSearchingTest
     public class NaivePatternSearchingTest
     {
         [TestMethod]
-        public void SearchTest()
+        public void NaivePatternSearching_Search_Test()
         {
             //arrange
             string input = "this is a test";

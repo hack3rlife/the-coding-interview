@@ -6,6 +6,7 @@
  */
 
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace com.hack3rlife.strings
 {
@@ -110,7 +111,7 @@ namespace com.hack3rlife.strings
         {
             if (index == number.Length)
             {
-                System.Console.WriteLine(output);
+                Debug.WriteLine(output);
                 result = result + " " + output.ToLowerInvariant();
                 return;
             }

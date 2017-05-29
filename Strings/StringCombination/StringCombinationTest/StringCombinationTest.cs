@@ -15,7 +15,21 @@ namespace com.hack3rlife.strings.test
             var input = TestContext.DataRow["input"].ToString();
             var expected = TestContext.DataRow["output"].ToString();
             // act
-            var actual = StringCombination.Get(input);
+            var actual = StringCombination.GetAllCombinations(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void GetAllCombinationsOfLengthKTest()
+        {
+            // arrange
+            var input = "ab";
+            var expected = "aaa aab aba abb baa bab bba bbb";
+
+            // act
+            var actual = StringCombination.GetAllCombinationsOfLengthK(input, 3);
 
             // assert
             Assert.AreEqual(expected, actual);

@@ -26,8 +26,8 @@
             //Build the heap into an array so such a way the largest value is at root.
             Heapify(input);
 
-
             int end = input.Length - 1;
+
             while (end >= 0)
             {
                 //swap the largest value which in this case will be always at position '0'
@@ -37,6 +37,7 @@
                 //swap screw the heap, so we need to restore it
                 SiftDown(input, 0, end);
             }
+
             return input;
         }
 

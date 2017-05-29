@@ -6,10 +6,11 @@ namespace com.hack3rlife.strings
     public static class FirstUniqueChar
     {
         /// <summary>
-        /// 
+        /// Given a string, find its first non-repeating character
         /// </summary>
-        /// <param name="input"></param>
-        /// <returns></returns>
+        /// <param name="input">The input string</param>
+        /// <returns>The index whithin the string of the first unique char; otherwise -1</returns>
+        /// <see cref="http://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/"/>
         public static int Find(string input)
         {
             if (string.IsNullOrEmpty(input))
@@ -32,10 +33,10 @@ namespace com.hack3rlife.strings
         }
 
         /// <summary>
-        /// 
+        /// Find the first non-repeating character from a stream of characters
         /// </summary>
-        /// <param name="input"></param>
-        /// <returns></returns>
+        /// <param name="input">The input stream</param>
+        /// <returns>The first non-repeating character in O(1) time at any moment.</returns>
         public static Dictionary<int, char> FindInStream(char[] input)
         {
             if (input == null || input.Length <= 0)

@@ -16,24 +16,23 @@
         {
             if (n == 0)
             {
-                 result += input;
-                 return;
+                result += input;
+                return;
             }
 
-            int length = input.Length-1;
+            int length = input.Length - 1;
 
-            if( length <= n)
+            if (length < n)
             {
-                 result = string.Empty;
-                 return;
+                return;
             }
 
             int index = 0;
             for (int i = 1; i <= n; i++)
             {
-                if (input[i] < input[index]) 
-                    index = i;            
-            }            
+                if (input[i] < input[index])
+                    index = i;
+            }
 
             result += input[index];
 

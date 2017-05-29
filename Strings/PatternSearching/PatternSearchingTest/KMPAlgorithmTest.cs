@@ -1,6 +1,5 @@
-﻿using System;
+﻿using com.hack3rlife.strings;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using com.hack3rlife.strings;
 
 namespace PatternSearchingTest
 {
@@ -8,7 +7,7 @@ namespace PatternSearchingTest
     public class KMPAlgorithmTest
     {
         [TestMethod]
-        public void SearchTest()
+        public void KMPAlgorithm_SearchTest()
         {
             //arrange
             string input = "AAAAAAAAAAAAAAAAAB";

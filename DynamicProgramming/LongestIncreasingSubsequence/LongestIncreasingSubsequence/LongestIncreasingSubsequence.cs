@@ -22,7 +22,7 @@ namespace com.hack3rlife.dynamicprogramming
         /// <see cref="http://www.geeksforgeeks.org/dynamic-programming-set-3-longest-increasing-subsequence/"/>
         public static int Get(int[] input)
         {
-            int[] result = Enumerable.Repeat(0, input.Length).ToArray();
+            int[] result = Enumerable.Repeat(1, input.Length).ToArray();
 
             int i = 1;
             int max = 1;

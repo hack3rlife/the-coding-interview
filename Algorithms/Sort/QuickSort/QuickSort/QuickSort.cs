@@ -5,6 +5,8 @@
  * 
  */
 
+using System.Diagnostics;
+
 namespace com.hack3rlife.algorithms.sorting
 {
     /// <summary>
@@ -33,6 +35,8 @@ namespace com.hack3rlife.algorithms.sorting
         /// <param name="right">q+1..input.length-1</param>
         public static void Sort(int[] input, int left, int right)
         {
+            Print(input);
+
             if (left < right)
             {
                 var q = Partition(input, left, right);
@@ -57,11 +61,15 @@ namespace com.hack3rlife.algorithms.sorting
             for (int i = left; i < right; i++)
             {
                 if (input[i] < pivot)
+                {
                     Swap(input, i, storeIndex++);
+                    Print(input);
+                }
             }
 
             //restore pivot to its correct position
             Swap(input, storeIndex, right);
+            Print(input);
 
             return storeIndex;
         }
@@ -80,6 +88,16 @@ namespace com.hack3rlife.algorithms.sorting
                 input[b] ^= input[a];
                 input[a] ^= input[b];
             }
+        }
+
+        private static void Print(int[] input)
+        {
+            for (int i = 0; i < input.Length; i++)
+            {
+                Debug.Write(string.Format(" {0} ", input[i]));
+            }
+            Debug.WriteLine(string.Empty);
+            
         }
     }
 }

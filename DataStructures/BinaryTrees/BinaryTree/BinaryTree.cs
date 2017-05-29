@@ -112,9 +112,25 @@ namespace com.hack3rlife.datastructures
         }
 
         /// <summary>
-        /// Check if the root is symetric or not.
+        /// Symmetric Tree (Mirror Image of itself)
+        /// Given a binary tree, check whether it is a mirror of itself.
         /// </summary>
         /// <param name="node">The root of the <see cref="BinaryTree{T}"/>.</param>
+        /// <![CDATA[
+        /// For example, this binary tree is symmetric:
+        ///        1
+        ///      /   \
+        ///     2     2
+        ///   / \   / \
+        ///  3   4 4   3
+        ///  
+        /// But the following is not:
+        ///     1
+        ///    / \
+        ///   2   2
+        ///    \   \
+        ///     3    3
+        /// ]]>
         /// <returns>True if the <see cref="BinaryTree{T}"/> is symetric; otherwise false.</returns>
         /// < cref="http://www.geeksforgeeks.org/symmetric-tree-tree-which-is-mirror-image-of-itself/"/>
         public bool IsSymetric(BinaryTreeNode<T> root)
@@ -166,9 +182,8 @@ namespace com.hack3rlife.datastructures
         /// <summary>
         /// Sums all the values stored in the each leaf of the <see cref="BinaryTree{T}"/>
         /// </summary>
-        /// <param name="node">Normally, the <see cref="BinaryTree{T}.Root"/></param>
+        /// <param name="node">Normally, the <see cref="BinaryTree{T}.Root"/></param>     
         /// <returns>The sum of all the values stored in the all the leaves of the <see cref="BinaryTree{T}"/></returns>
-        /// <see cref="http://www.geeksforgeeks.org/find-sum-left-leaves-given-binary-tree/"/>
         public int SumOfAllLeaves(BinaryTreeNode<int> node)
         {
             if (node == null)
@@ -183,6 +198,22 @@ namespace com.hack3rlife.datastructures
         /// <summary>
         /// Given a binary tree, where every node value is a Digit from 1-9 .Find the sum of all the numbers which are formed from root to leaf paths.
         /// </summary>
+        /// <![CDATA[
+        ///       									6
+        ///                                      /      \
+        ///                                    3          5
+        ///                                  /   \          \
+        ///                                 2     5          4  
+        ///                                      /   \
+        ///                                     7     4
+        /// There are 4 leaves, hence 4 root to leaf paths:
+        /// Path Number
+        /// 6->3->2                   632
+        /// 6->3->5->7               6357
+        /// 6->3->5->4               6354
+        /// 6->5>4                    654   
+        ///Answer = 632 + 6357 + 6354 + 654 = 13997 
+        /// ]]>
         /// <param name="node">Usually, the <see cref="BinaryTree{T}.Root"/></param>
         /// <param name="sum"></param>
         /// <returns>The sum of all the numbers which are formed from root to leaf paths.</returns>
@@ -203,38 +234,109 @@ namespace com.hack3rlife.datastructures
         /// <summary>
         /// Given a binary tree in which each node element contains a number. Find the maximum possible sum from one leaf node to another.
         /// </summary>
-        /// <param name="node"></param>
-        /// <param name="curent"></param>
-        /// <returns>The max sum</returns>
-        /// <see cref="http://www.geeksforgeeks.org/find-maximum-path-sum-two-leaves-binary-tree/"/>
-        public int MaxPathSum(BinaryTreeNode<int> node, int curent)
+        /// <param name="node">The <see cref="BinaryTreeNode{T}"/></param>
+        /// <returns>The max sum between to leaves if any; otherwise 0</returns>
+        /// <see cref="http://algorithms.tutorialhorizon.com/given-a-binary-tree-find-the-maximum-path-sum-between-any-two-leaves/"/>
+        /// <seealso cref="http://www.geeksforgeeks.org/find-maximum-path-sum-two-leaves-binary-tree/"/>
+        public int MaxSumPathBetweenTwoleaves(BinaryTreeNode<int> node)
         {
             if (node == null)
                 return 0;
 
-            return MaxPathSumHelper(node, curent);
+            int max = int.MinValue;
+            MaxSumPathBetweenTwoleavesHelper(node, ref max);
+
+            return max;
         }
 
-        private int MaxPathSumHelper(BinaryTreeNode<int> node, int curent)
+        /// <summary>
+        /// Helper method to find the maximum path sum between two leaves of a binary tree
+        /// </summary>
+        /// <param name="node">TThe <see cref="BinaryTreeNode{T}"/></param>
+        /// <param name="max">The current max in the current recursion stack</param>
+        /// <returns>The max sum between to leaves if any; otherwise 0</returns>
+        private int MaxSumPathBetweenTwoleavesHelper(BinaryTreeNode<int> node, ref int max)
         {
             if (node == null)
                 return 0;
 
-            curent += node.Value;
+            var left = MaxSumPathBetweenTwoleavesHelper(node.Left, ref max);
+            var right = MaxSumPathBetweenTwoleavesHelper(node.Right, ref max);
+
+            var currMax = left + right + node.Value;
+            Debug.WriteLine("currMax: {0} + {1} + {2} = {3}", left, right, node.Value, currMax);
+
+            if (max < currMax)
+            {
+                max = currMax;
+                Debug.WriteLine("Max: {0}", max, node.Value);
+            }
+
+            var result = Math.Max(left, right) + node.Value;
+            Debug.WriteLine("Current Sum: Max({0},{1}) + {2} = {3}", left, right, node.Value, result);
+
+            return result;
+        }
+
+
+        /// <summary>
+        /// Given a Binary Tree, find the maximum sum path from a leaf to root. 
+        /// </summary>
+        /// <![CDATA[
+        ///  For example, in the following tree, there are three leaf to root paths 8->-2->10, -4->-2->10 and 7->10. The sums of these three paths are 16, 4 and 17 respectively. 
+        ///  The maximum of them is 17 and the path for maximum is 7-> 10.
+        ///                  10
+        ///               /      \
+        ///	            -2        7
+        ///            /   \     
+        ///	          8     -4    
+        /// ]]>
+        /// <param name="node">The <see cref="BinaryTreeNode{T}"/></param>
+        /// <param name="curent"></param>
+        /// <returns>The max sum</returns>
+        /// <see cref="http://www.geeksforgeeks.org/find-the-maximum-sum-path-in-a-binary-tree/"/>
+        public int MaxSumRootToLeaf(BinaryTreeNode<int> node)
+        {
+            if (node == null)
+                return 0;
+
+            return MaxSumRootToLeafHelper(node, 0);
+        }
+
+        /// <summary>
+        /// Helper fuction to find the maximum sum leaf to root path in a Binary Tree
+        /// </summary>
+        /// <param name="node">The <see cref="BinaryTreeNode{T}"/></param>
+        /// <param name="currSum"></param>
+        /// <returns></returns>
+        private int MaxSumRootToLeafHelper(BinaryTreeNode<int> node, int currSum)
+        {
+            if (node == null)
+                return 0;
+
+            currSum += node.Value;
+            Debug.WriteLine("Current Sum: {0}", currSum);
 
             if (node.Left == null && node.Right == null)
-                return curent;
+            {
+                Debug.WriteLine("Current Sum: {0} at leaf {1}", currSum, node.Value);
+                return currSum;
+            }
 
-            var left = MaxPathSumHelper(node.Left, curent);
-            var right = MaxPathSumHelper(node.Right, curent);
+            var left = MaxSumRootToLeafHelper(node.Left, currSum);
+            var right = MaxSumRootToLeafHelper(node.Right, currSum);
 
-            return left > right ? left : right;
+            var max = left > right ? left : right;
+
+            Debug.WriteLine("Current Max Sum(left:{0}, rigth:{1}) = {2}", left, right, max);
+
+            return max;
         }
 
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="node"></param>
+        /// <param name="node">The <see cref="BinaryTreeNode{T}"/></param>
         public void LeftRigthToDownRightRepresentation(BinaryTreeNode<T> node)
         {
             if (node == null)
@@ -301,7 +403,6 @@ namespace com.hack3rlife.datastructures
             {
                 list.Add(-1);
                 Debug.Write(string.Format(" {0} ", -1));
-
                 return;
             }
 
@@ -341,7 +442,7 @@ namespace com.hack3rlife.datastructures
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="node"></param>
+        /// <param name="node">The <see cref="BinaryTreeNode{T}"/></param>
         /// <returns></returns>
         public void InOrder(BinaryTreeNode<T> node)
         {
@@ -354,31 +455,51 @@ namespace com.hack3rlife.datastructures
             }
         }
 
+        /// <summary>
+        /// The diameter of a Binary Tree (sometimes called the width) is the number of nodes on the longest path between two leaves in the tree.
+        /// The diameter of a tree T is the largest of the following quantities:
+        /// 1. The diameter of T’s left subtree
+        /// 2. The diameter of T’s right subtree
+        /// 3. The longest path between leaves that goes through the root of T(this can be computed from the heights of the subtrees of T)
+        /// </summary>
+        /// <param name="node">he <see cref="BinaryTreeNode{T}"/></param>
+        /// <returns>The Diamater of the tree.</returns>
+        /// <see cref="http://www.geeksforgeeks.org/lowest-common-ancestor-binary-tree-set-1/"/>
+        /// <seealso cref="http://algorithms.tutorialhorizon.com/diameter-of-a-binary-tree/"/>
         public int Diameter(BinaryTreeNode<T> node)
         {
             //base case
             if (node == null)
                 return 0;
 
-            //get left and rigth heigth
+            //get left and right heigth
             int lheight = Height(node.Left);
             int rheight = Height(node.Right);
 
             Debug.WriteLine("Node: {0} lheight: {1} rheight: {2}", node.Value, lheight, rheight);
 
+            // get the left and right
             int ldiameter = Diameter(node.Left);
             int rdiameter = Diameter(node.Right);
 
             Debug.WriteLine("Node: {0} ldiameter: {1} rdiameter: {2}", node.Value, ldiameter, rdiameter);
 
-            int result = Math.Max(lheight + rheight, Math.Max(ldiameter, rdiameter));
+            int diameter = Math.Max(lheight + rheight + 1,    // Height of left subtree + height of right subtree + 1 
+                         Math.Max(ldiameter,                // Diameter of left subtree
+                        rdiameter));                        // Diameter of right subtree
 
-            Debug.WriteLine("Node: {0} result: {1}", node.Value, result);
+            Debug.WriteLine("Node: {0} Diamater: {1}", node.Value, diameter);
 
-            return result;
+            return diameter;
         }
 
 
+        /// <summary>
+        /// Find the Maximum Depth OR Height of a Binary Tree
+        /// </summary>
+        /// <param name="node">The <see cref="BinaryTreeNode{T}"/></param>
+        /// <returns>Height of a binary tree</returns>
+        /// <see cref="http://algorithms.tutorialhorizon.com/find-the-maximum-depth-or-height-of-a-binary-tree/"/>
         public int Height(BinaryTreeNode<T> node)
         {
             if (node == null)
@@ -403,7 +524,7 @@ namespace com.hack3rlife.datastructures
         /// <summary>
         /// Helper function to know if the tree is balanced or not.
         /// </summary>
-        /// <param name="node"></param>
+        /// <param name="node">The <see cref="BinaryTreeNode{T}"/></param>
         /// <returns>Returns -1 if the tree is not balanced; otherwise the height of the tree</returns>
         private int CheckIsBalanced(BinaryTreeNode<T> node)
         {
@@ -427,7 +548,7 @@ namespace com.hack3rlife.datastructures
         }
 
         /// <summary>
-        /// Helper function to check if the root is symetric or not.
+        /// Helper function to check if the given binary tree is a mirror of itself.
         /// </summary>
         /// <param name="left">The left <see cref="BinaryTreeNode{T}"/>.</param>
         /// <param name="right">The right <see cref="BinaryTreeNode{T}.</param>
@@ -467,10 +588,11 @@ namespace com.hack3rlife.datastructures
         /// Case 2: 
         /// Case 3: if <para>node</para> is the right most node in the tree then its inorder suc­ces­sor will be NULL.
         /// </summary>
-        /// <param name="root">The root</param>
-        /// <param name="node">The node</param>
-        /// <param name="parent">The parent node</param>
+        /// <param name="root">The <see cref="BinaryTreeNode{T}"/></param>
+        /// <param name="node">The <see cref="BinaryTreeNode{T}"/></param>
+        /// <param name="parent">The <see cref="BinaryTreeNode{T}"/></param>
         /// <returns>Inorder suc­ces­sor of node</returns>
+        /// <see cref="http://algorithms.tutorialhorizon.com/inorder-successor-in-binary-tree/"/>
         private BinaryTreeNode<T> FindSuccesor(BinaryTreeNode<T> root, BinaryTreeNode<T> node, BinaryTreeNode<T> parent)
         {
             //base case
@@ -498,7 +620,7 @@ namespace com.hack3rlife.datastructures
         /// <summary>
         /// Based on http://stackoverflow.com/questions/1649027/how-do-i-print-out-a-tree-structure
         /// </summary>
-        /// <param name="node">Usually BinarySearchTree<T> root</param>
+        /// <param name="node">The <see cref="BinaryTreeNode{T}"/></param>
         /// <param name="prefix">If wanted, prefix value to be appended</param>
         private void DisplayLeftRight(BinaryTreeNode<T> node, String prefix = "")
         {
@@ -517,7 +639,7 @@ namespace com.hack3rlife.datastructures
         /// <summary>
         /// Based on http://stackoverflow.com/questions/1649027/how-do-i-print-out-a-tree-structure
         /// </summary>
-        /// <param name="node">Usually BinarySearchTree<T> root</param>
+        /// <param name="node">The <see cref="BinaryTreeNode{T}"/></param>
         /// <param name="prefix">If wanted, prefix value to be appended</param>
         private void DisplayDownRight(BinaryTreeNode<T> node, String prefix = "")
         {

@@ -11,6 +11,7 @@ namespace CoinChange
     ///  for N = 4 and S = {1,2,3}, there are four solutions: {1,1,1,1},{1,1,2},{2,2},{1,3}. So output should be 4. For N = 10 and S = {2, 5, 3, 6}, there 
     ///  are five solutions: {2,2,2,2,2}, {2,2,3,3}, {2,2,6}, {2,3,5} and {5,5}. So the output should be 5.
     /// </example>
+    /// <see cref="http://www.geeksforgeeks.org/dynamic-programming-set-7-coin-change/"/>
     public class CoinChange
     {
         /// <summary>
@@ -88,6 +89,35 @@ namespace CoinChange
             }
 
             return result[m - 1, n];
+        }
+
+
+        public static int Count2(int[] coins, int cents)
+        {
+            int length = coins.Length;
+            int[] result = new int[cents + 1];
+
+            result[0] = 1;
+
+            for (int i = 0; i < length; i++)
+            {
+                for (int j = coins[i]; j <= cents; j++)
+                {
+                    result[j] += result[j - coins[i]];
+                    Print(result);
+                }
+            }
+
+            return result[cents];
+        }
+
+        private static void Print(int[] input)
+        {
+            for (int i = 0; i < input.Length; i++)
+            {
+                Debug.Write(string.Format(" {0} ", input[i]));
+            }
+            Debug.WriteLine("");
         }
 
         private static void Print(int[,] input)

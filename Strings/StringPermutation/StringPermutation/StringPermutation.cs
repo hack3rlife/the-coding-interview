@@ -5,6 +5,8 @@
  * 
  */
 
+using System.Diagnostics;
+
 namespace com.hack3rlife.strings
 {
     /// <summary>
@@ -25,9 +27,7 @@ namespace com.hack3rlife.strings
         /// output: ABC ACB BAC BCA CBA CAB]]>        
         public static string Permute(string input)
         {
-            var output = string.Empty;
-            Permutation(input.ToCharArray(), 0, ref output);
-
+            var output = Permutation(input.ToCharArray(), 0, string.Empty);
             return output.TrimEnd();
         }
 
@@ -36,20 +36,24 @@ namespace com.hack3rlife.strings
         /// </summary>
         /// <param name="input">The input string as array of chars</param>
         /// <param name="current">The start position. </param>
-        private static void Permutation(char[] input, int current, ref string output)
+        /// <param name="output">The current output in the recursion stack</param>
+        private static string Permutation(char[] input, int current, string output)
         {
             if (current == input.Length - 1)
             {
                 output += new string(input) + " ";
-                return;
+                Debug.WriteLine(output);
+                return output;
             }
 
             for (int i = current; i < input.Length; i++)
             {
                 Swap(input, current, i);
-                Permutation(input, current + 1, ref output);
+                output = Permutation(input, current + 1, output);
                 Swap(input, current, i);
             }
+
+            return output;
         }
 
         /// <summary>

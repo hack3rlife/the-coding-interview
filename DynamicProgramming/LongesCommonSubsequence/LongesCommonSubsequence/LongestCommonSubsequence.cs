@@ -45,10 +45,12 @@ namespace com.hack3rlife.dynamicprogramming
                     // if curr char is the same in both string
                     if (x[i - 1] == y[j - 1])
                     {
+                        //num[i, j] is equal to the top left diagonal value + 1
                         num[i, j] = num[i - 1, j - 1] + 1;
                     }
                     else
                     {
+                        //num[i, j] = max(left cell, top cell)
                         num[i, j] = max(num[i - 1, j], num[i, j - 1]);
                     }
 

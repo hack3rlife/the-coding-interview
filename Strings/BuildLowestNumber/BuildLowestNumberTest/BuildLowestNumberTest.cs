@@ -22,7 +22,7 @@ namespace com.hack3rlife.strings.test
             LowestNumber.BuildLowestNumber(input, n, ref actual);
 
             //assert
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(int.Parse(expected), int.Parse(actual));
         }
     }
 }

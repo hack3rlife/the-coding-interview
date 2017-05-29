@@ -35,5 +35,20 @@ namespace com.hack3rlife.strings.test
             //assert
             Assert.IsFalse(condition);
         }
+
+        [TestMethod()]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\valid_anagrams.csv", "valid_anagrams#csv", DataAccessMethod.Sequential)]
+        public void IsAnagram_XOrBasedSolutionTest()
+        {
+            //arrange
+            string source = TestContext.DataRow["string1"].ToString().ToLowerInvariant().Trim().Replace(" ", "");
+            string target = TestContext.DataRow["string2"].ToString().ToLowerInvariant().Trim().Replace(" ", "");
+
+            //act
+            bool condition = IsAnagram.XOrBasedSolution(source.ToLowerInvariant().Trim(), target.ToLowerInvariant().Trim());
+
+            //assert
+            Assert.IsTrue(condition, string.Format("{0} is not anagram of {1}", source, target));
+        }
     }
 }

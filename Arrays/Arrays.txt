@@ -1,4 +1,4 @@
-Arrays (27) 
+Arrays (25) 
 +DutchNationalFlagProblem
 		*DutchNationalFlagProblem\DutchNationalFlagProblem.csproj
 		*DutchNationalFlagProblemTest\DutchNationalFlagProblemTest.csproj
@@ -8,9 +8,6 @@ Arrays (27)
 +LeftRotation
 		*LeftRotation\ArrayRotation.csproj
 		*LeftRotationTests\ArrayRotationTests.csproj
-+LightsOut
-		*LightsOut\LightsOut.csproj
-		*LightsOutTests\LightsOutTests.csproj
 +MatrixInDiagonal
 		*MatrixInDiagonal\MatrixInDiagonal.csproj
 		*MatrixInDiagonalTests\MatrixInDiagonalTests.csproj

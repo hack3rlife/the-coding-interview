@@ -1,5 +1,4 @@
-﻿using com.hack3rlife.strings;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace com.hack3rlife.strings.test
 {
@@ -60,8 +59,7 @@ namespace com.hack3rlife.strings.test
             Assert.IsFalse(condition);
         }
 
-
-            [TestMethod]
+        [TestMethod]
         public void Palindrome_IsPalindrome_WhiteSpace_Fail()
         {
             //arrange

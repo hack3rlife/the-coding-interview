@@ -1,4 +1,10 @@
-Random (2) 
+Random (6) 
++CashiersProblem
+		*CashiersProblem\CashiersProblem.csproj
+		*CashiersProblemTest\CashiersProblemTest.csproj
++LightsOut
+		*LightsOut\LightsOut.csproj
+		*LightsOutTests\LightsOutTests.csproj
 +RatioIterator
 		*RatioIterator\RatioIterator.csproj
 		*RatioIteratorTest\RatioIteratorTest.csproj

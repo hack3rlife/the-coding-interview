@@ -544,6 +544,7 @@ namespace com.hack3rlife.datastructures
 
             return new BinarySearchTree<int>(root);
         }
+
         private static BinarySearchTreeNode<int> ToBinarySearchTreeNode(LinkedList list, int n)
         {
             if (n <= 0)

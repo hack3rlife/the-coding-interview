@@ -56,6 +56,25 @@ namespace com.hack3rlife.strings
             return new string(input);
         }
 
+        /// <summary>
+        /// String reverse using recursion
+        /// </summary>
+        /// <param name="input">The string in a array of chars</param>
+        /// <param name="i">left index</param>
+        /// <param name="j">rigth index</param>
+        /// <returns>The reversed string</returns>
+        public static string Reverse(char[] input, int i, int j)
+        {
+            if (i == j || i > j || i > input.Length || j < 0)
+                return new string(input);
+
+            input[i] ^= input[j];
+            input[j] ^= input[i];
+            input[i] ^= input[j];
+
+            return Reverse(input, i + 1, j - 1);
+        }
+
         public static string ReverseWordsInASentece(string input)
         {
             var reversed = Reverse(input.ToCharArray());

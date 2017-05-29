@@ -1,4 +1,6 @@
-﻿namespace com.hack3rlife.strings
+﻿using System.Collections.Generic;
+
+namespace com.hack3rlife.strings
 {
     /// <summary>
     /// Two strings str1 and str2 are called isomorphic if there is a one to one mapping possible for every character of str1 to every character of str2. And all occurrences of every 
@@ -24,6 +26,7 @@
         /// Space Complexity O(2n)
         /// </remarks>
         /// <see cref="http://www.geeksforgeeks.org/check-if-two-given-strings-are-isomorphic-to-each-other/"/>
+        /// <returns>True if both string are isomorphic; otherwise false</returns>
         public static bool IsIsomorphic(string input1, string input2)
         {
             if (input1.Length != input1.Length)
@@ -41,7 +44,6 @@
                         return false;
 
                     visited[input2[i]] = true;
-
                     alphabet[input1[i]] = input2[i];
                 }
                 else
@@ -51,6 +53,53 @@
                 }
 
             }
+            return true;
+        }
+
+        /// <summary>
+        /// Check if two given strings are isomorphic to each other (using Dictionary<char, char>)
+        /// </summary>
+        /// <param name="input1">The input string one</param>
+        /// <param name="input2">The input string two</param>
+        /// <returns>True if the both string are isomorphic: otherwise false</returns>
+        /// <example>
+        /// "egg", "add", returns true.
+        /// "foo", "bar", returns false.
+        /// "paper", "title", returns true.
+        /// "aab", "xxy", returns true
+        /// </example>
+        /// <remarks>
+        /// Time Complexity O(n)
+        /// Space Complexity O(n)
+        /// </remarks>
+        /// <see cref="http://www.geeksforgeeks.org/check-if-two-given-strings-are-isomorphic-to-each-other/"/>
+        /// <returns>True if both string are isomorphic; otherwise false</returns>
+        public static bool IsIsomorphicExtended(string input1, string input2)
+        {
+            if (input1.Length != input1.Length)
+                return false;
+
+            Dictionary<char, char> dictionary = new Dictionary<char, char>();
+
+            for (int i = 0; i < input1.Length; i++)
+            {
+                if (dictionary.ContainsKey(input1[i]))
+                {
+                    if (dictionary[input1[i]] != input2[i])
+                    {
+                        return false;
+                    }
+                }
+                else if (dictionary.ContainsValue(input2[i]))
+                {
+                    return false;
+                }
+                else
+                {
+                    dictionary.Add(input1[i], input2[i]);
+                }
+            }
+
             return true;
         }
     }

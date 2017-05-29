@@ -72,11 +72,11 @@ namespace com.hack3rlife.dynamicprogramming
             var adjRow = new int[] { 0, -1, -1 };
             var adjCol = new int[] { -1, -1, 0 };
 
-            //left
+            //left (Remove)
             int a = input[i + adjRow[0], j + adjCol[0]];
-            //diag
+            //diag (Replace)
             int b = input[i + adjRow[1], j + adjCol[1]];
-            //top
+            //top (Insert)
             int c = input[i + adjRow[2], j + adjCol[2]];
 
             int smallest = Math.Min(Math.Min(a, b), c);

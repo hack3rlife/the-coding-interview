@@ -26,7 +26,7 @@ namespace com.hack3rlife.strings.test
         public void BalancedExpressions_IsBalancedExpression_False_Test()
         {
             // arrange
-            string expression = TestContext.DataRow["expression"].ToString();
+            string expression = TestContext.DataRow[0].ToString();
 
             // act
             var condition = BalancedExpressions.IsBalancedExpressionWithStacks(expression);

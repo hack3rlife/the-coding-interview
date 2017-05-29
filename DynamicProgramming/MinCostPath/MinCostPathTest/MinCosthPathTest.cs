@@ -1,7 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using MinCostPath;
 
-namespace MinCostPathTest
+namespace com.hack3rlife.dynamicprogramming.test
 {
     [TestClass]
     public class MinCosthPathTest
@@ -18,10 +17,28 @@ namespace MinCostPathTest
             };
             // act
 
-            var result = MinCosthPath.Get(matrix);
+            var result = MinCostPath.Get(matrix);
 
             // assert
             Assert.AreEqual(12, result);
+        }
+
+        [TestMethod]
+        public void MinCosthPath_Get2_Test()
+        {
+            // arrange
+            var matrix = new[,]
+            {
+                { 1, 2, 3 },
+                { 4, 8, 2 },
+                { 1, 5, 3 }
+            };
+            // act
+
+            var result = MinCostPath.Get(matrix);
+
+            // assert
+            Assert.AreEqual(8, result);
         }
     }
 }

@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{479F5041-548C-4123-A04D-FB86ED10708C}</ProjectGuid>
+    <ProjectGuid>{DD788D98-785D-4737-9B4C-EFA553845C07}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MakingAnagramsTests</RootNamespace>
-    <AssemblyName>MakingAnagramsTests</AssemblyName>
+    <RootNamespace>LightsOutTests</RootNamespace>
+    <AssemblyName>LightsOutTests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -17,6 +17,10 @@
     <IsCodedUITest>False</IsCodedUITest>
     <TestProjectType>UnitTest</TestProjectType>
     <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -51,13 +55,13 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="MakingAnagramsTest.cs" />
+    <Compile Include="LightsOutTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MakingAnagrams\MakingAnagrams.csproj">
-      <Project>{DACD3C22-A3A1-4318-ABA5-0972A23B985D}</Project>
-      <Name>MakingAnagrams</Name>
+    <ProjectReference Include="..\LightsOut\LightsOut.csproj">
+      <Project>{F53D7F71-BBDC-4361-A04A-8DD46ACC138B}</Project>
+      <Name>LightsOut</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

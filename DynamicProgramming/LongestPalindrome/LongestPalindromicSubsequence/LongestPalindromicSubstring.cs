@@ -71,9 +71,9 @@ namespace com.hack3rlife.dynamicprogramming
                             start = i;
                             max = l;
                         }
-
-                        Print(res);
                     }
+
+                    Print(res);
                 }
             }
 

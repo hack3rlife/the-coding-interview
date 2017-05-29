@@ -30,13 +30,15 @@ namespace com.hack3rlife.dynamicprogramming
             {
                 for (int j = 0; j <= W; j++)
                 {
-                    if (i == 0 || j == 0)
+                    //if (i == 0 || j == 0)
+                    //{
+                    //    result[i, j] = 0;
+                    //}
+                    if (weights[i - 1] <= j)
                     {
-                        result[i, j] = 0;
-                    }
-                    else if (weights[i - 1] <= j)
-                    {
-                        result[i, j] = max(values[i - 1] + result[i - 1, j - weights[i - 1]], result[i - 1, j]);
+                        result[i, j] =
+                            max(values[i - 1] + result[i - 1, j - weights[i - 1]],
+                                result[i - 1, j]);
                     }
                     else
                     {

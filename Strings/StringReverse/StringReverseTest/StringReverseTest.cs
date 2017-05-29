@@ -8,7 +8,7 @@ namespace com.hack3rlife.strings.test
     public class StringReverseTest
     {
         [TestMethod]
-        public void ReverseTest()
+        public void StringReverse_Reverse_Test()
         {
             // arrange
             var input = "hack3rlife";
@@ -22,7 +22,7 @@ namespace com.hack3rlife.strings.test
         }
 
         [TestMethod]
-        public void ReverseOptimizedTest()
+        public void StringReverse_ReverseOptimized_Test()
         {
             // arrange
             var input = "I am Hector"; // "hack3rlife";
@@ -32,6 +32,20 @@ namespace com.hack3rlife.strings.test
             //var actual = StringReverse.Reverse(input.ToCharArray());
             var actual = StringReverse.ReverseWordsInASentece(input);
             // arrange
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void StringReverse_RecursiveMethod_Test()
+        {
+            // arrange
+            var input = "hack3rlife";
+            var expected = "efilr3kcah";
+
+            // act
+            var actual = StringReverse.Reverse(input.ToCharArray(), 0, input.Length-1);
+
+            // assert
             Assert.AreEqual(expected, actual);
         }
     }
