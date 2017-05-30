@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace com.hack3rlife.datastructures
 {
@@ -414,14 +415,15 @@ namespace com.hack3rlife.datastructures
                 return FindMin(node.Right);
 
             T succ = default(T);
-             
+
             while (root != null)
             {
-                if(node.Value.CompareTo(root.Value) < 0)        //node.Value < root.Value
+                if (node.Value.CompareTo(root.Value) < 0)        //node.Value < root.Value
                 {
                     succ = root.Value;
                     root = root.Left;
-                }else if(node.Value.CompareTo(root.Value) > 0)
+                }
+                else if (node.Value.CompareTo(root.Value) > 0)
                 {
                     root = root.Right;
                 }
@@ -453,11 +455,152 @@ namespace com.hack3rlife.datastructures
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="node"></param>
+        public List<T> InLevel<T>(BinarySearchTreeNode<T> root) where T : IComparable<T>
+        {
+            List<T> list = new List<T>();
+
+            Queue<BinarySearchTreeNode<T>> q = new Queue<BinarySearchTreeNode<T>>();
+            q.Enqueue(root);
+
+            while (q.Count > 0)
+            {
+                var tn = q.Dequeue();
+                tn.DisplayNode();
+                list.Add(tn.Value);
+
+                if (tn.Left != null)
+                    q.Enqueue(tn.Left);
+                if (tn.Right != null)
+                    q.Enqueue(tn.Right);
+            }
+
+            return list;
+        }
+
+        /// <summary>
+        /// Modification of level order traversal
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="node"></param>
+        /// <see cref="http://www.geeksforgeeks.org/level-order-traversal-in-spiral-form/"/>
+        /// <remarks>
+        ///  To print the nodes in spiral order, nodes at different levels should be printed in alternating order. 
+        ///  An additional Boolean variable ltr is used to change printing order of levels. If ltr is 1 then printGivenLevel() prints nodes from left to right 
+        ///  else from right to left. Value of ltr is flipped in each iteration to change the order.
+        /// </remarks>
+        public void InLevelSpiral<T>(BinarySearchTreeNode<T> node) where T : IComparable<T>
+        {
+            int level = GetLevels(node);
+
+            bool reversed = false;
+
+            for (int i = 0; i < level; i++)
+            {
+                GivenLevelSpiral(node, i, reversed);
+                reversed = !reversed;
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="node"></param>
+        /// <param name="k"></param>
+        /// <param name="list"></param>
+        public void FindKthLargestElements<T>(BinarySearchTreeNode<T> node, int k, IList<T> list) where T : IComparable<T>
+        {
+            if (node != null)
+            {
+                FindKthLargestElements<T>(node.Right, k, list);
+
+                if (list.Count < k)
+                {
+                    list.Add(node.Value);
+                }
+
+                FindKthLargestElements<T>(node.Left, k, list);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="node"></param>
+        /// <returns></returns>
+        public bool IsBinarySearchTree<T>(BinarySearchTreeNode<T> node, T min, T max) where T : IComparable<T>
+        {
+            if (node == null)
+                return true;
+
+            if (node.Value.CompareTo(min) < 0 || node.Value.CompareTo(max) > 0)
+                return false;
+
+            Debug.WriteLine("Node: {0} Left: {1} Rigth: {2} Min: {3} Max: {4}", 
+                node.Value, node.Left!= null? node.Left.Value: default(T), node.Right!=null? node.Right.Value:default(T), min, max);
+            var left = IsBinarySearchTree(node.Left, min, node.Value);           
+            var right = IsBinarySearchTree(node.Right, node.Value, max);
+
+            return left && right;
+        }
+
+        /// <summary>
         /// Display the BinarySearchTree strcuture 
         /// </summary>
         public void Display()
         {
             Display(this.Root);
+        }
+
+        /// <summary>
+        /// Get the max level of a BinarySearchTree
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="node"></param>
+        /// <returns></returns>
+        private static int GetLevels<T>(BinarySearchTreeNode<T> node) where T : IComparable<T>
+        {
+            if (node == null)
+                return 0;
+
+            int left = GetLevels(node.Left) + 1;
+            int right = GetLevels(node.Right) + 1;
+
+            return left < right ? right : left;
+        }
+
+        /// <summary>
+        /// Recursive version of Level Order Traversal
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="node"></param>
+        /// <param name="level"></param>
+        /// <param name="reversed"></param>
+        private static void GivenLevelSpiral<T>(BinarySearchTreeNode<T> node, int level, bool reversed) where T : IComparable<T>
+        {
+            if (node == null)
+                return;
+
+            if (level == 0)
+                Debug.Write(string.Format(" {0} ", node.Value));
+
+            if (level > 0)
+            {
+                if (reversed)
+                {
+                    GivenLevelSpiral(node.Left, level - 1, reversed);
+                    GivenLevelSpiral(node.Right, level - 1, reversed);
+                }
+                else
+                {
+                    GivenLevelSpiral(node.Right, level - 1, reversed);
+                    GivenLevelSpiral(node.Left, level - 1, reversed);
+                }
+            }
         }
 
         /// <summary>
