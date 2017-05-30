@@ -15,6 +15,7 @@ namespace LinkedListTest
             list1.AddLast(3);
             //list1.AddLast(4);
             //list1.AddLast(5);
+            list1.Display();
 
             LinkedList list2 = new LinkedList();
             list2.AddLast(6);
@@ -22,6 +23,7 @@ namespace LinkedListTest
             list2.AddLast(8);
             list2.AddLast(9);
             list2.AddLast(0);
+            list2.Display();
 
             list1.MergeAlternateNodes(list2);
 

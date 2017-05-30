@@ -63,6 +63,8 @@
     <Compile Include="DeleteNAfterMTest.cs" />
     <Compile Include="LinkedListBaseTest.cs" />
     <Compile Include="FindKthTest.cs" />
+    <Compile Include="RemoveDulicateSortedListTest.cs" />
+    <Compile Include="RemoveDulicatesUnsortedListTest.cs" />
     <Compile Include="LinkedListTests.cs" />
     <Compile Include="MergeAlternateNodesTest.cs" />
     <Compile Include="MergeIterativeTest.cs" />

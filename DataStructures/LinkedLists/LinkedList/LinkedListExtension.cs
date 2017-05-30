@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace com.hack3rlife.datastructures
 {
@@ -114,7 +115,12 @@ namespace com.hack3rlife.datastructures
         /// <summary>
         /// Reverse a <see cref="LinkedList{T}"/> (Iterative version)
         /// </summary>
+        /// <![CDATA[
+        /// Input : Head of following linked list: 1->2->3->4->NULL
+        /// Output : Linked list should be changed to: 4->3->2->1->NULL
+        /// ]]>
         /// <param name="list">The <see cref="LinkedList{T}"/> </param>
+        /// <see cref="http://www.geeksforgeeks.org/write-a-function-to-reverse-the-nodes-of-a-linked-list/"/>
         public static void ReverseIterative(this LinkedList list)
         {
             if (list.Head != null)
@@ -157,67 +163,86 @@ namespace com.hack3rlife.datastructures
         }
 
         /// <summary>
-        /// Remove duplicates from an unsorted LinkedList
+        /// Remove duplicates from an unsorted LinkedList: deletes any duplicate nodes from the list. The list is not sorted.
         /// </summary>
+        /// <![CDATA[
+        /// For example if the linked list is 12->11->12->21->41->43->21 then removeDuplicates() should convert the list to 12->11->21->41->43.
+        /// ]]>
         /// <typeparam name="T"></typeparam>
         /// <param name="list"></param>
-        public static void RemoveDulicatesUnsorted(this LinkedList list)
+        /// <see cref="http://www.geeksforgeeks.org/remove-duplicates-from-an-unsorted-linked-list/"/>
+        public static LinkedList RemoveDulicatesUnsorted(this LinkedList list)
         {
-            if (list.Head != null)
+            if (list == null)
+                return null;
+
+            LinkedListNode curr = list.Head;
+            LinkedListNode prev = null;
+            Hashtable ht = new Hashtable();
+
+            while (curr != null)
             {
-                LinkedListNode current = list.Head;
-
-                while (current != null)
+                if (ht.ContainsKey(curr.Value))
                 {
-                    LinkedListNode node = current.Next;
-
-                    while (node != null)
-                    {
-                        if (current.Value.Equals(node.Value))
-                        {
-                            node.Next = node.Next.Next;
-                        }
-                        else
-                        {
-                            node = node.Next;
-                        }
-                    }
-
-                    current = current.Next;
+                    prev.Next = curr.Next;
+                    list.Count--;
                 }
+                else
+                {
+                    ht.Add(curr.Value, 1);
+                    prev = curr;
+                }
+
+                curr = prev.Next;
             }
+
+            return list;
         }
 
         /// <summary>
-        /// Remove duplicates from an sorted LinkedList
+        /// Remove duplicates from an sorted LinkedList in non-decreasing order and deletes any duplicate nodes from the list
         /// </summary>
+        /// <![CDATA[
+        /// For example if the linked list is 11->11->11->21->43->43->60 then removeDuplicates() should convert the list to 11->21->43->60.
+        /// ]]>
         /// <typeparam name="T"></typeparam>
         /// <param name="list"></param>
-        public static void RemoveDuplicatesSorted(this LinkedList list)
+        /// <see cref="http://www.geeksforgeeks.org/remove-duplicates-from-a-sorted-linked-list/"/>
+        public static LinkedList RemoveDuplicatesSorted(this LinkedList list)
         {
-            if (list.Head != null)
-            {
-                LinkedListNode current = list.Head;
+            if (list == null)
+                return null;
 
-                while (current.Next != null)
+            LinkedListNode current = list.Head;
+            LinkedListNode next = null;
+
+            while (current.Next != null)
+            {
+                if (current.Value.Equals(current.Next.Value))
                 {
-                    if (current.Value.Equals(current.Next.Value))
-                    {
-                        current = current.Next.Next;
-                    }
-                    else
-                    {
-                        current = current.Next;
-                    }
+                    next = current.Next.Next;
+                    list.Count--;
+                    current.Next = next;
+                }
+                else
+                {
+                    current = current.Next;
                 }
             }
+
+            return list;
         }
 
         /// <summary>
         /// Given a singly linked list, rotate the linked list counter-clockwise by k nodes
         /// </summary>
-        /// <param name="list">LinkedList</param>
+        /// <![CDATA[
+        /// For example, if the given linked list is 10->20->30->40->50->60 and k is 4, the list should be modified to 50->60->10->20->30->40. Assume that k is smaller than the count of 
+        /// nodes in linked list.
+        /// ]]>
+        /// <param name="list">The <see cref="LinkedList"/></param>
         /// <param name="k">Number of times the LinkedList is going to be rotated</param>
+        /// <see cref="http://www.geeksforgeeks.org/rotate-a-linked-list/"/>
         public static void Rotate(this LinkedList list, int k)
         {
             if (list.Head == null)
@@ -241,74 +266,106 @@ namespace com.hack3rlife.datastructures
             current.Next = list.Head;
             list.Head = kthnode.Next;
             kthnode.Next = null;
+            list.Tail = kthnode;
+
         }
 
         /// <summary>
-        /// 
+        /// Pairwise swap elements of a given linked list
         /// </summary>
+        /// <![CDATA[
+        /// Given a singly linked list, write a function to swap elements pairwise. For example, if the linked list is 1->2->3->4->5 then the function should change it to 2->1->4->3->5,
+        /// and if the linked list is 1->2->3->4->5->6 then the function should change it to 2->1->4->3->6->5.
+        /// ]]>
         /// <typeparam name="T"></typeparam>
-        /// <param name="list"></param>
+        /// <param name="list">The <see cref="LinkedList"/></param>
+        /// <see cref="http://www.geeksforgeeks.org/pairwise-swap-elements-of-a-given-linked-list/"/>
         public static void SwapConsecutives(this LinkedList list)
         {
-            if (list.Head != null && list.Head.Next != null)
-            {
-                LinkedListNode current = list.Head;
-                list.Head = current.Next;
-                current.Next = list.Head.Next;
-                list.Head.Next = current;
+            if (list == null && list.Head == null)
+                return;
 
-                while (current.Next != null && current.Next.Next != null)
+            var prev = list.Head;
+            var curr = list.Head.Next;
+
+            list.Head = curr;
+
+            while (true)
+            {
+                var next = curr.Next;
+                curr.Next = prev;
+
+                if (next == null || next.Next == null)
                 {
-                    LinkedListNode temp = current.Next;
-                    current.Next = current.Next.Next;
-                    temp.Next = current.Next.Next;
-                    current.Next.Next = temp;
-                    current = current.Next.Next;
+                    prev.Next = next;
+                    break;
                 }
+
+                prev.Next = next.Next;
+
+                prev = next;
+                curr = prev.Next;
             }
+
         }
 
         /// <summary>
-        /// 
+        /// Given a linked list, reverse alternate nodes and append at the end
         /// </summary>
+        /// <![CDATA[
+        /// Given a linked list, reverse alternate nodes and append them to end of list.
+        /// Examples
+        ///         Input List:  1->2->3->4->5->6
+        ///         Output List: 1->3->5->6->4->2
+        /// 
+        ///         Input List:  12->14->16->18->20
+        ///         Output List: 12->16->20->18->14
+        /// ]]>
         /// <param name="list"></param>
+        /// <see cref="http://www.geeksforgeeks.org/given-linked-list-reverse-alternate-nodes-append-end/"/>
         public static void ReverseAlternateNodesAndAppendAtTheEnd(this LinkedList list)
         {
-            if (list.Head != null)
+            //if head is null or list is less than 3 nodes
+            if (list.Head == null || list.Head.Next == null && list.Head.Next.Next == null)
             {
-                LinkedListNode current = list.Head;
-
-                LinkedListNode prev = current.Next;
-                current.Next = current.Next.Next;
-                prev.Next = null;
-
-                current = current.Next;
-
-                list.Display();
-
-                while (current != null && current.Next != null)
-                {
-                    LinkedListNode temp = current.Next;
-                    current.Next = current.Next.Next;
-
-                    temp.Next = prev;
-                    prev = temp;
-
-                    current = current.Next;
-
-                    list.Display();
-                }
-
-                current.Next = prev;
+                return;
             }
+
+            var odd = list.Head;
+            var even = odd.Next;
+
+            odd.Next = odd.Next.Next;
+            odd = odd.Next;
+            even.Next = null;
+
+            while (odd != null && odd.Next != null)
+            {
+                var temp = odd.Next.Next;
+                odd.Next.Next = even;
+                even = odd.Next;
+                odd.Next = temp;
+
+                if (temp != null)
+                    odd = temp;
+            }
+
+            odd.Next = even;
+
         }
 
         /// <summary>
-        /// 
+        /// Merge a linked list into another linked list at alternate positions
         /// </summary>
+        /// <![CDATA[
+        /// Given two linked lists, insert nodes of second list into first list at alternate positions of first list. 
+        /// For example, if first list is 5->7->17->13->11 and second is 12->10->2->4->6, the first list should become 5->12->7->10->17->2->13->4->11->6 and second list should become empty.
+        /// The nodes of second list should only be inserted when there are positions available.For example, if the first list is 1->2->3 and second list is 4->5->6->7->8, then first list 
+        /// should become 1->4->2->5->3->6 and second list to 7-> 8.
+        /// ]]>
         /// <typeparam name="T"></typeparam>
         /// <param name="list"></param>
         /// <param name="alternate"></param>
+        /// <see cref="http://www.geeksforgeeks.org/merge-a-linked-list-into-another-linked-list-at-alternate-positions/"/>
         public static void MergeAlternateNodes(this LinkedList list, LinkedList alternate)
         {
             if (list.Head != null)
@@ -328,16 +385,33 @@ namespace com.hack3rlife.datastructures
 
                     current1 = current1.Next.Next;
                 }
+
+                alternate.Head = current2;
             }
         }
 
         /// <summary>
-        /// 
+        /// Delete N nodes after M nodes of a linked list
         /// </summary>
+        /// <![CDATA[
+        /// Given a linked list and two integers M and N. Traverse the linked list such that you retain M nodes then delete next N nodes, continue the same till end of the linked list.
+        /// 
+        /// Input:
+        ///        M = 2, N = 2
+        ///        Linked List: 1->2->3->4->5->6->7->8
+        ///        Output:
+        ///        Linked List: 1->2->5->6
+        /// Input:
+        ///        M = 3, N = 2
+        ///        Linked List: 1->2->3->4->5->6->7->8->9->10
+        ///        Output:
+        ///        Linked List: 1->2->3->6->7->8
+        /// ]]>
         /// <typeparam name="T"></typeparam>
         /// <param name="list"></param>
         /// <param name="m"></param>
         /// <param name="n"></param>
+        /// <see cref="http://www.geeksforgeeks.org/delete-n-nodes-after-m-nodes-of-a-linked-list/"/>
         public static void DeleteNAfterM(this LinkedList list, int m, int n)
         {
             if (list.Head != null)
@@ -438,13 +512,32 @@ namespace com.hack3rlife.datastructures
         }
 
         /// <summary>
-        /// Given a linked list and a value x, partition it such that all nodes less than x come before nodes greater than or equal to x
+        /// Partitioning a linked list around a given value and keeping the original order.
         /// </summary>
+        /// <![CDATA[
+        /// Given a linked list and a value x, partition it such that all nodes less than x come first, then all nodes with value equal to x and finally nodes with value greater than or 
+        /// equal to x. The original relative order of the nodes in each of the three partitions should be preserved. The partition must work in-place.
+        /// 
+        /// Examples:
+        /// 
+        ///         Input : 1->4->3->2->5->2->3, 
+        ///         x = 3
+        ///         Output: 1->2->2->3->3->4->5
+        /// 
+        ///         Input : 1->4->2->10 
+        ///         x = 3
+        ///         Output: 1->2->4->10
+        /// 
+        ///         Input : 10->4->20->10->3 
+        ///         x = 3
+        ///         Output: 3->10->4->20->10 
+        /// ]]>
         /// <param name="list"></param>
         /// <param name="pivot"></param>      
         /// <see cref="http://qa.geeksforgeeks.org/3823/partition-the-given-linkedlist"/>
         public static void Partition(this LinkedList list, int pivot)
         {
+            //TODO: This method is incomplet and not working
             LinkedListNode current = list.Head;
             LinkedListNode lesser = null;
             LinkedListNode greater = null;
@@ -479,8 +572,16 @@ namespace com.hack3rlife.datastructures
         }
 
         /// <summary>
-        /// 
+        /// Add two numbers represented by linked lists
         /// </summary>
+        /// <![CDATA[
+        /// Given two numbers represented by two lists, write a function that returns sum list. The sum list is list representation of addition of two input numbers.
+        /// Input:
+        ///        First List: 5->6->3  // represents number 365
+        ///        Second List: 8->4->2 //  represents number 248
+        ///        Output
+        ///        Resultant list: 3->1->6  // represents number 613
+        /// ]]>
         /// <param name="a"></param>
         /// <param name="b"></param>
         /// <returns></returns>
@@ -521,7 +622,8 @@ namespace com.hack3rlife.datastructures
                     tail.Next = node;
                     tail = node;
                 }
-                else {
+                else
+                {
                     head = node;
                     tail = node;
                 }

@@ -26,7 +26,7 @@ namespace com.hack3rlife.datastructures
         /// <summary>
         /// Gets the number of nodes actually contained in the LinkedList
         /// </summary>
-        public int Count { get; private set; }
+        public int Count { get; set; }
 
         public bool IsReadOnly
         {
@@ -45,7 +45,7 @@ namespace com.hack3rlife.datastructures
             {
                 node.Next = this.Head;
                 this.Head = node;
-            }   
+            }
             else
             {
                 this.Head = node;
@@ -93,7 +93,7 @@ namespace com.hack3rlife.datastructures
                 {
                     this.Head = this.Tail;
                 }
-                else if(this.Count>=3)
+                else if (this.Count >= 3)
                 {
                     LinkedListNode current = this.Head.Next;
                     this.Head = current;
@@ -119,7 +119,7 @@ namespace com.hack3rlife.datastructures
                 {
                     this.Tail = this.Head;
                 }
-                else if (this.Count>=3)
+                else if (this.Count >= 3)
                 {
                     LinkedListNode current = this.Head;
 
@@ -175,7 +175,7 @@ namespace com.hack3rlife.datastructures
 
                     previous = current;
                     current = current.Next;
-                }       
+                }
             }
 
             return false;
@@ -189,7 +189,7 @@ namespace com.hack3rlife.datastructures
         /// <param name="current"></param>
         /// <returns></returns>
         public LinkedListNode RemoveAll(int data, LinkedListNode current)
-        {            
+        {
             if (current == null)
                 return current;
 
@@ -287,7 +287,7 @@ namespace com.hack3rlife.datastructures
         void ICollection<int>.Add(int item)
         {
             this.AddLast(item);
-        }       
+        }
 
         /// <summary>
         /// 

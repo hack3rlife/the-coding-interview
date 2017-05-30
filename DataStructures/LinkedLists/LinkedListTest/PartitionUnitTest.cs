@@ -17,17 +17,11 @@ namespace com.hack3rlife.datastructures
             //arrange
             LinkedList list = new LinkedList();
             list.AddFirst(9);
-            list.Display();
             list.AddFirst(1);
-            list.Display();
             list.AddFirst(7);
-            list.Display();
             list.AddFirst(5);
-            list.Display();
             list.AddFirst(4);
-            list.Display();
             list.AddFirst(8);
-            list.Display();
             list.AddFirst(2);
             list.Display();
 

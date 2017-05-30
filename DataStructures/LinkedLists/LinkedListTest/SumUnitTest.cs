@@ -28,7 +28,8 @@ namespace com.hack3rlife.datastructures
             //act
             var actual = a.Sum(b);
 
-            //assert            
+            //assert      
+            //1320      
         }
     }
 }
