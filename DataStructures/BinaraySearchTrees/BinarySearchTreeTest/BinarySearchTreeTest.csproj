@@ -70,6 +70,8 @@
     <Compile Include="PreOrderEnumerableTest.cs" />
     <Compile Include="PostOrderEnumerableTest.cs" />
     <Compile Include="InLevelsEnumerableTest.cs" />
+    <Compile Include="InLevelTest.cs" />
+    <Compile Include="InLevelSpitalTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BinarySearchTree\BinarySearchTree.csproj">

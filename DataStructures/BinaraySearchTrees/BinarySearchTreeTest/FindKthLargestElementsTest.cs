@@ -26,7 +26,7 @@ namespace com.hack3rlife.datastructures.test
             }
 
             //act
-            bst.Root.FindKthLargestElements(k, actual);
+            bst.FindKthLargestElements(bst.Root, k, actual);
 
             //assert
 
