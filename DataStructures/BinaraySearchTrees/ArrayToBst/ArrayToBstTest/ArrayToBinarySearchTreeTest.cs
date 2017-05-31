@@ -13,7 +13,7 @@ namespace com.hack3rlife.arrays
             var expected = new int[] { 1, 2, 3, 4, 5, 6 };
 
             //act
-            var bst = expected.ToBinarySearchTree(0, expected.Length-1);
+            var bst = expected.ToBinarySearchTree();
             bst.Display();
 
             //assert

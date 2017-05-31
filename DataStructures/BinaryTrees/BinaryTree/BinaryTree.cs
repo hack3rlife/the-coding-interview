@@ -20,6 +20,8 @@ namespace com.hack3rlife.datastructures
 
         private List<T> _inorder;
 
+        private List<T> _preorder;
+
         public List<T> InOderList
         {
             get
@@ -34,9 +36,57 @@ namespace com.hack3rlife.datastructures
             }
         }
 
+        public List<T> Preorder
+        {
+            get
+            {
+                if (Root != null && _preorder.Count == 0)
+                {
+                    _preorder = new List<T>();
+                    PreOrder(Root);
+                }
+
+                return _preorder;
+            }
+        }
+
+        /// <summary>
+        /// Returns the BinarySearchTree<T> as IEnumerable<T> traversed in levels               
+        /// </summary>
+        /// <see cref="http://en.wikipedia.org/wiki/Tree_traversal#Breadth-first_2"/>
+        /// <seealso cref="http://en.wikipedia.org/wiki/Breadth-first_search"/>
+        public IEnumerable<T> InLevelsEnumerable
+        {
+            get
+            {
+                if (Root == null)
+                    yield return default(T);
+
+                Queue<BinaryTreeNode<T>> q = new Queue<BinaryTreeNode<T>>();
+                q.Enqueue(Root);
+
+                while (q.Count > 0)
+                {
+                    var node = q.Dequeue();
+                    yield return node.Value;
+
+                    if (node.Left != null)
+                        q.Enqueue(node.Left);
+
+                    if (node.Right != null)
+                        q.Enqueue(node.Right);
+                }
+            }
+        }
+
         public BinaryTree()
         {
             _inorder = new List<T>();
+        }
+
+        public BinaryTree(BinaryTreeNode<T> root) : this()
+        {
+            this.Root = root;
         }
 
         /// <summary>
@@ -278,7 +328,6 @@ namespace com.hack3rlife.datastructures
             return result;
         }
 
-
         /// <summary>
         /// Given a Binary Tree, find the maximum sum path from a leaf to root. 
         /// </summary>
@@ -456,6 +505,23 @@ namespace com.hack3rlife.datastructures
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="node">The <see cref="BinaryTreeNode{T}"/></param>
+        /// <returns></returns>
+        public void PreOrder(BinaryTreeNode<T> node)
+        {
+            if (node != null)
+            {
+                _inorder.Add(node.Value);
+                node.DisplayNode();
+
+                PreOrder(node.Left);
+                PreOrder(node.Right);
+            }
+        }
+
+        /// <summary>
         /// The diameter of a Binary Tree (sometimes called the width) is the number of nodes on the longest path between two leaves in the tree.
         /// The diameter of a tree T is the largest of the following quantities:
         /// 1. The diameter of T’s left subtree
@@ -493,7 +559,6 @@ namespace com.hack3rlife.datastructures
             return diameter;
         }
 
-
         /// <summary>
         /// Find the Maximum Depth OR Height of a Binary Tree
         /// </summary>
@@ -507,8 +572,6 @@ namespace com.hack3rlife.datastructures
 
             return 1 + Math.Max(Height(node.Left), Height(node.Right));
         }
-
-
 
         /// <summary>
         /// Display the BinarySearchTree strcuture 
