@@ -1,4 +1,4 @@
-DynamicProgramming (46) 
+DynamicProgramming (36) 
 +CoinChange
 		*CoinChange\CoinChange.csproj
 		*CoinChangeTest\CoinChangeTest.csproj
@@ -42,21 +42,9 @@ DynamicProgramming (46)
 +MaximumSubarrayProblem
 		*MaximumSubarrayProblem\MaximumSubarrayProblem.csproj
 		*MaximumSubarrayProblemTest\MaximumSubarrayProblemTest.csproj
-+MaxSumIncreasingSubsequence
-		*LongestIncreasingSubsequenceSumTest\LongestIncreasingSubsequenceSumTest.csproj
-		*MaxSumIncreasingSubsequence\MaxSumIncreasingSubsequence.csproj
 +MinCostPath
 		*MinCostPath\MinCostPath.csproj
 		*MinCostPathTest\MinCostPathTest.csproj
-+NumberOfIslands
-		*NumberOfIslands\NumberOfIslands.csproj
-		*NumberOfIslandsTest\NumberOfIslandsTest.csproj
-+RatInAMaze
-		*RatInAMaze\RatInAMaze.csproj
-		*RatInAMazeTest\RatInAMazeTest.csproj
-+ShortestPathBinaryMaze
-		*ShortestPathBinaryMaze\ShortestPathBinaryMaze.csproj
-		*ShortestPathBinaryMazeTests\ShortestPathBinaryMazeTests.csproj
 +SubArrayGivenSum
 		*SubArrayGivenSum\SubArrayGivenSum.csproj
 		*SubArrayGivenSumTest\SubArrayGivenSumTest.csproj
@@ -66,6 +54,3 @@ DynamicProgramming (46)
 +WildCardMatch
 		*WildCardMatch\WildCardMatch.csproj
 		*WildCardMatchTest\WildCardMatchTest.csproj
-+WordSearch
-		*WordSearch\WordSearch.csproj
-		*WordSearchTest\WordSearchTest.csproj

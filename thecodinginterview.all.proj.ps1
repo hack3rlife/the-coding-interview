@@ -1,6 +1,6 @@
 #Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 
-$scriptDirectory = "C:\tfs\TheCodingInterview" #(Get-Item $MyInvocation.MyCommand.Path).Directory.FullName
+$scriptDirectory = "C:\git\TheCodingInterview" #(Get-Item $MyInvocation.MyCommand.Path).Directory.FullName
 $dteObj = New-Object -ComObject "VisualStudio.DTE.14.0"
 
 $slnDir = ".\"

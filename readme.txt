@@ -1,4 +1,4 @@
-The Coding Interview (167) 
+The Coding Interview (166) 
 + .git (0) 
 + Algorithms (16) 
 	1: BinarySearch 
@@ -43,13 +43,17 @@ The Coding Interview (167)
 	23: ShortestPathBinaryMazeTests 
 	24: StairCase 
 	25: StairCaseTUniTests 
-+ Backtracking (0) 
++ Backtracking (4) 
+	1: RatInAMaze 
+	2: RatInAMazeTest 
+	3: WordSearch 
+	4: WordSearchTest 
 + BitManipulation (2) 
 	1: CountBits 
 	2: CountBitsTest 
 + DataStructures (15) 
-	1: ArrayToBinarySearchTree 
-	2: ArrayToBinarySearchTreeTest 
+	1: ArrayToTree 
+	2: ArrayToTreeTest 
 	3: BinarySearchTree 
 	4: BinarySearchTreeTest 
 	5: BinarySearchTreeTests 
@@ -63,7 +67,8 @@ The Coding Interview (167)
 	13: QueueTest 
 	14: Stack 
 	15: StackTest 
-+ DynamicProgramming (46) 
++ docs (0) 
++ DynamicProgramming (36) 
 	1: CoinChange 
 	2: CoinChangeTest 
 	3: JumpGame 
@@ -92,24 +97,19 @@ The Coding Interview (167)
 	26: MaximumSizeSquareTest 
 	27: MaximumSubarrayProblem 
 	28: MaximumSubarrayProblemTest 
-	29: LongestIncreasingSubsequenceSumTest 
-	30: MaxSumIncreasingSubsequence 
-	31: MinCostPath 
-	32: MinCostPathTest 
-	33: NumberOfIslands 
-	34: NumberOfIslandsTest 
-	35: RatInAMaze 
-	36: RatInAMazeTest 
-	37: ShortestPathBinaryMaze 
-	38: ShortestPathBinaryMazeTests 
-	39: SubArrayGivenSum 
-	40: SubArrayGivenSumTest 
-	41: SubsetSum 
-	42: SubsetSumTest 
-	43: WildCardMatch 
-	44: WildCardMatchTest 
-	45: WordSearch 
-	46: WordSearchTest 
+	29: MinCostPath 
+	30: MinCostPathTest 
+	31: SubArrayGivenSum 
+	32: SubArrayGivenSumTest 
+	33: SubsetSum 
+	34: SubsetSumTest 
+	35: WildCardMatch 
+	36: WildCardMatchTest 
++ Graphs (4) 
+	1: NumberOfIslands 
+	2: NumberOfIslandsTest 
+	3: ShortestPathBinaryMaze 
+	4: ShortestPathBinaryMazeTests 
 + Math (2) 
 	1: SquareRoot 
 	2: SquareRootTest 
@@ -176,5 +176,6 @@ The Coding Interview (167)
 	36: StringPermutationTest 
 	37: StringReverse 
 	38: StringReverseTest 
-+ Tools (1) 
++ Tools (2) 
 	1: ProjectsTree 
+	2: TestDrive 

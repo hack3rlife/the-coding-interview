@@ -5,13 +5,19 @@ using System.Text;
 
 namespace ProjectsTree
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            var root = @"C:\tfs\TheCodingInterview";
+
+            var root = @"C:\git\TheCodingInterview";
+
+            Console.WriteLine(root);
+
             var sb = new StringBuilder();
             sb.AppendFormat("The Coding Interview ([total]) \r\n");
+
+            Console.WriteLine(sb.ToString());
 
             var total = 0;
             var count = 0;
@@ -32,12 +38,16 @@ namespace ProjectsTree
                     var directoryPath = directory.Split('\\');
                     var folderName = directoryPath[directoryPath.Length - 1];
 
+                    Console.WriteLine(folderName);
+
                     var files = Directory.GetFiles(directory, "*.csproj", SearchOption.AllDirectories);
 
                     total += files.Length;
                     count = files.Length;
 
                     var fileName = string.Format("{0}\\{1}.txt", directory, folderName);
+
+                    Console.WriteLine(fileName);
 
                     sb.AppendFormat("+ {0} ({1}) \r\n", folderName, count);
 

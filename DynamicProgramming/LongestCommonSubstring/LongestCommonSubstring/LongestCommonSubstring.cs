@@ -28,7 +28,7 @@ namespace com.hack3rlife.dynamicprogramming
             int m = input1.Length;
             int n = input2.Length;
 
-            int[,] num = new int[m, n];
+            int[,] result = new int[m, n];
 
             int max = 0;
 
@@ -36,18 +36,20 @@ namespace com.hack3rlife.dynamicprogramming
             {
                 for (int j = 1; j < n; j++)
                 {
-                    if (input1[i] == input2[j])
+                    if (input1[i - 1] == input2[j - 1])
                     {
-                        num[i, j] = num[i - 1, j - 1] + 1;
+                        //num[i,j] = top left diagonal + 1
+                        result[i, j] = result[i - 1, j - 1] + 1;
 
-                        max = (max > num[i, j]) ? max : num[i, j];
+                        //store max value so far
+                        max = (max > result[i, j]) ? max : result[i, j];
+
+                        Print(result);
                     }
                     else
                     {
-                        num[i, j] = 0;
+                        result[i, j] = 0;
                     }
-
-                    Print(num);
                 }
             }
 

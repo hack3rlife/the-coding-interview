@@ -16,7 +16,7 @@ namespace LongestCommonSubstringTest
             int expected = 10;
 
             //act
-            int actual = LongestCommonSubstring.GetLength(input1, input2);
+            int actual = LongestCommonSubstring.GetLength(input1.ToLowerInvariant(), input2.ToLowerInvariant());
 
             //Test
 

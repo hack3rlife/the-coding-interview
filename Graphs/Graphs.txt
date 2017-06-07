@@ -1,0 +1,7 @@
+Graphs (4) 
++NumberOfIslands
+		*NumberOfIslands\NumberOfIslands.csproj
+		*NumberOfIslandsTest\NumberOfIslandsTest.csproj
++ShortestPathBinaryMaze
+		*ShortestPathBinaryMaze\ShortestPathBinaryMaze.csproj
+		*ShortestPathBinaryMazeTests\ShortestPathBinaryMazeTests.csproj
