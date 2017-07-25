@@ -1,4 +1,4 @@
-﻿ $msBuildExe = 'C:\Program Files (x86)\MSBuild\14.0\Bin\msbuild.exe'
+﻿ $msBuildExe = 'C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\msbuild.exe'
  $path = "C:\git\thecodinginterview\Tools\ProjectsTree\ProjectsTree\ProjectsTree.csproj"
  $output = 'C:\git\thecodinginterview\Tools\ProjectsTree\ProjectsTree\bin\Debug\ProjectsTree.exe'
  

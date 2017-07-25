@@ -43,5 +43,26 @@ namespace com.hack3rlife.strings
 
             return true;
         }
+
+        public static bool IsPalindromeOfPermutation(string input)
+        {
+            var count = 0;
+            var alphabet = new char[26]; //new char[char.GetNumericValue('z') - char.GetNumericValue('a') + 1];
+
+            for (int i = 0; i < input.Length; i++)
+            {
+                if (input[i] >= 97 && input[i] <= 122)        //[a-z]
+                {
+                    alphabet[input[i] - 97]++;
+
+                    if ((alphabet[input[i] - 97]) % 2 == 1)
+                        count++;
+                    else
+                        count--;
+                }
+            }
+
+            return count <= 1;
+        }
     }
 }

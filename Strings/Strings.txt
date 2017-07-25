@@ -1,4 +1,4 @@
-Strings (38) 
+Strings (40) 
 +BalancedExpressions
 		*BalancedExpressions\BalancedExpressions.csproj
 		*BalancedExpressionsTests\BalancedExpressionsTest.csproj
@@ -20,7 +20,7 @@ Strings (38)
 +IsPalindrome
 		*IsPalindrome\IsPalindrome.csproj
 		*IsPalindromeTest\IsPalindromeTest.csproj
-+Strings
++IsPangram
 		*IsPangram\IsPangram.csproj
 		*IsPangramTests\IsPangramTests.csproj
 +IsRotation
@@ -50,6 +50,9 @@ Strings (38)
 +StringCombination
 		*StringCombination\StringCombination.csproj
 		*StringCombinationTest\StringCombinationTest.csproj
++StringCompression
+		*StringCompression\StringCompression.csproj
+		*StringCompressionTests\StringCompressionTests.csproj
 +StringPermutation
 		*StringPermutation\StringPermutation.csproj
 		*StringPermutationTest\StringPermutationTest.csproj

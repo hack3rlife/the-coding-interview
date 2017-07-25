@@ -1,4 +1,4 @@
-The Coding Interview (166) 
+The Coding Interview (169) 
 + .git (0) 
 + Algorithms (16) 
 	1: BinarySearch 
@@ -43,11 +43,12 @@ The Coding Interview (166)
 	23: ShortestPathBinaryMazeTests 
 	24: StairCase 
 	25: StairCaseTUniTests 
-+ Backtracking (4) 
-	1: RatInAMaze 
-	2: RatInAMazeTest 
-	3: WordSearch 
-	4: WordSearchTest 
++ Backtracking (5) 
+	1: NurikabeChecker 
+	2: RatInAMaze 
+	3: RatInAMazeTest 
+	4: WordSearch 
+	5: WordSearchTest 
 + BitManipulation (2) 
 	1: CountBits 
 	2: CountBitsTest 
@@ -137,7 +138,8 @@ The Coding Interview (166)
 	4: LightsOutTests 
 	5: RatioIterator 
 	6: RatioIteratorTest 
-+ Strings (38) 
++ Recursion (0) 
++ Strings (40) 
 	1: BalancedExpressions 
 	2: BalancedExpressionsTest 
 	3: BuildLowestNumber 
@@ -172,10 +174,12 @@ The Coding Interview (166)
 	32: RomaNumeralsTest 
 	33: StringCombination 
 	34: StringCombinationTest 
-	35: StringPermutation 
-	36: StringPermutationTest 
-	37: StringReverse 
-	38: StringReverseTest 
+	35: StringCompression 
+	36: StringCompressionTests 
+	37: StringPermutation 
+	38: StringPermutationTest 
+	39: StringReverse 
+	40: StringReverseTest 
 + Tools (2) 
 	1: ProjectsTree 
 	2: TestDrive 
