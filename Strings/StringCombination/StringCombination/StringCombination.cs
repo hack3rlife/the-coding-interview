@@ -106,8 +106,8 @@ namespace com.hack3rlife.strings
 
             for (int i = 0; i < input.Length; i++)
             {
-                var temp = currOutput + input[i];
-                output = Combine(input, temp, output, k - 1);
+                currOutput += input[i];
+                output = Combine(input, currOutput, output, k - 1);
             }
 
             return output;
@@ -120,6 +120,6 @@ namespace com.hack3rlife.strings
         private static string Combine()
         {
             throw new NotImplementedException();
-        }
+        }        
     }
 }

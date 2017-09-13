@@ -1,4 +1,7 @@
-DynamicProgramming (36) 
+DynamicProgramming (38) 
++AllPairsShortestPathProblem
+		*AllPairsShortestPathProblem\AllPairsShortestPathProblem.csproj
+		*AllPairsShortestPathProblemTest\AllPairsShortestPathProblemTest.csproj
 +CoinChange
 		*CoinChange\CoinChange.csproj
 		*CoinChangeTest\CoinChangeTest.csproj

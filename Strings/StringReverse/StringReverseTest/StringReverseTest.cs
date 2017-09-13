@@ -48,5 +48,20 @@ namespace com.hack3rlife.strings.test
             // assert
             Assert.AreEqual(expected, actual);
         }
+
+
+        [TestMethod]
+        public void StringReverse_RecursiveMethod()
+        {
+            // arrange
+            var input = "Candidates pass interview";
+            var expected = "setadidnaC ssap weivretni";
+
+            // act
+            var actual = StringReverse.ReverseWordsInASentece(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

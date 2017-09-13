@@ -1,4 +1,7 @@
-BitManipulation (2) 
+BitManipulation (4) 
 +CountBits
 		*CountBits\CountBits.csproj
 		*CountBitsTest\CountBitsTest.csproj
++PowerSet
+		*PowerSet\PowerSet.csproj
+		*PowerSetTest\PowerSetTest.csproj

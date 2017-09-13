@@ -24,4 +24,4 @@ $msg = Read-Host "Enter commit msg:"
 git checkout -b mymaster origin/master
 git add *
 git commit -a -m $msg
-git push origin master
+git push origin mymaster

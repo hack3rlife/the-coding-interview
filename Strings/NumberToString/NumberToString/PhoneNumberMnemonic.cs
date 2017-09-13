@@ -49,7 +49,7 @@ namespace com.hack3rlife.strings
                 result = result + " " + current.ToLowerInvariant();
                 return;
             }
-
+             
             var currentLetters = GetLetters(number[current.Length]);
             foreach (var c in currentLetters)
             {

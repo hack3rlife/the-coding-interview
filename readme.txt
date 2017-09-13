@@ -1,4 +1,4 @@
-The Coding Interview (169) 
+The Coding Interview (179) 
 + .git (0) 
 + Algorithms (16) 
 	1: BinarySearch 
@@ -17,41 +17,47 @@ The Coding Interview (169)
 	14: QuickSortTest 
 	15: SelectionSort 
 	16: SelectionSortTest 
-+ Arrays (25) 
++ Arrays (29) 
 	1: DutchNationalFlagProblem 
 	2: DutchNationalFlagProblemTest 
-	3: FindKth 
-	4: FindKthTest 
-	5: ArrayRotation 
-	6: ArrayRotationTests 
-	7: MatrixInDiagonal 
-	8: MatrixInDiagonalTests 
-	9: MatrixInSpiral 
-	10: MatrixInSpiralTest 
-	11: MatrixPaths 
-	12: MatrixPathsTest 
-	13: MatrixRotateTest 
-	14: MatrixRotate 
-	15: MissingElement 
-	16: MissingElementTest 
-	17: NextGreaterElement 
-	18: NextGreaterElementTests 
-	19: NumberOfIslands 
-	20: NumberOfIslandsTest 
-	21: PythagoreanTriplet 
-	22: ShortestPathBinaryMaze 
-	23: ShortestPathBinaryMazeTests 
-	24: StairCase 
-	25: StairCaseTUniTests 
+	3: FindDuplicates 
+	4: FindKth 
+	5: FindKthTest 
+	6: ArrayRotation 
+	7: ArrayRotationTests 
+	8: MatrixInDiagonal 
+	9: MatrixInDiagonalTests 
+	10: MatrixInSpiral 
+	11: MatrixInSpiralTest 
+	12: MatrixPaths 
+	13: MatrixPathsTest 
+	14: MatrixRotateTest 
+	15: MatrixRotate 
+	16: MaxSliceSum 
+	17: MissingElement 
+	18: MissingElementTest 
+	19: NextGreaterElement 
+	20: NextGreaterElementTests 
+	21: NumberOfIslands 
+	22: NumberOfIslandsTest 
+	23: PythagoreanTriplet 
+	24: ShortestPathBinaryMaze 
+	25: ShortestPathBinaryMazeTests 
+	26: StairCase 
+	27: StairCaseTUniTests 
+	28: Stocks 
+	29: StocksTest 
 + Backtracking (5) 
 	1: NurikabeChecker 
 	2: RatInAMaze 
 	3: RatInAMazeTest 
 	4: WordSearch 
 	5: WordSearchTest 
-+ BitManipulation (2) 
++ BitManipulation (4) 
 	1: CountBits 
 	2: CountBitsTest 
+	3: PowerSet 
+	4: PowerSetTest 
 + DataStructures (15) 
 	1: ArrayToTree 
 	2: ArrayToTreeTest 
@@ -69,48 +75,52 @@ The Coding Interview (169)
 	14: Stack 
 	15: StackTest 
 + docs (0) 
-+ DynamicProgramming (36) 
-	1: CoinChange 
-	2: CoinChangeTest 
-	3: JumpGame 
-	4: JumpGameTest 
-	5: KnapsackProblem 
-	6: KnapsackProblemTest 
-	7: LargestSubarrayWithZeroSum 
-	8: LargestSubarrayWithZeroSumTest 
-	9: MaximumSubarrayProblem 
-	10: MaximumSubarrayProblemTest 
-	11: LavenshteinDistance 
-	12: LavenshteinDistanceTest 
-	13: LongestCommonSubsequence 
-	14: LongestCommonSubsequenceTest 
-	15: LongestCommonSubstring 
-	16: LongestCommonSubstringTest 
-	17: LongestIncreasingSubsequence 
-	18: LongestIncreasingSubsequenceTest 
-	19: LongestIncreasingSubsequenceSum 
-	20: LongestIncreasingSubsequenceSumTest 
-	21: LongestPalindromic 
-	22: LongestPalindromicTest 
-	23: MatrixPaths 
-	24: MatrixPathsTest 
-	25: MaximumSizeSquare 
-	26: MaximumSizeSquareTest 
-	27: MaximumSubarrayProblem 
-	28: MaximumSubarrayProblemTest 
-	29: MinCostPath 
-	30: MinCostPathTest 
-	31: SubArrayGivenSum 
-	32: SubArrayGivenSumTest 
-	33: SubsetSum 
-	34: SubsetSumTest 
-	35: WildCardMatch 
-	36: WildCardMatchTest 
-+ Graphs (4) 
-	1: NumberOfIslands 
-	2: NumberOfIslandsTest 
-	3: ShortestPathBinaryMaze 
-	4: ShortestPathBinaryMazeTests 
++ DynamicProgramming (38) 
+	1: AllPairsShortestPathProblem 
+	2: AllPairsShortestPathProblemTest 
+	3: CoinChange 
+	4: CoinChangeTest 
+	5: JumpGame 
+	6: JumpGameTest 
+	7: KnapsackProblem 
+	8: KnapsackProblemTest 
+	9: LargestSubarrayWithZeroSum 
+	10: LargestSubarrayWithZeroSumTest 
+	11: MaximumSubarrayProblem 
+	12: MaximumSubarrayProblemTest 
+	13: LavenshteinDistance 
+	14: LavenshteinDistanceTest 
+	15: LongestCommonSubsequence 
+	16: LongestCommonSubsequenceTest 
+	17: LongestCommonSubstring 
+	18: LongestCommonSubstringTest 
+	19: LongestIncreasingSubsequence 
+	20: LongestIncreasingSubsequenceTest 
+	21: LongestIncreasingSubsequenceSum 
+	22: LongestIncreasingSubsequenceSumTest 
+	23: LongestPalindromic 
+	24: LongestPalindromicTest 
+	25: MatrixPaths 
+	26: MatrixPathsTest 
+	27: MaximumSizeSquare 
+	28: MaximumSizeSquareTest 
+	29: MaximumSubarrayProblem 
+	30: MaximumSubarrayProblemTest 
+	31: MinCostPath 
+	32: MinCostPathTest 
+	33: SubArrayGivenSum 
+	34: SubArrayGivenSumTest 
+	35: SubsetSum 
+	36: SubsetSumTest 
+	37: WildCardMatch 
+	38: WildCardMatchTest 
++ Graphs (6) 
+	1: DijkstraShortestPath 
+	2: DijkstraShortestPathTest 
+	3: NumberOfIslands 
+	4: NumberOfIslandsTest 
+	5: ShortestPathBinaryMaze 
+	6: ShortestPathBinaryMazeTests 
 + Math (2) 
 	1: SquareRoot 
 	2: SquareRootTest 

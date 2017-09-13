@@ -1,4 +1,7 @@
-Graphs (4) 
+Graphs (6) 
++DijkstraShortestPath
+		*DijkstraShortestPath\DijkstraShortestPath.csproj
+		*DijkstraShortestPathTest\DijkstraShortestPathTest.csproj
 +NumberOfIslands
 		*NumberOfIslands\NumberOfIslands.csproj
 		*NumberOfIslandsTest\NumberOfIslandsTest.csproj

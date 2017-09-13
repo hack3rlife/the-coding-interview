@@ -44,6 +44,11 @@ namespace com.hack3rlife.strings
             return true;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
         public static bool IsPalindromeOfPermutation(string input)
         {
             var count = 0;

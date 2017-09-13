@@ -1,7 +1,7 @@
 #Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 
 $scriptDirectory = (Get-Item $MyInvocation.MyCommand.Path).Directory.FullName
-$dteObj = New-Object -ComObject "VisualStudio.DTE.14.0"
+$dteObj = New-Object -ComObject "VisualStudio.DTE.15.0"
 
 $slnDir = ".\"
 $slnName = "Arrays"

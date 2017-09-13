@@ -5,6 +5,7 @@
  * 
  */
 
+using System;
 using System.Diagnostics;
 
 namespace com.hack3rlife.algorithms
@@ -23,44 +24,21 @@ namespace com.hack3rlife.algorithms
         /// prefix.
         /// </summary>
         /// <param name="input"></param>
-        /// <returns>An arrray with the max sum, start index and end index for the max sum. 
-        /// a[0] = max sum
-        /// a[1] = start
-        /// a[2] = end
-        /// </returns>
+        /// <returns>The max subarray sum</returns>
         /// <see cref="http://www.geeksforgeeks.org/largest-sum-contiguous-subarray/"/>
-        public static int[] GetLargestSum(int[] input)
+        /// <seealso cref="https://rafal.io/posts/codility-max-slice-sum.html"/>
+        public static int MaxSubArraySum(int[] input)
         {
-            int max_sum = 0;
-            int current_sum = 0;
+            int curr_max = input[0];
+            int max_so_far = input[0];
 
-            int begin = 0;
-            int end = 0;
-
-            for (int i = 0; i < input.Length; i++)
+            for (int i = 1; i < input.Length; i++)
             {
-                current_sum += input[i];
-
-                //if sum < 0, reset values
-                if (current_sum < 0)
-                {
-                    current_sum = 0;
-                    begin = i + 1;
-                    end = begin;
-                }
-
-                if (max_sum < current_sum)
-                {
-                    max_sum = current_sum;
-                    end = i;
-
-                    Debug.WriteLine("Current Sum found between index {0} - {1}", begin, end);
-                }
+                curr_max = Math.Max(input[i], curr_max + input[i]);
+                max_so_far = Math.Max(curr_max, max_so_far);
             }
 
-            Debug.WriteLine("Max Sum: {0} found between index {1} - {2}", max_sum, begin, end);
-
-            return new int[] { max_sum, begin, end };           
+            return max_so_far;
         }
     }
 }

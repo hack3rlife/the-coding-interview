@@ -3,12 +3,12 @@
 $scriptDirectory = (Get-Item $MyInvocation.MyCommand.Path).Directory.FullName
 
 $slnDir = ".\"
-$slnName = "Graphs"
+$slnName = "BitsManipulation"
 
 $dteObj = New-Object -ComObject "VisualStudio.DTE.15.0"
 $dteObj.Solution.Create($scriptDirectory, $slnName)
-	(ls . -Recurse *.csproj) | % { $dteObj.Solution.AddFromFile($_.FullName, $false) }
-$dteObj.Solution.SaveAs( (Join-Path $scriptDirectory 'Graphs.sln') ) 
+(ls . -Recurse *.csproj) | % { $dteObj.Solution.AddFromFile($_.FullName, $false) }
+$dteObj.Solution.SaveAs( (Join-Path $scriptDirectory 'BitsManipulation.sln') ) 
 $dteObj.Quit()
 
-ls -in *.sln -r | select -last 1 | %{ ii $_.FullName }
+ls -in *.sln -r | select -first 1 | %{ ii $_.FullName }

@@ -10,7 +10,7 @@ namespace com.hack3rlife.bitmanipulation
     /// <summary>
     /// Implements counting ones in a number
     /// </summary>
-    public  static class CountBits
+    public static class CountBits
     {
         /// <summary>
         /// Counts the number of 1s in a number

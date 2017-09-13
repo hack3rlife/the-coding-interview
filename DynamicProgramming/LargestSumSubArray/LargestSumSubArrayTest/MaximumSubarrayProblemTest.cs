@@ -14,10 +14,10 @@ namespace MaximumSubarrayProblemTest
             int expected = 7;
 
             //act
-            int[] actual = MaximumSubarrayProblem.GetLargestSum(input);
+            int actual = MaximumSubarrayProblem.MaxSubArraySum(input);
 
             //assert
-            Assert.AreEqual(expected, actual[0]);
+            Assert.AreEqual(expected, actual);
         }
 
 
@@ -26,13 +26,13 @@ namespace MaximumSubarrayProblemTest
         {
             //arrange
             int[] input = new int[] { -2, -3, -4, -1, -2, -1, -5, -3 };
-            int expected = 0;
+            int expected = -1;
 
             //act
-            int[] actual = MaximumSubarrayProblem.GetLargestSum(input);
+            int actual = MaximumSubarrayProblem.MaxSubArraySum(input);
 
             //assert
-            Assert.AreEqual(expected, actual[0]);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
@@ -43,10 +43,10 @@ namespace MaximumSubarrayProblemTest
             int expected = 21;
 
             //act
-            int[] actual = MaximumSubarrayProblem.GetLargestSum(input);
+            int actual = MaximumSubarrayProblem.MaxSubArraySum(input);
 
             //assert
-            Assert.AreEqual(expected, actual[0]);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
@@ -57,10 +57,10 @@ namespace MaximumSubarrayProblemTest
             int expected = 5;
 
             //act
-            int[] actual = MaximumSubarrayProblem.GetLargestSum(input);
+            int actual = MaximumSubarrayProblem.MaxSubArraySum(input);
 
             //assert
-            Assert.AreEqual(expected, actual[0]);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
@@ -71,10 +71,10 @@ namespace MaximumSubarrayProblemTest
             int expected = 8;
 
             //act
-            int[] actual = MaximumSubarrayProblem.GetLargestSum(input);
+            int actual = MaximumSubarrayProblem.MaxSubArraySum(input);
 
             //assert
-            Assert.AreEqual(expected, actual[0]);
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
@@ -85,10 +85,10 @@ namespace MaximumSubarrayProblemTest
             int expected = 6;
 
             //act
-            int[] actual = MaximumSubarrayProblem.GetLargestSum(input);
+            int actual = MaximumSubarrayProblem.MaxSubArraySum(input);
 
             //assert
-            Assert.AreEqual(expected, actual[0]);
+            Assert.AreEqual(expected, actual);
         }
     }
 }
