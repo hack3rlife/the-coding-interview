@@ -32,7 +32,7 @@ namespace DijkstraShortestPath
             {
                 var i = MinDistance(output, visited);
 
-                visited[k] = true;
+                visited[i] = true;
 
                 for (int j = 0; j < length; j++)
                 {
@@ -43,6 +43,7 @@ namespace DijkstraShortestPath
                     {
                         output[j] = output[i] + input[i, j];
                         Print(output);
+                        Print ( visited );
                     }
                 }
             }
@@ -56,7 +57,7 @@ namespace DijkstraShortestPath
 
             for (int i = 0; i < length; i++)
             {
-                if(output[i] <= min && visited[i] == false)
+                if(output[i] < min && visited[i] == false)
                 {
                     min = output[i];
                     min_index = i;
@@ -77,6 +78,16 @@ namespace DijkstraShortestPath
             }
 
             Debug.WriteLine("");
+        }
+
+        private static void Print( bool[] input )
+        {
+            for (int i = 0; i < input.GetLength ( 0 ); i++)
+            {
+                Debug.Write ( string.Format ( " {0} ", input[i] ) );
+            }
+
+            Debug.WriteLine ( "" );
         }
     }
 }
