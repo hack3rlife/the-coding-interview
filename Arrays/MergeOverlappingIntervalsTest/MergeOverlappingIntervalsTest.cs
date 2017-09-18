@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace MergeOverlappingIntervals.Test
+namespace com.hack3rlife.arrays.test
 {
     [TestClass ()]
     public class MergeOverlappingIntervalsTest

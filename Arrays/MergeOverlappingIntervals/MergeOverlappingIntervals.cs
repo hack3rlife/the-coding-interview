@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace MergeOverlappingIntervals
+namespace com.hack3rlife.arrays
 {
     public static class MergeOverlappingIntervals
     {
@@ -57,24 +57,6 @@ namespace MergeOverlappingIntervals
 
             var curr = stack.Peek ();
 
-            // special case when the interval is dealing with the first position
-            if (curr.Min > interval.Min && curr.Min > interval.Max)
-            {
-                stack.Pop ();
-                stack.Push (interval);
-                stack.Push (curr);
-                IsMerged = true;
-            }
-            else if (curr.Min > interval.Min)
-            {
-                curr.Min = interval.Min;
-                curr.Max = Math.Max (curr.Max, interval.Max);
-
-                stack.Pop ();
-                stack.Push (curr);
-                IsMerged = true;
-            }
-
             int length = intervals.Count;
             for (int i = 1 ; i < length ; i++)
             {
@@ -82,16 +64,29 @@ namespace MergeOverlappingIntervals
 
                 if (IsMerged == false)
                 {
-                    if (curr.Min <= interval.Min && intervals[i].Min > interval.Max)
+                    if (curr.Min > interval.Min && curr.Min > interval.Max)
                     {
-                        if (curr.Max < interval.Max)
-                            curr.Max = interval.Max;
-                        else
-                            curr.Max = intervals[i].Max;
+                        stack.Pop ();
+                        stack.Push (interval);
+                        stack.Push (curr);
+                        IsMerged = true;
+                    }
+                    else if (curr.Min <= interval.Min && curr.Max > interval.Min)
+                    {
+                        curr.Min = Math.Min (curr.Min, interval.Min);
+                        curr.Max = Math.Max (curr.Max, interval.Max);
 
                         stack.Pop ();
                         stack.Push (curr);
-                        curr = stack.Peek ();
+                        IsMerged = true;
+                    }
+                    else if (curr.Min > interval.Min)
+                    {
+                        curr.Min = interval.Min;
+                        curr.Max = Math.Max (curr.Max, interval.Max);
+
+                        stack.Pop ();
+                        stack.Push (curr);
                         IsMerged = true;
                     }
                 }
