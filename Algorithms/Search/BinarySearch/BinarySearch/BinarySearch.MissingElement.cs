@@ -9,12 +9,12 @@
         /// <param name="input">The input array</param>
         /// <returns>The missing number: otherwise -1</returns>
         /// <example>
-        /// input: [1, 2, 4, 6, 3, 7, 8]
-        /// missing number:5
+        /// input: [1, 2, 3, 4, 6, 7, 8]
+        /// missing number: 5
         /// </example>
         /// <remarks> The input array is sorted in increasing order.</remarks>
         /// <see cref="http://www.geeksforgeeks.org/find-the-missing-number/"/>
-        public static int FindMissingElement(int[] input)
+        public static int FindMissingElement( int[] input )
         {
             int left = 0;
             int right = input.Length - 1;
@@ -25,7 +25,7 @@
 
             while (left <= right)
             {
-                int mid = left + (right - left) / 2;
+                int mid = left + ( right - left ) / 2;
 
                 if (input[mid] - 1 > mid)
                     right = mid - 1;

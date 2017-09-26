@@ -36,7 +36,7 @@ namespace com.hack3rlife.arrays
                         left++;
                         right--;
                     }
-                    else if (a + b + c < 0)
+                    else if (a + b + c < n)
                     {
                         left++;
                     }

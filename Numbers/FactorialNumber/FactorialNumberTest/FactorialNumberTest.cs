@@ -22,5 +22,20 @@ namespace om.hack3rlife.numbers.test
             // assert
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\factorial_numbers.csv", "factorial_numbers#csv", DataAccessMethod.Sequential)]
+        public void FactorialNumber_FactorialDP_Succeed()
+        {
+            // arrange
+            var input = int.Parse(TestContext.DataRow["input"].ToString());
+            var expected = long.Parse(TestContext.DataRow["output"].ToString());
+
+            // act
+            var actual = FactorialNumber.FactorialDP(input);
+
+            // assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

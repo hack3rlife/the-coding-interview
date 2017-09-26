@@ -1,4 +1,4 @@
-The Coding Interview (179) 
+The Coding Interview (181) 
 + .git (0) 
 + Algorithms (16) 
 	1: BinarySearch 
@@ -17,36 +17,34 @@ The Coding Interview (179)
 	14: QuickSortTest 
 	15: SelectionSort 
 	16: SelectionSortTest 
-+ Arrays (29) 
-	1: DutchNationalFlagProblem 
-	2: DutchNationalFlagProblemTest 
-	3: FindDuplicates 
-	4: FindKth 
-	5: FindKthTest 
-	6: ArrayRotation 
-	7: ArrayRotationTests 
-	8: MatrixInDiagonal 
-	9: MatrixInDiagonalTests 
-	10: MatrixInSpiral 
-	11: MatrixInSpiralTest 
-	12: MatrixPaths 
-	13: MatrixPathsTest 
-	14: MatrixRotateTest 
-	15: MatrixRotate 
-	16: MaxSliceSum 
-	17: MissingElement 
-	18: MissingElementTest 
-	19: NextGreaterElement 
-	20: NextGreaterElementTests 
-	21: NumberOfIslands 
-	22: NumberOfIslandsTest 
++ Arrays (27) 
+	1: 2SumProblem 
+	2: 2SumProblemTest 
+	3: 3SumProblem 
+	4: 3SumProblemTest 
+	5: DutchNationalFlagProblem 
+	6: DutchNationalFlagProblemTest 
+	7: FindKth 
+	8: FindKthTest 
+	9: ArrayRotation 
+	10: ArrayRotationTests 
+	11: MatrixInDiagonal 
+	12: MatrixInDiagonalTests 
+	13: MatrixInSpiral 
+	14: MatrixInSpiralTest 
+	15: MatrixRotateTest 
+	16: MatrixRotate 
+	17: MergeOverlappingIntervals 
+	18: MergeOverlappingIntervalsTest 
+	19: MissingElement 
+	20: MissingElementTest 
+	21: NextGreaterElement 
+	22: NextGreaterElementTests 
 	23: PythagoreanTriplet 
-	24: ShortestPathBinaryMaze 
-	25: ShortestPathBinaryMazeTests 
-	26: StairCase 
-	27: StairCaseTUniTests 
-	28: Stocks 
-	29: StocksTest 
+	24: StairCase 
+	25: StairCaseTUniTests 
+	26: Stocks 
+	27: StocksTest 
 + Backtracking (5) 
 	1: NurikabeChecker 
 	2: RatInAMaze 
@@ -75,7 +73,7 @@ The Coding Interview (179)
 	14: Stack 
 	15: StackTest 
 + docs (0) 
-+ DynamicProgramming (38) 
++ DynamicProgramming (42) 
 	1: AllPairsShortestPathProblem 
 	2: AllPairsShortestPathProblemTest 
 	3: CoinChange 
@@ -108,12 +106,16 @@ The Coding Interview (179)
 	30: MaximumSubarrayProblemTest 
 	31: MinCostPath 
 	32: MinCostPathTest 
-	33: SubArrayGivenSum 
-	34: SubArrayGivenSumTest 
-	35: SubsetSum 
-	36: SubsetSumTest 
-	37: WildCardMatch 
-	38: WildCardMatchTest 
+	33: NumberOfIslands 
+	34: NumberOfIslandsTest 
+	35: ShortestPathBinaryMaze 
+	36: ShortestPathBinaryMazeTests 
+	37: SubArrayGivenSum 
+	38: SubArrayGivenSumTest 
+	39: SubsetSum 
+	40: SubsetSumTest 
+	41: WildCardMatch 
+	42: WildCardMatchTest 
 + Graphs (6) 
 	1: DijkstraShortestPath 
 	2: DijkstraShortestPathTest 

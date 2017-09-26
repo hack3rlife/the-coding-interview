@@ -1,7 +1,7 @@
 ﻿namespace com.hack3rlife.algorithms.searching
 {
     /// <summary>
-    /// Search an element in a sorted and rotated array
+    /// Search an element in a sorted and rotated array (Find an element in a sorted rotated array without finding pivot)
     /// </summary>
     public static partial class BinarySearch
     {
@@ -24,15 +24,15 @@
         ///         output: 8
         /// ]]>
         /// <see cref="http://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/"/></remarks>
-        /// <returns>If found, returns the position of the number otherwise -1</returns>
-        public static int PivotedBinarySearch(int[] input, int k)
+        /// <returns>Returns the position of the number otherwise -1</returns>
+        public static int PivotedBinarySearch( int[] input, int k )
         {
             int left = 0;
             int right = input.Length - 1;
 
             while (left <= right)
             {
-                int mid = left + (right - left) /2;
+                int mid = left + ( right - left ) / 2;
 
                 if (input[mid] == k)
                     return mid;

@@ -17,7 +17,7 @@ namespace com.hack3rlife.arrays
         /// 1 2 3
         /// 4 5 6
         /// 7 8 9
-        /// 
+        ///
         /// Output:
         /// 1
         /// 4 2
@@ -25,27 +25,28 @@ namespace com.hack3rlife.arrays
         /// 8 6
         /// 9
         /// </example>
-        public static int[,] Print(int[,] input)
+        /// <returns>The diagonal order of the input matrix</returns>
+        public static int[,] Print( int[,] input )
         {
             if (input == null)
                 return null;
 
-            var rowCount = input.GetLength(0);
-            var colCount = input.GetLength(1);
+            var rowCount = input.GetLength (0);
+            var colCount = input.GetLength (1);
 
             var output = new int[rowCount + colCount - 1, rowCount];
             var x = 0;
             var y = 0;
 
-            // 1. Print row diagonals 
-            for (int i = 0; i < rowCount; i++)
+            // 1. Print row diagonals
+            for (int i = 0 ; i < rowCount ; i++)
             {
                 var row = i;
                 var col = 0;
 
                 while (row >= 0 && col < colCount)
                 {
-                    Debug.Write(string.Format(" {0} ", input[row, col]));
+                    Debug.Write ($" {input[row, col]}");
                     output[x, y] = input[row, col];
 
                     row--;
@@ -55,18 +56,18 @@ namespace com.hack3rlife.arrays
 
                 x++;
                 y = 0;
-                Debug.WriteLine("");
+                Debug.WriteLine ("");
             }
 
             // 2. Print col diagonals
-            for (int j = 1; j < colCount; j++)
+            for (int j = 1 ; j < colCount ; j++)
             {
                 var row = rowCount - 1;
                 var col = j;
 
                 while (row >= 0 && col < colCount)
                 {
-                    Debug.Write(string.Format(" {0} ", input[row, col]));
+                    Debug.Write ($" {input[row, col]}");
                     output[x, y] = input[row, col];
 
                     row--;
@@ -76,7 +77,7 @@ namespace com.hack3rlife.arrays
 
                 x++;
                 y = 0;
-                Debug.WriteLine("");
+                Debug.WriteLine ("");
             }
 
             return output;

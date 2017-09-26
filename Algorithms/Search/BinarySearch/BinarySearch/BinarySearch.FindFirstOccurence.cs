@@ -1,28 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace com.hack3rlife.algorithms.searching
+﻿namespace com.hack3rlife.algorithms.searching
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public static partial class BinarySearch
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <![CDATA[
         ///         Input: arr[] = {1, 1, 2, 2, 2, 2, 3},   x = 2
         ///         Output: 2
         /// ]]>
-        /// 
+        ///
         /// <param name="input"></param>
         /// <param name="k"></param>
         /// <returns></returns>
-        public static int FindFirstOccurrence(int[] input, int k)
+        public static int FindFirstOccurrence( int[] input, int k )
         {
             var left = 0;
             var right = input.Length - 1;
@@ -30,7 +24,7 @@ namespace com.hack3rlife.algorithms.searching
 
             while (left <= right)
             {
-                var mid = left + ((right - left) / 2);
+                var mid = left + ( ( right - left ) / 2 );
 
                 if (input[mid] == k)
                 {
@@ -45,7 +39,6 @@ namespace com.hack3rlife.algorithms.searching
                 {
                     left = mid + 1;
                 }
-
             }
 
             return result;

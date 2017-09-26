@@ -12,7 +12,7 @@
         /// <returns>The index of the peak element if any; otherwise -1</returns>
         /// <see cref=">https://leetcode.com/problems/find-peak-element/"/>
         /// <seealso cref="http://www.geeksforgeeks.org/find-a-peak-in-a-given-array/"/>
-        public static int FindPeakElement(int[] input)
+        public static int FindPeakElement( int[] input )
         {
             if (input == null)
                 return -1;
@@ -22,7 +22,7 @@
 
             while (left <= right)
             {
-                var mid = (left + right) / 2;
+                var mid = ( left + right ) / 2;
 
                 // IsPeak current mid?
                 if (mid == 0 ||
@@ -32,11 +32,11 @@
                     return mid;
                 }
 
-                // If middle element is not peak and its left neighbour is greater 
+                // if middle element is not peak and its left neighbour is greater
                 // than it, then left half must have a peak element
                 if (input[mid - 1] > input[mid])
                     right = mid - 1;
-                // If middle element is not peak and its right neighbour is greater
+                // if middle element is not peak and its right neighbour is greater
                 // than it, then right half must have a peak element
                 else
                     left = mid + 1;

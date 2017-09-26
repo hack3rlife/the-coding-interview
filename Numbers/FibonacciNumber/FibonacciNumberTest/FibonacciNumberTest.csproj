@@ -59,6 +59,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\FactorialNumber\FactorialNumber\FactorialNumber.csproj">
+      <Project>{C5A7A350-6D68-48AD-88C5-AC255170F600}</Project>
+      <Name>FactorialNumber</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FibonacciNumber\FibonacciNumber.csproj">
       <Project>{a11c8883-cc07-43bc-8caf-839c0fb83de3}</Project>
       <Name>FibonacciNumber</Name>

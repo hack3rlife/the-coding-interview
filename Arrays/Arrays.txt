@@ -1,9 +1,13 @@
-Arrays (29) 
+Arrays (27) 
++2SumProblem
+		*2SumProblem\2SumProblem.csproj
+		*2SumProblemTest\2SumProblemTest.csproj
++3SumProblem
+		*3SumProblem\3SumProblem.csproj
+		*3SumProblemTest\3SumProblemTest.csproj
 +DutchNationalFlagProblem
 		*DutchNationalFlagProblem\DutchNationalFlagProblem.csproj
 		*DutchNationalFlagProblemTest\DutchNationalFlagProblemTest.csproj
-+FindDuplicates
-		*FindDuplicates\FindDuplicates.csproj
 +FindKth
 		*FindKth\FindKth.csproj
 		*FindKthTest\FindKthTest.csproj
@@ -16,28 +20,20 @@ Arrays (29)
 +MatrixInSpiral
 		*MatrixInSpiral\MatrixInSpiral.csproj
 		*MatrixInSpiralTest\MatrixInSpiralTest.csproj
-+MatrixPaths
-		*MatrixPaths\MatrixPaths.csproj
-		*MatrixPathsTest\MatrixPathsTest.csproj
 +MatrixRotate90Degrees
 		*MatrixRotateTest\MatrixRotateTest.csproj
 		*RotateMatrix90Degrees\MatrixRotate.csproj
-+MaxSliceSum
-		*MaxSliceSum\MaxSliceSum.csproj
++Arrays
+		*MergeOverlappingIntervals\MergeOverlappingIntervals.csproj
+		*MergeOverlappingIntervalsTest\MergeOverlappingIntervalsTest.csproj
 +MissingElement
 		*MissingElement\MissingElement.csproj
 		*MissingElementTest\MissingElementTest.csproj
 +NextGreaterElement
 		*NextGreaterElement\NextGreaterElement.csproj
 		*NextGreaterElementTests\NextGreaterElementTests.csproj
-+NumberOfIslands
-		*NumberOfIslands\NumberOfIslands.csproj
-		*NumberOfIslandsTest\NumberOfIslandsTest.csproj
 +PythagoreanTriplet
 		*PythagoreanTriplet\PythagoreanTriplet.csproj
-+ShortestPathBinaryMaze
-		*ShortestPathBinaryMaze\ShortestPathBinaryMaze.csproj
-		*ShortestPathBinaryMazeTests\ShortestPathBinaryMazeTests.csproj
 +StairCase
 		*StairCase\StairCase.csproj
 		*StairCaseTUniTests\StairCaseTUniTests.csproj
